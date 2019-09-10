@@ -35,7 +35,9 @@ logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut)
 
 #prints out the null distribution histogram, the argument breaks is use to define 
 #number of bins we want to break the data up into
+png("null_distribution_ldrs.png")
 hist(logdropoffswt$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
+dev.off()
 
 ## ------------------------------------------------------------------------
 ###check if the matrices of p-values can be called after the pipeline has been run twice
@@ -143,10 +145,12 @@ posteriors_diff
 differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
 ## ------------------------------------------------------------------------
+png("bum_hmm_output_35S_DMS_dataset.png")
 plot(differentiallymod, xlab = 'Nucleotide position',
      ylab = 'Probability of modification',
      main = 'BUMHMM output for 35S DMS data set',
      ylim = c(0,1))
+dev.off()
 
 ## ----eval=FALSE----------------------------------------------------------
 ## ## Call the function with the additonal tolerance parameter
