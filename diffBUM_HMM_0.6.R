@@ -1,6 +1,6 @@
 ### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
 
-setwd("/Users/toby/Desktop/BUM_HMM_analyses/diffhmmfwbw/version 0.6 - working with correct output///")  
+setwd("/Users/maran/Desktop/diff_BUM_HMM")  
 
 
 #biocLite("BUMHMM")
