@@ -1,6 +1,6 @@
 ### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
 
-setwd("/Users/maran/Desktop/diff_BUM_HMM")  
+setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM")  
 
 
 #biocLite("BUMHMM")
@@ -35,33 +35,42 @@ logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut)
 
 #prints out the null distribution histogram, the argument breaks is use to define 
 #number of bins we want to break the data up into
-png("null_distribution_ldrs.png")
+png("null_distribution_ldrs_wt.png")
 hist(logdropoffswt$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
+dev.off()
+
+png("null_distribution_ldrs_mut.png")
+hist(logdropoffsmut$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
 dev.off()
 
 ## ------------------------------------------------------------------------
 ###check if the matrices of p-values can be called after the pipeline has been run twice
+##The reason why LDR_C has 1 column only is because it's the comparison between two controls
+##The reason why LDR_CT has 4 columns is because it is the comparison of two treatment with each 
+##of two controls (T1 C1, T1, C2, T2 C1, T2 C2)
 head(logdropoffswt$LDR_C)
 head(logdropoffswt$LDR_CT)
 head(logdropoffsmut$LDR_C)
 head(logdropoffsmut$LDR_CT)
 
+#Number of control and treatment replicates
 Nc <- Nt <- 2
 
+#Top strand. This information is useful to know for sequencing representation bias
 strand = "+"
 
-###
+###Calculates empirical P values for the two datasets, wt and mutant
 empPvals_1 <- computePvals(logdropoffswt$LDR_C,logdropoffswt$LDR_CT, Nc, Nt, strand, logdropoffswt$nuclPosition,
                            logdropoffswt$nuclSelection$analysedC, logdropoffswt$nuclSelection$analysedCT)
 
 empPvals_2 <- computePvals(logdropoffsmut$LDR_C,logdropoffsmut$LDR_CT, Nc, Nt, strand, logdropoffsmut$nuclPosition,
                            logdropoffsmut$nuclSelection$analysedC, logdropoffsmut$nuclSelection$analysedCT)
 
-
-stretches <-overlapsRanges(logdropoffswt$stretches,logdropoffsmut$stretches)
+#Selects regions that have sufficient coverage or drop off counts 
+#stretches <-overlapsRanges(logdropoffswt$stretches,logdropoffsmut$stretches)
 
 ## Number of nucleotides in the sequence = number of rows in empPvals_1
-nNucl <- length(empPvals_1[1, ])
+#nNucl <- length(empPvals_1[1, ])
 
 
 ## ------------------------------------------------------------------------
