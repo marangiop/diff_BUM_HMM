@@ -1,12 +1,7 @@
-### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
+#Set directory
+setwd("C:/Users/maran/Desktop/diff_BUM_HMM_working_based_on_xist")
 
-setwd("C:/Users/maran/Desktop/diff_BUM_HMM_Project/Files sent by Toby - 15 Sep 2019/mice Xist dataset")  
-
-  
-#biocLite("BUMHMM")
-#biocLite("Biostrings")
-#install.packages("Rcpp", dependencies = TRUE)
-
+#Import functions
 source("https://bioconductor.org/biocLite.R")
 source("Functions/computePvals.R")
 source("Functions/calculateLDRs.R")
@@ -24,19 +19,23 @@ suppressPackageStartupMessages({
   library(Biostrings)
   library(SummarizedExperiment) })
 
-#make a table: take coverage counts and drop off counts from the working directory
-mergedcountswt <- read.table("Data/invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-mergedstartswt <- read.table("Data/invivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-mergedcountsmut <- read.table("Data/exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-mergedstartsmut <- read.table("Data/exvivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
+
+#Analysis of 35S pre-rRNA data
+Nc <- Nt <- 2
+refsequence <- "Data/35S_pre-RNA/35S_pre-RNA.seq"
+outputfilename <-paste0('35S pre-RNA','_diff_BUM_HMM_analysed','.txt')
+mergedcountswt <- read.table("Data/35S_pre-RNA/35S_control_delta5_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+mergedstartswt <- read.table("Data/35S_pre-RNA/35S_control_delta5_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+mergedcountsmut <- read.table("Data/35S_pre-RNA/35S_control_Erb1_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+mergedstartsmut <- read.table("Data/35S_pre-RNA/35S_control_Erb1_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 
 head(mergedcountswt)
 head(mergedstartswt)
 
-logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt)  
-logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut)
+logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, Nc, refsequence)  
+logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, Nc, refsequence) 
 
-#prints out the null distribution histogram, the argument breaks is use to define 
+#Prints out the null distribution histogram, the argument breaks is use to define 
 #number of bins we want to break the data up into
 hist(logdropoffswt$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
 
@@ -46,8 +45,6 @@ head(logdropoffswt$LDR_C)
 head(logdropoffswt$LDR_CT)
 head(logdropoffsmut$LDR_C)
 head(logdropoffsmut$LDR_CT)
-
-Nc <- Nt <- 2
 
 strand = "+"
 
@@ -72,8 +69,6 @@ nNucl <- length(empPvals_1[1, ])
 #null distribution, as well as the positional information of the selected stretches
 #and nucleotide pairs where the LDRs were obtained.
 
-###There are two alternatives, unhash as needed:
-##Alternative 1: Calculate posteriors on the data at positions specified by stretches only:  
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
 pvaluesstretch<-list(Pv1, Pv2)
@@ -100,36 +95,9 @@ for (i in 1:length(stretches)) {
   return(pvaluesstretch)
 }
 
-#TEST if pvaluesstretch contains p-values
-#pvaluesstretch [[1]][,100:200]
-
 posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
 colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
-
-#save this for trying to implement stretches
-#for (i in 1:length(stretches)) {
-## Extract start and end of a current stretch
-#stretchStart <- start(stretches)[i]
-#stretchEnd <- end(stretches)[i]
-#stretchpvalues <- list(empPvals_1[, stretchStart:stretchEnd],empPvals_2[, stretchStart:stretchEnd])
-#if (strand == '+') {
-#selection <- hmmFwbw_differential_two_betas(stretchpvalues)
-#posteriors_diff[stretchStart:stretchEnd, ] <- t(selection)
-#}
-#}
-
-
-### Alternative 2 - Calculating posteriors on all the data without considering stretches:
-
-#posteriors_diff <- hmmFwbw_differential_two_betas(list(empPvals_1,empPvals_2))
-#colnames(posteriors_diff) <- c(" ","UU","UM","MU","MM")
-
-#head(posteriors_diff)
-
-## ------------------------------------------------------------------------
-#head(posteriors)
-
 
 ## All posterior probabilities need to be shifted by 1 nt because the RT
 ## is believed to stop 1 nucleotide before the modified nucleodide.
@@ -151,13 +119,7 @@ plot(differentiallymod, xlab = 'Nucleotide position',
      main = 'diffBUMHMM output: Probabilites of differential modification between ex vivo and in vivo Xist',
      ylim = c(0,1))
 
-## ----eval=FALSE----------------------------------------------------------
-## ## Call the function with the additonal tolerance parameter
-## posteriors <- computeProbs(LDR_C, LDR_CT, Nc, Nt, '+', nuclPosition,
-##                            nuclSelection$analysedC, nuclSelection$analysedCT,
-##                            stretches, 0.001)
-
 ## ------------------------------------------------------------------------
 shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
-write.table(shifted_posteriors,sep="\t",quote=FALSE,file="35S_diffBUM_HMM_in vivo_vs_exvivo_deletions_method2.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
+write.table(shifted_posteriors,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
 
