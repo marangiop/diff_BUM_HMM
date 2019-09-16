@@ -27,23 +27,23 @@ suppressPackageStartupMessages({
   library(SummarizedExperiment) })
 
 #make a table: take coverage counts and drop off counts from the working directory
-#mergedcountswt <- read.table("Data/invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-#mergedstartswt <- read.table("Data/invivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-#mergedcountsmut <- read.table("Data/exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-#mergedstartsmut <- read.table("Data/exvivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
+mergedcountswt <- read.table("Data/Xist/invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
+mergedstartswt <- read.table("Data/Xist/invivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
+mergedcountsmut <- read.table("Data/Xist/exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
+mergedstartsmut <- read.table("Data/Xist/exvivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
 
 
 	
-mergedcountswt <- read.table("Data/35S_pre-RNA/35S_control_delta5_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
-mergedstartswt <- read.table("Data/35S_pre-RNA/35S_control_delta5_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
-mergedcountsmut <- read.table("Data/35S_pre-RNA/35S_control_Erb1_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
-mergedstartsmut <- read.table("Data/35S_pre-RNA/35S_control_Erb1_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+#mergedcountswt <- read.table("Data/35S_pre-RNA/35S_control_delta5_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+#mergedstartswt <- read.table("Data/35S_pre-RNA/35S_control_delta5_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+#mergedcountsmut <- read.table("Data/35S_pre-RNA/35S_control_Erb1_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+#mergedstartsmut <- read.table("Data/35S_pre-RNA/35S_control_Erb1_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 
 noreplicates <- 2
-refsequence <- "Data/35S_pre-RNA/35S pre-RNA.seq"
+refsequence <- "Data/Xist/Xist.seq"
 
 
-outputfilename <-paste0('35S pre-RNA','_diff_BUM_HMM_analysed','.txt')
+outputfilename <-paste0('Xist','_diff_BUM_HMM_analysed','.txt')
 
 head(mergedcountswt)
 head(mergedstartswt)
