@@ -1,8 +1,8 @@
 ### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
 
-setwd("C:/Users/maran/Desktop/diff_BUM_HMM_Project/Files sent by Toby - 15 Sep 2019/mice Xist dataset")  
+setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM///")  
 
-  
+
 #biocLite("BUMHMM")
 #biocLite("Biostrings")
 #install.packages("Rcpp", dependencies = TRUE)
@@ -25,13 +25,10 @@ suppressPackageStartupMessages({
   library(SummarizedExperiment) })
 
 #make a table: take coverage counts and drop off counts from the working directory
-mergedcountswt <- read.table("Data/invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-mergedstartswt <- read.table("Data/invivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-mergedcountsmut <- read.table("Data/exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-mergedstartsmut <- read.table("Data/exvivo_deletions.txt",comment.char="#",col.names=c("chromosome","position","Xist_DMSO_1","Xist_DMSO_2","Xist_1M7_1","Xist_1M7_2"))
-
-head(mergedcountswt)
-head(mergedstartswt)
+mergedcountswt <- read.table("Data/35S_control_delta5_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
+mergedstartswt <- read.table("Data/35S_control_delta5_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
+mergedcountsmut <- read.table("Data/35S_control_Erb1_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
+mergedstartsmut <- read.table("Data/35S_control_Erb1_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
 
 logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt)  
 logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut)
@@ -73,13 +70,13 @@ nNucl <- length(empPvals_1[1, ])
 #and nucleotide pairs where the LDRs were obtained.
 
 ###There are two alternatives, unhash as needed:
-##Alternative 1: Calculate posteriors on the data at positions specified by stretches only:  
+###Alternative 1: Calculate posteriors on the data at positions specified by stretches only:  
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
 pvaluesstretch<-list(Pv1, Pv2)
 for (i in 1:length(stretches)) {
   if (i>1 & i<=length(stretches)) {
-    # Extract start and end of a current stretch
+    ## Extract start and end of a current stretch
     stretchStart <- start(stretches)[i]
     stretchEnd <- end(stretches)[i]
     Pv1 <-cbind(Pv1, matrix(nrow = length(empPvals_1[,1]), ncol = (stretchStart - end(stretches[i-1])-1)))
@@ -89,7 +86,7 @@ for (i in 1:length(stretches)) {
     pvaluesstretch <-list(Pv1, Pv2)
     next()
   } else {
-    # Extract start and end of a current stretch
+    ## Extract start and end of a current stretch
     stretchStart <- start(stretches)[i]
     stretchEnd <- end(stretches)[i]
     Pv1 <- cbind(Pv1,empPvals_1[,stretchStart:stretchEnd])
@@ -100,11 +97,11 @@ for (i in 1:length(stretches)) {
   return(pvaluesstretch)
 }
 
-#TEST if pvaluesstretch contains p-values
+##TEST if pvaluesstretch contains p-values
 #pvaluesstretch [[1]][,100:200]
 
 posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
-colnames(posteriors_diff) <- c("UU","UM","MU","MM")
+colnames(posteriors_diff) <- c(" ","UU","UM","MU","MM")
 head(posteriors_diff)
 
 #save this for trying to implement stretches
@@ -137,7 +134,7 @@ head(posteriors_diff)
 ## ------------------------------------------------------------------------
 shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
 shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
-colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
+colnames(shifted_posteriors) <- c(" ","UU","UM","MU","MM")
 
 head(shifted_posteriors)
 head(posteriors_diff)
@@ -148,7 +145,7 @@ differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 ## ------------------------------------------------------------------------
 plot(differentiallymod, xlab = 'Nucleotide position',
      ylab = 'Probability of modification',
-     main = 'diffBUMHMM output: Probabilites of differential modification between ex vivo and in vivo Xist',
+     main = 'diffBUMHMM output: Probabilites of differential modification between Erb1 and delta 5',
      ylim = c(0,1))
 
 ## ----eval=FALSE----------------------------------------------------------
@@ -159,5 +156,4 @@ plot(differentiallymod, xlab = 'Nucleotide position',
 
 ## ------------------------------------------------------------------------
 shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
-write.table(shifted_posteriors,sep="\t",quote=FALSE,file="35S_diffBUM_HMM_in vivo_vs_exvivo_deletions_method2.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
-
+write.table(shifted_posteriors,sep="\t",quote=FALSE,file="35S_diffBUM_HMM_WT_vs_Erb1_stretches_finaltrans.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)

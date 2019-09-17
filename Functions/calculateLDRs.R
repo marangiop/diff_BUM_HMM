@@ -1,5 +1,5 @@
 
-calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates=2,refsequence) {
+calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates=2,refsequence="rDNA.seq") {
   ### calculates and returns LDRs for the dataset
   mergedcounts <- mergedcounts[3:6]
   mergedstarts <- mergedstarts[3:6]
@@ -12,8 +12,6 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates=2,refsequence) 
   #in size info of the file (although I have no idea why)
   #store the reference sequence as a DNAString class object, under the name dna
   #here its needed to specify the number of replicates we have for each control and treatment samples
-  #refsequence="Xist.seq"
-  file.info(refsequence)
   seq <- gsub("[\r\n\"]", "", readChar(refsequence, file.info(refsequence)$size))
   dna <- DNAString(seq)
 
