@@ -25,21 +25,22 @@ suppressPackageStartupMessages({
   library(Biostrings)
   library(SummarizedExperiment) })
 
-noreplicates <- 3
+noreplicates <- 2
 
 ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
 setwd(ref_seq_directory)  
 
-refsequence <- "5S_refseq.txt"
 
-setwd(working_directory)  
+refsequence <- "Xist.seq"
 
-outputfilename <-paste0('5S_negative_control_test_identical_conditions','_diff_BUM_HMM_analysed','.txt')
+setwd(working_directory)  	
 
-mergedcountswt <- read.table("Data/5S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
-mergedstartswt <- read.table("Data/5S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
-mergedcountsmut <- read.table("Data/5S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
-mergedstartsmut <- read.table("Data/5S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
+outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed','.txt')
+
+mergedcountswt <- read.table("Data/Xist_invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+mergedstartswt <- read.table("Data/Xist_invivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+mergedcountsmut <- read.table("Data/Xist_exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+mergedstartsmut <- read.table("Data/Xist_exvivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
 
 logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence, working_directory)
 logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence, working_directory)
