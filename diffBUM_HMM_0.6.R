@@ -1,6 +1,7 @@
 ### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
 
-setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/")  
+working_directory <-"/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/"
+setwd(working_directory)  
 
 
 #biocLite("BUMHMM")
@@ -32,19 +33,21 @@ suppressPackageStartupMessages({
 #mergedstartsmut <- read.table("Data/minchia_4.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
 
 noreplicates <- 3
-setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/Reference sequences/")  
-refsequence <- "25S_refseq.txt"
-setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/")  
 
-#refsequence <- "25S_refseq.txt"
+ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
+setwd(ref_seq_directory)  
+
+refsequence <- "25S_refseq.txt"
+
+setwd(working_directory)  
 
 mergedcountswt <- read.table("Data/25S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
 mergedstartswt <- read.table("Data/25S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
 mergedcountsmut <- read.table("Data/25S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
 mergedstartsmut <- read.table("Data/25S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
 
-logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence)  
-logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence)
+logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence, working_directory)
+logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence, working_directory)
 
 
 #mergedcountswt <- read.table("Data/5.8S_readcounts.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
@@ -128,7 +131,8 @@ for (i in 1:length(stretches)) {
 #pvaluesstretch [[1]][,100:200]
 
 posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
-colnames(posteriors_diff) <- c(" ","UU","UM","MU","MM")
+#colnames(posteriors_diff) <- c("  ","UU","UM","MU","MM") - The way Toby had this line
+colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
 
 #save this for trying to implement stretches
@@ -161,7 +165,9 @@ head(posteriors_diff)
 ## ------------------------------------------------------------------------
 shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
 shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
-colnames(shifted_posteriors) <- c(" ","UU","UM","MU","MM")
+#colnames(shifted_posteriors) <- c(" ","UU","UM","MU","MM")
+colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
+
 
 head(shifted_posteriors)
 head(posteriors_diff)
