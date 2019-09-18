@@ -1,13 +1,23 @@
 
-calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates=2,refsequence="rDNA.seq") {
+calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
   ### calculates and returns LDRs for the dataset
-  mergedcounts <- mergedcounts[3:6]
-  mergedstarts <- mergedstarts[3:6]
+  if (noreplicates == 2) {
+      mergedcounts <- mergedcounts[3:6]
+      mergedstarts <- mergedstarts[3:6]
+    } else if (noreplicates == 3){
+        mergedcounts <- mergedcounts[3:8]
+        mergedstarts <- mergedstarts[3:8]
+    } else {
+        mergedcounts <- mergedcounts[3:10]
+        mergedstarts <- mergedstarts[3:10]
+    }   
+    
+ 
   
   #calculate the drop off rates for each nucleotide position, drop off rates for treatment should be higher than control
   mergeddors <- mergedstarts / mergedcounts
   mergeddors <- replace(mergeddors, is.na(mergeddors), 0)
-
+ 
   #introduce the reference DNA seqeunce, remove \r\n\ characters that can be found
   #in size info of the file (although I have no idea why)
   #store the reference sequence as a DNAString class object, under the name dna
@@ -33,7 +43,22 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates=2,refsequence="
       1, nchar(dna)
     ))))
   )
-  colnames(se) <- c('C1', 'C2', 'T1', 'T2')
+  
+  col_name_vector = c()
+  for (i in 1:noreplicates) {
+      name=paste("C", i, sep="")
+      col_name_vector=c(col_name_vector,name)
+  }
+  for (i in 1:noreplicates) {
+      name=paste("T", i, sep="")
+      col_name_vector=c(col_name_vector,name)
+  }
+  
+ 
+  
+  #colnames(se) <- c('C1', 'C2', 'T1', 'T2')
+  colnames(se) <- col_name_vector
+  
   
   ##this is a test to see if we can get data for the specified experimental replicates (controls/treatments)
   #for one of the matrices (coverage) we have contained in se

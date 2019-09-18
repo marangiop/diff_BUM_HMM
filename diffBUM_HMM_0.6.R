@@ -1,6 +1,6 @@
 ### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
 
-setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM///")  
+setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/")  
 
 
 #biocLite("BUMHMM")
@@ -25,13 +25,40 @@ suppressPackageStartupMessages({
   library(SummarizedExperiment) })
 
 #make a table: take coverage counts and drop off counts from the working directory
-mergedcountswt <- read.table("Data/35S_control_delta5_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
-mergedstartswt <- read.table("Data/35S_control_delta5_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
-mergedcountsmut <- read.table("Data/35S_control_Erb1_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
-mergedstartsmut <- read.table("Data/35S_control_Erb1_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
 
-logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt)  
-logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut)
+#mergedcountswt <- read.table("Data/minchia.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+#mergedstartswt <- read.table("Data/minchia_2.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+#mergedcountsmut <- read.table("Data/minchia_3.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+#mergedstartsmut <- read.table("Data/minchia_4.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+
+noreplicates <- 3
+setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/Reference sequences/")  
+refsequence <- "25S_refseq.txt"
+setwd("/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/")  
+
+#refsequence <- "25S_refseq.txt"
+
+mergedcountswt <- read.table("Data/25S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
+mergedstartswt <- read.table("Data/25S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
+mergedcountsmut <- read.table("Data/25S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
+mergedstartsmut <- read.table("Data/25S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
+
+logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence)  
+logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence)
+
+
+#mergedcountswt <- read.table("Data/5.8S_readcounts.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+#mergedstartswt <- read.table("Data/5.8S_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+#mergedcountsmut <- read.table("Data/5.8S_readcounts.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+#mergedstartsmut <- read.table("Data/5.8S_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","5.8S_C1","5.8S_C2", "5.8S_C3","5.8S_T1", "5.8S_T2", "5.8S_T3"))
+
+
+
+
+
+
+
+
 
 #prints out the null distribution histogram, the argument breaks is use to define 
 #number of bins we want to break the data up into
@@ -44,7 +71,7 @@ head(logdropoffswt$LDR_CT)
 head(logdropoffsmut$LDR_C)
 head(logdropoffsmut$LDR_CT)
 
-Nc <- Nt <- 2
+Nc <- Nt <- noreplicates
 
 strand = "+"
 
@@ -156,4 +183,4 @@ plot(differentiallymod, xlab = 'Nucleotide position',
 
 ## ------------------------------------------------------------------------
 shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
-write.table(shifted_posteriors,sep="\t",quote=FALSE,file="35S_diffBUM_HMM_WT_vs_Erb1_stretches_finaltrans.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
+write.table(shifted_posteriors,sep="\t",quote=FALSE,file="25S_negative_control_test_identical_conditions_stretches_finaltrans.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
