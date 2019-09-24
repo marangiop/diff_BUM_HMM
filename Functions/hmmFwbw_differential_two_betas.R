@@ -1,12 +1,12 @@
 
-hmmFwbw_differential_two_betas <- function(pValues){
+hmmFwbw_differential_two_betas <- function(pValues, noise){
       
   ## Settings for HMM
   ## Set the transition matrix: try amending this for performance 
-  trans <- matrix(c(0.9025, 0.19, 0.19, 0.04,
-                    0.0475, 0.76, 0.01, 0.16,
-                    0.0475, 0.01, 0.76, 0.16,
-                    0.0025, 0.04, 0.04, 0.64), nrow = 4, ncol = 4, byrow = TRUE)
+  trans <- matrix(c(0.9025*noise, 0.19*noise, 0.19*noise, 0.04*noise,
+                    0.0475*noise, 0.76*noise, 0.01*noise, 0.16*noise,
+                    0.0475*noise, 0.01*noise, 0.76*noise, 0.16*noise,
+                    0.0025*noise, 0.04*noise, 0.04*noise, 0.64*noise), nrow = 4, ncol = 4, byrow = TRUE)
   
   ## Set the values for Beta shape parameters in the emission mixture
   ## model
