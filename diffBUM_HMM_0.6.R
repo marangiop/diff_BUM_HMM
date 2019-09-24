@@ -30,13 +30,12 @@ noreplicates <- 2
 ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
 setwd(ref_seq_directory)  
 
-noise=-0.5
-
+#noise=-0.5
 refsequence <- "Xist.seq"
 
 setwd(working_directory)  	
 
-outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed_negative0.5noise','.txt')
+outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed_uniform_noise','.txt')
 
 mergedcountswt <- read.table("Data/Xist_invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
 mergedstartswt <- read.table("Data/Xist_invivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
@@ -112,7 +111,7 @@ for (i in 1:length(stretches)) {
 ##TEST if pvaluesstretch contains p-values
 #pvaluesstretch [[1]][,100:200]
 
-posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch, noise)
+posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
 #colnames(posteriors_diff) <- c("  ","UU","UM","MU","MM") - The way Toby had this line
 colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
