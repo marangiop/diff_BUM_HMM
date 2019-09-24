@@ -35,7 +35,7 @@ refsequence <- "Xist.seq"
 
 setwd(working_directory)  	
 
-outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed_uniform_noise','.txt')
+outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed_10percent_noise','.txt')
 
 mergedcountswt <- read.table("Data/Xist_invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
 mergedstartswt <- read.table("Data/Xist_invivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
