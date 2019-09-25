@@ -11,7 +11,7 @@ setwd(working_directory)
 source("https://bioconductor.org/biocLite.R")
 source("Functions/computePvals.R")
 source("Functions/calculateLDRs.R")
-source("Functions/hmmFwbw_differential_two_betas.R")
+#source("Functions/hmmFwbw_differential_two_betas.R")
 source("Functions/betaParamsEM.R")
 source("Functions/betaParamsMStep.R")
 source("Functions/findPatternPos.R")
@@ -84,7 +84,7 @@ nNucl <- length(empPvals_1[1, ])
 ###Alternative 1: Calculate posteriors on the data at positions specified by stretches only:  
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
-pvaluesstretch<-list(Pv1, Pv2)
+pValues<-list(Pv1, Pv2)
 for (i in 1:length(stretches)) {
   if (i>1 & i<=length(stretches)) {
     ## Extract start and end of a current stretch
@@ -94,7 +94,7 @@ for (i in 1:length(stretches)) {
     Pv2 <-cbind(Pv2, matrix(nrow = length(empPvals_2[,1]), ncol = (stretchStart - end(stretches[i-1])-1)))
     Pv1 <- cbind(Pv1,empPvals_1[,stretchStart:stretchEnd])
     Pv2 <- cbind(Pv2,empPvals_2[,stretchStart:stretchEnd])
-    pvaluesstretch <-list(Pv1, Pv2)
+    pValues <-list(Pv1, Pv2)
     next()
   } else {
     ## Extract start and end of a current stretch
@@ -102,16 +102,127 @@ for (i in 1:length(stretches)) {
     stretchEnd <- end(stretches)[i]
     Pv1 <- cbind(Pv1,empPvals_1[,stretchStart:stretchEnd])
     Pv2 <- cbind(Pv2,empPvals_2[,stretchStart:stretchEnd])
-    pvaluesstretch <- list(Pv1,Pv2)
+    pValues <- list(Pv1,Pv2)
     next()
   }
-  return(pvaluesstretch)
+  return(pValues)
 }
 
 ##TEST if pvaluesstretch contains p-values
 #pvaluesstretch [[1]][,100:200]
 
-posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
+#posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
+
+
+#hmmFwbw_differential_two_betas <- function(pValues){
+    
+    ## Settings for HMM
+    ## Set the transition matrix: try amending this for performance
+a = 0.9025 + rnorm(1, mean=0, sd =0.01)
+b = 0.0475 + rnorm(1, mean=0, sd =0.01)
+c = 0.0475 + rnorm(1, mean=0, sd =0.01) 
+d = 1 - (a + b + c)
+
+e = 0.19 + rnorm(1, mean=0, sd =0.01)
+f = 0.76 + rnorm(1, mean=0, sd =0.01)
+g = 0.01 + rnorm(1, mean=0, sd =0.01)
+h = 1 - (e + f + g)
+
+i = 0.19 + rnorm(1, mean=0, sd =0.01)
+j = 0.01 + rnorm(1, mean=0, sd =0.01)
+k = 0.76 + rnorm(1, mean=0, sd =0.01)
+l = 1 - (i + j + k)
+
+m = 0.04 + rnorm(1, mean=0, sd =0.01)
+n = 0.16 + rnorm(1, mean=0, sd =0.01)
+o = 0.16 + rnorm(1, mean=0, sd =0.01)
+p = 1 - (m + n + o)
+
+trans <- matrix(c(a, e, i, m,
+                  b, f, j, n,
+                  c, g, k, o,
+                  d, h, l, p), nrow = 4, ncol = 4, byrow = TRUE)
+
+## Set the values for Beta shape parameters in the emission mixture
+## model
+alpha_P1 = 1
+beta_P1 = 10
+
+alpha_P2 = 1
+beta_P2 = 10
+
+## Set initial probability to 0.25 in each state
+initialProb = c(0.25, 0.25, 0.25, 0.25)
+## Number of experiments (treatment-control comparisons)
+nexp <- length(pValues[[1]][, 1])
+
+# calculates number of nucleotides
+nBins <- length(pValues[[1]][1, ]) 
+
+# calculates number of states
+nStates <- length(trans[, 1]) 
+
+## Log-likelihood of observations given state
+obsLike <- matrix(1, ncol = nBins, nrow = nStates) ##generates a matrix where rows are states and columns are nucleotides
+
+fwdMessage <- matrix(0, ncol = nBins, nrow = nStates)
+bwdMessage <- matrix(0, ncol = nBins, nrow = nStates)
+
+## Non independence assumption
+## Calculation of likelihoods (sum over replicates of likelihoods of each experiment)
+#iterates over a sequence of values from 1 to the number of experimental comparisons
+for (index in 1:nexp ) { 
+    #iterates over a sequence of values from 1 to the number of nucleotides
+    for (index2 in 1:nBins) { 
+        # Likelihod for UU
+        if (is.na(pValues[[1]][index, index2]) || is.na(pValues[[2]][index, index2])) {
+            obsLike[, index2] <- obsLike[, index2]
+        } else { 
+            obsLike[1, index2] <- obsLike[1, index2] * stats::dbeta(pValues[[1]][index, index2], shape1 = 1, shape2 = 1) * 
+                stats::dbeta(pValues[[2]][index, index2], shape1 = 1, shape2 = 1)
+            # Likelihod for MU
+            obsLike[2, index2] <- obsLike[2, index2] * stats::dbeta(pValues[[1]][index, index2], shape1 = 1, shape2 = 1) *
+                stats::dbeta(pValues[[2]][index, index2], shape1 = alpha_P2, shape2 = beta_P2)
+            # Likelihod for UM
+            obsLike[3, index2] <- obsLike[3, index2] * stats::dbeta(pValues[[1]][index, index2], shape1 = alpha_P1, shape2 = beta_P1) *
+                stats::dbeta(pValues[[2]][index, index2], shape1 = 1, shape2 = 1)
+            # Likelihod for MM
+            obsLike[4, index2] <- obsLike[4, index2] * stats::dbeta(pValues[[1]][index, index2], shape1 = alpha_P1, shape2 = beta_P1) *
+                stats::dbeta(pValues[[2]][index, index2], shape1 = alpha_P2, shape2 = beta_P2)
+        }
+    }
+}
+
+## Calculation of the forward messages
+fwdMessage[, 1] <- initialProb * obsLike[, 1] 
+fwdMessage[, 1] <- fwdMessage[, 1] / sum(fwdMessage[, 1]) 
+
+for (index in 2:nBins) {
+    fwdMessage[, index] <- (trans %*% fwdMessage[, index - 1]) *
+        obsLike[, index]     
+    fwdMessage[, index] <- fwdMessage[, index] / sum(fwdMessage[, index]) 
+}
+
+## Calculation of the backward message
+bwdMessage[, nBins] <- 1
+
+for (index in (nBins - 1):1) {
+    bwdMessage[, index] <- (trans %*% bwdMessage[, index + 1]) * obsLike[, index]
+    bwdMessage[, index] <- bwdMessage[, index] / sum(bwdMessage[, index])
+}
+
+## Calculation of posteriors
+posteriors_diff <- fwdMessage * bwdMessage
+posteriors_diff <- posteriors_diff/ (matrix(1, nrow = length(posteriors_diff[, 1]))
+                          %*% colSums(posteriors_diff))
+posteriors_diff <- t(posteriors_diff)
+
+
+
+
+
+
+
 #colnames(posteriors_diff) <- c("  ","UU","UM","MU","MM") - The way Toby had this line
 colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
