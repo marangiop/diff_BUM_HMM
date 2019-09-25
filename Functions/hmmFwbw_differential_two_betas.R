@@ -8,6 +8,8 @@ hmmFwbw_differential_two_betas <- function(pValues){
   c = 0.0475 + rnorm(1, mean=0, sd =0.01) 
   d = 1 - (a + b + c)
   
+  
+  
   e = 0.19 + rnorm(1, mean=0, sd =0.01)
   f = 0.76 + rnorm(1, mean=0, sd =0.01)
   g = 0.01 + rnorm(1, mean=0, sd =0.01)
@@ -27,6 +29,26 @@ hmmFwbw_differential_two_betas <- function(pValues){
                     b, f, j, n,
                     c, g, k, o,
                     d, h, l, p), nrow = 4, ncol = 4, byrow = TRUE)
+  
+  print(paste0("Value of a is ", a))
+  print(paste0("Value of b is ", b))
+  print(paste0("Value of c is ", c))
+  print(paste0("Value of d is ", d))
+  print(paste0("Value of e is ", e))
+  print(paste0("Value of f is ", f))
+  print(paste0("Value of g is ", g))
+  print(paste0("Value of h is ", h))
+  print(paste0("Value of i is ", i))
+  print(paste0("Value of j is ", j))
+  print(paste0("Value of k is ", k))
+  print(paste0("Value of l is ", l))
+  print(paste0("Value of m is ", m))
+  print(paste0("Value of n is ", n))
+  print(paste0("Value of o is ", o))
+  print(paste0("Value of p is ", p))
+  
+  write.table(trans, file = "transition_matrix.txt", sep = " ", row.names = FALSE, col.names = FALSE)
+  
   
   ## Set the values for Beta shape parameters in the emission mixture
   ## model
