@@ -3,27 +3,38 @@ hmmFwbw_differential_two_betas <- function(pValues){
       
   ## Settings for HMM
   ## Set the transition matrix: try amending this for performance
-  a = 0.9025 + rnorm(1, mean=0, sd =0.01)
-  b = 0.0475 + rnorm(1, mean=0, sd =0.01)
-  c = 0.0475 + rnorm(1, mean=0, sd =0.01) 
-  d = 1 - (a + b + c)
+ 
+    
+    
+  a = 0.90191255
+  b = 0.03156310
+  c = 0.05522621 
+  d = 0.01129814
+  
+ 
+  
+  
+  e =  0.205308008
+  f = 0.755516588
+  g =  0.004671871
+  h = 0.034503533
+  
+
+  
+  i = 0.175512352
+  j = 0.005651755
+  k = 0.750016875
+  l = 0.068819017
   
   
   
-  e = 0.19 + rnorm(1, mean=0, sd =0.01)
-  f = 0.76 + rnorm(1, mean=0, sd =0.01)
-  g = 0.01 + rnorm(1, mean=0, sd =0.01)
-  h = 1 - (e + f + g)
   
-  i = 0.19 + rnorm(1, mean=0, sd =0.01)
-  j = 0.01 + rnorm(1, mean=0, sd =0.01)
-  k = 0.76 + rnorm(1, mean=0, sd =0.01)
-  l = 1 - (i + j + k)
   
-  m = 0.04 + rnorm(1, mean=0, sd =0.01)
-  n = 0.16 + rnorm(1, mean=0, sd =0.01)
-  o = 0.16 + rnorm(1, mean=0, sd =0.01)
-  p = 1 - (m + n + o)
+  
+  m = 0.04853803
+  n = 0.15624684
+  o = 0.19844527
+  p = 0.59676986  
     
   trans <- matrix(c(a, e, i, m,
                     b, f, j, n,
