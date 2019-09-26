@@ -111,12 +111,147 @@ for (i in 1:length(stretches)) {
 ##TEST if pvaluesstretch contains p-values
 #pvaluesstretch [[1]][,100:200]
 
-posteriors_diff <- hmmFwbw_differential_two_betas(pValues)
+
+
+
+
+a = 0.9025 + rnorm(1, mean=0, sd =0.01)
+b = 0.0475 + rnorm(1, mean=0, sd =0.01)
+c = 0.0475 + rnorm(1, mean=0, sd =0.01) 
+d = 1 - (a + b + c)
+
+e = 0.19 + rnorm(1, mean=0, sd =0.01)
+f = 0.76 + rnorm(1, mean=0, sd =0.01)
+g = 0.01 + rnorm(1, mean=0, sd =0.01)
+h = 1 - (e + f + g)
+
+i = 0.19 + rnorm(1, mean=0, sd =0.01)
+j = 0.01 + rnorm(1, mean=0, sd =0.01)
+k = 0.76 + rnorm(1, mean=0, sd =0.01)
+l = 1 - (i + j + k)
+
+m = 0.04 + rnorm(1, mean=0, sd =0.01)
+n = 0.16 + rnorm(1, mean=0, sd =0.01)
+o = 0.16 + rnorm(1, mean=0, sd =0.01)
+p = 1 - (m + n + o)
+
+#b= -0.9
+
+if (a > 0) {
+    if (b > 0) {
+        if (c > 0) {
+            if (d > 0) {
+                if (e > 0) {
+                    if (f > 0) {
+                        if (g > 0) {
+                            if (h > 0) {
+                                if (i > 0) {
+                                    if (j > 0) {
+                                        if (k > 0) {
+                                            if (l > 0) {
+                                                if (m > 0) {
+                                                    if (n > 0) {
+                                                        if (o > 0) {
+                                                            if (p > 0) {
+                                                                
+                                                                trans <- matrix(c(a, e, i, m,
+                                                                                  b, f, j, n,
+                                                                                  c, g, k, o,
+                                                                                  d, h, l, p), nrow = 4, ncol = 4, byrow = TRUE)
+                                                                
+                                                                #Transition matrix not generated
+                                                                #now <- Sys.time()
+                                                                #print(trans)
+                                                            
+                                                                #write.table(trans, file = "transition_matrix.txt", sep = " ", row.names = FALSE, col.names = FALSE)
+                                                                posteriors_diff <- hmmFwbw_differential_two_betas(pValues, trans)
+                                                                colnames(posteriors_diff) <- c("UU","UM","MU","MM")
+                                                                #head(posteriors_diff)
+                                                                shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
+                                                                shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
+                                                                #colnames(shifted_posteriors) <- c(" ","UU","UM","MU","MM")
+                                                                colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
+                                                                
+                                                                message('Hello - I am inside the loop')
+                                                                
+                                                                
+                                                                #head(shifted_posteriors)
+                                                                #head(posteriors_diff)
+                                                                #posteriors_diff
+                                                                
+                                                                #differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
+                                                                
+                                                                ## ------------------------------------------------------------------------
+                                                                #plot(differentiallymod, xlab = 'Nucleotide position',
+                                                                #     ylab = 'Probability of modification',
+                                                                #     main = 'diffBUMHMM output: Probabilites of differential modification between Erb1 and delta 5',
+                                                                 #    ylim = c(0,1))
+                                                                
+                                                                ## ----eval=FALSE----------------------------------------------------------
+                                                                ## ## Call the function with the additonal tolerance parameter
+                                                                ## posteriors <- computeProbs(LDR_C, LDR_CT, Nc, Nt, '+', nuclPosition,
+                                                                ##                            nuclSelection$analysedC, nuclSelection$analysedCT,
+                                                                ##                            stretches, 0.001)
+                                                                
+                                                                ## ------------------------------------------------------------------------
+                                                                shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
+                                                                write.table(shifted_posteriors,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
+                                                                
+                                                                message('hellp - after writing output file')
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                        
+                    }
+                    
+                    
+                }
+                
+            }
+            
+            
+        }
+        
+        
+    }
+
+    
+}
+
+
+    
+
+
+
+
+
+
+## Set the values for Beta shape parameters in the emission mixture
+## model
+
+
+
 
 
 #colnames(posteriors_diff) <- c("  ","UU","UM","MU","MM") - The way Toby had this line
-colnames(posteriors_diff) <- c("UU","UM","MU","MM")
-head(posteriors_diff)
+
 
 #save this for trying to implement stretches
 #for (i in 1:length(stretches)) {
@@ -146,30 +281,3 @@ head(posteriors_diff)
 ## is believed to stop 1 nucleotide before the modified nucleodide.
 ## So below a new matrix is made containing the values shifted by one position.
 ## ------------------------------------------------------------------------
-shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
-shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
-#colnames(shifted_posteriors) <- c(" ","UU","UM","MU","MM")
-colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
-
-
-head(shifted_posteriors)
-head(posteriors_diff)
-posteriors_diff
-
-differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
-
-## ------------------------------------------------------------------------
-plot(differentiallymod, xlab = 'Nucleotide position',
-     ylab = 'Probability of modification',
-     main = 'diffBUMHMM output: Probabilites of differential modification between Erb1 and delta 5',
-     ylim = c(0,1))
-
-## ----eval=FALSE----------------------------------------------------------
-## ## Call the function with the additonal tolerance parameter
-## posteriors <- computeProbs(LDR_C, LDR_CT, Nc, Nt, '+', nuclPosition,
-##                            nuclSelection$analysedC, nuclSelection$analysedCT,
-##                            stretches, 0.001)
-
-## ------------------------------------------------------------------------
-shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
-write.table(shifted_posteriors,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
