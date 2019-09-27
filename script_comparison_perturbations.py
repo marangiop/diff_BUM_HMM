@@ -5,7 +5,8 @@ import pandas as pd
 import numpy as np
 #import sys
 
-original_df = pd.read_csv('C:/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/Xist_in vivo_vs_ex vivo_diff_BUM_HMM_analysed.txt', sep="\t", header=0)
+
+original_df = pd.read_csv('C:/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/35S_diffBUM_HMM_WT_vs_Erb1_diff_BUM_HMM_analysed.txt', sep="\t", header=0)
 original_df= original_df.rename_axis('nt').reset_index()
 
 original_df['filteredUM'] = [0 if x<0.90 else x for x in original_df['UM']]
@@ -35,7 +36,7 @@ for iter in range(150):
     print('Iteration: ' +str(iter))
     subprocess.call("Rscript --vanilla /Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/diffBUM_HMM_0.6.R", shell=True)
         
-    temp_df = pd.read_csv('C:/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/Xist_in vivo_vs_ex vivo_diff_BUM_HMM_analysed_gaussian_noise.txt', sep="\t", header=0)
+    temp_df = pd.read_csv('C:/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/35S_diffBUM_HMM_WT_vs_Erb1_diff_BUM_HMM_analysed_gaussian_noise.txt', sep="\t", header=0)
     
     
     

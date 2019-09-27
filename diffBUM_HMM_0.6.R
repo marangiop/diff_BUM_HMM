@@ -31,16 +31,17 @@ ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
 setwd(ref_seq_directory)  
 
 #noise=-0.5
-refsequence <- "Xist.seq"
+refsequence <- "35S pre-rRNA_refseq.seq"
 
 setwd(working_directory)  	
 
-outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed_gaussian_noise','.txt')
+outputfilename <-paste0('35S_diffBUM_HMM_WT_vs_Erb1','_diff_BUM_HMM_analysed_gaussian_noise','.txt')
 
-mergedcountswt <- read.table("Data/Xist_invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-mergedstartswt <- read.table("Data/Xist_invivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-mergedcountsmut <- read.table("Data/Xist_exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-mergedstartsmut <- read.table("Data/Xist_exvivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+#make a table: take coverage counts and drop off counts from the working directory
+mergedcountswt <- read.table("Data/35S_control_delta5_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
+mergedstartswt <- read.table("Data/35S_control_delta5_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
+mergedcountsmut <- read.table("Data/35S_control_Erb1_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
+mergedstartsmut <- read.table("Data/35S_control_Erb1_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
 
 logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence, working_directory)
 logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence, working_directory)
