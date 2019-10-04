@@ -197,11 +197,12 @@ posteriors_diff
 differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
 ## ------------------------------------------------------------------------
+png("diff_bum_hmm_output_Xist_new_data_sum_of_diff_states.png")
 plot(differentiallymod, xlab = 'Nucleotide position',
-     ylab = 'Probability of modification',
-     main = 'diffBUMHMM output: Probabilites of differential modification between Erb1 and delta 5',
+     ylab = 'Probability of modification (UM+MU)',
+     main = 'diffBUMHMM output: ProbabilITY of differential modification between in vivo and ex vivo',
      ylim = c(0,1))
-
+dev.off()
 ## ----eval=FALSE----------------------------------------------------------
 ## ## Call the function with the additonal tolerance parameter
 ## posteriors <- computeProbs(LDR_C, LDR_CT, Nc, Nt, '+', nuclPosition,
