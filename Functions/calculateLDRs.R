@@ -1,23 +1,28 @@
 
-calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence, working_directory) {
+calculateLDRs <- function(counts,rates,noreplicates,refsequence, working_directory) {
   ### calculates and returns LDRs for the dataset
-  if (noreplicates == 2) {
-      mergedcounts <- mergedcounts[3:6]
-      mergedstarts <- mergedstarts[3:6]
-    } else if (noreplicates == 3){
-        mergedcounts <- mergedcounts[3:8]
-        mergedstarts <- mergedstarts[3:8]
-    } else {
-        mergedcounts <- mergedcounts[3:10]
-        mergedstarts <- mergedstarts[3:10]
-    }   
+  #if (noreplicates == 2) {
+  #    mergedcounts <- mergedcounts[3:6]
+  #    mergedstarts <- mergedstarts[3:6]
+  #  } else if (noreplicates == 3){
+  #      mergedcounts <- mergedcounts[3:8]
+  #      mergedstarts <- mergedstarts[3:8]
+  #  } else {
+  #      mergedcounts <- mergedcounts[3:10]
+  #      mergedstarts <- mergedstarts[3:10]
+  #  }   
+  mergeddors <- replace(rates, is.na(rates), 0)
     
- 
+  mergedstarts <-  mergeddors * counts
+    
+  mergedstarts[1:4] <- lapply(mergedstarts[1:4], as.integer)
+  
   
   #calculate the drop off rates for each nucleotide position, drop off rates for treatment should be higher than control
-  mergeddors <- mergedstarts / mergedcounts
-  mergeddors <- replace(mergeddors, is.na(mergeddors), 0)
- 
+  #mergeddors <- mergedstarts / mergedcounts
+  
+  mergeddors <- replace(mergedstarts, is.na(mergedstarts), 0)
+  
   #introduce the reference DNA seqeunce, remove \r\n\ characters that can be found
   #in size info of the file (although I have no idea why)
   #store the reference sequence as a DNAString class object, under the name dna
@@ -34,18 +39,25 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence, wo
   #while each row represents features of interest we want to view: the nucleotide position along the reference DNA sequence
   #the rep function gives a handle to extract data from the matrices
   
+
+  #coverage = as.matrix(incell_counts)
+  #colnames(coverage) <- c("DMSO_1","DMSO_2","X1M7_1","X1M7_2")
+  #dropoff_rate = as.matrix(incell_rate)
+  #colnames(dropoff_rate) <- c("DMSO_1","DMSO_2","X1M7_1","X1M7_2")
+  
+  
   se <- SummarizedExperiment(
-    list(
-      coverage = as.matrix(mergedcounts),
-      dropoff_count = as.matrix(mergedstarts),
-      dropoff_rate = as.matrix(mergeddors)
-    ),
-    colData = DataFrame(replicate = rep(c(
-      "control", "treatment"
-    ), each = noreplicates)),
-    rowData = DataFrame(nucl = Views(dna, successiveIRanges(rep(
-      1, nchar(dna)
-    ))))
+      list(        
+          coverage = as.matrix(counts),
+          dropoff_count = as.matrix(mergedstarts),
+          dropoff_rate = as.matrix(mergeddors)
+      ),
+      colData = DataFrame(replicate = rep(c(
+          "control", "treatment"
+      ), each = noreplicates)),
+      rowData = DataFrame(nucl = Views(dna, successiveIRanges(rep(
+          1, nchar(dna)
+      ))))
   )
   
   col_name_vector = c()

@@ -35,39 +35,79 @@ refsequence <- "Xist.seq"
 
 setwd(working_directory)  	
 
-outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed','.txt')
+outputfilename <-paste0('Xist_in vivo_vs_ex vivo_new_data_october','_diff_BUM_HMM_analysed','.txt')
 
-mergedcountswt <- read.table("Data/Xist_invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-mergedstartswt <- read.table("Data/Xist_invivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-mergedcountsmut <- read.table("Data/Xist_exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-mergedstartsmut <- read.table("Data/Xist_exvivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
 
-logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence, working_directory)
-logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence, working_directory)
-#prints out the null distribution histogram, the argument breaks is use to define 
-#number of bins we want to break the data up into
-hist(logdropoffswt$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
+table1_incell <- read.delim("Data/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+table2_incell <- read.delim("Data/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+
+table3_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+table4_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+
+table1_incell_DMSO_1_count <- table1_incell[,c(3)]
+table2_incell_DMSO_1_count <- table2_incell[,c(3)]
+table1_incell_X1M7_1_count <- table1_incell[,c(5)]
+table2_incell_X1M7_1_count <- table2_incell[,c(5)]
+
+incell_counts <- data.frame("DMSO_1" = table1_incell_DMSO_1_count,"DMSO_2" = table2_incell_DMSO_1_count,"X1M7_1" = table1_incell_X1M7_1_count,"X1M7_2"= table2_incell_X1M7_1_count)
+
+table1_incell_DMSO_1_rate <- table1_incell[,c(4)]
+table2_incell_DMSO_1_rate <- table2_incell[,c(4)]
+table1_incell_X1M7_1_rate <- table1_incell[,c(6)]
+table2_incell_X1M7_1_rate <- table2_incell[,c(6)]
+
+incell_rate <- data.frame("DMSO_1" = table1_incell_DMSO_1_rate,"DMSO_2" = table2_incell_DMSO_1_rate,"X1M7_1" = table1_incell_X1M7_1_rate,"X1M7_2"= table2_incell_X1M7_1_rate)
+
+
+table3_exvivo_DMSO_1_count <- table3_exvivo[,c(3)]
+table4_exvivo_DMSO_1_count <- table4_exvivo[,c(3)]
+table3_exvivo_X1M7_1_count <- table3_exvivo[,c(5)]
+table4_exvivo_X1M7_1_count <- table4_exvivo[,c(5)]
+
+exvivo_counts <- data.frame("DMSO_1" = table3_exvivo_DMSO_1_count,"DMSO_2" = table4_exvivo_DMSO_1_count,"X1M7_1" = table3_exvivo_X1M7_1_count,"X1M7_2"= table4_exvivo_X1M7_1_count)
+
+table3_exvivo_DMSO_1_rate <- table3_exvivo[,c(4)]
+table4_exvivo_DMSO_1_rate <- table4_exvivo[,c(4)]
+table3_exvivo_X1M7_1_rate <- table3_exvivo[,c(6)]
+table4_exvivo_X1M7_1_rate <- table4_exvivo[,c(6)]
+
+exvivo_rate <- data.frame("DMSO_1" = table3_exvivo_DMSO_1_rate,"DMSO_2" = table4_exvivo_DMSO_1_rate,"X1M7_1" = table3_exvivo_X1M7_1_rate,"X1M7_2"= table4_exvivo_X1M7_1_rate)
+
+
+logdropoffs_incell <- calculateLDRs(incell_counts,incell_rate, noreplicates, refsequence, working_directory)
+
+
+logdropoffs_exvivo <- calculateLDRs(exvivo_counts,exvivo_rate, noreplicates, refsequence, working_directory)
+
+
+hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
+
+hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
 
 ## ------------------------------------------------------------------------
 ###check if the matrices of p-values can be called after the pipeline has been run twice
-head(logdropoffswt$LDR_C)
-head(logdropoffswt$LDR_CT)
-head(logdropoffsmut$LDR_C)
-head(logdropoffsmut$LDR_CT)
+#head(logdropoffswt$LDR_C)
+#head(logdropoffswt$LDR_CT)
+#head(logdropoffsmut$LDR_C)
+#head(logdropoffsmut$LDR_CT)
 
 Nc <- Nt <- noreplicates
 
 strand = "+"
 
+
+#logdropoffswt <- logdropoffs_incell
+#logdropoffsmut <- logdropoffs_exvivo
+
 ###
-empPvals_1 <- computePvals(logdropoffswt$LDR_C,logdropoffswt$LDR_CT, Nc, Nt, strand, logdropoffswt$nuclPosition,
-                           logdropoffswt$nuclSelection$analysedC, logdropoffswt$nuclSelection$analysedCT)
+empPvals_1 <- computePvals(logdropoffs_incell$LDR_C,logdropoffs_incell$LDR_CT, Nc, Nt, strand, logdropoffs_incell$nuclPosition,
+                           logdropoffs_incell$nuclSelection$analysedC, logdropoffs_incell$nuclSelection$analysedCT)
 
-empPvals_2 <- computePvals(logdropoffsmut$LDR_C,logdropoffsmut$LDR_CT, Nc, Nt, strand, logdropoffsmut$nuclPosition,
-                           logdropoffsmut$nuclSelection$analysedC, logdropoffsmut$nuclSelection$analysedCT)
+empPvals_2 <- computePvals(logdropoffs_exvivo$LDR_C,logdropoffs_exvivo$LDR_CT, Nc, Nt, strand, logdropoffs_exvivo$nuclPosition,
+                           logdropoffs_exvivo$nuclSelection$analysedC, logdropoffs_exvivo$nuclSelection$analysedCT)
 
 
-stretches <-overlapsRanges(logdropoffswt$stretches,logdropoffsmut$stretches)
+stretches <-overlapsRanges(logdropoffs_incell$stretches,logdropoffs_exvivo$stretches)
 
 ## Number of nucleotides in the sequence = number of rows in empPvals_1
 nNucl <- length(empPvals_1[1, ])
@@ -86,26 +126,26 @@ Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
 pvaluesstretch<-list(Pv1, Pv2)
 for (i in 1:length(stretches)) {
-  if (i>1 & i<=length(stretches)) {
-    ## Extract start and end of a current stretch
-    stretchStart <- start(stretches)[i]
-    stretchEnd <- end(stretches)[i]
-    Pv1 <-cbind(Pv1, matrix(nrow = length(empPvals_1[,1]), ncol = (stretchStart - end(stretches[i-1])-1)))
-    Pv2 <-cbind(Pv2, matrix(nrow = length(empPvals_2[,1]), ncol = (stretchStart - end(stretches[i-1])-1)))
-    Pv1 <- cbind(Pv1,empPvals_1[,stretchStart:stretchEnd])
-    Pv2 <- cbind(Pv2,empPvals_2[,stretchStart:stretchEnd])
-    pvaluesstretch <-list(Pv1, Pv2)
-    next()
-  } else {
-    ## Extract start and end of a current stretch
-    stretchStart <- start(stretches)[i]
-    stretchEnd <- end(stretches)[i]
-    Pv1 <- cbind(Pv1,empPvals_1[,stretchStart:stretchEnd])
-    Pv2 <- cbind(Pv2,empPvals_2[,stretchStart:stretchEnd])
-    pvaluesstretch <- list(Pv1,Pv2)
-    next()
-  }
-  return(pvaluesstretch)
+    if (i>1 & i<=length(stretches)) {
+        ## Extract start and end of a current stretch
+        stretchStart <- start(stretches)[i]
+        stretchEnd <- end(stretches)[i]
+        Pv1 <-cbind(Pv1, matrix(nrow = length(empPvals_1[,1]), ncol = (stretchStart - end(stretches[i-1])-1)))
+        Pv2 <-cbind(Pv2, matrix(nrow = length(empPvals_2[,1]), ncol = (stretchStart - end(stretches[i-1])-1)))
+        Pv1 <- cbind(Pv1,empPvals_1[,stretchStart:stretchEnd])
+        Pv2 <- cbind(Pv2,empPvals_2[,stretchStart:stretchEnd])
+        pvaluesstretch <-list(Pv1, Pv2)
+        next()
+    } else {
+        ## Extract start and end of a current stretch
+        stretchStart <- start(stretches)[i]
+        stretchEnd <- end(stretches)[i]
+        Pv1 <- cbind(Pv1,empPvals_1[,stretchStart:stretchEnd])
+        Pv2 <- cbind(Pv2,empPvals_2[,stretchStart:stretchEnd])
+        pvaluesstretch <- list(Pv1,Pv2)
+        next()
+    }
+    return(pvaluesstretch)
 }
 
 ##TEST if pvaluesstretch contains p-values
