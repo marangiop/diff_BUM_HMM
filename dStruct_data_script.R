@@ -68,9 +68,12 @@ write.table(reac,sep="\t",quote=FALSE,file='SHAPE_values_Xist.txt',col.names = c
 
 #REPEAT WITH 0.20 FDR
 result <- dStruct(reac, reps_A = 2, reps_B = 2, 
-		                    min_length = 1) #Change the search length here.
+		                    min_length = 11) #Change the search length here.
 res <- subset(result, 
-	                    FDR < 0.45) #Change the FDR level here.
+	                    FDR < 0.05) #Change the FDR level here.
+
+write.table(reac,sep="\t",quote=FALSE,file='output_dStruct_Xist_new_data_reac_table_11nt.txt', row.names = TRUE)
+write.table(res,sep="\t",quote=FALSE,file='output_dStruct_Xist_new_data_res_table_11nt.txt', row.names = FALSE)
 
 
 #--------------
@@ -85,5 +88,3 @@ for (i in 1:nrow(res)) {
 		     width = 7, height = 7, units = "in")
 }
 
-write.table(reac,sep="\t",quote=FALSE,file='output_dStruct_Xist_new_data_reac_table.txt', row.names = TRUE)
-write.table(res,sep="\t",quote=FALSE,file='output_dStruct_Xist_new_data_res_table.txt', row.names = FALSE)
