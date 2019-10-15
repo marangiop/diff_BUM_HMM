@@ -1,50 +1,16 @@
-library(dStruct)
-library(ggplot2)
-library(reshape2)
 
 working_directory <-"/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/"
 setwd(working_directory)
 
-#---------------
-#Reading data
-cond <- c("delta5", "Erb1")
-#a_cnts <- read.table("Data/35S_control_delta5_merged_dropoffcounts.sgr",
-#                     sep = "\t", header= T)
-#a_cov <- read.table("Data/35S_control_delta5_merged_reads.sgr",
-#                    sep = "\t", header= T)
 
-#b_cnts <- read.table("Data/35S_control_Erb1_merged_dropoffcounts.sgr",
-#                     sep = "\t", header= T)
-#b_cov <- read.table("Data/35S_control_Erb1_merged_reads.sgr",
-#                    sep = "\t", header= T)
+delta5_shape <- read.table("Data/SHAPE_35S/35S_SHAPE_reactivities.txt",
+                    sep = "\t", col.names= c("nucleotide", "rep1", "rep2"))
+deltaerb1_shape <- read.table("Data/SHAPE_35S/35S_Erb1_dep_SHAPE_reactivities.txt",
+                           sep = "\t", col.names= c("nucleotide","rep1", "rep2"))
 
+delta5_shape[nrow(delta5_shape)+1,] <- c(6868, -999.0,-999.0)
+deltaerb1_shape[nrow(deltaerb1_shape)+1,] <- c(6868, -999.0,-999.0)
 
-a_cnts <- read.delim("Data/35S_control_delta5_merged_dropoffcounts.sgr", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-
-a_cov <- read.delim("Data/35S_control_delta5_merged_reads.sgr", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-
-
-b_cnts <- read.delim("Data/35S_control_Erb1_merged_dropoffcounts.sgr", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-
-b_cov <- read.delim("Data/35S_control_Erb1_merged_reads.sgr", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
-
-
-
-
-#----------------
-#Calculating reactivities
-a_rates <- a_cnts[, 3:6]/a_cov[, 3:6]
-b_rates <- b_cnts[, 3:6]/b_cov[, 3:6]
-a_raw_reac <- (a_rates[, 3:4] - a_rates[, 1:2])/(1 - a_rates[, 1:2])
-b_raw_reac <- (b_rates[, 3:4] - b_rates[, 1:2])/(1 - b_rates[, 1:2])
-
-reac <- cbind(a_raw_reac, b_raw_reac)
-reac[reac<0] <- 0
-reac <- as.data.frame(reac)
-colnames(reac) <- c("A1", "A2", "B1", "B2")
-reac <- apply(reac, 2, two.eight.normalize)
-
-write.table(reac,sep="\t",quote=FALSE,file='normalised_SHAPE_35S.txt', row.names = TRUE)
 
 
 ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
@@ -56,15 +22,15 @@ setwd(working_directory)
 seq_split <- strsplit(seq, "")[[1]]
 
 m1 <- matrix(seq_split , ncol=1, byrow=TRUE)
-nucleotide_column<- as.data.frame(m1, stringsAsFactors=FALSE)
+nucleotide_column <- as.data.frame(m1, stringsAsFactors=FALSE)
 
 
-position_column <- a_cnts[,c(2)]
+position_column <- delta5_shape[,c(1)]
 
-a1 <- reac[,c(1)]
-a2 <- reac[,c(2)]
-b1 <- reac[,c(3)]
-b2 <- reac[,c(4)]
+a1 <- delta5_shape[,c(2)]
+a2 <- delta5_shape[,c(3)]
+b1 <- deltaerb1_shape[,c(2)]
+b2 <- deltaerb1_shape[,c(3)]
 
 ####
 df <- data.frame("Position" = position_column ,"A1" = a1, "nucleotide" = nucleotide_column)
