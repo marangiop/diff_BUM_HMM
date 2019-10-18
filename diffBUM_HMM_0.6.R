@@ -35,7 +35,7 @@ refsequence <- "Xist.seq"
 
 setwd(working_directory)  	
 
-outputfilename <-paste0('Xist_in vivo_vs_ex vivo_new_data_october','_diff_BUM_HMM_analysed','.txt')
+outputfilename <-paste0('Xist_in vivo_vs_ex vivo_new_data_october_reanalysed','_diff_BUM_HMM_analysed','.txt')
 
 
 table1_incell <- read.delim("Data/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
@@ -44,6 +44,7 @@ table2_incell <- read.delim("Data/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=F
 table3_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
 table4_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
 
+#READ COUNTS  i.e COVERAGE
 table1_incell_DMSO_1_count <- table1_incell[,c(3)]
 table2_incell_DMSO_1_count <- table2_incell[,c(3)]
 table1_incell_X1M7_1_count <- table1_incell[,c(5)]
@@ -74,10 +75,43 @@ table4_exvivo_X1M7_1_rate <- table4_exvivo[,c(6)]
 exvivo_rate <- data.frame("DMSO_1" = table3_exvivo_DMSO_1_rate,"DMSO_2" = table4_exvivo_DMSO_1_rate,"X1M7_1" = table3_exvivo_X1M7_1_rate,"X1M7_2"= table4_exvivo_X1M7_1_rate)
 
 
-logdropoffs_incell <- calculateLDRs(incell_counts,incell_rate, noreplicates, refsequence, working_directory)
+mutation_counts_in_cell <-  incell_counts * incell_rate
+mutation_counts_ex_vivo <-  exvivo_counts * exvivo_rate
+
+#mutation_counts_in_cell[1:4] <- lapply(mutation_counts_in_cell[1:4], as.integer)
+#mutation_counts_ex_vivo[1:4] <- lapply(mutation_counts_ex_vivo[1:4], as.integer)
+
+mutation_counts_in_cell[,c('empty_column')] <- 0
+mutation_counts_in_cell[,c('empty_column_2')] <- 0
+mutation_counts_in_cell <- mutation_counts_in_cell[,c(5,6,1,2,3,4)]
+
+mutation_counts_ex_vivo[,c('empty_column')] <- 0
+mutation_counts_ex_vivo[,c('empty_column_2')] <- 0
+mutation_counts_ex_vivo <- mutation_counts_ex_vivo[,c(5,6,1,2,3,4)]
+
+incell_counts[,c('empty_column')] <- 0
+incell_counts[,c('empty_column_2')] <- 0
+incell_counts <- incell_counts[,c(5,6,1,2,3,4)]
+
+exvivo_counts[,c('empty_column')] <- 0
+exvivo_counts[,c('empty_column_2')] <- 0
+exvivo_counts <- exvivo_counts[,c(5,6,1,2,3,4)]
+
+#mergedcounts <- mutation_counts_in_cell[3:6]
+#mergedstarts <- incell_counts[3:6]
+#mergeddors <- mergedstarts / mergedcounts
+#mergeddors <- replace(mergeddors, is.na(mergeddors), 0)
+
+mutation_counts_in_cell[1:6] <- lapply(mutation_counts_in_cell[1:6], as.integer)
+mutation_counts_ex_vivo[1:6] <- lapply(mutation_counts_ex_vivo[1:6], as.integer)
 
 
-logdropoffs_exvivo <- calculateLDRs(exvivo_counts,exvivo_rate, noreplicates, refsequence, working_directory)
+
+
+logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence, working_directory)
+
+
+logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, noreplicates, refsequence, working_directory)
 
 
 hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
