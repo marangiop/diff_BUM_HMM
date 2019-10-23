@@ -1,6 +1,6 @@
 ### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
 
-working_directory <-"/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/"
+working_directory <-"/Users/maran/Desktop/TestGit/"
 setwd(working_directory)  
 
 
@@ -35,7 +35,7 @@ refsequence <- "Xist.seq"
 
 setwd(working_directory)  	
 
-outputfilename <-paste0('Xist_in vivo_vs_ex vivo_new_data_october_reanalysed','_diff_BUM_HMM_analysed','.txt')
+outputfilename <-paste0('Xist_in vivo_vs_ex vivo_new_data_october_reanalysed_rounded_correctly','_diff_BUM_HMM_analysed','.txt')
 
 
 table1_incell <- read.delim("Data/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
@@ -102,10 +102,11 @@ exvivo_counts <- exvivo_counts[,c(5,6,1,2,3,4)]
 #mergeddors <- mergedstarts / mergedcounts
 #mergeddors <- replace(mergeddors, is.na(mergeddors), 0)
 
-mutation_counts_in_cell[1:6] <- lapply(mutation_counts_in_cell[1:6], as.integer)
-mutation_counts_ex_vivo[1:6] <- lapply(mutation_counts_ex_vivo[1:6], as.integer)
+#mutation_counts_in_cell[1:6] <- lapply(mutation_counts_in_cell[1:6], as.integer)
+#mutation_counts_ex_vivo[1:6] <- lapply(mutation_counts_ex_vivo[1:6], as.integer)
 
-
+mutation_counts_in_cell[1:6] <- lapply(lapply(mutation_counts_in_cell[1:6],round), as.integer)
+mutation_counts_ex_vivo[1:6] <- lapply(lapply(mutation_counts_ex_vivo[1:6],round), as.integer)
 
 
 logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence, working_directory)
