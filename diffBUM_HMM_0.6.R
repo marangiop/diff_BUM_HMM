@@ -1,12 +1,18 @@
 ### CHANGE THE DIRECTORY TO RUN FROM THE CORRECT FOLDER!!!
 
+<<<<<<< HEAD
+#working_directory <-"/Users/maran/Desktop/diff_BUM_HMM_Project/Github/diff_BUM_HMM/"
+working_directory <-"/Users/sgrannem/OneDrive - University of Edinburgh/diffBUM_HMM"
+
+=======
 working_directory <-"/Users/maran/Desktop/TestGit/"
+>>>>>>> 08c2cfe429f0483b7a33e8d856882f6129ac606e
 setwd(working_directory)  
 
 
-#biocLite("BUMHMM")
-#biocLite("Biostrings")
-#install.packages("Rcpp", dependencies = TRUE)
+biocLite("BUMHMM")
+biocLite("Biostrings")
+install.packages("Rcpp", dependencies = TRUE)
 
 source("https://bioconductor.org/biocLite.R")
 source("Functions/computePvals.R")
@@ -27,7 +33,8 @@ suppressPackageStartupMessages({
 
 noreplicates <- 2
 
-ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
+ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="/")
+cat(ref_seq_directory)
 setwd(ref_seq_directory)  
 
 

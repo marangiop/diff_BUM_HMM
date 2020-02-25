@@ -1,5 +1,5 @@
 
-calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence, working_directory) {
+calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
     ### calculates and returns LDRs for the dataset
     if (noreplicates == 2) {
         mergedcounts <- mergedcounts[3:6]
@@ -12,8 +12,6 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence, wo
         mergedstarts <- mergedstarts[3:10]
     }   
     
-    
-    
     #calculate the drop off rates for each nucleotide position, drop off rates for treatment should be higher than control
     mergeddors <- mergedstarts / mergedcounts
     mergeddors <- replace(mergeddors, is.na(mergeddors), 0)
@@ -23,8 +21,6 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence, wo
     #store the reference sequence as a DNAString class object, under the name dna
     #here its needed to specify the number of replicates we have for each control and treatment samples
     
-    ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
-    setwd(ref_seq_directory)  
     seq <- gsub("[\r\n\"]", "", readChar(refsequence, file.info(refsequence)$size))
     dna <- DNAString(seq)
     setwd(working_directory) 
