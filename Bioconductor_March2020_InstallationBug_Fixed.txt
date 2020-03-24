@@ -1,0 +1,25 @@
+Updated installations instructions
+
+
+1) Update to latest R version
+
+A. Open RGui and run the following 3 commands in the console:
+install.packages("installr")
+library(installr)
+updateR()
+
+B. You will get prompted several questions (below are not all of them). Answer them like below:
+- Do you want to keep the older version of R? Yes
+- Do you want to transfer over the packages from the previous version of R? Yes
+- Do you want to update all the packages? No
+
+2) Install Bioconductor 
+
+A. Open RStudio as administrator
+B. Run the following command in the console:
+BiocManager::install(version = "3.10")
+C. When prompted about updating packages, enter "a" (for "all" packages)
+
+3) Install Biostrings and SummarizedExperiment
+A. Run the following command in the console:
+BiocManager::install(c("Biostrings", "SummarizedExperiment"))
