@@ -1,8 +1,14 @@
-#biocLite("BUMHMM")
-#biocLite("Biostrings")
-#install.packages("Rcpp", dependencies = TRUE)
+#USER HAS TO ALWAYS MANUALLY SET THE WORKING DIRECTOR TO THE CLONED DIFFBUM-HMM FOLDER
+#ON RSTUDIO BEFORE RUNNIGN THE SCRIPT 
+working_directory <- getwd()
 
-source("https://bioconductor.org/biocLite.R")
+#IF YOU HAVEN'T DONE IT YET, READ THE FOLLOWING FILE AND FOLLOW ITS INSTRUCTIONS:
+# Bioconductor_March2020_InstallationBug_Fixed.txt
+
+#Line 11 is commented out because after done what it says on line 5 
+#(i.e. updating R and Bioconductor to versions 3.6.3 and 3.1.0, respectively) 
+#there is no need to run line 8 every time the script is run. 
+#source("https://bioconductor.org/biocLite.R")
 source("Functions/computePvals.R")
 source("Functions/calculateLDRs.R")
 source("Functions/hmmFwbw_differential_two_betas.R")
