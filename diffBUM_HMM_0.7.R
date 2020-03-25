@@ -25,15 +25,15 @@ suppressPackageStartupMessages({
   library(Biostrings)
   library(SummarizedExperiment) })
 
-getwd()
+#getwd()
 
 noreplicates <- 2
 
-cat(working_directory)
+#cat(working_directory)
 
-ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="/")
-refsequence <- paste(ref_seq_directory,"Xist.seq",sep="")
-cat(refsequence)
+#ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="/")
+refsequence <- "Xist.seq"
+#cat(refsequence)
 
 outputfilename <-paste0('Xist_in vivo_vs_ex vivo_new_data_october_reanalysed','_diff_BUM_HMM_analysed','.txt')
 
@@ -56,8 +56,8 @@ head(exvivo_counts)
 incell_rates <- data.frame("in_cell_DMSO1_mutation_rate" = table1_incell["in_cell_DMSO1_mutation_rate"],"in_cell_DMSO2_mutation_rate" = table2_incell["in_cell_DMSO2_mutation_rate"],"X1M7_1_mutation_rate" = table1_incell["in_cell_1M71_mutation_rate"],"X1M7_2_mutation_rate"= table2_incell["in_cell_1M72_mutation_rate"])
 exvivo_rates <- data.frame("ex_vivo_DMSO1_mutation_rate" = table1_exvivo["ex_vivo_DMSO1_mutation_rate"],"ex_vivo_DMSO2_mutation_rate" = table2_exvivo["ex_vivo_DMSO2_mutation_rate"],"X1M7_1_mutation_rate" = table1_exvivo["ex_vivo_1M71_mutation_rate"],"X1M7_2_mutation_rate"= table2_exvivo["ex_vivo_1M72_mutation_rate"])
 
-mutation_counts_in_cell <-  incell_counts * incell_rate
-mutation_counts_ex_vivo <-  exvivo_counts * exvivo_rate
+mutation_counts_in_cell <-  incell_counts * incell_rates
+mutation_counts_ex_vivo <-  exvivo_counts * exvivo_rates
 
 mutation_counts_in_cell <- cbind(position=0,mutation_counts_in_cell)
 mutation_counts_ex_vivo <- cbind(position=0,mutation_counts_ex_vivo)

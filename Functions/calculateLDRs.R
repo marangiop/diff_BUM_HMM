@@ -12,6 +12,8 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
         mergedstarts <- mergedstarts[3:10]
     }   
     
+    
+    
     #calculate the drop off rates for each nucleotide position, drop off rates for treatment should be higher than control
     mergeddors <- mergedstarts / mergedcounts
     mergeddors <- replace(mergeddors, is.na(mergeddors), 0)
@@ -23,7 +25,7 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
     
     seq <- gsub("[\r\n\"]", "", readChar(refsequence, file.info(refsequence)$size))
     dna <- DNAString(seq)
-    setwd(working_directory) 
+    #setwd(working_directory) 
     
     #construct a list of matrices using the container SummarizedExperiment (se), containing DOC, coverage, and drop-off rate values.
     #each column represents the samples: 1 column for each control or treatment replicate
