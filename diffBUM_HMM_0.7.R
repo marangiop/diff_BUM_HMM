@@ -31,11 +31,11 @@ noreplicates <- 2
 
 #cat(working_directory)
 
-#ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="/")
+#ref_seq_directory <- paste(working_directory, "Reference sequences/Xist.seq",molecule  ,sep="/")
 refsequence <- "Xist.seq"
 #cat(refsequence)
 
-outputfilename <-paste0('Xist_in vivo_vs_ex vivo_new_data_october_reanalysed','_diff_BUM_HMM_analysed','.txt')
+outputfilename <-paste0('Xist in vivo vs. ex vivo','_diff_BUM_HMM_analysis','.txt')
 
 table1_incell <- read.delim("Data/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
 table2_incell <- read.delim("Data/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
@@ -191,7 +191,7 @@ posteriors_diff
 differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
 ## ------------------------------------------------------------------------
-png("diff_bum_hmm_output_Xist_new_data_sum_of_diff_states.png")
+png("Xist_sum_of_diff_states_diff_BUM_HMM.png")
 plot(differentiallymod, xlab = 'Nucleotide position',
      ylab = 'Probability of modification (UM+MU)',
      main = 'diffBUMHMM output: ProbabilITY of differential modification between in vivo and ex vivo',
