@@ -2,6 +2,8 @@
 #ON RSTUDIO BEFORE RUNNIGN THE SCRIPT 
 working_directory <- getwd()
 
+library(Rmpfr)
+
 #IF YOU HAVEN'T DONE IT YET, READ THE FOLLOWING FILE AND FOLLOW ITS INSTRUCTIONS:
 # Bioconductor_March2020_InstallationBug_Fixed.txt
 
@@ -35,7 +37,7 @@ noreplicates <- 2
 refsequence <- "Xist.seq"
 #cat(refsequence)
 
-outputfilename <-paste0('Xist in vivo vs. ex vivo','_diff_BUM_HMM_analysis','.txt')
+outputfilename <-paste0('Xist in vivo vs. ex vivo scaled by dc','_diff_BUM_HMM_analysis','.txt')
 
 table1_incell <- read.delim("Data/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
 table2_incell <- read.delim("Data/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
@@ -44,6 +46,11 @@ table1_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=F
 table2_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
 
 head(table1_incell["in_cell_DMSO1_read_count"])
+
+dc_incell <- read.delim("Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_exvivo <- read.delim("XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+
+
 
 #READ COUNTS  i.e COVERAGE
 incell_counts <- data.frame("in_cell_DMSO1_read_count" = table1_incell["in_cell_DMSO1_read_count"],"in_cell_DMSO2_read_count" = table2_incell["in_cell_DMSO2_read_count"],"X1M7_1_read_count" = table1_incell["in_cell_1M71_read_count"],"X1M7_2_read_count"= table2_incell["in_cell_1M72_read_count"])
@@ -56,8 +63,83 @@ head(exvivo_counts)
 incell_rates <- data.frame("in_cell_DMSO1_mutation_rate" = table1_incell["in_cell_DMSO1_mutation_rate"],"in_cell_DMSO2_mutation_rate" = table2_incell["in_cell_DMSO2_mutation_rate"],"X1M7_1_mutation_rate" = table1_incell["in_cell_1M71_mutation_rate"],"X1M7_2_mutation_rate"= table2_incell["in_cell_1M72_mutation_rate"])
 exvivo_rates <- data.frame("ex_vivo_DMSO1_mutation_rate" = table1_exvivo["ex_vivo_DMSO1_mutation_rate"],"ex_vivo_DMSO2_mutation_rate" = table2_exvivo["ex_vivo_DMSO2_mutation_rate"],"X1M7_1_mutation_rate" = table1_exvivo["ex_vivo_1M71_mutation_rate"],"X1M7_2_mutation_rate"= table2_exvivo["ex_vivo_1M72_mutation_rate"])
 
-mutation_counts_in_cell <-  incell_counts * incell_rates
-mutation_counts_ex_vivo <-  exvivo_counts * exvivo_rates
+# DENATURED COTNROLS 
+dc_incell_column <- data.frame("DC_mutation_rate"=dc_incell["DC_mutation_rate"] )
+dc_exvivo_column <- data.frame("DC_mutation_rate"=dc_exvivo["DC_mutation_rate"])
+
+
+#$in_cell_DMSO1_mutation_rate <- mpfr(incell_rates$in_cell_DMSO1_mutation_rate, 200)
+#incell_rates$in_cell_DMSO2_mutation_rate <- mpfr(incell_rates$in_cell_DMSO2_mutation_rate, 200)
+#incell_rates$in_cell_1M71_mutation_rate <- mpfr(incell_rates$in_cell_1M71_mutation_rate, 200)
+#incell_rates$in_cell_1M72_mutation_rate <- mpfr(incell_rates$in_cell_1M72_mutation_rate, 200)
+
+library(formattable)
+incell_rates = formattable(incell_rates,digits = 8, format = "f" )
+exvivo_rates = formattable(exvivo_rates,digits = 8, format = "f" )
+
+dc_incell_column = formattable(dc_incell_column, digits = 8, format = "f" )
+dc_exvivo_column = formattable(dc_exvivo_column,digits = 8, format = "f" )
+
+#incell_rates_vector <- as.vector(incell_rates[['in_cell_DMSO1_mutation_rate']])
+#y = formatC(incell_rates_vector, digits = 8, format = "f")
+#y = formattable(incell_rates_vector,digits = 8, format = "f" )
+
+#dc_incell_column_vector <- as.vector(dc_incell_column[['DC_mutation_rate']])
+#w = formattable(dc_incell_column_vector,digits = 8, format = "f" )
+#
+#a = y/w
+
+#form_a = formattable(a,digits = 8, format = "f" )
+#z <- mpfr(incell_rates_vector, precBits = 10)
+
+#dc_incell_column$DC_mutation_rate <- mpfr(dc_incell_column$DC_mutation_rate,200)
+#dc_exvivo_column$DC_mutation_rate <- mpfr(dc_exvivo_column$DC_mutation_rate,200)
+
+#Dividing DMSO and 1MT columns for both in cell and ex vivo by respective DC replicate
+#Note:only 1 single replicate for DC was available, for each condition. 
+scaled_incell_rates <- incell_rates[,] / dc_incell_column
+scaled_exvivo_rates <- exvivo_rates[,] / dc_exvivo_column
+
+#Removing NaN and Inf values
+is.na(scaled_incell_rates)<-sapply(scaled_incell_rates, is.infinite)
+scaled_incell_rates[is.na(scaled_incell_rates)]<-0
+
+is.na(scaled_exvivo_rates)<-sapply(scaled_exvivo_rates, is.infinite)
+scaled_exvivo_rates[is.na(scaled_exvivo_rates)]<-0
+
+#scaled_incell_rates[,] <- sapply(scaled_incell_rates[,], as.numeric)
+#scaled_exvivo_rates[,] <- sapply(scaled_exvivo_rates[,], as.numeric)
+
+
+#WORKING
+attributes(scaled_incell_rates) <- NULL
+attributes(scaled_exvivo_rates) <- NULL
+
+#df <-data.frame(t(sapply(scaled_incell_rates,c)))
+#df_2 <-data.frame(t(sapply(scaled_exvivo_rates,c)))
+
+n <- length(scaled_incell_rates[[1]])
+scaled_incell_rates_df  <- structure(scaled_incell_rates,  row.names = c(NA, -n), class = "data.frame")
+colnames(scaled_incell_rates_df) <- c("in_cell_DMSO1_mutation_rate", "in_cell_DMSO2_mutation_rate", "in_cell_1M71_mutation_rate", "in_cell_1M72_mutation_rate" )
+scaled_exvivo_rates_df  <- structure(scaled_exvivo_rates,  row.names = c(NA, -n), class = "data.frame")
+colnames(scaled_exvivo_rates_df) <- c("in_cell_DMSO1_mutation_rate", "in_cell_DMSO2_mutation_rate", "in_cell_1M71_mutation_rate", "in_cell_1M72_mutation_rate" )
+
+
+#scaled_exvivo_rates_df  <- structure(scaled_exvivo_rates, col.names = c("ex_vivo_DMSO1_mutation_rate", "ex_vivo_DMSO2_mutation_rate", "ex_vivo_1M71_mutation_rate", "ex_vivo_1M72_mutation_rate" ), row.names = c(NA, -n), class = "data.frame")
+
+
+
+#scaled_incell_rates_df <- data.frame(matrix(unlist(scaled_incell_rates), byrow=FALSE, ncol=length(scaled_incell_rates[[1]])),stringsAsFactors=FALSE)
+#scaled_incell_rates_df <- data.frame(matrix(unlist(scaled_exvivo_rates)),stringsAsFactors=FALSE)
+
+
+#Option 1: Leave mutation counts untouched, using non-scaled rated
+#mutation_counts_in_cell <-  incell_counts * incell_rates
+#mutation_counts_ex_vivo <-  exvivo_counts * exvivo_rates
+
+#Option 2: calculate counts using scaled rates 
+mutation_counts_in_cell <-  incell_counts * scaled_incell_rates_df
+mutation_counts_ex_vivo <-  exvivo_counts * scaled_exvivo_rates_df
 
 mutation_counts_in_cell <- cbind(position=0,mutation_counts_in_cell)
 mutation_counts_ex_vivo <- cbind(position=0,mutation_counts_ex_vivo)
@@ -191,7 +273,7 @@ posteriors_diff
 differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
 ## ------------------------------------------------------------------------
-png("Xist_sum_of_diff_states_diff_BUM_HMM.png")
+png("Xist_sum_of_diff_states_diff_BUM_HMM_scaled_w_dc.png")
 plot(differentiallymod, xlab = 'Nucleotide position',
      ylab = 'Probability of modification (UM+MU)',
      main = 'diffBUMHMM output: ProbabilITY of differential modification between in vivo and ex vivo',
