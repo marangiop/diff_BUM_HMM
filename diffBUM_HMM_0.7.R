@@ -124,6 +124,20 @@ colnames(scaled_incell_rates_df) <- c("in_cell_DMSO1_mutation_rate", "in_cell_DM
 scaled_exvivo_rates_df  <- structure(scaled_exvivo_rates,  row.names = c(NA, -n), class = "data.frame")
 colnames(scaled_exvivo_rates_df) <- c("in_cell_DMSO1_mutation_rate", "in_cell_DMSO2_mutation_rate", "in_cell_1M71_mutation_rate", "in_cell_1M72_mutation_rate" )
 
+#Setting regions to 0, based on sanity check
+
+scaled_incell_rates_df[2500:4500,]=0 
+scaled_exvivo_rates_df[2500:4500,]=0 
+
+scaled_incell_rates_df[1:78,]=0 
+scaled_exvivo_rates_df[1:78,]=0 
+
+scaled_incell_rates_df[2451:2599,]=0 
+scaled_exvivo_rates_df[2451:2599,]=0 
+
+scaled_incell_rates_df[17801:17918,]=0 
+scaled_exvivo_rates_df[17801:17918,]=0 
+
 
 #scaled_exvivo_rates_df  <- structure(scaled_exvivo_rates, col.names = c("ex_vivo_DMSO1_mutation_rate", "ex_vivo_DMSO2_mutation_rate", "ex_vivo_1M71_mutation_rate", "ex_vivo_1M72_mutation_rate" ), row.names = c(NA, -n), class = "data.frame")
 
@@ -153,6 +167,8 @@ exvivo_counts <- cbind(gene="Xist",exvivo_counts)
 
 head(mutation_counts_ex_vivo)
 head(exvivo_counts)
+
+
 
 ## Calculating dropoff rates
 logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence)
