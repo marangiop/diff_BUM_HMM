@@ -74,6 +74,15 @@ colnames(scaled_exvivo_rates_df) <- c("ex_vivo_mutation_rate_rep1", "ex_vivo_mut
 scaled_incell_rates_df[2500:4500,]=0 
 scaled_exvivo_rates_df[2500:4500,]=0 
 
+scaled_incell_rates_df[1:78,]=0 
+scaled_exvivo_rates_df[1:78,]=0 
+
+scaled_incell_rates_df[2451:2599,]=0 
+scaled_exvivo_rates_df[2451:2599,]=0 
+
+scaled_incell_rates_df[17801:17918,]=0 
+scaled_exvivo_rates_df[17801:17918,]=0 
+
 library(dStruct)
 
 scaled_incell_rates_2_8_norm <- apply(scaled_incell_rates_df, 2, two.eight.normalize)
