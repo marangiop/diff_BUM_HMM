@@ -100,25 +100,26 @@ reac[reac<0] <- 0
 reac <- as.data.frame(reac)
 
 
-result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 11) #Change the search length here
+result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 1) #Change the search length here
 
 
 res <- subset(result, 
-	                    FDR < 0.05) #Change the FDR level here.
+	                    FDR < 0.42) #Change the FDR level here.
 
 #write.table(reac,sep="\t",quote=FALSE,file='output_dStruct_Xist_new_data_reac_table_11nt.txt', row.names = TRUE)
-write.table(res,sep="\t",quote=FALSE,file='output_dStruct_Xist_res_table_11nt.txt', row.names = FALSE)
+write.table(res,sep="\t",quote=FALSE,file='output_dStruct_Xist_res_table_1nt.txt', row.names = FALSE)
 
 
 #--------------
 #Plotting results
-df <- melt(data.frame(reac, n = 1:nrow(reac)), id.vars = "n")
-for (i in 1:nrow(res)) {
-	  ggsave(paste0(res$Start[i], "_", res$Stop[i], ".pdf"), 
-		          print(ggplot(df, aes(x= n, y = value)) + geom_bar(stat = "identity") +
-				          xlab("Nucleotide") + ylab("Normalized reactivity") +
-					      facet_grid(variable~.) + 
-					            coord_cartesian(ylim = c(0, 3), xlim = c(res$Start[i], res$Stop[i]))),
-		     width = 7, height = 7, units = "in")
-}
+#
+#df <- melt(data.frame(reac, n = 1:nrow(reac)), id.vars = "n")
+#for (i in 1:nrow(res)) {
+#	  ggsave(paste0(res$Start[i], "_", res$Stop[i], ".pdf"), #
+#		          print(ggplot(df, aes(x= n, y = value)) + geom_bar(stat = "identity") +
+#				          xlab("Nucleotide") + ylab("Normalized reactivity") +
+#					      facet_grid(variable~.) + 
+#					            coord_cartesian(ylim = c(0, 3), xlim = c(res$Start[i], res$Stop[i]))),
+#		     width = 7, height = 7, units = "in")
+#}
 
