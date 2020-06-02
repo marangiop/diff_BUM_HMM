@@ -1,0 +1,22 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_649	18	27	+	17.125	6.73e-07	0.00437	AGGCATAGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_648	20	29	+	17.125	6.73e-07	0.00437	AGGCATAGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_647	23	32	+	17.125	6.73e-07	0.00437	AGGCATAGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_185	2	11	+	16.0521	4.85e-06	0.0104	AGTCACAGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_184	11	20	+	16.0521	4.85e-06	0.0104	AGTCACAGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_183	13	22	+	16.0521	4.85e-06	0.0104	AGTCACAGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_182	18	27	+	16.0521	4.85e-06	0.0104	AGTCACAGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_203	3	12	+	15.625	5.33e-06	0.0104	AGGCATTGGC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_202	19	28	+	15.625	5.33e-06	0.0104	AGGCATTGGC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_201	23	32	+	15.625	5.33e-06	0.0104	AGGCATTGGC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_75	3	12	+	15.2604	1.04e-05	0.0182	AGTCACTGTC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_250	10	19	+	14.6042	1.31e-05	0.0182	AGGCATTGCC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_249	12	21	+	14.6042	1.31e-05	0.0182	AGGCATTGCC
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_129	5	14	+	14.5417	1.49e-05	0.0182	AGTCATAGTG
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_128	9	18	+	14.5417	1.49e-05	0.0182	AGTCATAGTG
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_127	18	27	+	14.5417	1.49e-05	0.0182	AGTCATAGTG
+AGKCAYWGUC	MEME-20	diffBUM_HMM_ex_vivo_679	17	26	+	13.8021	1.89e-05	0.0217	AGGCACTGGG
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_13 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif AGKCAYWGUC MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa

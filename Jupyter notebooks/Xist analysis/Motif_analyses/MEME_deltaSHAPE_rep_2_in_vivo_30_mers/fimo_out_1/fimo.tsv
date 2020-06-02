@@ -1,0 +1,22 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_90	4	13	+	15.6	4.73e-06	0.00268	AAAGCTGCCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_89	16	25	+	15.6	4.73e-06	0.00268	AAAGCTGCCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_88	18	27	+	15.6	4.73e-06	0.00268	AAAGCTGCCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_87	20	29	+	15.6	4.73e-06	0.00268	AAAGCTGCCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_86	23	32	+	15.6	4.73e-06	0.00268	AAAGCTGCCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_100	1	10	+	15.0211	8.07e-06	0.00268	AATTCTGCCA
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_99	5	14	+	15.0211	8.07e-06	0.00268	AATTCTGCCA
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_98	8	17	+	15.0211	8.07e-06	0.00268	AATTCTGCCA
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_123	2	11	+	14.9053	9.26e-06	0.00268	TATGCTGTCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_122	7	16	+	14.9053	9.26e-06	0.00268	TATGCTGTCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_121	10	19	+	14.9053	9.26e-06	0.00268	TATGCTGTCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_120	15	24	+	14.9053	9.26e-06	0.00268	TATGCTGTCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_119	18	27	+	14.9053	9.26e-06	0.00268	TATGCTGTCT
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_9	8	17	+	14.2842	1.84e-05	0.00432	AATTCTGTCA
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_8	15	24	+	14.2842	1.84e-05	0.00432	AATTCTGTCA
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_7	22	31	+	14.2842	1.84e-05	0.00432	AATTCTGTCA
+AAUKCUGYCW	MEME-1	deltaSHAPE_rep2_in_vivo_6	19	28	+	11.7053	4.58e-05	0.0101	CATTCTGTCA
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_2_in_vivo_30_mers/fimo_out_1 --bgfile MEME_deltaSHAPE_rep_2_in_vivo_30_mers/background --motif AAUKCUGYCW MEME_deltaSHAPE_rep_2_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_2_in_vivo_30_mers/deltaSHAPE_rep_2_in_vivo_30_mers.fa

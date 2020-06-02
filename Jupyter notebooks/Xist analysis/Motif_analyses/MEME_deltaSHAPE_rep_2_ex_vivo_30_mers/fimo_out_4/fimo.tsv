@@ -1,0 +1,21 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_34	19	28	+	15.9688	1.28e-06	0.00289	CACCCAACAA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_138	5	14	+	15.5625	2.75e-06	0.00289	CACCTAACAC
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_137	12	21	+	15.5625	2.75e-06	0.00289	CACCTAACAC
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_136	17	26	+	15.5625	2.75e-06	0.00289	CACCTAACAC
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_153	6	15	+	14.5521	1.12e-05	0.00716	CACCTAATGA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_152	21	30	+	14.5521	1.12e-05	0.00716	CACCTAATGA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_138	15	24	+	14.2396	1.54e-05	0.00716	CACCTAATAA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_137	22	31	+	14.2396	1.54e-05	0.00716	CACCTAATAA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_79	14	23	+	13.8542	1.86e-05	0.00716	CCCCCAACCC
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_78	17	26	+	13.8542	1.86e-05	0.00716	CCCCCAACCC
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_37	7	16	+	13.6458	2.05e-05	0.00716	CCCCAAACAC
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_36	15	24	+	13.6458	2.05e-05	0.00716	CCCCAAACAC
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_22	5	14	+	12.5	4.24e-05	0.0119	CAACCAATGA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_21	9	18	+	12.5	4.24e-05	0.0119	CAACCAATGA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_20	13	22	+	12.5	4.24e-05	0.0119	CAACCAATGA
+CACCYAAYRM	MEME-5	deltaSHAPE_rep2_ex_vivo_83	22	31	+	11.8333	5.84e-05	0.0153	CACCAAAGGA
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/fimo_out_4 --bgfile MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/background --motif CACCYAAYRM MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/deltaSHAPE_rep_2_ex_vivo_30_mers.fa

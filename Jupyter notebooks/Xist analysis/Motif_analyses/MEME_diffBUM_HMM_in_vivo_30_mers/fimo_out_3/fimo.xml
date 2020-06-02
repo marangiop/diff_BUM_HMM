@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Begin document body -->
+<fimo version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation=  xmlns:fimo="http://noble.gs.washington.edu/schema/fimo"
+>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_in_vivo_30_mers/fimo_out_3 --bgfile MEME_diffBUM_HMM_in_vivo_30_mers/background --motif WCCHUUAMAC MEME_diffBUM_HMM_in_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_in_vivo_30_mers/diffBUM_HMM_in_vivo_30_mers.fa</command-line>
+<settings>
+<setting name="output directory">MEME_diffBUM_HMM_in_vivo_30_mers/fimo_out_3</setting>
+<setting name="MEME file name">MEME_diffBUM_HMM_in_vivo_30_mers/meme_out/meme.xml</setting>
+<setting name="sequence file name">MEME_diffBUM_HMM_in_vivo_30_mers/diffBUM_HMM_in_vivo_30_mers.fa</setting>
+<setting name="background file name">MEME_diffBUM_HMM_in_vivo_30_mers/background</setting>
+<setting name="allow clobber">true</setting>
+<setting name="compute q-values">true</setting>
+<setting name="parse genomic coord.">true</setting>
+<setting name="text only">false</setting>
+<setting name="scan both strands">false</setting>
+<setting name="output threshold">0.0001</setting>
+<setting name="threshold type">p-value</setting>
+<setting name="max stored scores">100000</setting>
+<setting name="pseudocount">0.1</setting>
+<setting name="verbosity">1</setting>
+<setting name="selected motif">WCCHUUAMAC</setting>
+</settings>
+<sequence-data num-sequences="127" num-residues="4064" />
+<alphabet name="RNA" like="rna">
+<letter id="A" symbol="A" name="Adenine" colour="CC0000"/>
+<letter id="C" symbol="C" name="Cytosine" colour="0000CC"/>
+<letter id="G" symbol="G" name="Guanine" colour="FFB300"/>
+<letter id="U" symbol="U" aliases="T" name="Uracil" colour="008000"/>
+<letter id="N" symbol="N" aliases="X." equals="ACGU" name="Any base"/>
+<letter id="V" symbol="V" equals="ACG" name="Not U"/>
+<letter id="H" symbol="H" equals="ACU" name="Not G"/>
+<letter id="D" symbol="D" equals="AGU" name="Not C"/>
+<letter id="B" symbol="B" equals="CGU" name="Not A"/>
+<letter id="M" symbol="M" equals="AC" name="Amino"/>
+<letter id="R" symbol="R" equals="AG" name="Purine"/>
+<letter id="W" symbol="W" equals="AU" name="Weak"/>
+<letter id="S" symbol="S" equals="CG" name="Strong"/>
+<letter id="Y" symbol="Y" equals="CU" name="Pyrimidine"/>
+<letter id="K" symbol="K" equals="GU" name="Keto"/>
+</alphabet>
+<motif name="YAUGUGUG" alt="MEME-1" width="8" best-possible-match="UAUGUGUG"/>
+<motif name="CYCCACUUGA" alt="MEME-2" width="10" best-possible-match="CUCCACUUGA"/>
+<motif name="WCCHUUAMAC" alt="MEME-3" width="10" best-possible-match="ACCUUUACAC"/>
+<motif name="UKUGUAUDUA" alt="MEME-4" width="10" best-possible-match="UGUGUAUGUA"/>
+<motif name="GCCAUCCCGC" alt="MEME-5" width="10" best-possible-match="GCCAUCCCGC"/>
+<motif name="CWUCACAUYU" alt="MEME-6" width="10" best-possible-match="CUUCACAUCU"/>
+<motif name="CCAGGAUC" alt="MEME-7" width="8" best-possible-match="CCAGGAUC"/>
+<motif name="CAAGAYGA" alt="MEME-8" width="8" best-possible-match="CAAGAUGA"/>
+<motif name="AUGAUUAACU" alt="MEME-9" width="10" best-possible-match="AUGAUUAACU"/>
+<motif name="CUUUGUUCAA" alt="MEME-10" width="10" best-possible-match="CUUUGUUCAA"/>
+<motif name="CUUYCAYUUC" alt="MEME-11" width="10" best-possible-match="CUUCCAUUUC"/>
+<motif name="ACURUSWAUG" alt="MEME-12" width="10" best-possible-match="ACUAUGUAUG"/>
+<motif name="AGRARUGAWA" alt="MEME-13" width="10" best-possible-match="AGAAAUGAUA"/>
+<motif name="CAGCAUYA" alt="MEME-14" width="8" best-possible-match="CAGCAUUA"/>
+<motif name="YAUKCUAUCY" alt="MEME-15" width="10" best-possible-match="CAUGCUAUCC"/>
+<motif name="GAGCCC" alt="MEME-16" width="6" best-possible-match="GAGCCC"/>
+<motif name="CUACCUGG" alt="MEME-17" width="8" best-possible-match="CUACCUGG"/>
+<motif name="AGAGGAGC" alt="MEME-18" width="8" best-possible-match="AGAGGAGC"/>
+<motif name="CSUCCGC" alt="MEME-19" width="7" best-possible-match="CGUCCGC"/>
+<motif name="GGCUUCUGCG" alt="MEME-20" width="10" best-possible-match="GGCUUCUGCG"/>
+<background source="MEME_diffBUM_HMM_in_vivo_30_mers/background">
+<value letter="A">0.252</value>
+<value letter="C">0.182</value>
+<value letter="G">0.192</value>
+<value letter="U">0.374</value>
+</background>
+<cisml-file>cisml.xml</cisml-file>
+</fimo>

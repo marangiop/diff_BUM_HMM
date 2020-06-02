@@ -1,0 +1,10 @@
+##gff-version 3
+>diffBUM_HMM_in_vivo_10	fimo	nucleotide_motif	16	25	63.5	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_10+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_10;pvalue=4.41e-07;qvalue=0.000426;sequence=ACCCTTACAC;
+>diffBUM_HMM_in_vivo_11	fimo	nucleotide_motif	12	21	63.5	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_11+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_11;pvalue=4.41e-07;qvalue=0.000426;sequence=ACCCTTACAC;
+>diffBUM_HMM_in_vivo_12	fimo	nucleotide_motif	4	13	63.5	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_12+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_12;pvalue=4.41e-07;qvalue=0.000426;sequence=ACCCTTACAC;
+>diffBUM_HMM_in_vivo_24	fimo	nucleotide_motif	5	14	47.5	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_24+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_24;pvalue=1.78e-05;qvalue=0.00574;sequence=TCCTTTACAG;
+>diffBUM_HMM_in_vivo_25	fimo	nucleotide_motif	2	11	47.5	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_25+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_25;pvalue=1.78e-05;qvalue=0.00574;sequence=TCCTTTACAG;
+>diffBUM_HMM_in_vivo_40	fimo	nucleotide_motif	20	29	51.2	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_40+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_40;pvalue=7.6e-06;qvalue=0.0044;sequence=ACCATTAAAC;
+>diffBUM_HMM_in_vivo_41	fimo	nucleotide_motif	11	20	51.2	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_41+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_41;pvalue=7.6e-06;qvalue=0.0044;sequence=ACCATTAAAC;
+>diffBUM_HMM_in_vivo_48	fimo	nucleotide_motif	21	30	49.6	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_48+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_48;pvalue=1.09e-05;qvalue=0.00449;sequence=TCCTTTAAAC;
+>diffBUM_HMM_in_vivo_49	fimo	nucleotide_motif	9	18	49.6	+	.	Name=WCCHUUAMAC_>diffBUM_HMM_in_vivo_49+;Alias=MEME-3;ID=WCCHUUAMAC-MEME-3-1->diffBUM_HMM_in_vivo_49;pvalue=1.09e-05;qvalue=0.00449;sequence=TCCTTTAAAC;

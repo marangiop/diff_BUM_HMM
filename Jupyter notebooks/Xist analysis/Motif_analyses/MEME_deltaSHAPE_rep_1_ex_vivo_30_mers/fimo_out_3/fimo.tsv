@@ -1,0 +1,20 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_137	4	13	+	16.4896	1.37e-06	0.00107	CACACCAGAA
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_136	18	27	+	16.4896	1.37e-06	0.00107	CACACCAGAA
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_135	21	30	+	16.4896	1.37e-06	0.00107	CACACCAGAA
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_93	7	16	+	16.2604	2.11e-06	0.00107	CACACTTGAG
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_92	10	19	+	16.2604	2.11e-06	0.00107	CACACTTGAG
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_91	12	21	+	16.2604	2.11e-06	0.00107	CACACTTGAG
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_90	21	30	+	16.2604	2.11e-06	0.00107	CACACTTGAG
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_7	6	15	+	15	6.49e-06	0.00289	CAAACAAGAG
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_24	19	28	+	12.8542	2.76e-05	0.0102	CACACAAAAG
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_83	16	25	+	12.7708	2.88e-05	0.0102	AAAACTTGAG
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_161	14	23	+	12.3958	3.78e-05	0.0123	AACACATGGA
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_85	12	21	+	11.7292	4.98e-05	0.013	AATACAAGAA
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_84	16	25	+	11.7292	4.98e-05	0.013	AATACAAGAA
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_89	22	31	+	11.7083	5.13e-05	0.013	CAAACCTGGA
+MACACHWGAR	MEME-4	deltaSHAPE_rep1_ex_vivo_88	11	20	+	11.4792	5.53e-05	0.0131	ACCACTTGAG
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/fimo_out_3 --bgfile MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/background --motif MACACHWGAR MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/deltaSHAPE_rep_1_ex_vivo_30_mers.fa

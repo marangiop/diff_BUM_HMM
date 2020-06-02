@@ -1,0 +1,10 @@
+Query_ID	Target_ID	Optimal_offset	p-value	E-value	q-value	Overlap	Query_consensus	Target_consensus	Orientation
+1	1	0	3.01739e-15	1.5087e-14	1.5087e-14	10	ACCACUGAAU	ACCACUGAAU	+
+2	2	0	3.3196e-10	1.6598e-09	1.6598e-09	8	GUGUGUCU	GUGUGUCU	+
+3	3	0	3.86226e-12	1.93113e-11	1.93113e-11	10	CUUAGUUGCA	CUUAGUUGCA	+
+4	4	0	3.1924e-09	1.5962e-08	1.5962e-08	8	CGGAAGAG	CGGAAGAG	+
+5	5	0	1.97748e-10	9.88739e-10	9.88739e-10	10	CAAUUCAUUU	CAAUUCAUUU	+
+
+# Tomtom (Motif Comparison Tool): Version 5.1.0 compiled on May 30 2020 at 12:27:32
+# The format of this file is described at http://meme-suite.org//doc/tomtom-output-format.html.
+# tomtom -verbosity 1 -text -thresh 0.1 MEME_deltaSHAPE_rep_1_in_vivo_30_mers/combined.meme MEME_deltaSHAPE_rep_1_in_vivo_30_mers/combined.meme

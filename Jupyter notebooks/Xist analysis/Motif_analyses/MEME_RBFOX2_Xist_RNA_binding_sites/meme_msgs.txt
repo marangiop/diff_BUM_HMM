@@ -1,0 +1,1 @@
+Option '-p' given but Parallel MEME not configured. Running Serial MEME.

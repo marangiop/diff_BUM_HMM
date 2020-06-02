@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_CELF1_Xist_RNA_binding_sites/CELF1_Xist_RNA_binding_sites.fa
+# seqs: 21    min: 42    max: 42    avg: 42.0    sum: 882    alph: RNA
+# order 0
+A 1.485e-01
+C 2.018e-01
+G 2.007e-01
+U 4.490e-01
+# order 1
+AA 2.904e-02
+AC 2.556e-02
+AG 3.833e-02
+AU 5.691e-02
+CA 3.833e-02
+CC 3.369e-02
+CG 5.814e-03
+CU 1.208e-01
+GA 3.136e-02
+GC 3.369e-02
+GG 2.672e-02
+GU 1.080e-01
+UA 4.994e-02
+UC 1.092e-01
+UG 1.289e-01
+UU 1.638e-01

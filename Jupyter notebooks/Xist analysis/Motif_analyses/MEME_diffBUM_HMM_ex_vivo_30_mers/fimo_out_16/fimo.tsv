@@ -1,0 +1,22 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_322	3	10	+	13.3636	1.42e-05	0.0506	ACAGAAGT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_548	6	13	+	13.3636	1.42e-05	0.0506	ACAGAAGT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_547	12	19	+	13.3636	1.42e-05	0.0506	ACAGAAGT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_321	22	29	+	13.3636	1.42e-05	0.0506	ACAGAAGT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_614	1	8	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_613	5	12	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_612	9	16	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_611	12	19	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_847	12	19	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_846	15	22	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_845	17	24	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_610	22	29	+	13.3295	2.88e-05	0.0506	ACAGAACT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_761	19	26	+	13.2045	4.86e-05	0.079	ACAGAAAT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_37	1	8	+	13.0909	6.58e-05	0.0818	TCAGAAGT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_36	5	12	+	13.0909	6.58e-05	0.0818	TCAGAAGT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_35	11	18	+	13.0909	6.58e-05	0.0818	TCAGAAGT
+WCAGAAVU	MEME-11	diffBUM_HMM_ex_vivo_34	13	20	+	13.0909	6.58e-05	0.0818	TCAGAAGT
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_16 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif WCAGAAVU MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa

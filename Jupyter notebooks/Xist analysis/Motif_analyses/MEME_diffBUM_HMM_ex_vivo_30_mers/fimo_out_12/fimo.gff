@@ -1,0 +1,18 @@
+##gff-version 3
+diffBUM_HMM_ex_vivo_5	fimo	nucleotide_motif	15	24	41.9	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_5+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_5;pvalue=6.41e-05;qvalue=0.0734;sequence=TGTGTGTGTA;
+diffBUM_HMM_ex_vivo_254	fimo	nucleotide_motif	23	32	53.9	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_254+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_254;pvalue=4.06e-06;qvalue=0.00845;sequence=GTTGTGTGCA;
+diffBUM_HMM_ex_vivo_255	fimo	nucleotide_motif	18	27	53.9	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_255+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_255;pvalue=4.06e-06;qvalue=0.00845;sequence=GTTGTGTGCA;
+diffBUM_HMM_ex_vivo_256	fimo	nucleotide_motif	15	24	53.9	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_256+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_256;pvalue=4.06e-06;qvalue=0.00845;sequence=GTTGTGTGCA;
+diffBUM_HMM_ex_vivo_257	fimo	nucleotide_motif	13	22	53.9	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_257+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_257;pvalue=4.06e-06;qvalue=0.00845;sequence=GTTGTGTGCA;
+diffBUM_HMM_ex_vivo_258	fimo	nucleotide_motif	2	11	53.9	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_258+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_258;pvalue=4.06e-06;qvalue=0.00845;sequence=GTTGTGTGCA;
+diffBUM_HMM_ex_vivo_381	fimo	nucleotide_motif	9	18	43.9	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_381+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_381;pvalue=4.06e-05;qvalue=0.0493;sequence=GTTATGCGTA;
+diffBUM_HMM_ex_vivo_521	fimo	nucleotide_motif	13	22	50.3	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_521+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_521;pvalue=9.28e-06;qvalue=0.012;sequence=GTTTTGTGTA;
+diffBUM_HMM_ex_vivo_522	fimo	nucleotide_motif	11	20	50.3	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_522+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_522;pvalue=9.28e-06;qvalue=0.012;sequence=GTTTTGTGTA;
+diffBUM_HMM_ex_vivo_620	fimo	nucleotide_motif	19	28	52.5	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_620+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_620;pvalue=5.64e-06;qvalue=0.00845;sequence=GTTTTGGGTA;
+diffBUM_HMM_ex_vivo_621	fimo	nucleotide_motif	17	26	52.5	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_621+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_621;pvalue=5.64e-06;qvalue=0.00845;sequence=GTTTTGGGTA;
+diffBUM_HMM_ex_vivo_622	fimo	nucleotide_motif	13	22	52.5	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_622+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_622;pvalue=5.64e-06;qvalue=0.00845;sequence=GTTTTGGGTA;
+diffBUM_HMM_ex_vivo_623	fimo	nucleotide_motif	5	14	52.5	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_623+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_623;pvalue=5.64e-06;qvalue=0.00845;sequence=GTTTTGGGTA;
+diffBUM_HMM_ex_vivo_636	fimo	nucleotide_motif	20	29	60.3	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_636+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_636;pvalue=9.4e-07;qvalue=0.00458;sequence=GTTGTGGGTA;
+diffBUM_HMM_ex_vivo_637	fimo	nucleotide_motif	16	25	60.3	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_637+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_637;pvalue=9.4e-07;qvalue=0.00458;sequence=GTTGTGGGTA;
+diffBUM_HMM_ex_vivo_638	fimo	nucleotide_motif	12	21	60.3	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_638+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_638;pvalue=9.4e-07;qvalue=0.00458;sequence=GTTGTGGGTA;
+diffBUM_HMM_ex_vivo_639	fimo	nucleotide_motif	7	16	60.3	+	.	Name=GUUKUGKGUA_diffBUM_HMM_ex_vivo_639+;Alias=MEME-9;ID=GUUKUGKGUA-MEME-9-1-diffBUM_HMM_ex_vivo_639;pvalue=9.4e-07;qvalue=0.00458;sequence=GTTGTGGGTA;

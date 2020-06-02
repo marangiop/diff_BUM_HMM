@@ -1,0 +1,8 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   1	YAWSACUSAG	MEME-1	YAWSACUSAG	1.9e0	   6.5e-1	          -0.43	         0.0	      7.0	         33	           5	         11	  0.21212	6.3e-2	        16
+   1	AAUUUCACUU	MEME-3	AAUUUCACUU	3.0e0	   1.0e0	          -0.00	         0.0	      9.0	         33	           2	          4	  0.27273	3.0e-1	        16
+   1	CCCAUACCC	MEME-2	CCCAUACCC	3.0e0	   1.0e0	          -0.00	         0.0	     28.0	         34	           5	          6	  0.82353	8.5e-1	        16
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
+# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
+# centrimo -seqlen 0 -verbosity 1 -oc MEME_FUS_Xist_RNA_binding_sites/centrimo_out -bfile MEME_FUS_Xist_RNA_binding_sites/background MEME_FUS_Xist_RNA_binding_sites/FUS_Xist_RNA_binding_sites.fa MEME_FUS_Xist_RNA_binding_sites/meme_out/meme.xml

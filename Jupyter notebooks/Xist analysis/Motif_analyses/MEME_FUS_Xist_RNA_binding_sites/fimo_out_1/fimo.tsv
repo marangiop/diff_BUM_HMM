@@ -1,0 +1,17 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+YAWSACUSAG	MEME-1	FUS_24	33	42	+	16.1481	1.32e-06	0.00162	CAAGACTCAG
+YAWSACUSAG	MEME-1	FUS_33	9	18	+	16.0463	2.32e-06	0.00162	TAAGACTGAG
+YAWSACUSAG	MEME-1	FUS_26	16	25	+	16.0463	2.32e-06	0.00162	TAAGACTGAG
+YAWSACUSAG	MEME-1	FUS_30	19	28	+	16.0463	2.32e-06	0.00162	TAAGACTGAG
+YAWSACUSAG	MEME-1	FUS_28	27	36	+	16.0463	2.32e-06	0.00162	TAAGACTGAG
+YAWSACUSAG	MEME-1	FUS_26	2	11	+	14.4815	1.2e-05	0.00597	CATCACTCAG
+YAWSACUSAG	MEME-1	FUS_28	13	22	+	14.4815	1.2e-05	0.00597	CATCACTCAG
+YAWSACUSAG	MEME-1	FUS_57	18	27	+	13.7963	1.89e-05	0.00825	CATTACTGAG
+YAWSACUSAG	MEME-1	FUS_30	5	14	+	13.3148	2.24e-05	0.00869	CATTACTCAG
+YAWSACUSAG	MEME-1	FUS_18	9	18	+	12.6296	3.19e-05	0.0112	TAAAACTCAG
+YAWSACUSAG	MEME-1	FUS_8	14	23	+	12.3426	3.8e-05	0.0121	CATGTCTGAG
+YAWSACUSAG	MEME-1	FUS_14	30	39	+	11.25	5.68e-05	0.0166	TAACACTGAA
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_FUS_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_FUS_Xist_RNA_binding_sites/background --motif YAWSACUSAG MEME_FUS_Xist_RNA_binding_sites/meme_out/meme.xml MEME_FUS_Xist_RNA_binding_sites/FUS_Xist_RNA_binding_sites.fa

@@ -1,0 +1,8 @@
+##gff-version 3
+deltaSHAPE_rep1_in_vivo_43	fimo	nucleotide_motif	7	14	49.5	+	.	Name=CRGAAGAG_deltaSHAPE_rep1_in_vivo_43+;Alias=MEME-4;ID=CRGAAGAG-MEME-4-1-deltaSHAPE_rep1_in_vivo_43;pvalue=1.11e-05;qvalue=0.00553;sequence=CAGAAGAG;
+deltaSHAPE_rep1_in_vivo_47	fimo	nucleotide_motif	2	9	48.3	+	.	Name=CRGAAGAG_deltaSHAPE_rep1_in_vivo_47+;Alias=MEME-4;ID=CRGAAGAG-MEME-4-1-deltaSHAPE_rep1_in_vivo_47;pvalue=1.48e-05;qvalue=0.00633;sequence=GGGAAGAG;
+deltaSHAPE_rep1_in_vivo_95	fimo	nucleotide_motif	17	24	49.5	+	.	Name=CRGAAGAG_deltaSHAPE_rep1_in_vivo_95+;Alias=MEME-4;ID=CRGAAGAG-MEME-4-1-deltaSHAPE_rep1_in_vivo_95;pvalue=1.11e-05;qvalue=0.00553;sequence=CAGAAGAG;
+deltaSHAPE_rep1_in_vivo_96	fimo	nucleotide_motif	4	11	49.5	+	.	Name=CRGAAGAG_deltaSHAPE_rep1_in_vivo_96+;Alias=MEME-4;ID=CRGAAGAG-MEME-4-1-deltaSHAPE_rep1_in_vivo_96;pvalue=1.11e-05;qvalue=0.00553;sequence=CAGAAGAG;
+deltaSHAPE_rep1_in_vivo_100	fimo	nucleotide_motif	25	32	53.9	+	.	Name=CRGAAGAG_deltaSHAPE_rep1_in_vivo_100+;Alias=MEME-4;ID=CRGAAGAG-MEME-4-1-deltaSHAPE_rep1_in_vivo_100;pvalue=4.09e-06;qvalue=0.00408;sequence=CGGAAGAG;
+deltaSHAPE_rep1_in_vivo_101	fimo	nucleotide_motif	9	16	53.9	+	.	Name=CRGAAGAG_deltaSHAPE_rep1_in_vivo_101+;Alias=MEME-4;ID=CRGAAGAG-MEME-4-1-deltaSHAPE_rep1_in_vivo_101;pvalue=4.09e-06;qvalue=0.00408;sequence=CGGAAGAG;
+deltaSHAPE_rep1_in_vivo_102	fimo	nucleotide_motif	1	8	53.9	+	.	Name=CRGAAGAG_deltaSHAPE_rep1_in_vivo_102+;Alias=MEME-4;ID=CRGAAGAG-MEME-4-1-deltaSHAPE_rep1_in_vivo_102;pvalue=4.09e-06;qvalue=0.00408;sequence=CGGAAGAG;

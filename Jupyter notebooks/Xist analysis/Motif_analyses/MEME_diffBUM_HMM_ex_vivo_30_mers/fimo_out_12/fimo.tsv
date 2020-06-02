@@ -1,0 +1,22 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_639	7	16	+	17.4375	9.4e-07	0.00458	GTTGTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_638	12	21	+	17.4375	9.4e-07	0.00458	GTTGTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_637	16	25	+	17.4375	9.4e-07	0.00458	GTTGTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_636	20	29	+	17.4375	9.4e-07	0.00458	GTTGTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_258	2	11	+	16.1458	4.06e-06	0.00845	GTTGTGTGCA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_257	13	22	+	16.1458	4.06e-06	0.00845	GTTGTGTGCA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_256	15	24	+	16.1458	4.06e-06	0.00845	GTTGTGTGCA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_255	18	27	+	16.1458	4.06e-06	0.00845	GTTGTGTGCA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_254	23	32	+	16.1458	4.06e-06	0.00845	GTTGTGTGCA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_623	5	14	+	15.9479	5.64e-06	0.00845	GTTTTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_622	13	22	+	15.9479	5.64e-06	0.00845	GTTTTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_621	17	26	+	15.9479	5.64e-06	0.00845	GTTTTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_620	19	28	+	15.9479	5.64e-06	0.00845	GTTTTGGGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_522	11	20	+	15.1979	9.28e-06	0.012	GTTTTGTGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_521	13	22	+	15.1979	9.28e-06	0.012	GTTTTGTGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_381	9	18	+	10.6562	4.06e-05	0.0493	GTTATGCGTA
+GUUKUGKGUA	MEME-9	diffBUM_HMM_ex_vivo_5	15	24	+	8.76042	6.41e-05	0.0734	TGTGTGTGTA
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_12 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif GUUKUGKGUA MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa

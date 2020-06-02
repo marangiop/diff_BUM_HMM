@@ -1,0 +1,13 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+UGUGUGUC	MEME-1	CELF1_7	2	9	+	12.7732	6.63e-05	0.00666	TGTGTGTC
+UGUGUGUC	MEME-1	CELF1_8	7	14	+	12.7732	6.63e-05	0.00666	TGTGTGTC
+UGUGUGUC	MEME-1	CELF1_4	9	16	+	12.7732	6.63e-05	0.00666	TGTGTGTC
+UGUGUGUC	MEME-1	CELF1_11	11	18	+	12.7732	6.63e-05	0.00666	TGTGTGTC
+UGUGUGUC	MEME-1	CELF1_17	11	18	+	12.7732	6.63e-05	0.00666	TGTGTGTC
+UGUGUGUC	MEME-1	CELF1_9	18	25	+	12.7732	6.63e-05	0.00666	TGTGTGTC
+UGUGUGUC	MEME-1	CELF1_8	30	37	+	12.7732	6.63e-05	0.00666	TGTGTGTC
+UGUGUGUC	MEME-1	CELF1_11	31	38	+	12.3711	8.82e-05	0.00776	AGTGTGTC
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_CELF1_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_CELF1_Xist_RNA_binding_sites/background --motif UGUGUGUC MEME_CELF1_Xist_RNA_binding_sites/meme_out/meme.xml MEME_CELF1_Xist_RNA_binding_sites/CELF1_Xist_RNA_binding_sites.fa

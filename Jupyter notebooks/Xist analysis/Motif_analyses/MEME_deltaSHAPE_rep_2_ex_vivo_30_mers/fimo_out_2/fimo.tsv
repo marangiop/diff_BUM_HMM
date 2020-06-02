@@ -1,0 +1,27 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_55	5	14	+	16.6458	2.11e-06	0.00128	TCCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_61	8	17	+	16.6458	2.11e-06	0.00128	TCCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_65	8	17	+	16.6458	2.11e-06	0.00128	TCCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_60	11	20	+	16.6458	2.11e-06	0.00128	TCCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_54	13	22	+	16.6458	2.11e-06	0.00128	TCCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_70	13	22	+	16.6458	2.11e-06	0.00128	TCCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_53	19	28	+	16.6458	2.11e-06	0.00128	TCCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_66	1	10	+	14.1979	1.25e-05	0.0048	TCCTTGCATT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_69	15	24	+	14.1979	1.25e-05	0.0048	TCATTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_68	17	26	+	14.1979	1.25e-05	0.0048	TCATTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_67	20	29	+	14.1979	1.25e-05	0.0048	TCATTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_9	2	11	+	13.3958	1.99e-05	0.00562	TCATTGCTGT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_57	11	20	+	13.3958	1.99e-05	0.00562	TCCTTGCAGT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_56	19	28	+	13.3958	1.99e-05	0.00562	TCCTTGCAGT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_8	23	32	+	13.3958	1.99e-05	0.00562	TCATTGCTGT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_173	8	17	+	12.4688	3.56e-05	0.0094	TCCTTACTAT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_112	21	30	+	11.6458	4.63e-05	0.0115	TCCAGGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_62	8	17	+	11.3542	5.75e-05	0.0128	TTCTTGCTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_71	9	18	+	11.3542	5.75e-05	0.0128	TCCTTGTTTT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_97	2	11	+	10.8958	7.37e-05	0.0142	TCCATACTAT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_96	4	13	+	10.8958	7.37e-05	0.0142	TCCATACTAT
+UCCUUGCUUU	MEME-2	deltaSHAPE_rep2_ex_vivo_95	10	19	+	10.8958	7.37e-05	0.0142	TCCATACTAT
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/fimo_out_2 --bgfile MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/background --motif UCCUUGCUUU MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_2_ex_vivo_30_mers/deltaSHAPE_rep_2_ex_vivo_30_mers.fa

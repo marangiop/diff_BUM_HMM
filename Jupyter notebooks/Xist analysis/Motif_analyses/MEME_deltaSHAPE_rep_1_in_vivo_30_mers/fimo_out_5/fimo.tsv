@@ -1,0 +1,13 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_86	15	24	+	16.8962	2.44e-06	0.00224	CAATTCACTT
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_85	17	26	+	16.8962	2.44e-06	0.00224	CAATTCACTT
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_84	20	29	+	16.8962	2.44e-06	0.00224	CAATTCACTT
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_55	10	19	+	16.7453	6.95e-06	0.00274	CAATTCATTT
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_54	14	23	+	16.7453	6.95e-06	0.00274	CAATTCATTT
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_53	20	29	+	16.7453	6.95e-06	0.00274	CAATTCATTT
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_52	22	31	+	16.7453	6.95e-06	0.00274	CAATTCATTT
+CAAUUCAYUU	MEME-5	deltaSHAPE_rep1_in_vivo_3	15	24	+	14.0849	1.33e-05	0.00458	GAATTCATTT
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_5 --bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background --motif CAAUUCAYUU MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa

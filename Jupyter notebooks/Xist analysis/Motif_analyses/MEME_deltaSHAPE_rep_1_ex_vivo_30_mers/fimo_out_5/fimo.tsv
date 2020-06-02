@@ -1,0 +1,12 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+AYGCUGYUGC	MEME-5	deltaSHAPE_rep1_ex_vivo_129	6	15	+	18.6857	7.93e-07	0.000823	ATGCTGCTGC
+AYGCUGYUGC	MEME-5	deltaSHAPE_rep1_ex_vivo_128	9	18	+	18.6857	7.93e-07	0.000823	ATGCTGCTGC
+AYGCUGYUGC	MEME-5	deltaSHAPE_rep1_ex_vivo_127	11	20	+	18.6857	7.93e-07	0.000823	ATGCTGCTGC
+AYGCUGYUGC	MEME-5	deltaSHAPE_rep1_ex_vivo_135	1	10	+	18.2667	1.33e-06	0.000823	ACGCTGTTGC
+AYGCUGYUGC	MEME-5	deltaSHAPE_rep1_ex_vivo_134	8	17	+	18.2667	1.33e-06	0.000823	ACGCTGTTGC
+AYGCUGYUGC	MEME-5	deltaSHAPE_rep1_ex_vivo_133	22	31	+	18.2667	1.33e-06	0.000823	ACGCTGTTGC
+AYGCUGYUGC	MEME-5	deltaSHAPE_rep1_ex_vivo_22	13	22	+	17.7714	1.66e-06	0.000885	AAGCTGCTGC
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/fimo_out_5 --bgfile MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/background --motif AYGCUGYUGC MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/deltaSHAPE_rep_1_ex_vivo_30_mers.fa

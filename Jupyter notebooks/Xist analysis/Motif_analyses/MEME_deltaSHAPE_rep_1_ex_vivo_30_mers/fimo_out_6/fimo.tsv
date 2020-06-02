@@ -1,0 +1,18 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_104	1	10	+	16.7263	3.4e-07	0.00041	AGGCACTGGG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_103	9	18	+	16.7263	3.4e-07	0.00041	AGGCACTGGG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_102	22	31	+	16.7263	3.4e-07	0.00041	AGGCACTGGG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_104	11	20	+	14.4947	7.98e-06	0.00578	ATGCAAAGAG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_103	19	28	+	14.4947	7.98e-06	0.00578	ATGCAAAGAG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_24	7	16	+	13.6842	1.46e-05	0.00779	AAGCAATGTG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_19	4	13	+	13.6211	1.51e-05	0.00779	GAGCACAGGG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_10	19	28	+	12.9895	2.58e-05	0.0117	AGGCATTGGC
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_82	17	26	+	12.5684	3.31e-05	0.0133	AAGGAATGAG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_141	14	23	+	12.4632	3.75e-05	0.0136	AACCACTGAG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_153	1	10	+	12.1053	4.47e-05	0.0147	CTGCAATGAG
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_111	10	19	+	11.2211	6.79e-05	0.0196	GTGCAATGAC
+ADGCAHUGRG	MEME-7	deltaSHAPE_rep1_ex_vivo_157	17	26	+	11.1895	7.05e-05	0.0196	AAGCCTTGAG
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/fimo_out_6 --bgfile MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/background --motif ADGCAHUGRG MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_ex_vivo_30_mers/deltaSHAPE_rep_1_ex_vivo_30_mers.fa

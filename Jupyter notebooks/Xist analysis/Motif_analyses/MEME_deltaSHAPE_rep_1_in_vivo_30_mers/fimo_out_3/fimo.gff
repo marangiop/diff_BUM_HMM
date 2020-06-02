@@ -1,0 +1,8 @@
+##gff-version 3
+deltaSHAPE_rep1_in_vivo_26	fimo	nucleotide_motif	4	13	53.5	+	.	Name=CUUAGUUGCA_deltaSHAPE_rep1_in_vivo_26+;Alias=MEME-3;ID=CUUAGUUGCA-MEME-3-1-deltaSHAPE_rep1_in_vivo_26;pvalue=4.47e-06;qvalue=0.00174;sequence=CTTCCTTGCA;
+deltaSHAPE_rep1_in_vivo_38	fimo	nucleotide_motif	7	16	58.8	+	.	Name=CUUAGUUGCA_deltaSHAPE_rep1_in_vivo_38+;Alias=MEME-3;ID=CUUAGUUGCA-MEME-3-1-deltaSHAPE_rep1_in_vivo_38;pvalue=1.3e-06;qvalue=0.000589;sequence=CTTAGTTGCA;
+deltaSHAPE_rep1_in_vivo_38	fimo	nucleotide_motif	22	31	58.8	+	.	Name=CUUAGUUGCA_deltaSHAPE_rep1_in_vivo_38+;Alias=MEME-3;ID=CUUAGUUGCA-MEME-3-2-deltaSHAPE_rep1_in_vivo_38;pvalue=1.3e-06;qvalue=0.000589;sequence=CTTAGTTGCA;
+deltaSHAPE_rep1_in_vivo_39	fimo	nucleotide_motif	5	14	58.8	+	.	Name=CUUAGUUGCA_deltaSHAPE_rep1_in_vivo_39+;Alias=MEME-3;ID=CUUAGUUGCA-MEME-3-1-deltaSHAPE_rep1_in_vivo_39;pvalue=1.3e-06;qvalue=0.000589;sequence=CTTAGTTGCA;
+deltaSHAPE_rep1_in_vivo_39	fimo	nucleotide_motif	20	29	58.8	+	.	Name=CUUAGUUGCA_deltaSHAPE_rep1_in_vivo_39+;Alias=MEME-3;ID=CUUAGUUGCA-MEME-3-2-deltaSHAPE_rep1_in_vivo_39;pvalue=1.3e-06;qvalue=0.000589;sequence=CTTAGTTGCA;
+deltaSHAPE_rep1_in_vivo_40	fimo	nucleotide_motif	3	12	58.8	+	.	Name=CUUAGUUGCA_deltaSHAPE_rep1_in_vivo_40+;Alias=MEME-3;ID=CUUAGUUGCA-MEME-3-1-deltaSHAPE_rep1_in_vivo_40;pvalue=1.3e-06;qvalue=0.000589;sequence=CTTAGTTGCA;
+deltaSHAPE_rep1_in_vivo_40	fimo	nucleotide_motif	18	27	58.8	+	.	Name=CUUAGUUGCA_deltaSHAPE_rep1_in_vivo_40+;Alias=MEME-3;ID=CUUAGUUGCA-MEME-3-2-deltaSHAPE_rep1_in_vivo_40;pvalue=1.3e-06;qvalue=0.000589;sequence=CTTAGTTGCA;

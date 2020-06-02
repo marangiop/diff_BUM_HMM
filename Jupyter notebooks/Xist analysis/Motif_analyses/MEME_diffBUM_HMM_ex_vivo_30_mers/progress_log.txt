@@ -1,0 +1,170 @@
+Invoking:
+  getsize MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.01504
+Invoking:
+  fasta-most -min 50 < MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.048719
+Invoking:
+  fasta-center -rna -len 100 < MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa 1> MEME_diffBUM_HMM_ex_vivo_30_mers/seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.060052
+Invoking:
+  fasta-shuffle-letters MEME_diffBUM_HMM_ex_vivo_30_mers/seqs-centered MEME_diffBUM_HMM_ex_vivo_30_mers/seqs-shuffled -kmer 2 -tag -dinuc -rna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.011141
+Invoking:
+  fasta-get-markov -nostatus -nosummary -rna -m 1 MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/background
+Finished invoke:
+  name: bg  status: 0  time: 0.007551
+Invoking:
+  meme MEME_diffBUM_HMM_ex_vivo_30_mers/seqs-centered -oc MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out -mod anr -nmotifs 20 -minw 4 -maxw 10 -bfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -rna -p 8 -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 938.303919
+Invoking:
+  dreme -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/dreme_out -png -rna -p MEME_diffBUM_HMM_ex_vivo_30_mers/seqs-centered -n MEME_diffBUM_HMM_ex_vivo_30_mers/seqs-shuffled
+Finished invoke:
+  name: dreme  status: 256  time: 0.058531
+Invoking:
+  centrimo -seqlen 0 -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/centrimo_out -bfile MEME_diffBUM_HMM_ex_vivo_30_mers/background MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: centrimo  status: 0  time: 0.169829
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 MEME_diffBUM_HMM_ex_vivo_30_mers/combined.meme MEME_diffBUM_HMM_ex_vivo_30_mers/combined.meme 1> MEME_diffBUM_HMM_ex_vivo_30_mers/motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 0.066857
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_1 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary UCUAUUUCUU MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo1  status: 0  time: 0.309289
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_2 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary AARSURRGWC MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo2  status: 0  time: 0.297812
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_3 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary AAAGAAWGCA MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo3  status: 0  time: 0.349718
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_4 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary GCAURCWKUC MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo4  status: 0  time: 0.363526
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_5 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary MUGCCAUCDA MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo5  status: 0  time: 0.296253
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_6 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary CUGGUGAAGA MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo6  status: 0  time: 0.293256
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_7 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary MUMAGGMCRU MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo7  status: 0  time: 0.308372
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_8 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary SCUUUGURUG MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo8  status: 0  time: 0.28289
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_9 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary AHUGUGHAHA MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo9  status: 0  time: 0.291455
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_10 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary SCCUAMUGGG MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo10  status: 0  time: 0.310042
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_11 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary GGGGMUGSGG MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo11  status: 0  time: 0.285261
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_12 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary GUUKUGKGUA MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo12  status: 0  time: 0.313464
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_13 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary AGKCAYWGUC MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo13  status: 0  time: 0.299699
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_14 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary CCUUGCUU MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo14  status: 0  time: 0.298693
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_15 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary AGWCSCCUUC MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo15  status: 0  time: 0.276234
+Invoking:
+  spamo -verbosity 1 -oc MEME_diffBUM_HMM_ex_vivo_30_mers/spamo_out_16 -bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background -keepprimary -primary WCAGAAVU MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo16  status: 0  time: 0.292861
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_1 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif UCUAUUUCUU MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo1  status: 0  time: 0.153558
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_2 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif AARSURRGWC MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo2  status: 0  time: 0.147086
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_3 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif AAAGAAWGCA MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo3  status: 0  time: 0.144186
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_4 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif GCAURCWKUC MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo4  status: 0  time: 0.154542
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_5 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif MUGCCAUCDA MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo5  status: 0  time: 0.151125
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_6 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif CUGGUGAAGA MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo6  status: 0  time: 0.148366
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_7 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif MUMAGGMCRU MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo7  status: 0  time: 0.151595
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_8 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif SCUUUGURUG MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo8  status: 0  time: 0.151791
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_9 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif AHUGUGHAHA MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo9  status: 0  time: 0.146689
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_10 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif SCCUAMUGGG MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo10  status: 0  time: 0.146748
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_11 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif GGGGMUGSGG MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo11  status: 0  time: 0.144877
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_12 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif GUUKUGKGUA MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo12  status: 0  time: 0.155162
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_13 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif AGKCAYWGUC MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo13  status: 0  time: 0.147759
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_14 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif CCUUGCUU MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo14  status: 0  time: 0.151791
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_15 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif AGWCSCCUUC MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo15  status: 0  time: 0.162321
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_diffBUM_HMM_ex_vivo_30_mers/fimo_out_16 --bgfile MEME_diffBUM_HMM_ex_vivo_30_mers/background --motif WCAGAAVU MEME_diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa
+Finished invoke:
+  name: fimo16  status: 0  time: 0.154711
+Writing output
+Invoking:
+  meme-chip_html_to_tsv MEME_diffBUM_HMM_ex_vivo_30_mers/meme-chip.html MEME_diffBUM_HMM_ex_vivo_30_mers/summary.tsv "meme-chip -meme-minw 4 -meme-maxw 10 -meme-nmotifs 20 -meme-p 8 -meme-mod anr -norc -rna -noecho -oc MEME_diffBUM_HMM_ex_vivo_30_mers diffBUM_HMM_ex_vivo_30_mers.fa" 5.1.0 "Fri Oct 11 15\:53\:28 2019 -0700"
+Finished invoke:
+  name: summary  status: 512  time: 0.034884
+Done

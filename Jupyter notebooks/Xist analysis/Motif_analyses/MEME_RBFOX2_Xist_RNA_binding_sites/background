@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_RBFOX2_Xist_RNA_binding_sites/RBFOX2_Xist_RNA_binding_sites.fa
+# seqs: 3    min: 42    max: 42    avg: 42.0    sum: 126    alph: RNA
+# order 0
+A 2.698e-01
+C 1.747e-01
+G 2.302e-01
+U 3.253e-01
+# order 1
+AA 4.879e-02
+AC 6.504e-02
+AG 9.753e-02
+AU 6.504e-02
+CA 8.129e-02
+CC 4.067e-02
+CG 1.630e-02
+CU 4.067e-02
+GA 8.129e-02
+GC 3.254e-02
+GG 4.067e-02
+GU 6.504e-02
+UA 5.692e-02
+UC 4.067e-02
+UG 8.129e-02
+UU 1.463e-01

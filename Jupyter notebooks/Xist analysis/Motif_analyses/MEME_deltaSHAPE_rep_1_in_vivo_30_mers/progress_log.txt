@@ -1,0 +1,82 @@
+Invoking:
+  getsize MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.011046
+Invoking:
+  fasta-most -min 50 < MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.048661
+Invoking:
+  fasta-center -rna -len 100 < MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa 1> MEME_deltaSHAPE_rep_1_in_vivo_30_mers/seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.056053
+Invoking:
+  fasta-shuffle-letters MEME_deltaSHAPE_rep_1_in_vivo_30_mers/seqs-centered MEME_deltaSHAPE_rep_1_in_vivo_30_mers/seqs-shuffled -kmer 2 -tag -dinuc -rna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.010034
+Invoking:
+  fasta-get-markov -nostatus -nosummary -rna -m 1 MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background
+Finished invoke:
+  name: bg  status: 0  time: 0.007753
+Invoking:
+  meme MEME_deltaSHAPE_rep_1_in_vivo_30_mers/seqs-centered -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out -mod anr -nmotifs 20 -minw 4 -maxw 10 -bfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background -rna -p 8 -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 49.371283
+Invoking:
+  dreme -verbosity 1 -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/dreme_out -png -rna -p MEME_deltaSHAPE_rep_1_in_vivo_30_mers/seqs-centered -n MEME_deltaSHAPE_rep_1_in_vivo_30_mers/seqs-shuffled
+Finished invoke:
+  name: dreme  status: 256  time: 0.070077
+Invoking:
+  centrimo -seqlen 0 -verbosity 1 -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/centrimo_out -bfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: centrimo  status: 0  time: 0.118696
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 MEME_deltaSHAPE_rep_1_in_vivo_30_mers/combined.meme MEME_deltaSHAPE_rep_1_in_vivo_30_mers/combined.meme 1> MEME_deltaSHAPE_rep_1_in_vivo_30_mers/motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 0.038899
+Invoking:
+  spamo -verbosity 1 -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/spamo_out_1 -bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background -keepprimary -primary AYCACYKARY MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo1  status: 0  time: 0.177343
+Invoking:
+  spamo -verbosity 1 -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/spamo_out_2 -bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background -keepprimary -primary GUGUGUCU MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo2  status: 0  time: 0.16456
+Invoking:
+  spamo -verbosity 1 -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/spamo_out_3 -bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background -keepprimary -primary CUUAGUUGCA MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo3  status: 0  time: 0.17351
+Invoking:
+  spamo -verbosity 1 -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/spamo_out_4 -bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background -keepprimary -primary CRGAAGAG MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo4  status: 0  time: 0.159687
+Invoking:
+  spamo -verbosity 1 -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/spamo_out_5 -bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background -keepprimary -primary CAAUUCAYUU MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: spamo5  status: 0  time: 0.167744
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_1 --bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background --motif AYCACYKARY MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa
+Finished invoke:
+  name: fimo1  status: 0  time: 0.090477
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_2 --bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background --motif GUGUGUCU MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa
+Finished invoke:
+  name: fimo2  status: 0  time: 0.101393
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_3 --bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background --motif CUUAGUUGCA MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa
+Finished invoke:
+  name: fimo3  status: 0  time: 0.109195
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_4 --bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background --motif CRGAAGAG MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa
+Finished invoke:
+  name: fimo4  status: 0  time: 0.104086
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_5 --bgfile MEME_deltaSHAPE_rep_1_in_vivo_30_mers/background --motif CAAUUCAYUU MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa
+Finished invoke:
+  name: fimo5  status: 0  time: 0.113531
+Writing output
+Invoking:
+  meme-chip_html_to_tsv MEME_deltaSHAPE_rep_1_in_vivo_30_mers/meme-chip.html MEME_deltaSHAPE_rep_1_in_vivo_30_mers/summary.tsv "meme-chip -meme-minw 4 -meme-maxw 10 -meme-nmotifs 20 -meme-p 8 -meme-mod anr -norc -rna -noecho -oc MEME_deltaSHAPE_rep_1_in_vivo_30_mers deltaSHAPE_rep_1_in_vivo_30_mers.fa" 5.1.0 "Fri Oct 11 15\:53\:28 2019 -0700"
+Finished invoke:
+  name: summary  status: 512  time: 0.056041
+Done

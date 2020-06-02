@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_diffBUM_HMM_in_vivo_30_mers/diffBUM_HMM_in_vivo_30_mers.fa
+# seqs: 127    min: 32    max: 32    avg: 32.0    sum: 4064    alph: RNA
+# order 0
+A 2.517e-01
+C 1.816e-01
+G 1.924e-01
+U 3.743e-01
+# order 1
+AA 7.290e-02
+AC 4.293e-02
+AG 4.750e-02
+AU 8.839e-02
+CA 5.766e-02
+CC 3.556e-02
+CG 1.169e-02
+CU 7.722e-02
+GA 4.597e-02
+GC 3.734e-02
+GG 3.073e-02
+GU 7.645e-02
+UA 7.696e-02
+UC 6.426e-02
+UG 1.044e-01
+UU 1.300e-01
