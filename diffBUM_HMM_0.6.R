@@ -31,20 +31,95 @@ ref_seq_directory <- paste(working_directory, "Reference sequences/" ,sep="")
 setwd(ref_seq_directory)  
 
 #noise=-0.5
-refsequence <- "35S pre-rRNA_refseq.seq"
+refsequence <- "Xist.seq"
 
 setwd(working_directory)  	
 
-outputfilename <-paste0('35S_diffBUM_HMM_WT_vs_Erb1','_diff_BUM_HMM_analysed_gaussian_noise','.txt')
+outputfilename <-paste0('Xist_in vivo_vs_ex vivo','_diff_BUM_HMM_analysed_gaussian_noise_latest_xist_data','.txt')
 
-#make a table: take coverage counts and drop off counts from the working directory
-mergedcountswt <- read.table("Data/35S_control_delta5_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
-mergedstartswt <- read.table("Data/35S_control_delta5_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
-mergedcountsmut <- read.table("Data/35S_control_Erb1_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
-mergedstartsmut <- read.table("Data/35S_control_Erb1_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_DMSO_1","35S_DMSO_2","35S_1M7_1","35S_1M7_2"))
+#ADDED CODE FOR PROCESSING NEW DATA 
 
-logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence, working_directory)
-logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence, working_directory)
+table1_incell <- read.delim("Data/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+table2_incell <- read.delim("Data/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+
+table3_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+table4_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+
+table1_incell_DMSO_1_count <- table1_incell[,c(3)]
+table2_incell_DMSO_1_count <- table2_incell[,c(3)]
+table1_incell_X1M7_1_count <- table1_incell[,c(5)]
+table2_incell_X1M7_1_count <- table2_incell[,c(5)]
+
+incell_counts <- data.frame("DMSO_1" = table1_incell_DMSO_1_count,"DMSO_2" = table2_incell_DMSO_1_count,"X1M7_1" = table1_incell_X1M7_1_count,"X1M7_2"= table2_incell_X1M7_1_count)
+
+table1_incell_DMSO_1_rate <- table1_incell[,c(4)]
+table2_incell_DMSO_1_rate <- table2_incell[,c(4)]
+table1_incell_X1M7_1_rate <- table1_incell[,c(6)]
+table2_incell_X1M7_1_rate <- table2_incell[,c(6)]
+
+incell_rate <- data.frame("DMSO_1" = table1_incell_DMSO_1_rate,"DMSO_2" = table2_incell_DMSO_1_rate,"X1M7_1" = table1_incell_X1M7_1_rate,"X1M7_2"= table2_incell_X1M7_1_rate)
+
+
+table3_exvivo_DMSO_1_count <- table3_exvivo[,c(3)]
+table4_exvivo_DMSO_1_count <- table4_exvivo[,c(3)]
+table3_exvivo_X1M7_1_count <- table3_exvivo[,c(5)]
+table4_exvivo_X1M7_1_count <- table4_exvivo[,c(5)]
+
+exvivo_counts <- data.frame("DMSO_1" = table3_exvivo_DMSO_1_count,"DMSO_2" = table4_exvivo_DMSO_1_count,"X1M7_1" = table3_exvivo_X1M7_1_count,"X1M7_2"= table4_exvivo_X1M7_1_count)
+
+table3_exvivo_DMSO_1_rate <- table3_exvivo[,c(4)]
+table4_exvivo_DMSO_1_rate <- table4_exvivo[,c(4)]
+table3_exvivo_X1M7_1_rate <- table3_exvivo[,c(6)]
+table4_exvivo_X1M7_1_rate <- table4_exvivo[,c(6)]
+
+exvivo_rate <- data.frame("DMSO_1" = table3_exvivo_DMSO_1_rate,"DMSO_2" = table4_exvivo_DMSO_1_rate,"X1M7_1" = table3_exvivo_X1M7_1_rate,"X1M7_2"= table4_exvivo_X1M7_1_rate)
+
+
+mutation_counts_in_cell <-  incell_counts * incell_rate
+mutation_counts_ex_vivo <-  exvivo_counts * exvivo_rate
+
+#mutation_counts_in_cell[1:4] <- lapply(mutation_counts_in_cell[1:4], as.integer)
+#mutation_counts_ex_vivo[1:4] <- lapply(mutation_counts_ex_vivo[1:4], as.integer)
+
+mutation_counts_in_cell[,c('empty_column')] <- 0
+mutation_counts_in_cell[,c('empty_column_2')] <- 0
+mutation_counts_in_cell <- mutation_counts_in_cell[,c(5,6,1,2,3,4)]
+
+mutation_counts_ex_vivo[,c('empty_column')] <- 0
+mutation_counts_ex_vivo[,c('empty_column_2')] <- 0
+mutation_counts_ex_vivo <- mutation_counts_ex_vivo[,c(5,6,1,2,3,4)]
+
+incell_counts[,c('empty_column')] <- 0
+incell_counts[,c('empty_column_2')] <- 0
+incell_counts <- incell_counts[,c(5,6,1,2,3,4)]
+
+exvivo_counts[,c('empty_column')] <- 0
+exvivo_counts[,c('empty_column_2')] <- 0
+exvivo_counts <- exvivo_counts[,c(5,6,1,2,3,4)]
+
+mutation_counts_in_cell[1:6] <- lapply(lapply(mutation_counts_in_cell[1:6],round), as.integer)
+mutation_counts_ex_vivo[1:6] <- lapply(lapply(mutation_counts_ex_vivo[1:6],round), as.integer)
+
+
+logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence, working_directory)
+
+
+logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, noreplicates, refsequence, working_directory)
+
+logdropoffswt <- logdropoffs_incell
+logdropoffsmut <- logdropoffs_exvivo
+
+#mergedcountswt <- read.table("Data/Xist_invivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+#mergedstartswt <- read.table("Data/Xist_invivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+#mergedcountsmut <- read.table("Data/Xist_exvivo_reads.txt", comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+#mergedstartsmut <- read.table("Data/Xist_exvivo_substitutions.txt",comment.char="#",col.names=c("chromosome","position","DMSO_1","DMSO_2","1M7_1","1M7_2"))
+
+#logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt, noreplicates, refsequence, working_directory)
+#logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut, noreplicates, refsequence, working_directory)
+
+
+
+
 #prints out the null distribution histogram, the argument breaks is use to define 
 #number of bins we want to break the data up into
 hist(logdropoffswt$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
