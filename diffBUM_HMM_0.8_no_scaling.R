@@ -1,7 +1,7 @@
 #USER HAS TO ALWAYS MANUALLY SET THE WORKING DIRECTORY TO THE CLONED DIFFBUM-HMM FOLDER
 #ON RSTUDIO BEFORE RUNNING THE SCRIPT 
 
-setwd("C://Users/User/Desktop/diff_BUM_HMM/")
+#setwd("C://Users/User/Desktop/diff_BUM_HMM/")
 working_directory <- getwd()
 
 #IF YOU HAVEN'T DONE IT YET, READ THE FOLLOWING FILE AND FOLLOW ITS INSTRUCTIONS:
@@ -95,8 +95,52 @@ head(exvivo_counts)
 logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence)
 logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, noreplicates, refsequence)
 
-hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
-hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
+
+png("LMR-xist-Control1-Control2-comparison_invivo.png")
+hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LDRs - in vivo')
+dev.off()
+
+png("LMR-xist-Control1-Control2-comparison_exvivo.png")
+hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LDRs - ex vivo')
+dev.off()
+
+ldr_ct_invivo <-- logdropoffs_incell$LDR_CT
+ldr_ct_exvivo <-- logdropoffs_exvivo$LDR_CT
+
+png("LMR-xist-Treatment1-Control1-comparison_invivo.png")
+hist(ldr_ct_invivo[ , 1:1], breaks = 30, main = 'LDR T1 - C1 distribution in vivo')
+dev.off()
+
+png("LMR-xist-Treatment1-Control2-comparison_invivo.png")
+hist(ldr_ct_invivo[ , 2:2], breaks = 30, main = 'LDR T1 - C2 distribution in vivo')
+dev.off()
+
+png("LMR-xist-Treatment2-Control1-comparison_invivo.png")
+hist(ldr_ct_invivo[ , 3:3], breaks = 30, main = 'LDR T2 - C1 distribution in vivo')
+dev.off()
+
+png("LMR-xist-Treatment2-Control2-comparison_invivo.png")
+hist(ldr_ct_invivo[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution in vivo')
+dev.off()
+
+png("LMR-xist-Treatment1-Control1-comparison_exvivo.png")
+hist(ldr_ct_exvivo[ , 1:1], breaks = 30, main = 'LDR T1 - C1 distribution ex vivo')
+dev.off()
+
+png("LMR-xist-Treatment1-Control2-comparison_exvivo.png")
+hist(ldr_ct_exvivo[ , 2:2], breaks = 30, main = 'LDR T1 - C2 distribution ex vivo')
+dev.off()
+
+png("LMR-xist-Treatment2-Control1-comparison_exvivo.png")
+hist(ldr_ct_exvivo[ , 3:3], breaks = 30, main = 'LDR T2 - C1 distribution in vivo')
+dev.off()
+
+png("LMR-xist-Treatment2-Control2-comparison_exvivo.png")
+hist(ldr_ct_exvivo[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution in vivo')
+dev.off()
+
+
+#hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
 
 ## ------------------------------------------------------------------------
 ###check if the matrices of p-values can be called after the pipeline has been run twice
@@ -145,6 +189,43 @@ nNucl <- length(empPvals_1[1, ])
 ###Alternative 1: Calculate posteriors on the data at positions specified by stretches only:  
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
+
+png("pvalues-xist-Treatment1-Control1-comparison_invivo.png")
+hist(Pv1[1:1,], breaks = 30, main = 'pvalues T1 - C1 distribution in vivo')
+dev.off()
+
+png("pvalues-xist-Treatment1-Control2-comparison_invivo.png")
+hist(Pv1[2:2,], breaks = 30, main = 'pvalues T1 - C2 distribution in vivo')
+dev.off()
+
+png("pvalues-xist-Treatment2-Control1-comparison_invivo.png")
+hist(Pv1[3:3,], breaks = 30, main = 'pvalues T2 - C1 distribution in vivo')
+dev.off()
+
+png("pvalues-xist-Treatment2-Control2-comparison_invivo.png")
+hist(Pv1[4:4,], breaks = 30, main = 'pvalues T2 - C2 distribution in vivo')
+dev.off()
+
+
+
+png("pvalues-xist-Treatment1-Control1-comparison_exvivo.png")
+hist(Pv2[1:1,], breaks = 30, main = 'pvalues T1 - C1 distribution ex vivo')
+dev.off()
+
+png("pvalues-xist-Treatment1-Control2-comparison_exvivo.png")
+hist(Pv2[2:2,], breaks = 30, main = 'pvalues T1 - C2 distribution ex vivo')
+dev.off()
+
+png("pvalues-xist-Treatment2-Control1-comparison_exvivo.png")
+hist(Pv2[3:3,], breaks = 30, main = 'pvalues T2 - C1 distribution ex vivo')
+dev.off()
+
+png("pvalues-xist-Treatment2-Control2-comparison_exvivo.png")
+hist(Pv2[4:4,], breaks = 30, main = 'pvalues T2 - C2 distribution ex vivo')
+dev.off()
+
+
+
 pvaluesstretch <-list(Pv1, Pv2)
 
 for (i in 1:length(stretches)) {
