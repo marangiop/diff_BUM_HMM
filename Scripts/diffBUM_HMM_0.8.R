@@ -1,7 +1,9 @@
 #USER HAS TO ALWAYS MANUALLY SET THE WORKING DIRECTORY TO THE CLONED DIFFBUM-HMM FOLDER
 #ON RSTUDIO BEFORE RUNNING THE SCRIPT 
 
-setwd("C://Users/User/Desktop/diff_BUM_HMM/")
+#setwd("C://Users/User/Desktop/diff_BUM_HMM/")
+setwd(dirname(getwd()))
+
 
 #library(Rmpfr)
 
@@ -48,8 +50,8 @@ table2_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=F
 
 head(table1_incell["in_cell_DMSO1_read_count"])
 
-dc_incell <- read.delim("Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
-dc_exvivo <- read.delim("XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_incell <- read.delim("Old/Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_exvivo <- read.delim("Old/XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
 
 
 
@@ -225,6 +227,13 @@ nNucl <- length(empPvals_1[1, ])
 ###Alternative 1: Calculate posteriors on the data at positions specified by stretches only:  
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
+
+write.table(Pv1, file="pvalues_invivo-latest-version-after-toby-bugfix.txt", row.names=TRUE, col.names=TRUE)
+write.table(Pv2, file="pvalues_exvivo-latest-version-after-toby-bugfix.txt", row.names=TRUE, col.names=TRUE)
+
+
+
+
 pvaluesstretch <-list(Pv1, Pv2)
 
 for (i in 1:length(stretches)) {
