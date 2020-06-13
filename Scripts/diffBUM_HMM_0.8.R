@@ -2,6 +2,11 @@
 #ON RSTUDIO BEFORE RUNNING THE SCRIPT 
 
 #setwd("C://Users/User/Desktop/diff_BUM_HMM/")
+
+
+
+##STEP FOR CORRECT EXECUTION
+#FIRST STEP: OPEN R STUDIO, GO TO THE SCRIPTS FOLDER AND SET THAT AS WORKING DIRECTORY, THEN RUN THE REST OF THE PIPELINE 
 setwd(dirname(getwd()))
 
 
@@ -177,8 +182,52 @@ head(exvivo_counts)
 logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence)
 logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, noreplicates, refsequence)
 
-hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
-hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LDRs')
+
+pdf('LMR-xist-Control1-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LDRs - in vivo')
+dev.off()
+
+
+pdf('LMR-xist-Control1-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LDRs - ex vivo')
+dev.off()
+
+ldr_ct_invivo <-- logdropoffs_incell$LDR_CT
+ldr_ct_exvivo <-- logdropoffs_exvivo$LDR_CT
+
+pdf('LMR-xist-Treatment1-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_invivo[ , 1:1], breaks = 30, main = 'LDR T1 - C1 distribution in vivo')
+dev.off()
+
+pdf('LMR-xist-Treatment1-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_invivo[ , 2:2], breaks = 30, main = 'LDR T1 - C2 distribution in vivo')
+dev.off()
+
+pdf('LMR-xist-Treatment2-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_invivo[ , 3:3], breaks = 30, main = 'LDR T2 - C1 distribution in vivo')
+dev.off()
+
+pdf('LMR-xist-Treatment2-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_invivo[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution in vivo')
+dev.off()
+
+
+pdf('LMR-xist-Treatment1-Control1-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_exvivo[ , 1:1], breaks = 30, main = 'LDR T1 - C1 distribution ex vivo')
+dev.off()
+
+pdf('LMR-xist-Treatment1-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_exvivo[ , 2:2], breaks = 30, main = 'LDR T1 - C2 distribution ex vivo')
+dev.off()
+
+pdf('LMR-xist-Treatment2-Control1-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_exvivo[ , 3:3], breaks = 30, main = 'LDR T2 - C1 distribution in vivo')
+dev.off()
+
+pdf('LMR-xist-Treatment2-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(ldr_ct_exvivo[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution in vivo')
+dev.off()
+
 
 ## ------------------------------------------------------------------------
 ###check if the matrices of p-values can be called after the pipeline has been run twice
@@ -227,10 +276,6 @@ nNucl <- length(empPvals_1[1, ])
 ###Alternative 1: Calculate posteriors on the data at positions specified by stretches only:  
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
-
-write.table(Pv1, file="pvalues_invivo-latest-version-after-toby-bugfix.txt", row.names=TRUE, col.names=TRUE)
-write.table(Pv2, file="pvalues_exvivo-latest-version-after-toby-bugfix.txt", row.names=TRUE, col.names=TRUE)
-
 
 
 
@@ -286,6 +331,46 @@ for (i in 1:length(stretches)) {
     }
 
 }
+
+write.table(Pv1, file="pvalues_invivo-latest-version-after-toby-bugfix.txt", row.names=TRUE, col.names=TRUE)
+write.table(Pv2, file="pvalues_exvivo-latest-version-after-toby-bugfix.txt", row.names=TRUE, col.names=TRUE)
+
+
+pdf('pvalues-xist-Treatment1-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(Pv1[1:1,], breaks = 30, main = 'pvalues T1 - C1 distribution in vivo')
+dev.off()
+
+pdf('pvalues-xist-Treatment1-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(Pv1[2:2,], breaks = 30, main = 'pvalues T1 - C2 distribution in vivo')
+dev.off()
+
+pdf('pvalues-xist-Treatment2-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(Pv1[3:3,], breaks = 30, main = 'pvalues T2 - C1 distribution in vivo')
+dev.off()
+
+pdf('pvalues-xist-Treatment2-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
+hist(Pv1[4:4,], breaks = 30, main = 'pvalues T2 - C2 distribution in vivo')
+dev.off()
+
+
+
+pdf('pvalues-xist-Treatment1-Control1-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(Pv2[1:1,], breaks = 30, main = 'pvalues T1 - C1 distribution ex vivo')
+dev.off()
+
+pdf('pvalues-xist-Treatment1-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(Pv2[2:2,], breaks = 30, main = 'pvalues T1 - C2 distribution ex vivo')
+dev.off()
+
+pdf('pvalues-xist-Treatment2-Control1-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(Pv2[3:3,], breaks = 30, main = 'pvalues T2 - C1 distribution ex vivo')
+dev.off()
+
+pdf('pvalues-xist-Treatment2-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
+hist(Pv2[4:4,], breaks = 30, main = 'pvalues T2 - C2 distribution ex vivo')
+dev.off()
+
+
 
 ##TEST if pvaluesstretch contains p-values
 #pvaluesstretch [[1]][,100:200]
