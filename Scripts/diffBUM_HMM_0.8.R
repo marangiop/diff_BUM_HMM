@@ -196,36 +196,36 @@ ldr_ct_invivo <-- logdropoffs_incell$LDR_CT
 ldr_ct_exvivo <-- logdropoffs_exvivo$LDR_CT
 
 pdf('LMR-xist-Treatment1-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_invivo[ , 1:1], breaks = 30, main = 'LDR T1 - C1 distribution in vivo')
+hist(ldr_ct_invivo[ , 1:1], breaks = 30, main = 'LMR T1 - C1 distribution in vivo')
 dev.off()
 
 pdf('LMR-xist-Treatment1-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_invivo[ , 2:2], breaks = 30, main = 'LDR T1 - C2 distribution in vivo')
+hist(ldr_ct_invivo[ , 2:2], breaks = 30, main = 'LMR T1 - C2 distribution in vivo')
 dev.off()
 
 pdf('LMR-xist-Treatment2-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_invivo[ , 3:3], breaks = 30, main = 'LDR T2 - C1 distribution in vivo')
+hist(ldr_ct_invivo[ , 3:3], breaks = 30, main = 'LMR T2 - C1 distribution in vivo')
 dev.off()
 
 pdf('LMR-xist-Treatment2-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_invivo[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution in vivo')
+hist(ldr_ct_invivo[ , 4:4], breaks = 30, main = 'LMR T2 - C2 distribution in vivo')
 dev.off()
 
 
 pdf('LMR-xist-Treatment1-Control1-comparison_exvivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_exvivo[ , 1:1], breaks = 30, main = 'LDR T1 - C1 distribution ex vivo')
+hist(ldr_ct_exvivo[ , 1:1], breaks = 30, main = 'LMR T1 - C1 distribution ex vivo')
 dev.off()
 
 pdf('LMR-xist-Treatment1-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_exvivo[ , 2:2], breaks = 30, main = 'LDR T1 - C2 distribution ex vivo')
+hist(ldr_ct_exvivo[ , 2:2], breaks = 30, main = 'LMR T1 - C2 distribution ex vivo')
 dev.off()
 
 pdf('LMR-xist-Treatment2-Control1-comparison_exvivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_exvivo[ , 3:3], breaks = 30, main = 'LDR T2 - C1 distribution in vivo')
+hist(ldr_ct_exvivo[ , 3:3], breaks = 30, main = 'LMR T2 - C1 distribution ex vivo')
 dev.off()
 
 pdf('LMR-xist-Treatment2-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
-hist(ldr_ct_exvivo[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution in vivo')
+hist(ldr_ct_exvivo[ , 4:4], breaks = 30, main = 'LMR T2 - C2 distribution ex vivo')
 dev.off()
 
 
