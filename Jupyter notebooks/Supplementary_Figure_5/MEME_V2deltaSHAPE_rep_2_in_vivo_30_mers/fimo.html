@@ -1,0 +1,1630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:cis="http://zlab.bu.edu/schema/cisml" xmlns:fimo="http://noble.gs.washington.edu/schema/cisml" xmlns:mem="http://noble.gs.washington.edu/meme">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>FIMO Results</title>
+<style type="text/css">
+td.left {text-align: left;}
+td.right {text-align: right; padding-right: 1cm;}
+</style>
+</head>
+<body color="#000000">
+<a name="top_buttons"></a>
+<hr>
+<table summary="buttons" align="left" cellspacing="0">
+<tr>
+<td bgcolor="#00FFFF"><a href="#database_and_motifs"><b>Database and Motifs</b></a></td>
+<td bgcolor="#DDFFDD"><a href="#sec_i"><b>High-scoring Motif Occurences</b></a></td>
+<td bgcolor="#DDDDFF"><a href="#debugging_information"><b>Debugging Information</b></a></td>
+<td bgcolor="#FFDD00"><a href="fimo.tsv""><b>Results in TSV Format</b></a></td>
+<td bgcolor="#FFDDFF"><a href="fimo.gff""><b>Results in GFF3 Format</b></a></td>
+</tr>
+</table>
+<br/>
+<br/>
+<hr/>
+<center><big><b>FIMO - Motif search tool</b></big></center>
+<hr>
+<p>
+FIMO version 5.1.0, (Release date: Fri Oct 11 15:53:28 2019 -0700)
+</p>
+<p>
+For further information on how to interpret these results please access <a href="http://meme-suite.org//doc/fimo-output-format.html">http://meme-suite.org//doc/fimo-output-format.html</a>.<br>
+To get a copy of the FIMO software please access <a href="http://meme-suite.org">http://meme-suite.org</a>
+
+</p>
+<p>If you use FIMO in your research, please cite the following paper:<br>
+Charles E. Grant, Timothy L. Bailey, and William Stafford Noble,
+"FIMO: Scanning for occurrences of a given motif",
+<i>Bioinformatics</i>, <b>27</b>(7):1017-1018, 2011.
+<a href="http://bioinformatics.oxfordjournals.org/content/27/7/1017">[full text]</a></p>
+<hr>
+<center><big><b><a name="database_and_motifs">DATABASE AND MOTIFS</a></b></big></center>
+<hr>
+<div style="padding-left: 0.75in; line-height: 1em; font-family: monospace;">
+<p>
+  DATABASE ../../Reference_sequences/Xist.fa
+  <br />
+  Database contains 1 sequences, 17918 residues
+</p>
+<p>
+  MOTIFS MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/meme_out/meme.txt (RNA)
+  <table>
+    <thead>
+      <tr>
+        <th style="border-bottom: 1px dashed;">MOTIF</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;">WIDTH</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;text-align:left;" >
+         BEST POSSIBLE MATCH
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:right;">AAYAAWUCUG</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">AAUAAAUCUG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GSCUGG</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">GCCUGG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">VUGUKKGCWU</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">CUGUUUGCAU</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">MCMCAACACC</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">ACCCAACACC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GCAAAUCCCC</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">GCAAAUCCCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GGYAUCAGRS</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">GGUAUCAGAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GUCCAGCC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">GUCCAGCC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">UCAGCRUC</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">UCAGCAUC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CCCCAC</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">CCCCAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CUUAGUUGC</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">CUUAGUUGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GCACAUUGGC</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">GCACAUUGGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">MWGRARYWUU</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">CAGGAACAUU</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">YUAAGYACUG</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">UUAAGUACUG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CCCAGG</td>
+        <td style="text-align:right;padding-left: 1em;">6</td>
+        <td style="text-align:left;padding-left: 1em;">CCCAGG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CCAAACUAAG</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">CCAAACUAAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GGAGGKAYCA</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">GGAGGUACCA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CAURGUCUC</td>
+        <td style="text-align:right;padding-left: 1em;">9</td>
+        <td style="text-align:left;padding-left: 1em;">CAUAGUCUC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GGUGGAUU</td>
+        <td style="text-align:right;padding-left: 1em;">8</td>
+        <td style="text-align:left;padding-left: 1em;">GGUGGAUU</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">AAUCAAGAWG</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">AAUCAAGAUG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CAGGACMRAC</td>
+        <td style="text-align:right;padding-left: 1em;">10</td>
+        <td style="text-align:left;padding-left: 1em;">CAGGACAAAC</td>
+       </tr>
+    </tbody>
+  </table>
+</p>
+<p>
+Random model letter frequencies (--motif--):
+<br/>
+
+A 0.315 C 0.177 G 0.190 U 0.318 </p>
+</div>
+<hr>
+<center><big><b><a name="sec_i">SECTION I: HIGH-SCORING MOTIF OCCURENCES</a></b></big></center>
+<hr>
+<ul>
+<li>
+There were 123 motif occurences with a p-value less than 0.0001.
+
+The full set of motif occurences can be seen in the
+TSV (tab-delimited values) output file
+<a href="fimo.tsv">fimo.tsv</a>, 
+the GFF3 file 
+<a href="fimo.gff">fimo.gff</a> 
+which may be suitable for uploading to the 
+<a href="http://genome.ucsc.edu/cgi-bin/hgTables">UCSC Genome Table Browser</a>
+(assuming the FASTA input sequences included genomic coordinates in UCSC or Galaxy format),
+or the XML file 
+<a href="fimo.xml">fimo.xml</a>.
+</li>
+<li>
+The <i>p</i>-value of a motif occurrence is defined as the
+probability of a random sequence of the same length as the motif
+matching that position of the sequence with as good or better a score.
+</li>
+<li>
+The score for the match of a position in a sequence to a motif
+is computed by summing the appropriate entries from each column of
+the position-dependent scoring matrix that represents the motif.
+</li>
+<li>
+The q-value of a motif occurrence is defined as the
+false discovery rate if the occurrence is accepted as significant.
+</li>
+<li>The table is sorted by increasing <i>p</i>-value.</li>
+</ul>
+<table border="1">
+<thead>
+<tr>
+<th>Motif ID</th>
+<th>Alt ID</th>
+<th>Sequence Name</th>
+<th>Strand</th>
+<th>Start</th>
+<th>End</th>
+<th>p-value</th>
+<th>q-value</th>
+<th>Matched Sequence</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+      <td style="text-align:left;">GCAAAUCCCC</td>
+      <td style="text-align:left;">MEME-5</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7664</td>
+      <td style="text-align:left;">7673</td>
+      <td style="text-align:left;">3.28e-07</td>
+      <td style="text-align:left;">0.00553</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCAAATCCCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCACAUUGGC</td>
+      <td style="text-align:left;">MEME-11</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12825</td>
+      <td style="text-align:left;">12834</td>
+      <td style="text-align:left;">3.82e-07</td>
+      <td style="text-align:left;">0.00661</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCACATTGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGAGGKAYCA</td>
+      <td style="text-align:left;">MEME-16</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14167</td>
+      <td style="text-align:left;">14176</td>
+      <td style="text-align:left;">4.06e-07</td>
+      <td style="text-align:left;">0.0058</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGAGGTACCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAGGACMRAC</td>
+      <td style="text-align:left;">MEME-20</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8468</td>
+      <td style="text-align:left;">8477</td>
+      <td style="text-align:left;">5.59e-07</td>
+      <td style="text-align:left;">0.00823</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGGACCAAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGAGGKAYCA</td>
+      <td style="text-align:left;">MEME-16</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15112</td>
+      <td style="text-align:left;">15121</td>
+      <td style="text-align:left;">6.48e-07</td>
+      <td style="text-align:left;">0.0058</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGAGGGACCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGYAUCAGRS</td>
+      <td style="text-align:left;">MEME-6</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12880</td>
+      <td style="text-align:left;">12889</td>
+      <td style="text-align:left;">8.51e-07</td>
+      <td style="text-align:left;">0.015</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGCATCAGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAGGACMRAC</td>
+      <td style="text-align:left;">MEME-20</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15670</td>
+      <td style="text-align:left;">15679</td>
+      <td style="text-align:left;">9.34e-07</td>
+      <td style="text-align:left;">0.00823</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGGACAGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCAAACUAAG</td>
+      <td style="text-align:left;">MEME-15</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5688</td>
+      <td style="text-align:left;">5697</td>
+      <td style="text-align:left;">1.04e-06</td>
+      <td style="text-align:left;">0.0186</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCAAACTAAG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15132</td>
+      <td style="text-align:left;">15141</td>
+      <td style="text-align:left;">1.31e-06</td>
+      <td style="text-align:left;">0.0122</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACACAACACC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGAGGKAYCA</td>
+      <td style="text-align:left;">MEME-16</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4811</td>
+      <td style="text-align:left;">4820</td>
+      <td style="text-align:left;">1.38e-06</td>
+      <td style="text-align:left;">0.00822</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGAGGTATCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12045</td>
+      <td style="text-align:left;">12054</td>
+      <td style="text-align:left;">1.5e-06</td>
+      <td style="text-align:left;">0.0122</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCCAAGACC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4996</td>
+      <td style="text-align:left;">5005</td>
+      <td style="text-align:left;">1.85e-06</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGTGTGCAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAUCAAGAWG</td>
+      <td style="text-align:left;">MEME-19</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15745</td>
+      <td style="text-align:left;">15754</td>
+      <td style="text-align:left;">2e-06</td>
+      <td style="text-align:left;">0.0357</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AATCAAGATG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCACAUUGGC</td>
+      <td style="text-align:left;">MEME-11</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7620</td>
+      <td style="text-align:left;">7629</td>
+      <td style="text-align:left;">2.02e-06</td>
+      <td style="text-align:left;">0.0175</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCACAATGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGYAUCAGRS</td>
+      <td style="text-align:left;">MEME-6</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15022</td>
+      <td style="text-align:left;">15031</td>
+      <td style="text-align:left;">2.11e-06</td>
+      <td style="text-align:left;">0.0186</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTATCAGGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8090</td>
+      <td style="text-align:left;">8099</td>
+      <td style="text-align:left;">2.12e-06</td>
+      <td style="text-align:left;">0.0122</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAAACACC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15881</td>
+      <td style="text-align:left;">15890</td>
+      <td style="text-align:left;">2.91e-06</td>
+      <td style="text-align:left;">0.0502</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTAAGTACTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5104</td>
+      <td style="text-align:left;">5113</td>
+      <td style="text-align:left;">2.96e-06</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGTTGGCAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAURGUCUC</td>
+      <td style="text-align:left;">MEME-17</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2023</td>
+      <td style="text-align:left;">2031</td>
+      <td style="text-align:left;">3.36e-06</td>
+      <td style="text-align:left;">0.0292</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATAGTCTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAURGUCUC</td>
+      <td style="text-align:left;">MEME-17</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">13881</td>
+      <td style="text-align:left;">13889</td>
+      <td style="text-align:left;">3.36e-06</td>
+      <td style="text-align:left;">0.0292</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATAGTCTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14645</td>
+      <td style="text-align:left;">14654</td>
+      <td style="text-align:left;">3.51e-06</td>
+      <td style="text-align:left;">0.0152</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACCTAACACC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2995</td>
+      <td style="text-align:left;">3002</td>
+      <td style="text-align:left;">3.55e-06</td>
+      <td style="text-align:left;">0.0192</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4988</td>
+      <td style="text-align:left;">4995</td>
+      <td style="text-align:left;">3.55e-06</td>
+      <td style="text-align:left;">0.0192</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">17069</td>
+      <td style="text-align:left;">17076</td>
+      <td style="text-align:left;">3.55e-06</td>
+      <td style="text-align:left;">0.0192</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CUUAGUUGC</td>
+      <td style="text-align:left;">MEME-10</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12920</td>
+      <td style="text-align:left;">12928</td>
+      <td style="text-align:left;">3.64e-06</td>
+      <td style="text-align:left;">0.0315</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTTAGTTGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CUUAGUUGC</td>
+      <td style="text-align:left;">MEME-10</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12935</td>
+      <td style="text-align:left;">12943</td>
+      <td style="text-align:left;">3.64e-06</td>
+      <td style="text-align:left;">0.0315</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTTAGTTGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAUCAAGAWG</td>
+      <td style="text-align:left;">MEME-19</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5716</td>
+      <td style="text-align:left;">5725</td>
+      <td style="text-align:left;">3.99e-06</td>
+      <td style="text-align:left;">0.0357</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AATCAAGAAG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAURGUCUC</td>
+      <td style="text-align:left;">MEME-17</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15231</td>
+      <td style="text-align:left;">15239</td>
+      <td style="text-align:left;">5.39e-06</td>
+      <td style="text-align:left;">0.0312</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATGGTCTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5234</td>
+      <td style="text-align:left;">5243</td>
+      <td style="text-align:left;">6.14e-06</td>
+      <td style="text-align:left;">0.055</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGGAACATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14901</td>
+      <td style="text-align:left;">14910</td>
+      <td style="text-align:left;">6.14e-06</td>
+      <td style="text-align:left;">0.055</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGGAACTTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">UCAGCRUC</td>
+      <td style="text-align:left;">MEME-8</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15792</td>
+      <td style="text-align:left;">15799</td>
+      <td style="text-align:left;">6.38e-06</td>
+      <td style="text-align:left;">0.106</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCAGCGTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1194</td>
+      <td style="text-align:left;">1203</td>
+      <td style="text-align:left;">6.81e-06</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTGTGTGCAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">11584</td>
+      <td style="text-align:left;">11593</td>
+      <td style="text-align:left;">6.81e-06</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTGTGTGCAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGYAUCAGRS</td>
+      <td style="text-align:left;">MEME-6</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">9860</td>
+      <td style="text-align:left;">9869</td>
+      <td style="text-align:left;">7.4e-06</td>
+      <td style="text-align:left;">0.0435</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGCAACAGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14571</td>
+      <td style="text-align:left;">14580</td>
+      <td style="text-align:left;">7.93e-06</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGTTGGCTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5824</td>
+      <td style="text-align:left;">5833</td>
+      <td style="text-align:left;">9.11e-06</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTGTTGGCAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAYAAWUCUG</td>
+      <td style="text-align:left;">MEME-1</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4941</td>
+      <td style="text-align:left;">4950</td>
+      <td style="text-align:left;">1.05e-05</td>
+      <td style="text-align:left;">0.113</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AATAATTCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1694</td>
+      <td style="text-align:left;">1703</td>
+      <td style="text-align:left;">1.11e-05</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTGTTTGCTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">11450</td>
+      <td style="text-align:left;">11459</td>
+      <td style="text-align:left;">1.11e-05</td>
+      <td style="text-align:left;">0.0233</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTGTTTGCTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2852</td>
+      <td style="text-align:left;">2859</td>
+      <td style="text-align:left;">1.12e-05</td>
+      <td style="text-align:left;">0.0361</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15316</td>
+      <td style="text-align:left;">15323</td>
+      <td style="text-align:left;">1.12e-05</td>
+      <td style="text-align:left;">0.0361</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGUGGAUU</td>
+      <td style="text-align:left;">MEME-18</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8532</td>
+      <td style="text-align:left;">8539</td>
+      <td style="text-align:left;">1.32e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTGGATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGUGGAUU</td>
+      <td style="text-align:left;">MEME-18</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">11414</td>
+      <td style="text-align:left;">11421</td>
+      <td style="text-align:left;">1.32e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTGGATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAYAAWUCUG</td>
+      <td style="text-align:left;">MEME-1</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">13858</td>
+      <td style="text-align:left;">13867</td>
+      <td style="text-align:left;">1.36e-05</td>
+      <td style="text-align:left;">0.113</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AATAAAGCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12897</td>
+      <td style="text-align:left;">12906</td>
+      <td style="text-align:left;">1.37e-05</td>
+      <td style="text-align:left;">0.0818</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGAAGCTTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12085</td>
+      <td style="text-align:left;">12094</td>
+      <td style="text-align:left;">1.41e-05</td>
+      <td style="text-align:left;">0.0486</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCCAACCCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4931</td>
+      <td style="text-align:left;">4940</td>
+      <td style="text-align:left;">1.41e-05</td>
+      <td style="text-align:left;">0.0723</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTGAGTACTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCACAUUGGC</td>
+      <td style="text-align:left;">MEME-11</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7558</td>
+      <td style="text-align:left;">7567</td>
+      <td style="text-align:left;">1.56e-05</td>
+      <td style="text-align:left;">0.0903</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCACAGGGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">UCAGCRUC</td>
+      <td style="text-align:left;">MEME-8</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">11429</td>
+      <td style="text-align:left;">11436</td>
+      <td style="text-align:left;">1.69e-05</td>
+      <td style="text-align:left;">0.141</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCAGCATC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15282</td>
+      <td style="text-align:left;">15291</td>
+      <td style="text-align:left;">1.77e-05</td>
+      <td style="text-align:left;">0.0723</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCAAGTGCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAYAAWUCUG</td>
+      <td style="text-align:left;">MEME-1</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15329</td>
+      <td style="text-align:left;">15338</td>
+      <td style="text-align:left;">1.89e-05</td>
+      <td style="text-align:left;">0.113</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AATATATCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8420</td>
+      <td style="text-align:left;">8429</td>
+      <td style="text-align:left;">2.02e-05</td>
+      <td style="text-align:left;">0.0377</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGTCTGCTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">13490</td>
+      <td style="text-align:left;">13499</td>
+      <td style="text-align:left;">2.05e-05</td>
+      <td style="text-align:left;">0.0723</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTCAGCACTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGUGGAUU</td>
+      <td style="text-align:left;">MEME-18</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">298</td>
+      <td style="text-align:left;">305</td>
+      <td style="text-align:left;">2.05e-05</td>
+      <td style="text-align:left;">0.122</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTGGACT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14360</td>
+      <td style="text-align:left;">14369</td>
+      <td style="text-align:left;">2.21e-05</td>
+      <td style="text-align:left;">0.0723</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTAGGCACTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">69</td>
+      <td style="text-align:left;">78</td>
+      <td style="text-align:left;">2.3e-05</td>
+      <td style="text-align:left;">0.094</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AAGGAGCTTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">13680</td>
+      <td style="text-align:left;">13689</td>
+      <td style="text-align:left;">2.35e-05</td>
+      <td style="text-align:left;">0.0394</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ATGTTTGCAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12998</td>
+      <td style="text-align:left;">13007</td>
+      <td style="text-align:left;">2.59e-05</td>
+      <td style="text-align:left;">0.0723</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCAAGCCCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2599</td>
+      <td style="text-align:left;">2608</td>
+      <td style="text-align:left;">2.62e-05</td>
+      <td style="text-align:left;">0.094</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGGAGTATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAYAAWUCUG</td>
+      <td style="text-align:left;">MEME-1</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14516</td>
+      <td style="text-align:left;">14525</td>
+      <td style="text-align:left;">3.33e-05</td>
+      <td style="text-align:left;">0.149</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AACAGATCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4894</td>
+      <td style="text-align:left;">4903</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.0723</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTAAGCAGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8601</td>
+      <td style="text-align:left;">8610</td>
+      <td style="text-align:left;">3.35e-05</td>
+      <td style="text-align:left;">0.0723</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTAAGCAGTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">UCAGCRUC</td>
+      <td style="text-align:left;">MEME-8</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1410</td>
+      <td style="text-align:left;">1417</td>
+      <td style="text-align:left;">3.36e-05</td>
+      <td style="text-align:left;">0.186</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCAGCTTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCAAAUCCCC</td>
+      <td style="text-align:left;">MEME-5</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5368</td>
+      <td style="text-align:left;">5377</td>
+      <td style="text-align:left;">3.36e-05</td>
+      <td style="text-align:left;">0.28</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCAAGTCCCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CUUAGUUGC</td>
+      <td style="text-align:left;">MEME-10</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8014</td>
+      <td style="text-align:left;">8022</td>
+      <td style="text-align:left;">3.49e-05</td>
+      <td style="text-align:left;">0.201</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTCAGTTGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">VUGUKKGCWU</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14146</td>
+      <td style="text-align:left;">14155</td>
+      <td style="text-align:left;">3.85e-05</td>
+      <td style="text-align:left;">0.0588</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACGTTGGCAT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">11925</td>
+      <td style="text-align:left;">11934</td>
+      <td style="text-align:left;">3.99e-05</td>
+      <td style="text-align:left;">0.11</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACACAAAACC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7485</td>
+      <td style="text-align:left;">7494</td>
+      <td style="text-align:left;">4.45e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGGAATATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7975</td>
+      <td style="text-align:left;">7984</td>
+      <td style="text-align:left;">4.49e-05</td>
+      <td style="text-align:left;">0.11</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAACAACACC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">13765</td>
+      <td style="text-align:left;">13774</td>
+      <td style="text-align:left;">4.87e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAAGAACATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8</td>
+      <td style="text-align:left;">15</td>
+      <td style="text-align:left;">4.91e-05</td>
+      <td style="text-align:left;">0.0995</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12308</td>
+      <td style="text-align:left;">12315</td>
+      <td style="text-align:left;">4.91e-05</td>
+      <td style="text-align:left;">0.0995</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ATCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GUCCAGCC</td>
+      <td style="text-align:left;">MEME-7</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15529</td>
+      <td style="text-align:left;">15536</td>
+      <td style="text-align:left;">4.91e-05</td>
+      <td style="text-align:left;">0.0995</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTCCAGCC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAUCAAGAWG</td>
+      <td style="text-align:left;">MEME-19</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4762</td>
+      <td style="text-align:left;">4771</td>
+      <td style="text-align:left;">4.95e-05</td>
+      <td style="text-align:left;">0.295</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AATCAAGATA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCAAAUCCCC</td>
+      <td style="text-align:left;">MEME-5</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7949</td>
+      <td style="text-align:left;">7958</td>
+      <td style="text-align:left;">4.99e-05</td>
+      <td style="text-align:left;">0.28</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCAAAGCCCT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MCMCAACACC</td>
+      <td style="text-align:left;">MEME-4</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">98</td>
+      <td style="text-align:left;">107</td>
+      <td style="text-align:left;">5.1e-05</td>
+      <td style="text-align:left;">0.11</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCTACCACC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15865</td>
+      <td style="text-align:left;">15874</td>
+      <td style="text-align:left;">5.42e-05</td>
+      <td style="text-align:left;">0.104</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTAAGTACTA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCCAC</td>
+      <td style="text-align:left;">MEME-9</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2972</td>
+      <td style="text-align:left;">2977</td>
+      <td style="text-align:left;">5.47e-05</td>
+      <td style="text-align:left;">0.223</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCCAC</td>
+      <td style="text-align:left;">MEME-9</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5538</td>
+      <td style="text-align:left;">5543</td>
+      <td style="text-align:left;">5.47e-05</td>
+      <td style="text-align:left;">0.223</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCCAC</td>
+      <td style="text-align:left;">MEME-9</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">9003</td>
+      <td style="text-align:left;">9008</td>
+      <td style="text-align:left;">5.47e-05</td>
+      <td style="text-align:left;">0.223</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCCAC</td>
+      <td style="text-align:left;">MEME-9</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">11261</td>
+      <td style="text-align:left;">11266</td>
+      <td style="text-align:left;">5.47e-05</td>
+      <td style="text-align:left;">0.223</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCCAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAGGACMRAC</td>
+      <td style="text-align:left;">MEME-20</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15483</td>
+      <td style="text-align:left;">15492</td>
+      <td style="text-align:left;">5.49e-05</td>
+      <td style="text-align:left;">0.323</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGGACCTTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGAGGKAYCA</td>
+      <td style="text-align:left;">MEME-16</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">16648</td>
+      <td style="text-align:left;">16657</td>
+      <td style="text-align:left;">5.66e-05</td>
+      <td style="text-align:left;">0.253</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGAGGGATGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCAAACUAAG</td>
+      <td style="text-align:left;">MEME-15</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15577</td>
+      <td style="text-align:left;">15586</td>
+      <td style="text-align:left;">5.77e-05</td>
+      <td style="text-align:left;">0.516</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAACCAAG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1842</td>
+      <td style="text-align:left;">1847</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2847</td>
+      <td style="text-align:left;">2852</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">3024</td>
+      <td style="text-align:left;">3029</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5134</td>
+      <td style="text-align:left;">5139</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5781</td>
+      <td style="text-align:left;">5786</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">13104</td>
+      <td style="text-align:left;">13109</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">13777</td>
+      <td style="text-align:left;">13782</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14503</td>
+      <td style="text-align:left;">14508</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CCCAGG</td>
+      <td style="text-align:left;">MEME-14</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15246</td>
+      <td style="text-align:left;">15251</td>
+      <td style="text-align:left;">6.31e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCAGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14293</td>
+      <td style="text-align:left;">14302</td>
+      <td style="text-align:left;">6.51e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ATGAAGCATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2996</td>
+      <td style="text-align:left;">3005</td>
+      <td style="text-align:left;">6.64e-05</td>
+      <td style="text-align:left;">0.104</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCCAGCCCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4989</td>
+      <td style="text-align:left;">4998</td>
+      <td style="text-align:left;">6.64e-05</td>
+      <td style="text-align:left;">0.104</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCCAGCCCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCACAUUGGC</td>
+      <td style="text-align:left;">MEME-11</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2113</td>
+      <td style="text-align:left;">2122</td>
+      <td style="text-align:left;">6.67e-05</td>
+      <td style="text-align:left;">0.231</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACACCTTGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCACAUUGGC</td>
+      <td style="text-align:left;">MEME-11</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15648</td>
+      <td style="text-align:left;">15657</td>
+      <td style="text-align:left;">6.67e-05</td>
+      <td style="text-align:left;">0.231</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTCATTGGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GSCUGG</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1430</td>
+      <td style="text-align:left;">1435</td>
+      <td style="text-align:left;">6.83e-05</td>
+      <td style="text-align:left;">0.16</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GSCUGG</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5578</td>
+      <td style="text-align:left;">5583</td>
+      <td style="text-align:left;">6.83e-05</td>
+      <td style="text-align:left;">0.16</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GSCUGG</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5761</td>
+      <td style="text-align:left;">5766</td>
+      <td style="text-align:left;">6.83e-05</td>
+      <td style="text-align:left;">0.16</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GSCUGG</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">9567</td>
+      <td style="text-align:left;">9572</td>
+      <td style="text-align:left;">6.83e-05</td>
+      <td style="text-align:left;">0.16</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GSCUGG</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14012</td>
+      <td style="text-align:left;">14017</td>
+      <td style="text-align:left;">6.83e-05</td>
+      <td style="text-align:left;">0.16</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GSCUGG</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14475</td>
+      <td style="text-align:left;">14480</td>
+      <td style="text-align:left;">6.83e-05</td>
+      <td style="text-align:left;">0.16</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GSCUGG</td>
+      <td style="text-align:left;">MEME-2</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15785</td>
+      <td style="text-align:left;">15790</td>
+      <td style="text-align:left;">6.83e-05</td>
+      <td style="text-align:left;">0.16</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAURGUCUC</td>
+      <td style="text-align:left;">MEME-17</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5995</td>
+      <td style="text-align:left;">6003</td>
+      <td style="text-align:left;">7.14e-05</td>
+      <td style="text-align:left;">0.31</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATATTCTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAYAAWUCUG</td>
+      <td style="text-align:left;">MEME-1</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15032</td>
+      <td style="text-align:left;">15041</td>
+      <td style="text-align:left;">7.28e-05</td>
+      <td style="text-align:left;">0.228</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AACAAAACGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">14527</td>
+      <td style="text-align:left;">14536</td>
+      <td style="text-align:left;">7.31e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTGGAGCTTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CUUAGUUGC</td>
+      <td style="text-align:left;">MEME-10</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">783</td>
+      <td style="text-align:left;">791</td>
+      <td style="text-align:left;">7.39e-05</td>
+      <td style="text-align:left;">0.32</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTTATTTGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">AAYAAWUCUG</td>
+      <td style="text-align:left;">MEME-1</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4853</td>
+      <td style="text-align:left;">4862</td>
+      <td style="text-align:left;">7.65e-05</td>
+      <td style="text-align:left;">0.228</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AACCATTCTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">CAGGACMRAC</td>
+      <td style="text-align:left;">MEME-20</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">17338</td>
+      <td style="text-align:left;">17347</td>
+      <td style="text-align:left;">7.94e-05</td>
+      <td style="text-align:left;">0.35</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGGACATTC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGAGGKAYCA</td>
+      <td style="text-align:left;">MEME-16</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">16950</td>
+      <td style="text-align:left;">16959</td>
+      <td style="text-align:left;">8.19e-05</td>
+      <td style="text-align:left;">0.293</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGAGGAACGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">YUAAGYACUG</td>
+      <td style="text-align:left;">MEME-13</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">7541</td>
+      <td style="text-align:left;">7550</td>
+      <td style="text-align:left;">8.23e-05</td>
+      <td style="text-align:left;">0.118</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CCCGGTACTG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8430</td>
+      <td style="text-align:left;">8439</td>
+      <td style="text-align:left;">8.43e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AAGAAACTTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15144</td>
+      <td style="text-align:left;">15153</td>
+      <td style="text-align:left;">8.43e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ATGAAACATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGYAUCAGRS</td>
+      <td style="text-align:left;">MEME-6</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5031</td>
+      <td style="text-align:left;">5040</td>
+      <td style="text-align:left;">8.48e-05</td>
+      <td style="text-align:left;">0.374</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTTATCAGAC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">11772</td>
+      <td style="text-align:left;">11781</td>
+      <td style="text-align:left;">8.84e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGAAGTTTT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GCACAUUGGC</td>
+      <td style="text-align:left;">MEME-11</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">12971</td>
+      <td style="text-align:left;">12980</td>
+      <td style="text-align:left;">8.96e-05</td>
+      <td style="text-align:left;">0.258</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GCACACTGGT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4952</td>
+      <td style="text-align:left;">4961</td>
+      <td style="text-align:left;">9.29e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGAAATATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">MWGRARYWUU</td>
+      <td style="text-align:left;">MEME-12</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">16220</td>
+      <td style="text-align:left;">16229</td>
+      <td style="text-align:left;">9.29e-05</td>
+      <td style="text-align:left;">0.119</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CAGAAATATT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGUGGAUU</td>
+      <td style="text-align:left;">MEME-18</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">728</td>
+      <td style="text-align:left;">735</td>
+      <td style="text-align:left;">9.81e-05</td>
+      <td style="text-align:left;">0.292</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTGGATG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGUGGAUU</td>
+      <td style="text-align:left;">MEME-18</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">8163</td>
+      <td style="text-align:left;">8170</td>
+      <td style="text-align:left;">9.81e-05</td>
+      <td style="text-align:left;">0.292</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTGGATG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">GGUGGAUU</td>
+      <td style="text-align:left;">MEME-18</td>
+      <td style="text-align:left;">Xist</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">17838</td>
+      <td style="text-align:left;">17845</td>
+      <td style="text-align:left;">9.81e-05</td>
+      <td style="text-align:left;">0.292</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTGGATG</td>
+   </tr>
+</tbody>
+</table>
+
+<hr>
+<center><big><b><a name="debugging_information">DEBUGGING INFORMATION</a></b></big></center>
+<hr>
+<p>
+Command line:
+</p>
+<pre>
+fimo --oc MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers --verbosity 1 MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/meme_out/meme.txt ../../Reference_sequences/Xist.fa
+</pre>
+<p>
+Settings:
+</p>
+<pre>
+<table>
+  <tr>
+    <td style="padding-right: 2em">output_directory = MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers</td>
+    <td style="padding-left: 5em; padding-right: 2em">MEME file name = MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/meme_out/meme.txt</td>
+    <td style="padding-left: 5em; padding-right: 2em">sequence file name = ../../Reference_sequences/Xist.fa</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">background file name = --motif--</td>
+    <td style="padding-left: 5em; padding-right: 2em">alphabet = RNA</td>
+    <td style="padding-left: 5em; padding-right: 2em">max stored scores = 100000</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">allow clobber = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">compute q-values = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">parse genomic coord. = false</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">text only = false</td>
+    <td style="padding-left: 5em; padding-right: 2em">scan both strands = false</td>
+    <td style="padding-left: 5em; padding-right: 2em">max strand = false</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">threshold type = p-value</td>
+    <td style="padding-left: 5em; padding-right: 2em">output theshold = 0.0001</td>
+    <td style="padding-left: 5em; padding-right: 2em">pseudocount = 0.1</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">alpha = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em">verbosity = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em"></td>
+  </tr>
+
+</table>
+</pre>
+<p>
+This information can be useful in the event you wish to report a
+problem with the FIMO software.
+</p>
+<hr>
+<span style="background-color: #DDDDFF"><a href="#top_buttons"><b>Go to top</b></a></span>
+</body>
+</html>

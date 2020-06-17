@@ -1,0 +1,1291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --oc MEME_V2diffBUM_HMM_ex_vivo_30_mers --verbosity 1 MEME_V2diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.txt ../../Reference_sequences/Xist.fa</command-line>
+<pattern-file>MEME_V2diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.txt</pattern-file>
+<sequence-file>../../Reference_sequences/Xist.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="UCUAWUUCUU" name="MEME-1">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="10272" stop="10281" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10333" stop="10342" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10357" stop="10366" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10381" stop="10390" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10420" stop="10429" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10442" stop="10451" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10482" stop="10491" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10506" stop="10515" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10545" stop="10554" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10589" stop="10598" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10629" stop="10638" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10677" stop="10686" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10717" stop="10726" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10742" stop="10751" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10841" stop="10850" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10865" stop="10874" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10973" stop="10982" score="16.2386" pvalue="4.63e-06">
+<sequence>TCTATTTCTT</sequence>
+<mem:qvalue>0.00487</mem:qvalue>
+</matched-element>
+<matched-element start="10316" stop="10325" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10403" stop="10412" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10465" stop="10474" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10528" stop="10537" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10612" stop="10621" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10700" stop="10709" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10764" stop="10773" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10956" stop="10965" score="16.0341" pvalue="8.41e-06">
+<sequence>TCTAATTCTT</sequence>
+<mem:qvalue>0.00601</mem:qvalue>
+</matched-element>
+<matched-element start="10824" stop="10833" score="13.9886" pvalue="1.35e-05">
+<sequence>TCTAATTCGT</sequence>
+<mem:qvalue>0.00928</mem:qvalue>
+</matched-element>
+<matched-element start="10937" stop="10946" score="13.2273" pvalue="1.63e-05">
+<sequence>TCTACTTCTT</sequence>
+<mem:qvalue>0.0108</mem:qvalue>
+</matched-element>
+<matched-element start="10889" stop="10898" score="13.0682" pvalue="1.91e-05">
+<sequence>TCTATGTCTT</sequence>
+<mem:qvalue>0.0118</mem:qvalue>
+</matched-element>
+<matched-element start="10913" stop="10922" score="13.0682" pvalue="1.91e-05">
+<sequence>TCTATGTCTT</sequence>
+<mem:qvalue>0.0118</mem:qvalue>
+</matched-element>
+<matched-element start="8054" stop="8063" score="12.25" pvalue="3.49e-05">
+<sequence>TCGAATTCTT</sequence>
+<mem:qvalue>0.0208</mem:qvalue>
+</matched-element>
+<matched-element start="16093" stop="16102" score="11.6364" pvalue="3.77e-05">
+<sequence>TCTATTTCCT</sequence>
+<mem:qvalue>0.0217</mem:qvalue>
+</matched-element>
+<matched-element start="10003" stop="10012" score="10.7727" pvalue="4.76e-05">
+<sequence>TCTATTTGGT</sequence>
+<mem:qvalue>0.0266</mem:qvalue>
+</matched-element>
+<matched-element start="15257" stop="15266" score="10.5682" pvalue="4.99e-05">
+<sequence>TCTAATTGGT</sequence>
+<mem:qvalue>0.027</mem:qvalue>
+</matched-element>
+<matched-element start="655" stop="664" score="10.4318" pvalue="5.56e-05">
+<sequence>TCTTTTTCTT</sequence>
+<mem:qvalue>0.0284</mem:qvalue>
+</matched-element>
+<matched-element start="11244" stop="11253" score="10.4318" pvalue="5.56e-05">
+<sequence>TCTTTTTCTT</sequence>
+<mem:qvalue>0.0284</mem:qvalue>
+</matched-element>
+<matched-element start="10781" stop="10790" score="10.2955" pvalue="6.35e-05">
+<sequence>TATATTTCTT</sequence>
+<mem:qvalue>0.0315</mem:qvalue>
+</matched-element>
+<matched-element start="10292" stop="10301" score="10.1364" pvalue="7.72e-05">
+<sequence>TCTATTTTTT</sequence>
+<mem:qvalue>0.0373</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="UCUUCCUUGC" name="MEME-2">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="10339" stop="10348" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10363" stop="10372" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10387" stop="10396" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10426" stop="10435" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10448" stop="10457" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10488" stop="10497" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10512" stop="10521" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10551" stop="10560" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10573" stop="10582" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10595" stop="10604" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10635" stop="10644" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10683" stop="10692" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10723" stop="10732" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10748" stop="10757" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10847" stop="10856" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10871" stop="10880" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10895" stop="10904" score="18.0104" pvalue="1.26e-06">
+<sequence>TCTTCCTTGC</sequence>
+<mem:qvalue>0.00128</mem:qvalue>
+</matched-element>
+<matched-element start="10658" stop="10667" score="15.1354" pvalue="6.97e-06">
+<sequence>TCTTTCTTGC</sequence>
+<mem:qvalue>0.00632</mem:qvalue>
+</matched-element>
+<matched-element start="11069" stop="11078" score="15.1354" pvalue="6.97e-06">
+<sequence>TCTTTCTTGC</sequence>
+<mem:qvalue>0.00632</mem:qvalue>
+</matched-element>
+<matched-element start="17567" stop="17576" score="14.8438" pvalue="8.7e-06">
+<sequence>CCTTCCTTTC</sequence>
+<mem:qvalue>0.0075</mem:qvalue>
+</matched-element>
+<matched-element start="11351" stop="11360" score="14.3646" pvalue="9.47e-06">
+<sequence>TCTTCCCTGC</sequence>
+<mem:qvalue>0.00777</mem:qvalue>
+</matched-element>
+<matched-element start="11479" stop="11488" score="13.9479" pvalue="1.2e-05">
+<sequence>TCCTCCTTTC</sequence>
+<mem:qvalue>0.00934</mem:qvalue>
+</matched-element>
+<matched-element start="13045" stop="13054" score="13.3229" pvalue="1.25e-05">
+<sequence>CCTTCCCTGC</sequence>
+<mem:qvalue>0.00934</mem:qvalue>
+</matched-element>
+<matched-element start="10787" stop="10796" score="13.2292" pvalue="1.42e-05">
+<sequence>TCTTCATTGC</sequence>
+<mem:qvalue>0.0102</mem:qvalue>
+</matched-element>
+<matched-element start="10654" stop="10663" score="13.0104" pvalue="1.89e-05">
+<sequence>TCTTTCTTTC</sequence>
+<mem:qvalue>0.013</mem:qvalue>
+</matched-element>
+<matched-element start="10919" stop="10928" score="12.9375" pvalue="2.1e-05">
+<sequence>TCTTCCTTGT</sequence>
+<mem:qvalue>0.0134</mem:qvalue>
+</matched-element>
+<matched-element start="10943" stop="10952" score="12.9375" pvalue="2.1e-05">
+<sequence>TCTTCCTTGT</sequence>
+<mem:qvalue>0.0134</mem:qvalue>
+</matched-element>
+<matched-element start="6546" stop="6555" score="12.9062" pvalue="2.17e-05">
+<sequence>CCCTCCTTTC</sequence>
+<mem:qvalue>0.0134</mem:qvalue>
+</matched-element>
+<matched-element start="308" stop="317" score="11.9688" pvalue="2.73e-05">
+<sequence>CCTTTCTTTC</sequence>
+<mem:qvalue>0.0162</mem:qvalue>
+</matched-element>
+<matched-element start="10999" stop="11008" score="11.0729" pvalue="3.68e-05">
+<sequence>TCCTTCTTTC</sequence>
+<mem:qvalue>0.0212</mem:qvalue>
+</matched-element>
+<matched-element start="16262" stop="16271" score="9.16667" pvalue="6.48e-05">
+<sequence>TCCTCATTTC</sequence>
+<mem:qvalue>0.036</mem:qvalue>
+</matched-element>
+<matched-element start="10979" stop="10988" score="8.36458" pvalue="8.53e-05">
+<sequence>TCTTCCTTCC</sequence>
+<mem:qvalue>0.0459</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="UYWGUGUG" name="MEME-3">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="2768" stop="2775" score="13.1023" pvalue="1.91e-05">
+<sequence>TCTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10308" stop="10315" score="13.1023" pvalue="1.91e-05">
+<sequence>TCTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="13223" stop="13230" score="13.1023" pvalue="1.91e-05">
+<sequence>TCTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="14522" stop="14529" score="13.1023" pvalue="1.91e-05">
+<sequence>TCTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="1395" stop="1402" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="8730" stop="8737" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10349" stop="10356" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10373" stop="10380" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10498" stop="10505" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10561" stop="10568" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10646" stop="10653" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10669" stop="10676" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10734" stop="10741" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10797" stop="10804" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10857" stop="10864" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10881" stop="10888" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="10905" stop="10912" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="11010" stop="11017" score="13.0568" pvalue="5.07e-05">
+<sequence>TTTGTGTG</sequence>
+<mem:qvalue>0.0499</mem:qvalue>
+</matched-element>
+<matched-element start="14116" stop="14123" score="12.3977" pvalue="6.63e-05">
+<sequence>TCAGTGTG</sequence>
+<mem:qvalue>0.056</mem:qvalue>
+</matched-element>
+<matched-element start="15072" stop="15079" score="12.3977" pvalue="6.63e-05">
+<sequence>TCAGTGTG</sequence>
+<mem:qvalue>0.056</mem:qvalue>
+</matched-element>
+<matched-element start="16169" stop="16176" score="12.3977" pvalue="6.63e-05">
+<sequence>TCAGTGTG</sequence>
+<mem:qvalue>0.056</mem:qvalue>
+</matched-element>
+<matched-element start="1117" stop="1124" score="12.3523" pvalue="9.2e-05">
+<sequence>TTAGTGTG</sequence>
+<mem:qvalue>0.0741</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AARCURGGUC" name="MEME-4">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="10141" stop="10150" score="17.4299" pvalue="6.85e-07">
+<sequence>AAACTGGGTC</sequence>
+<mem:qvalue>0.00611</mem:qvalue>
+</matched-element>
+<matched-element start="12222" stop="12231" score="17.4299" pvalue="6.85e-07">
+<sequence>AAACTGGGTC</sequence>
+<mem:qvalue>0.00611</mem:qvalue>
+</matched-element>
+<matched-element start="13421" stop="13430" score="16.7383" pvalue="2.53e-06">
+<sequence>AAACTAGGTC</sequence>
+<mem:qvalue>0.0151</mem:qvalue>
+</matched-element>
+<matched-element start="14557" stop="14566" score="15.4766" pvalue="7.37e-06">
+<sequence>AAGCCGGGAC</sequence>
+<mem:qvalue>0.0272</mem:qvalue>
+</matched-element>
+<matched-element start="13942" stop="13951" score="15.1215" pvalue="9.08e-06">
+<sequence>AAGCTGGGTG</sequence>
+<mem:qvalue>0.0272</mem:qvalue>
+</matched-element>
+<matched-element start="15666" stop="15675" score="14.785" pvalue="9.87e-06">
+<sequence>AAGCCAGGAC</sequence>
+<mem:qvalue>0.0272</mem:qvalue>
+</matched-element>
+<matched-element start="15170" stop="15179" score="14.6075" pvalue="1.09e-05">
+<sequence>AACCTAGGTC</sequence>
+<mem:qvalue>0.0272</mem:qvalue>
+</matched-element>
+<matched-element start="8157" stop="8166" score="14.5794" pvalue="1.22e-05">
+<sequence>AAACTAGGTG</sequence>
+<mem:qvalue>0.0272</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="YAAGGUCCCA" name="MEME-5">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="6295" stop="6304" score="17.1458" pvalue="1.1e-06">
+<sequence>TAAGGTCCCA</sequence>
+<mem:qvalue>0.019</mem:qvalue>
+</matched-element>
+<matched-element start="5282" stop="5291" score="16.1562" pvalue="2.43e-06">
+<sequence>CAAGGTCCTA</sequence>
+<mem:qvalue>0.019</mem:qvalue>
+</matched-element>
+<matched-element start="6789" stop="6798" score="15.8958" pvalue="3.19e-06">
+<sequence>CAAGGTCCCT</sequence>
+<mem:qvalue>0.019</mem:qvalue>
+</matched-element>
+<matched-element start="5391" stop="5400" score="15.7604" pvalue="4.31e-06">
+<sequence>CAAGATCCCA</sequence>
+<mem:qvalue>0.0192</mem:qvalue>
+</matched-element>
+<matched-element start="11959" stop="11968" score="14.875" pvalue="5.79e-06">
+<sequence>TAAGGACCCA</sequence>
+<mem:qvalue>0.0206</mem:qvalue>
+</matched-element>
+<matched-element start="4879" stop="4888" score="13.5" pvalue="1.37e-05">
+<sequence>CACAGTCCCA</sequence>
+<mem:qvalue>0.0405</mem:qvalue>
+</matched-element>
+<matched-element start="6905" stop="6914" score="12.2604" pvalue="2.51e-05">
+<sequence>CAAGGCCGCA</sequence>
+<mem:qvalue>0.0457</mem:qvalue>
+</matched-element>
+<matched-element start="3548" stop="3557" score="12.1771" pvalue="2.59e-05">
+<sequence>TACGGTCCTA</sequence>
+<mem:qvalue>0.0457</mem:qvalue>
+</matched-element>
+<matched-element start="3666" stop="3675" score="12.1771" pvalue="2.59e-05">
+<sequence>TACGGTCCTA</sequence>
+<mem:qvalue>0.0457</mem:qvalue>
+</matched-element>
+<matched-element start="4358" stop="4367" score="12.1771" pvalue="2.59e-05">
+<sequence>TACGGTCCTA</sequence>
+<mem:qvalue>0.0457</mem:qvalue>
+</matched-element>
+<matched-element start="15173" stop="15182" score="12.0938" pvalue="2.82e-05">
+<sequence>CTAGGTCCTA</sequence>
+<mem:qvalue>0.0457</mem:qvalue>
+</matched-element>
+<matched-element start="5051" stop="5060" score="9.4375" pvalue="9.3e-05">
+<sequence>CTCAGTCCCA</sequence>
+<mem:qvalue>0.138</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="CCUUGCUU" name="MEME-6">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="5299" stop="5306" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="8816" stop="8823" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10343" stop="10350" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10367" stop="10374" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10430" stop="10437" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10492" stop="10499" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10555" stop="10562" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10577" stop="10584" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10639" stop="10646" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10727" stop="10734" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10851" stop="10858" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10875" stop="10882" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="10899" stop="10906" score="14.7604" pvalue="1.91e-05">
+<sequence>CCTTGCTT</sequence>
+<mem:qvalue>0.0258</mem:qvalue>
+</matched-element>
+<matched-element start="6408" stop="6415" score="13.7396" pvalue="3.47e-05">
+<sequence>CCTTGCAT</sequence>
+<mem:qvalue>0.0358</mem:qvalue>
+</matched-element>
+<matched-element start="10391" stop="10398" score="13.7396" pvalue="3.47e-05">
+<sequence>CCTTGCAT</sequence>
+<mem:qvalue>0.0358</mem:qvalue>
+</matched-element>
+<matched-element start="10516" stop="10523" score="13.7396" pvalue="3.47e-05">
+<sequence>CCTTGCAT</sequence>
+<mem:qvalue>0.0358</mem:qvalue>
+</matched-element>
+<matched-element start="10752" stop="10759" score="13.7396" pvalue="3.47e-05">
+<sequence>CCTTGCAT</sequence>
+<mem:qvalue>0.0358</mem:qvalue>
+</matched-element>
+<matched-element start="2014" stop="2021" score="10.3646" pvalue="9.26e-05">
+<sequence>GCTTGCGT</sequence>
+<mem:qvalue>0.0901</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AGAAAWVAAA" name="MEME-7">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="14782" stop="14791" score="15.0444" pvalue="1.49e-06">
+<sequence>AGAAAAAAAA</sequence>
+<mem:qvalue>0.0263</mem:qvalue>
+</matched-element>
+<matched-element start="4844" stop="4853" score="13.1556" pvalue="1.93e-05">
+<sequence>AGGAAAGAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="4732" stop="4741" score="13.1111" pvalue="2.07e-05">
+<sequence>AGTAAACAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="6844" stop="6853" score="13.1111" pvalue="2.07e-05">
+<sequence>AGTAAACAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="14770" stop="14779" score="12.9444" pvalue="2.59e-05">
+<sequence>GGAAATGAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="127" stop="136" score="12.7667" pvalue="3.09e-05">
+<sequence>AGAAAACATA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="5683" stop="5692" score="12.5" pvalue="3.87e-05">
+<sequence>AGAAACCAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="1968" stop="1977" score="12.4889" pvalue="3.98e-05">
+<sequence>AGAAAGAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="535" stop="544" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="536" stop="545" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="537" stop="546" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="538" stop="547" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="539" stop="548" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="540" stop="549" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="541" stop="550" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="542" stop="551" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="14784" stop="14793" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="17786" stop="17795" score="12.4556" pvalue="4.18e-05">
+<sequence>AAAAAAAAAA</sequence>
+<mem:qvalue>0.041</mem:qvalue>
+</matched-element>
+<matched-element start="17549" stop="17558" score="12.3444" pvalue="4.58e-05">
+<sequence>GGAAAAAATA</sequence>
+<mem:qvalue>0.0426</mem:qvalue>
+</matched-element>
+<matched-element start="9409" stop="9418" score="12.2222" pvalue="4.95e-05">
+<sequence>AGAAATGATA</sequence>
+<mem:qvalue>0.0438</mem:qvalue>
+</matched-element>
+<matched-element start="8566" stop="8575" score="11.9667" pvalue="6.05e-05">
+<sequence>AGTAAAAATA</sequence>
+<mem:qvalue>0.0509</mem:qvalue>
+</matched-element>
+<matched-element start="546" stop="555" score="11.8889" pvalue="6.38e-05">
+<sequence>AAAAAACAAA</sequence>
+<mem:qvalue>0.0513</mem:qvalue>
+</matched-element>
+<matched-element start="16073" stop="16082" score="11.6333" pvalue="7.33e-05">
+<sequence>GGAAATAATA</sequence>
+<mem:qvalue>0.0523</mem:qvalue>
+</matched-element>
+<matched-element start="9732" stop="9741" score="11.5333" pvalue="7.92e-05">
+<sequence>AGAAAAAAAG</sequence>
+<mem:qvalue>0.0523</mem:qvalue>
+</matched-element>
+<matched-element start="4845" stop="4854" score="11.5" pvalue="8.06e-05">
+<sequence>GGAAAGAAAA</sequence>
+<mem:qvalue>0.0523</mem:qvalue>
+</matched-element>
+<matched-element start="14783" stop="14792" score="11.4667" pvalue="8.21e-05">
+<sequence>GAAAAAAAAA</sequence>
+<mem:qvalue>0.0523</mem:qvalue>
+</matched-element>
+<matched-element start="17785" stop="17794" score="11.4667" pvalue="8.21e-05">
+<sequence>GAAAAAAAAA</sequence>
+<mem:qvalue>0.0523</mem:qvalue>
+</matched-element>
+<matched-element start="17198" stop="17207" score="11.4556" pvalue="8.29e-05">
+<sequence>GGGAATGAAA</sequence>
+<mem:qvalue>0.0523</mem:qvalue>
+</matched-element>
+<matched-element start="5482" stop="5491" score="11.2889" pvalue="9.17e-05">
+<sequence>GGGAATCAAA</sequence>
+<mem:qvalue>0.0547</mem:qvalue>
+</matched-element>
+<matched-element start="16398" stop="16407" score="11.2778" pvalue="9.28e-05">
+<sequence>AGGAAACATA</sequence>
+<mem:qvalue>0.0547</mem:qvalue>
+</matched-element>
+<matched-element start="16952" stop="16961" score="11.1778" pvalue="9.92e-05">
+<sequence>AGGAACGAAA</sequence>
+<mem:qvalue>0.0566</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="SMCCCGWGGM" name="MEME-8">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="11657" stop="11666" score="19.1" pvalue="3.09e-07">
+<sequence>CACCCGTGGA</sequence>
+<mem:qvalue>0.00539</mem:qvalue>
+</matched-element>
+<matched-element start="1222" stop="1231" score="17.9667" pvalue="1.5e-06">
+<sequence>CCCCCGTGGC</sequence>
+<mem:qvalue>0.0109</mem:qvalue>
+</matched-element>
+<matched-element start="1277" stop="1286" score="17.8333" pvalue="1.87e-06">
+<sequence>CACCCGAGGC</sequence>
+<mem:qvalue>0.0109</mem:qvalue>
+</matched-element>
+<matched-element start="10203" stop="10212" score="17.4083" pvalue="2.58e-06">
+<sequence>GACCCGAGGA</sequence>
+<mem:qvalue>0.0113</mem:qvalue>
+</matched-element>
+<matched-element start="7218" stop="7227" score="9.6" pvalue="6.34e-05">
+<sequence>CACCAGAGGC</sequence>
+<mem:qvalue>0.217</mem:qvalue>
+</matched-element>
+<matched-element start="1207" stop="1216" score="9.30833" pvalue="7.44e-05">
+<sequence>GACCCCTGGC</sequence>
+<mem:qvalue>0.217</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="KYUAGCCUGG" name="MEME-9">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="14008" stop="14017" score="19.0374" pvalue="3.79e-07">
+<sequence>GCTAGCCTGG</sequence>
+<mem:qvalue>0.00675</mem:qvalue>
+</matched-element>
+<matched-element start="1426" stop="1435" score="17.5888" pvalue="1e-06">
+<sequence>GTTAGCCTGG</sequence>
+<mem:qvalue>0.00895</mem:qvalue>
+</matched-element>
+<matched-element start="5805" stop="5814" score="15.7383" pvalue="5.41e-06">
+<sequence>TCTAGCCTGC</sequence>
+<mem:qvalue>0.0321</mem:qvalue>
+</matched-element>
+<matched-element start="5574" stop="5583" score="15.0187" pvalue="7.4e-06">
+<sequence>TGTAGCCTGG</sequence>
+<mem:qvalue>0.033</mem:qvalue>
+</matched-element>
+<matched-element start="1082" stop="1091" score="13.7944" pvalue="1.06e-05">
+<sequence>GCTAGCCGGA</sequence>
+<mem:qvalue>0.038</mem:qvalue>
+</matched-element>
+<matched-element start="5757" stop="5766" score="10.6542" pvalue="2.27e-05">
+<sequence>GCTGGCCTGG</sequence>
+<mem:qvalue>0.0674</mem:qvalue>
+</matched-element>
+<matched-element start="5786" stop="5795" score="10.2243" pvalue="2.96e-05">
+<sequence>GCTAGCCTTG</sequence>
+<mem:qvalue>0.0753</mem:qvalue>
+</matched-element>
+<matched-element start="16556" stop="16565" score="7.96262" pvalue="8.51e-05">
+<sequence>GCAAGCCTGA</sequence>
+<mem:qvalue>0.19</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="KSCCAGAG" name="MEME-10">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="2188" stop="2195" score="15.6542" pvalue="4.67e-06">
+<sequence>GGCCAGAG</sequence>
+<mem:qvalue>0.0273</mem:qvalue>
+</matched-element>
+<matched-element start="14994" stop="15001" score="15.6542" pvalue="4.67e-06">
+<sequence>GGCCAGAG</sequence>
+<mem:qvalue>0.0273</mem:qvalue>
+</matched-element>
+<matched-element start="15047" stop="15054" score="15.6542" pvalue="4.67e-06">
+<sequence>GGCCAGAG</sequence>
+<mem:qvalue>0.0273</mem:qvalue>
+</matched-element>
+<matched-element start="14947" stop="14954" score="14.1308" pvalue="1.7e-05">
+<sequence>TGCCAGAG</sequence>
+<mem:qvalue>0.0748</mem:qvalue>
+</matched-element>
+<matched-element start="15010" stop="15017" score="13.8692" pvalue="2.47e-05">
+<sequence>TCCCAGAG</sequence>
+<mem:qvalue>0.0818</mem:qvalue>
+</matched-element>
+<matched-element start="12009" stop="12016" score="13.5607" pvalue="3.73e-05">
+<sequence>GCCCAGAA</sequence>
+<mem:qvalue>0.0818</mem:qvalue>
+</matched-element>
+<matched-element start="13993" stop="14000" score="13.5607" pvalue="3.73e-05">
+<sequence>GCCCAGAA</sequence>
+<mem:qvalue>0.0818</mem:qvalue>
+</matched-element>
+<matched-element start="15080" stop="15087" score="13.5607" pvalue="3.73e-05">
+<sequence>GCCCAGAA</sequence>
+<mem:qvalue>0.0818</mem:qvalue>
+</matched-element>
+<matched-element start="8478" stop="8485" score="12.2991" pvalue="4.77e-05">
+<sequence>TGCCAGAA</sequence>
+<mem:qvalue>0.093</mem:qvalue>
+</matched-element>
+<matched-element start="7439" stop="7446" score="12.0374" pvalue="5.8e-05">
+<sequence>TCCCAGAA</sequence>
+<mem:qvalue>0.102</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="GGGGAUGSGG" name="MEME-11">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="1035" stop="1044" score="16.6042" pvalue="1.14e-06">
+<sequence>GGGGTTGCGG</sequence>
+<mem:qvalue>0.0204</mem:qvalue>
+</matched-element>
+<matched-element start="9813" stop="9822" score="15.4792" pvalue="3.6e-06">
+<sequence>GGAGATGGGG</sequence>
+<mem:qvalue>0.0251</mem:qvalue>
+</matched-element>
+<matched-element start="1154" stop="1163" score="15.3333" pvalue="4.21e-06">
+<sequence>GGGGATAGGG</sequence>
+<mem:qvalue>0.0251</mem:qvalue>
+</matched-element>
+<matched-element start="17734" stop="17743" score="14.5938" pvalue="6.78e-06">
+<sequence>ACGGATGCGG</sequence>
+<mem:qvalue>0.0303</mem:qvalue>
+</matched-element>
+<matched-element start="1917" stop="1926" score="14.1562" pvalue="1e-05">
+<sequence>GAGGCTGCGG</sequence>
+<mem:qvalue>0.0359</mem:qvalue>
+</matched-element>
+<matched-element start="6605" stop="6614" score="12.75" pvalue="2.59e-05">
+<sequence>AAGGATGGGG</sequence>
+<mem:qvalue>0.0773</mem:qvalue>
+</matched-element>
+<matched-element start="6770" stop="6779" score="11.3125" pvalue="5.75e-05">
+<sequence>AGGGATACCG</sequence>
+<mem:qvalue>0.147</mem:qvalue>
+</matched-element>
+<matched-element start="1134" stop="1143" score="10.9375" pvalue="6.75e-05">
+<sequence>GCGGAAGCCG</sequence>
+<mem:qvalue>0.151</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AAHUUCCARG" name="MEME-12">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="5748" stop="5757" score="17.6355" pvalue="6.85e-07">
+<sequence>AACTTCCAGG</sequence>
+<mem:qvalue>0.0108</mem:qvalue>
+</matched-element>
+<matched-element start="6564" stop="6573" score="16.9159" pvalue="1.82e-06">
+<sequence>AATTTCCAGG</sequence>
+<mem:qvalue>0.0108</mem:qvalue>
+</matched-element>
+<matched-element start="14212" stop="14221" score="16.9159" pvalue="1.82e-06">
+<sequence>AATTTCCAGG</sequence>
+<mem:qvalue>0.0108</mem:qvalue>
+</matched-element>
+<matched-element start="13171" stop="13180" score="16.6355" pvalue="2.74e-06">
+<sequence>AACTTCCAAG</sequence>
+<mem:qvalue>0.0123</mem:qvalue>
+</matched-element>
+<matched-element start="12063" stop="12072" score="14.0093" pvalue="1.42e-05">
+<sequence>AAATTCGAAG</sequence>
+<mem:qvalue>0.0459</mem:qvalue>
+</matched-element>
+<matched-element start="9981" stop="9990" score="13.7009" pvalue="1.54e-05">
+<sequence>ACCTTCGAGG</sequence>
+<mem:qvalue>0.0459</mem:qvalue>
+</matched-element>
+<matched-element start="11890" stop="11899" score="8.1028" pvalue="7.91e-05">
+<sequence>GACTTCCAAG</sequence>
+<mem:qvalue>0.186</mem:qvalue>
+</matched-element>
+<matched-element start="140" stop="149" score="8" pvalue="8.29e-05">
+<sequence>AAATTCCACG</sequence>
+<mem:qvalue>0.186</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="UMCAUACU" name="MEME-13">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="202" stop="209" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3158" stop="3165" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3270" stop="3277" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3389" stop="3396" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3509" stop="3516" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3627" stop="3634" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3737" stop="3744" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3856" stop="3863" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="3968" stop="3975" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="4080" stop="4087" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="4199" stop="4206" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="4319" stop="4326" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="4437" stop="4444" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="4549" stop="4556" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="4664" stop="4671" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="13690" stop="13697" score="14.3364" pvalue="2.1e-05">
+<sequence>TCCATACT</sequence>
+<mem:qvalue>0.0234</mem:qvalue>
+</matched-element>
+<matched-element start="6226" stop="6233" score="14.1682" pvalue="4.92e-05">
+<sequence>TACATACT</sequence>
+<mem:qvalue>0.0461</mem:qvalue>
+</matched-element>
+<matched-element start="10050" stop="10057" score="14.1682" pvalue="4.92e-05">
+<sequence>TACATACT</sequence>
+<mem:qvalue>0.0461</mem:qvalue>
+</matched-element>
+<matched-element start="14317" stop="14324" score="14.1682" pvalue="4.92e-05">
+<sequence>TACATACT</sequence>
+<mem:qvalue>0.0461</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="GGCWUGCU" name="MEME-14">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="5109" stop="5116" score="15.3438" pvalue="9.45e-06">
+<sequence>GGCATGCT</sequence>
+<mem:qvalue>0.0623</mem:qvalue>
+</matched-element>
+<matched-element start="16056" stop="16063" score="15.3438" pvalue="9.45e-06">
+<sequence>GGCATGCT</sequence>
+<mem:qvalue>0.0623</mem:qvalue>
+</matched-element>
+<matched-element start="2" stop="9" score="14.375" pvalue="2.1e-05">
+<sequence>GGCTTGCT</sequence>
+<mem:qvalue>0.0623</mem:qvalue>
+</matched-element>
+<matched-element start="6311" stop="6318" score="14.375" pvalue="2.1e-05">
+<sequence>GGCTTGCT</sequence>
+<mem:qvalue>0.0623</mem:qvalue>
+</matched-element>
+<matched-element start="9761" stop="9768" score="14.375" pvalue="2.1e-05">
+<sequence>GGCTTGCT</sequence>
+<mem:qvalue>0.0623</mem:qvalue>
+</matched-element>
+<matched-element start="16847" stop="16854" score="14.375" pvalue="2.1e-05">
+<sequence>GGCTTGCT</sequence>
+<mem:qvalue>0.0623</mem:qvalue>
+</matched-element>
+<matched-element start="14507" stop="14514" score="13.1875" pvalue="2.87e-05">
+<sequence>GGCATGCA</sequence>
+<mem:qvalue>0.0729</mem:qvalue>
+</matched-element>
+<matched-element start="1857" stop="1864" score="12.8958" pvalue="3.82e-05">
+<sequence>CGCATGCT</sequence>
+<mem:qvalue>0.0848</mem:qvalue>
+</matched-element>
+<matched-element start="16202" stop="16209" score="11.7812" pvalue="6.87e-05">
+<sequence>GGGATGCT</sequence>
+<mem:qvalue>0.135</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AAGAUGGCGG" name="MEME-15">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="1352" stop="1361" score="20.5167" pvalue="4.15e-07">
+<sequence>AAGATGGCGG</sequence>
+<mem:qvalue>0.00372</mem:qvalue>
+</matched-element>
+<matched-element start="1465" stop="1474" score="20.5167" pvalue="4.15e-07">
+<sequence>AAGATGGCGG</sequence>
+<mem:qvalue>0.00372</mem:qvalue>
+</matched-element>
+<matched-element start="1256" stop="1265" score="18.525" pvalue="9.74e-07">
+<sequence>AAAATGGCGG</sequence>
+<mem:qvalue>0.00581</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AGUUCCASAA" name="MEME-16">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="16668" stop="16677" score="18.4019" pvalue="9.22e-07">
+<sequence>AGTTCCACAA</sequence>
+<mem:qvalue>0.00819</mem:qvalue>
+</matched-element>
+<matched-element start="17111" stop="17120" score="18.4019" pvalue="9.22e-07">
+<sequence>AGTTCCACAA</sequence>
+<mem:qvalue>0.00819</mem:qvalue>
+</matched-element>
+<matched-element start="11644" stop="11653" score="17.3925" pvalue="2.96e-06">
+<sequence>AGGTCCAGAA</sequence>
+<mem:qvalue>0.0175</mem:qvalue>
+</matched-element>
+<matched-element start="7437" stop="7446" score="16.1495" pvalue="4.08e-06">
+<sequence>AGTCCCAGAA</sequence>
+<mem:qvalue>0.0181</mem:qvalue>
+</matched-element>
+<matched-element start="4558" stop="4567" score="9.96262" pvalue="3.52e-05">
+<sequence>AGTTCCAGAG</sequence>
+<mem:qvalue>0.125</mem:qvalue>
+</matched-element>
+<matched-element start="16572" stop="16581" score="9.53271" pvalue="6.42e-05">
+<sequence>AGTTACAGAA</sequence>
+<mem:qvalue>0.19</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="GRWUGCCACC" name="MEME-17">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="9929" stop="9938" score="17.2604" pvalue="1.1e-06">
+<sequence>GAATGCCACC</sequence>
+<mem:qvalue>0.015</mem:qvalue>
+</matched-element>
+<matched-element start="8310" stop="8319" score="16.2917" pvalue="2.15e-06">
+<sequence>GATTGCCACC</sequence>
+<mem:qvalue>0.015</mem:qvalue>
+</matched-element>
+<matched-element start="2302" stop="2311" score="15.8438" pvalue="2.57e-06">
+<sequence>GGATGCCAAC</sequence>
+<mem:qvalue>0.015</mem:qvalue>
+</matched-element>
+<matched-element start="15912" stop="15921" score="15.3958" pvalue="4.59e-06">
+<sequence>GGATGCAACC</sequence>
+<mem:qvalue>0.0201</mem:qvalue>
+</matched-element>
+<matched-element start="1642" stop="1651" score="14.5833" pvalue="7.53e-06">
+<sequence>GGTTGCCACT</sequence>
+<mem:qvalue>0.0264</mem:qvalue>
+</matched-element>
+<matched-element start="5431" stop="5440" score="14.2812" pvalue="1.03e-05">
+<sequence>GGGTGCCAAC</sequence>
+<mem:qvalue>0.0301</mem:qvalue>
+</matched-element>
+<matched-element start="6983" stop="6992" score="14.0938" pvalue="1.24e-05">
+<sequence>GGATCCCACT</sequence>
+<mem:qvalue>0.0312</mem:qvalue>
+</matched-element>
+<matched-element start="5838" stop="5847" score="12.6771" pvalue="2.72e-05">
+<sequence>GGTTCCTACC</sequence>
+<mem:qvalue>0.0513</mem:qvalue>
+</matched-element>
+<matched-element start="2230" stop="2239" score="12.6458" pvalue="2.78e-05">
+<sequence>GAATCCTACC</sequence>
+<mem:qvalue>0.0513</mem:qvalue>
+</matched-element>
+<matched-element start="5603" stop="5612" score="12.5208" pvalue="2.92e-05">
+<sequence>CATTGCCACC</sequence>
+<mem:qvalue>0.0513</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AGSAAWGGGS" name="MEME-18">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="5008" stop="5017" score="17.3364" pvalue="1.09e-06">
+<sequence>AGCAAAGGGG</sequence>
+<mem:qvalue>0.0148</mem:qvalue>
+</matched-element>
+<matched-element start="17517" stop="17526" score="16.5888" pvalue="2.26e-06">
+<sequence>AGGAATGGGC</sequence>
+<mem:qvalue>0.0148</mem:qvalue>
+</matched-element>
+<matched-element start="1385" stop="1394" score="16.4019" pvalue="2.51e-06">
+<sequence>CGCAAAGGGC</sequence>
+<mem:qvalue>0.0148</mem:qvalue>
+</matched-element>
+<matched-element start="1666" stop="1675" score="15.5888" pvalue="4.84e-06">
+<sequence>AGAAATGGGC</sequence>
+<mem:qvalue>0.0213</mem:qvalue>
+</matched-element>
+<matched-element start="6050" stop="6059" score="14.757" pvalue="9.66e-06">
+<sequence>AGCAAAGAGG</sequence>
+<mem:qvalue>0.0284</mem:qvalue>
+</matched-element>
+<matched-element start="13505" stop="13514" score="14.757" pvalue="9.66e-06">
+<sequence>AACAAAGGGG</sequence>
+<mem:qvalue>0.0284</mem:qvalue>
+</matched-element>
+<matched-element start="13705" stop="13714" score="14.0093" pvalue="1.37e-05">
+<sequence>AGGAATGAGC</sequence>
+<mem:qvalue>0.0345</mem:qvalue>
+</matched-element>
+<matched-element start="9085" stop="9094" score="13.5607" pvalue="1.73e-05">
+<sequence>AGAAAAGAGC</sequence>
+<mem:qvalue>0.0381</mem:qvalue>
+</matched-element>
+<matched-element start="7108" stop="7117" score="9.43925" pvalue="5.01e-05">
+<sequence>CAGAAAGAGG</sequence>
+<mem:qvalue>0.0982</mem:qvalue>
+</matched-element>
+<matched-element start="17061" stop="17070" score="8.68224" pvalue="6.72e-05">
+<sequence>AGGAAAGGGT</sequence>
+<mem:qvalue>0.111</mem:qvalue>
+</matched-element>
+<matched-element start="7557" stop="7566" score="8.65421" pvalue="6.9e-05">
+<sequence>AGCACAGGGG</sequence>
+<mem:qvalue>0.111</mem:qvalue>
+</matched-element>
+<matched-element start="12616" stop="12625" score="7.88785" pvalue="9.82e-05">
+<sequence>CAAAATGAGG</sequence>
+<mem:qvalue>0.144</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AASUGUUGGC" name="MEME-19">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="5822" stop="5831" score="18.5047" pvalue="8.41e-07">
+<sequence>AAGTGTTGGC</sequence>
+<mem:qvalue>0.0137</mem:qvalue>
+</matched-element>
+<matched-element start="14569" stop="14578" score="17.7757" pvalue="1.68e-06">
+<sequence>AACTGTTGGC</sequence>
+<mem:qvalue>0.0137</mem:qvalue>
+</matched-element>
+<matched-element start="1635" stop="1644" score="16.486" pvalue="3.07e-06">
+<sequence>AAGTGTTGGT</sequence>
+<mem:qvalue>0.0137</mem:qvalue>
+</matched-element>
+<matched-element start="1686" stop="1695" score="16.486" pvalue="3.07e-06">
+<sequence>AAGTGTTGGT</sequence>
+<mem:qvalue>0.0137</mem:qvalue>
+</matched-element>
+<matched-element start="1881" stop="1890" score="15.7944" pvalue="4.71e-06">
+<sequence>AAGTGTTGGA</sequence>
+<mem:qvalue>0.0169</mem:qvalue>
+</matched-element>
+<matched-element start="8214" stop="8223" score="15.7103" pvalue="6.6e-06">
+<sequence>AACTGCTGGC</sequence>
+<mem:qvalue>0.0197</mem:qvalue>
+</matched-element>
+<matched-element start="16417" stop="16426" score="13.729" pvalue="9.26e-06">
+<sequence>AAGTGCTGGA</sequence>
+<mem:qvalue>0.0237</mem:qvalue>
+</matched-element>
+<matched-element start="5102" stop="5111" score="9.56075" pvalue="4.34e-05">
+<sequence>TACTGTTGGC</sequence>
+<mem:qvalue>0.0971</mem:qvalue>
+</matched-element>
+<matched-element start="9775" stop="9784" score="8.2243" pvalue="7.96e-05">
+<sequence>CAGTGCTGGC</sequence>
+<mem:qvalue>0.158</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AGGACAUUUR" name="MEME-20">
+<scanned-sequence accession="Xist" name="Xist">
+<matched-element start="1996" stop="2005" score="17.1458" pvalue="1.13e-06">
+<sequence>AGGACATTTG</sequence>
+<mem:qvalue>0.0201</mem:qvalue>
+</matched-element>
+<matched-element start="1329" stop="1338" score="15.9167" pvalue="4.18e-06">
+<sequence>AGGACATTTA</sequence>
+<mem:qvalue>0.0278</mem:qvalue>
+</matched-element>
+<matched-element start="15484" stop="15493" score="15.4062" pvalue="4.69e-06">
+<sequence>AGGACCTTCG</sequence>
+<mem:qvalue>0.0278</mem:qvalue>
+</matched-element>
+<matched-element start="17339" stop="17348" score="14.9167" pvalue="1.02e-05">
+<sequence>AGGACATTCA</sequence>
+<mem:qvalue>0.0455</mem:qvalue>
+</matched-element>
+<matched-element start="5723" stop="5732" score="14.25" pvalue="1.35e-05">
+<sequence>AAGACCTTTG</sequence>
+<mem:qvalue>0.0481</mem:qvalue>
+</matched-element>
+<matched-element start="15900" stop="15909" score="13.7604" pvalue="1.88e-05">
+<sequence>AAGACATTTA</sequence>
+<mem:qvalue>0.0522</mem:qvalue>
+</matched-element>
+<matched-element start="1985" stop="1994" score="13.3333" pvalue="2.05e-05">
+<sequence>AGGCCATTTC</sequence>
+<mem:qvalue>0.0522</mem:qvalue>
+</matched-element>
+<matched-element start="13767" stop="13776" score="13.1667" pvalue="2.43e-05">
+<sequence>AGAACATTTG</sequence>
+<mem:qvalue>0.054</mem:qvalue>
+</matched-element>
+<matched-element start="556" stop="565" score="8.47917" pvalue="9.38e-05">
+<sequence>AAAACCTTTC</sequence>
+<mem:qvalue>0.186</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Begin document body -->
+<fimo version="5.1.0" release="Fri Oct 11 15:53:28 2019 -0700">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation=  xmlns:fimo="http://noble.gs.washington.edu/schema/fimo"
+>
+<command-line>fimo --oc MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers --verbosity 1 MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers/meme_out/meme.txt ../../Reference_sequences/Xist.fa</command-line>
+<settings>
+<setting name="output directory">MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers</setting>
+<setting name="MEME file name">MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers/meme_out/meme.txt</setting>
+<setting name="sequence file name">../../Reference_sequences/Xist.fa</setting>
+<setting name="background file name">--motif--</setting>
+<setting name="allow clobber">true</setting>
+<setting name="compute q-values">true</setting>
+<setting name="parse genomic coord.">false</setting>
+<setting name="text only">false</setting>
+<setting name="scan both strands">false</setting>
+<setting name="output threshold">0.0001</setting>
+<setting name="threshold type">p-value</setting>
+<setting name="max stored scores">100000</setting>
+<setting name="pseudocount">0.1</setting>
+<setting name="verbosity">1</setting>
+</settings>
+<sequence-data num-sequences="1" num-residues="17918" />
+<alphabet name="RNA" like="rna">
+<letter id="A" symbol="A" name="Adenine" colour="CC0000"/>
+<letter id="C" symbol="C" name="Cytosine" colour="0000CC"/>
+<letter id="G" symbol="G" name="Guanine" colour="FFB300"/>
+<letter id="U" symbol="U" aliases="T" name="Uracil" colour="008000"/>
+<letter id="N" symbol="N" aliases="X." equals="ACGU" name="Any base"/>
+<letter id="V" symbol="V" equals="ACG" name="Not U"/>
+<letter id="H" symbol="H" equals="ACU" name="Not G"/>
+<letter id="D" symbol="D" equals="AGU" name="Not C"/>
+<letter id="B" symbol="B" equals="CGU" name="Not A"/>
+<letter id="M" symbol="M" equals="AC" name="Amino"/>
+<letter id="R" symbol="R" equals="AG" name="Purine"/>
+<letter id="W" symbol="W" equals="AU" name="Weak"/>
+<letter id="S" symbol="S" equals="CG" name="Strong"/>
+<letter id="Y" symbol="Y" equals="CU" name="Pyrimidine"/>
+<letter id="K" symbol="K" equals="GU" name="Keto"/>
+</alphabet>
+<motif name="RUCUAUUUCU" alt="MEME-1" width="10" best-possible-match="GUCUAUUUCU"/>
+<motif name="UCCUUGCUUU" alt="MEME-2" width="10" best-possible-match="UCCUUGCUUU"/>
+<motif name="CAMMACWURA" alt="MEME-3" width="10" best-possible-match="CAAAACUUGA"/>
+<motif name="AAUCRAGA" alt="MEME-4" width="8" best-possible-match="AAUCAAGA"/>
+<motif name="CWARRCASUG" alt="MEME-5" width="10" best-possible-match="CUAAGCAGUG"/>
+<motif name="AHGCUGYUGC" alt="MEME-6" width="10" best-possible-match="ACGCUGUUGC"/>
+<motif name="AAGCUGGG" alt="MEME-7" width="8" best-possible-match="AAGCUGGG"/>
+<motif name="CAGUCCCAA" alt="MEME-8" width="9" best-possible-match="CAGUCCCAA"/>
+<motif name="AAUGGSUG" alt="MEME-9" width="8" best-possible-match="AAUGGCUG"/>
+<motif name="GRAAGARCA" alt="MEME-10" width="9" best-possible-match="GAAAGAGCA"/>
+<motif name="GAGCWCAGG" alt="MEME-11" width="9" best-possible-match="GAGCUCAGG"/>
+<motif name="AGCUGAAGUC" alt="MEME-12" width="10" best-possible-match="AGCUGAAGUC"/>
+<motif name="GUGGGUG" alt="MEME-13" width="7" best-possible-match="GUGGGUG"/>
+<motif name="AGASGGAAS" alt="MEME-14" width="9" best-possible-match="AGACGGAAC"/>
+<motif name="CAGAUGGUUG" alt="MEME-15" width="10" best-possible-match="CAGAUGGUUG"/>
+<motif name="CCARGCAUGC" alt="MEME-16" width="10" best-possible-match="CCAAGCAUGC"/>
+<motif name="CUGAGUMA" alt="MEME-17" width="8" best-possible-match="CUGAGUAA"/>
+<motif name="CUGCCACA" alt="MEME-18" width="8" best-possible-match="CUGCCACA"/>
+<motif name="GCCAGUG" alt="MEME-19" width="7" best-possible-match="GCCAGUG"/>
+<motif name="SCAAAGCMAA" alt="MEME-20" width="10" best-possible-match="CCAAAGCAAA"/>
+<background source="--motif--">
+<value letter="A">0.254</value>
+<value letter="C">0.195</value>
+<value letter="G">0.173</value>
+<value letter="U">0.378</value>
+</background>
+<cisml-file>cisml.xml</cisml-file>
+</fimo>
