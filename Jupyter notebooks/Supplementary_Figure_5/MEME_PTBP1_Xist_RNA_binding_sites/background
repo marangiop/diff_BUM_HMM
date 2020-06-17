@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_PTBP1_Xist_RNA_binding_sites/PTBP1_Xist_RNA_binding_sites.fa
+# seqs: 22    min: 32    max: 32    avg: 32.0    sum: 704    alph: RNA
+# order 0
+A 1.676e-01
+C 2.074e-01
+G 1.534e-01
+U 4.716e-01
+# order 1
+AA 5.132e-02
+AC 2.347e-02
+AG 2.200e-02
+AU 7.185e-02
+CA 3.519e-02
+CC 4.546e-02
+CG 4.407e-03
+CU 1.232e-01
+GA 1.760e-02
+GC 1.907e-02
+GG 1.907e-02
+GU 1.026e-01
+UA 6.745e-02
+UC 1.173e-01
+UG 1.056e-01
+UU 1.745e-01

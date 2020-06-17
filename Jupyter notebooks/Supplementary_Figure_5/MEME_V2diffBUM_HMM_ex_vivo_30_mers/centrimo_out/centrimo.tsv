@@ -1,0 +1,9 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   1	UCUAWUUCUU	MEME-1	UCUAWUUCUU	1.2e-2	   6.1e-4	          -7.40	         0.0	      3.0	         23	          16	         43	  0.13043	5.6e-5	        11
+   1	UYWGUGUG	MEME-3	UYWGUGUG	4.2e0	   2.1e-1	          -1.55	         0.0	      5.0	         25	          11	         29	  0.20000	2.0e-2	        12
+   1	AAHUUCCARG	MEME-12	AAHUUCCARG	4.4e0	   2.2e-1	          -1.51	         0.0	      3.0	         23	           6	         18	  0.13043	2.3e-2	        11
+   1	UCUUCCUUGC	MEME-2	UCUUCCUUGC	8.0e0	   4.0e-1	          -0.92	         0.0	     21.0	         23	          34	         34	  0.91304	4.5e-2	        11
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
+# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
+# centrimo -seqlen 0 -verbosity 1 -oc MEME_V2diffBUM_HMM_ex_vivo_30_mers/centrimo_out -bfile MEME_V2diffBUM_HMM_ex_vivo_30_mers/background MEME_V2diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa MEME_V2diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml

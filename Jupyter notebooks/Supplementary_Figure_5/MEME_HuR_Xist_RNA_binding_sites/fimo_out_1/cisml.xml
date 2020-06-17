@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc MEME_HuR_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_HuR_Xist_RNA_binding_sites/background --motif CUUCCUUGC MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa</command-line>
+<pattern-file>MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml</pattern-file>
+<sequence-file>MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="CUUCCUUGC" name="MEME-1">
+<scanned-sequence accession="HuR_1" name="HuR_1">
+</scanned-sequence>
+<scanned-sequence accession="HuR_2" name="HuR_2">
+<matched-element start="4" stop="12" score="12.7129" pvalue="4.24e-05">
+<sequence>CTTACCTGC</sequence>
+<mem:qvalue>0.00198</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="HuR_3" name="HuR_3">
+</scanned-sequence>
+<scanned-sequence accession="HuR_4" name="HuR_4">
+</scanned-sequence>
+<scanned-sequence accession="HuR_5" name="HuR_5">
+</scanned-sequence>
+<scanned-sequence accession="HuR_6" name="HuR_6">
+<matched-element start="2" stop="10" score="14.1485" pvalue="3.75e-05">
+<sequence>CTTCCTTGC</sequence>
+<mem:qvalue>0.00198</mem:qvalue>
+</matched-element>
+<matched-element start="24" stop="32" score="14.1485" pvalue="3.75e-05">
+<sequence>CTTCCTTGC</sequence>
+<mem:qvalue>0.00198</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="HuR_7" name="HuR_7">
+<matched-element start="9" stop="17" score="14.1485" pvalue="3.75e-05">
+<sequence>CTTCCTTGC</sequence>
+<mem:qvalue>0.00198</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="HuR_8" name="HuR_8">
+<matched-element start="3" stop="11" score="14.1485" pvalue="3.75e-05">
+<sequence>CTTCCTTGC</sequence>
+<mem:qvalue>0.00198</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="HuR_9" name="HuR_9">
+</scanned-sequence>
+<scanned-sequence accession="HuR_10" name="HuR_10">
+</scanned-sequence>
+<scanned-sequence accession="HuR_11" name="HuR_11">
+<matched-element start="3" stop="11" score="14.1782" pvalue="1.05e-05">
+<sequence>CTTCCCTGC</sequence>
+<mem:qvalue>0.00198</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="HuR_12" name="HuR_12">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

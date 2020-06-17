@@ -1,0 +1,8 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   1	GGAG	MEME-1	GGAG	1.0e0	   3.4e-1	          -1.07	         0.0	      5.0	         29	           2	          2	  0.17241	3.0e-2	        14
+   1	UKCC	MEME-3	UKCC	3.0e0	   1.0e0	          -0.00	         0.0	     17.0	         29	           1	          2	  0.58621	8.3e-1	        14
+   1	AGRGYC	MEME-2	AGRGYC	3.0e0	   1.0e0	          -0.00	         0.0	     17.0	         27	           1	          2	  0.62963	8.6e-1	        13
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
+# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
+# centrimo -seqlen 0 -verbosity 1 -oc MEME_RBFOX2_Xist_RNA_binding_sites/centrimo_out -bfile MEME_RBFOX2_Xist_RNA_binding_sites/background MEME_RBFOX2_Xist_RNA_binding_sites/RBFOX2_Xist_RNA_binding_sites.fa MEME_RBFOX2_Xist_RNA_binding_sites/meme_out/meme.xml

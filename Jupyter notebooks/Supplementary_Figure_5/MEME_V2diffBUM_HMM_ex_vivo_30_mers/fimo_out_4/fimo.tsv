@@ -1,0 +1,21 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_177	2	11	+	17.1458	1.1e-06	0.00483	TAAGGTCCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_176	16	25	+	17.1458	1.1e-06	0.00483	TAAGGTCCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_175	23	32	+	17.1458	1.1e-06	0.00483	TAAGGTCCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_123	3	12	+	16.1562	2.44e-06	0.006	CAAGGTCCTA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_122	21	30	+	16.1562	2.44e-06	0.006	CAAGGTCCTA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_201	6	15	+	15.8958	3.2e-06	0.006	CAAGGTCCCT
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_200	21	30	+	15.8958	3.2e-06	0.006	CAAGGTCCCT
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_130	7	16	+	15.7604	4.32e-06	0.0063	CAAGATCCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_129	23	32	+	15.7604	4.32e-06	0.0063	CAAGATCCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_363	1	10	+	14.875	5.8e-06	0.00693	TAAGGACCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_362	16	25	+	14.875	5.8e-06	0.00693	TAAGGACCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_103	2	11	+	13.5	1.37e-05	0.0138	CACAGTCCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_102	18	27	+	13.5	1.37e-05	0.0138	CACAGTCCCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_207	17	26	+	12.2396	2.51e-05	0.0236	CAAGGCCGCA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_475	2	11	+	12.0938	2.82e-05	0.0247	CTAGGTCCTA
+YAAGGUCCCA	MEME-5	diffBUM_HMM_ex_vivo_111	4	13	+	9.4375	9.31e-05	0.0764	CTCAGTCCCA
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_V2diffBUM_HMM_ex_vivo_30_mers/fimo_out_4 --bgfile MEME_V2diffBUM_HMM_ex_vivo_30_mers/background --motif YAAGGUCCCA MEME_V2diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_V2diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa

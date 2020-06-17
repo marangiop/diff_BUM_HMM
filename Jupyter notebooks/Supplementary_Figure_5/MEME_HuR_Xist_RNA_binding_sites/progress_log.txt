@@ -1,0 +1,50 @@
+Invoking:
+  getsize MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.014767
+Invoking:
+  fasta-most -min 50 < MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.070224
+Invoking:
+  fasta-center -rna -len 100 < MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa 1> MEME_HuR_Xist_RNA_binding_sites/seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.087248
+Invoking:
+  fasta-shuffle-letters MEME_HuR_Xist_RNA_binding_sites/seqs-centered MEME_HuR_Xist_RNA_binding_sites/seqs-shuffled -kmer 2 -tag -dinuc -rna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.012914
+Invoking:
+  fasta-get-markov -nostatus -nosummary -rna -m 1 MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa MEME_HuR_Xist_RNA_binding_sites/background
+Finished invoke:
+  name: bg  status: 0  time: 0.011133
+Invoking:
+  meme MEME_HuR_Xist_RNA_binding_sites/seqs-centered -oc MEME_HuR_Xist_RNA_binding_sites/meme_out -mod anr -nmotifs 3 -minw 4 -maxw 10 -bfile MEME_HuR_Xist_RNA_binding_sites/background -rna -p 8 -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 0.74524
+Invoking:
+  dreme -verbosity 1 -oc MEME_HuR_Xist_RNA_binding_sites/dreme_out -png -rna -p MEME_HuR_Xist_RNA_binding_sites/seqs-centered -n MEME_HuR_Xist_RNA_binding_sites/seqs-shuffled
+Finished invoke:
+  name: dreme  status: 256  time: 0.058402
+Invoking:
+  centrimo -seqlen 0 -verbosity 1 -oc MEME_HuR_Xist_RNA_binding_sites/centrimo_out -bfile MEME_HuR_Xist_RNA_binding_sites/background MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml
+Finished invoke:
+  name: centrimo  status: 0  time: 0.039706
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 MEME_HuR_Xist_RNA_binding_sites/combined.meme MEME_HuR_Xist_RNA_binding_sites/combined.meme 1> MEME_HuR_Xist_RNA_binding_sites/motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 0.03049
+Invoking:
+  spamo -verbosity 1 -oc MEME_HuR_Xist_RNA_binding_sites/spamo_out_1 -bgfile MEME_HuR_Xist_RNA_binding_sites/background -keepprimary -primary CUUCCUUGC MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml
+Finished invoke:
+  name: spamo1  status: 0  time: 0.074948
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc MEME_HuR_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_HuR_Xist_RNA_binding_sites/background --motif CUUCCUUGC MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa
+Finished invoke:
+  name: fimo1  status: 0  time: 0.063252
+Writing output
+Invoking:
+  meme-chip_html_to_tsv MEME_HuR_Xist_RNA_binding_sites/meme-chip.html MEME_HuR_Xist_RNA_binding_sites/summary.tsv "meme-chip -meme-minw 4 -meme-maxw 10 -meme-nmotifs 3 -meme-p 8 -meme-mod anr -norc -rna -noecho -oc MEME_HuR_Xist_RNA_binding_sites HuR_Xist_RNA_binding_sites.fa" 5.1.0 "Fri Oct 11 15\:53\:28 2019 -0700"
+Finished invoke:
+  name: summary  status: 512  time: 0.050281
+Done

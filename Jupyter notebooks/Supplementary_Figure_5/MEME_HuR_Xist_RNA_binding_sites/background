@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa
+# seqs: 12    min: 32    max: 32    avg: 32.0    sum: 384    alph: RNA
+# order 0
+A 1.016e-01
+C 2.188e-01
+G 1.198e-01
+U 5.598e-01
+# order 1
+AA 1.614e-02
+AC 1.345e-02
+AG 1.077e-02
+AU 6.183e-02
+CA 2.958e-02
+CC 4.839e-02
+CG 2.704e-03
+CU 1.371e-01
+GA 5.392e-03
+GC 3.495e-02
+GG 2.420e-02
+GU 5.377e-02
+UA 4.839e-02
+UC 1.236e-01
+UG 8.333e-02
+UU 3.064e-01

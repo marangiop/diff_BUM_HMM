@@ -1,9 +1,0 @@
-##gff-version 3
-HuR_5	fimo	nucleotide_motif	6	15	41.4	+	.	Name=CUAUUUCUUC_HuR_5+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-1-HuR_5;pvalue=7.25e-05;qvalue=0.00382;sequence=CTATTTCTTG;
-HuR_6	fimo	nucleotide_motif	2	11	 46	+	.	Name=CUAUUUCUUC_HuR_6+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-1-HuR_6;pvalue=2.48e-05;qvalue=0.00159;sequence=CTATTTCTTC;
-HuR_6	fimo	nucleotide_motif	24	33	 46	+	.	Name=CUAUUUCUUC_HuR_6+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-2-HuR_6;pvalue=2.48e-05;qvalue=0.00159;sequence=CTATTTCTTC;
-HuR_7	fimo	nucleotide_motif	9	18	 46	+	.	Name=CUAUUUCUUC_HuR_7+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-1-HuR_7;pvalue=2.48e-05;qvalue=0.00159;sequence=CTATTTCTTC;
-HuR_8	fimo	nucleotide_motif	3	12	 46	+	.	Name=CUAUUUCUUC_HuR_8+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-1-HuR_8;pvalue=2.48e-05;qvalue=0.00159;sequence=CTATTTCTTC;
-HuR_8	fimo	nucleotide_motif	27	36	 46	+	.	Name=CUAUUUCUUC_HuR_8+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-2-HuR_8;pvalue=2.48e-05;qvalue=0.00159;sequence=CTATTTCTTC;
-HuR_9	fimo	nucleotide_motif	5	14	 46	+	.	Name=CUAUUUCUUC_HuR_9+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-1-HuR_9;pvalue=2.48e-05;qvalue=0.00159;sequence=CTATTTCTTC;
-HuR_11	fimo	nucleotide_motif	1	10	 41	+	.	Name=CUAUUUCUUC_HuR_11+;Alias=MEME-1;ID=CUAUUUCUUC-MEME-1-1-HuR_11;pvalue=7.94e-05;qvalue=0.00382;sequence=ACATTTCTTC;

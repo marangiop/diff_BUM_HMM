@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_TARDBP_Xist_RNA_binding_sites/TARDBP_Xist_RNA_binding_sites.fa
+# seqs: 17    min: 32    max: 32    avg: 32.0    sum: 544    alph: RNA
+# order 0
+A 2.059e-01
+C 1.673e-01
+G 2.904e-01
+U 3.364e-01
+# order 1
+AA 4.365e-02
+AC 3.416e-02
+AG 6.831e-02
+AU 6.641e-02
+CA 4.175e-02
+CC 3.037e-02
+CG 3.796e-02
+CU 5.313e-02
+GA 6.831e-02
+GC 5.882e-02
+GG 6.072e-02
+GU 1.100e-01
+UA 4.934e-02
+UC 4.554e-02
+UG 1.252e-01
+UU 1.063e-01

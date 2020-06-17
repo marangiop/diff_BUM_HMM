@@ -1,8 +1,0 @@
-db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
-   1	GYACAUKKGC	MEME-6	GYACAUKKGC	8.0e0	   4.0e-1	          -0.91	         0.0	      5.0	         23	           5	         10	  0.21739	4.6e-2	        11
-   1	AAGRWGAAUC	MEME-3	AAGRWGAAUC	8.5e0	   4.3e-1	          -0.85	         0.0	     11.0	         23	           6	          7	  0.47826	4.9e-2	        11
-   1	GYCYGKSCUK	MEME-10	GYCYGKSCUK	9.0e0	   4.5e-1	          -0.80	         0.0	     17.0	         23	          15	         16	  0.73913	5.3e-2	        11
-
-# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
-# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
-# centrimo -seqlen 0 -verbosity 1 -oc MEME_deltaSHAPE_rep_2_in_vivo_30_mers/centrimo_out -bfile MEME_deltaSHAPE_rep_2_in_vivo_30_mers/background MEME_deltaSHAPE_rep_2_in_vivo_30_mers/deltaSHAPE_rep_2_in_vivo_30_mers.fa MEME_deltaSHAPE_rep_2_in_vivo_30_mers/meme_out/meme.xml

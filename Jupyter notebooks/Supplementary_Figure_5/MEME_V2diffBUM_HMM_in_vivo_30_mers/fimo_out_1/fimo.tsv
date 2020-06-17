@@ -1,0 +1,17 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_68	1	10	+	14.9896	3.05e-06	0.00369	CATGTGCGTG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_67	12	21	+	14.9896	3.05e-06	0.00369	CATGTGCGTG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_2	17	26	+	14.0417	8.17e-06	0.00492	CTTGTGTGTG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_70	8	17	+	13.7917	1.02e-05	0.00492	CATGTGTGAG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_69	18	27	+	13.7917	1.02e-05	0.00492	CATGTGTGAG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_54	18	27	+	13.5	1.33e-05	0.00537	CCTTTGTGTG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_53	3	12	+	13.375	1.65e-05	0.00573	CTTGTGTGTC
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_23	9	18	+	12.5104	3.37e-05	0.0102	CATTTGTGTC
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_8	4	13	+	12.0625	4.56e-05	0.011	CTTCTGCGTG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_7	23	32	+	12.0625	4.56e-05	0.011	CTTCTGCGTG
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_10	20	29	+	11.6562	6.11e-05	0.0129	CCTGTGCGGC
+CHUGUGUGUS	MEME-1	diffBUM_HMM_in_vivo_69	9	18	+	11.6458	6.37e-05	0.0129	TATGTGTGTC
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_V2diffBUM_HMM_in_vivo_30_mers/fimo_out_1 --bgfile MEME_V2diffBUM_HMM_in_vivo_30_mers/background --motif CHUGUGUGUS MEME_V2diffBUM_HMM_in_vivo_30_mers/meme_out/meme.xml MEME_V2diffBUM_HMM_in_vivo_30_mers/diffBUM_HMM_in_vivo_30_mers.fa

@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_1 --bgfile MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/background --motif UGUGURUCUA MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa</command-line>
+<pattern-file>MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml</pattern-file>
+<sequence-file>MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="UGUGURUCUA" name="MEME-1">
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_0" name="deltaSHAPE_rep1_in_vivo_0">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_1" name="deltaSHAPE_rep1_in_vivo_1">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_2" name="deltaSHAPE_rep1_in_vivo_2">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_3" name="deltaSHAPE_rep1_in_vivo_3">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_4" name="deltaSHAPE_rep1_in_vivo_4">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_5" name="deltaSHAPE_rep1_in_vivo_5">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_6" name="deltaSHAPE_rep1_in_vivo_6">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_7" name="deltaSHAPE_rep1_in_vivo_7">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_8" name="deltaSHAPE_rep1_in_vivo_8">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_9" name="deltaSHAPE_rep1_in_vivo_9">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_10" name="deltaSHAPE_rep1_in_vivo_10">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_11" name="deltaSHAPE_rep1_in_vivo_11">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_12" name="deltaSHAPE_rep1_in_vivo_12">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_13" name="deltaSHAPE_rep1_in_vivo_13">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_14" name="deltaSHAPE_rep1_in_vivo_14">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_15" name="deltaSHAPE_rep1_in_vivo_15">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_16" name="deltaSHAPE_rep1_in_vivo_16">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_17" name="deltaSHAPE_rep1_in_vivo_17">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_18" name="deltaSHAPE_rep1_in_vivo_18">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_19" name="deltaSHAPE_rep1_in_vivo_19">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_20" name="deltaSHAPE_rep1_in_vivo_20">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_21" name="deltaSHAPE_rep1_in_vivo_21">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_22" name="deltaSHAPE_rep1_in_vivo_22">
+<matched-element start="18" stop="27" score="14.3905" pvalue="1.23e-05">
+<sequence>GGTGTGTCTA</sequence>
+<mem:qvalue>0.00495</mem:qvalue>
+</matched-element>
+<matched-element start="3" stop="12" score="13.0952" pvalue="2.33e-05">
+<sequence>TGAGTGTGTA</sequence>
+<mem:qvalue>0.0052</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_23" name="deltaSHAPE_rep1_in_vivo_23">
+<matched-element start="12" stop="21" score="12.2857" pvalue="3.87e-05">
+<sequence>TATGTATCTA</sequence>
+<mem:qvalue>0.00706</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_24" name="deltaSHAPE_rep1_in_vivo_24">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_25" name="deltaSHAPE_rep1_in_vivo_25">
+<matched-element start="16" stop="25" score="16.6952" pvalue="1.58e-06">
+<sequence>TGTGTGTCTA</sequence>
+<mem:qvalue>0.00159</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_26" name="deltaSHAPE_rep1_in_vivo_26">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_27" name="deltaSHAPE_rep1_in_vivo_27">
+<matched-element start="4" stop="13" score="16.6952" pvalue="1.58e-06">
+<sequence>TGTGTGTCTA</sequence>
+<mem:qvalue>0.00159</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_28" name="deltaSHAPE_rep1_in_vivo_28">
+<matched-element start="21" stop="30" score="13.1238" pvalue="2.21e-05">
+<sequence>TGTGTGTCTT</sequence>
+<mem:qvalue>0.0052</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_29" name="deltaSHAPE_rep1_in_vivo_29">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_30" name="deltaSHAPE_rep1_in_vivo_30">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_31" name="deltaSHAPE_rep1_in_vivo_31">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_32" name="deltaSHAPE_rep1_in_vivo_32">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_33" name="deltaSHAPE_rep1_in_vivo_33">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_34" name="deltaSHAPE_rep1_in_vivo_34">
+<matched-element start="8" stop="17" score="12.6667" pvalue="3.1e-05">
+<sequence>TGAGTATGTA</sequence>
+<mem:qvalue>0.00623</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_35" name="deltaSHAPE_rep1_in_vivo_35">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_36" name="deltaSHAPE_rep1_in_vivo_36">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_37" name="deltaSHAPE_rep1_in_vivo_37">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_38" name="deltaSHAPE_rep1_in_vivo_38">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_39" name="deltaSHAPE_rep1_in_vivo_39">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_40" name="deltaSHAPE_rep1_in_vivo_40">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_41" name="deltaSHAPE_rep1_in_vivo_41">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_42" name="deltaSHAPE_rep1_in_vivo_42">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_43" name="deltaSHAPE_rep1_in_vivo_43">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_44" name="deltaSHAPE_rep1_in_vivo_44">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_45" name="deltaSHAPE_rep1_in_vivo_45">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_46" name="deltaSHAPE_rep1_in_vivo_46">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_47" name="deltaSHAPE_rep1_in_vivo_47">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_48" name="deltaSHAPE_rep1_in_vivo_48">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_49" name="deltaSHAPE_rep1_in_vivo_49">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_50" name="deltaSHAPE_rep1_in_vivo_50">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_51" name="deltaSHAPE_rep1_in_vivo_51">
+<matched-element start="13" stop="22" score="16.2667" pvalue="4.16e-06">
+<sequence>TGTGTATCTA</sequence>
+<mem:qvalue>0.00209</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_52" name="deltaSHAPE_rep1_in_vivo_52">
+<matched-element start="2" stop="11" score="16.2667" pvalue="4.16e-06">
+<sequence>TGTGTATCTA</sequence>
+<mem:qvalue>0.00209</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_53" name="deltaSHAPE_rep1_in_vivo_53">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_54" name="deltaSHAPE_rep1_in_vivo_54">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_55" name="deltaSHAPE_rep1_in_vivo_55">
+<matched-element start="14" stop="23" score="13.8381" pvalue="2.01e-05">
+<sequence>TGTGTATATA</sequence>
+<mem:qvalue>0.0052</mem:qvalue>
+</matched-element>
+<matched-element start="12" stop="21" score="10.2857" pvalue="8.11e-05">
+<sequence>TATGTGTATA</sequence>
+<mem:qvalue>0.0125</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_56" name="deltaSHAPE_rep1_in_vivo_56">
+<matched-element start="4" stop="13" score="13.8381" pvalue="2.01e-05">
+<sequence>TGTGTATATA</sequence>
+<mem:qvalue>0.0052</mem:qvalue>
+</matched-element>
+<matched-element start="2" stop="11" score="10.2857" pvalue="8.11e-05">
+<sequence>TATGTGTATA</sequence>
+<mem:qvalue>0.0125</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_57" name="deltaSHAPE_rep1_in_vivo_57">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_58" name="deltaSHAPE_rep1_in_vivo_58">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_59" name="deltaSHAPE_rep1_in_vivo_59">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_60" name="deltaSHAPE_rep1_in_vivo_60">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_61" name="deltaSHAPE_rep1_in_vivo_61">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_62" name="deltaSHAPE_rep1_in_vivo_62">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_63" name="deltaSHAPE_rep1_in_vivo_63">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_64" name="deltaSHAPE_rep1_in_vivo_64">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_65" name="deltaSHAPE_rep1_in_vivo_65">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_66" name="deltaSHAPE_rep1_in_vivo_66">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_67" name="deltaSHAPE_rep1_in_vivo_67">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_68" name="deltaSHAPE_rep1_in_vivo_68">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_69" name="deltaSHAPE_rep1_in_vivo_69">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_70" name="deltaSHAPE_rep1_in_vivo_70">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_71" name="deltaSHAPE_rep1_in_vivo_71">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_72" name="deltaSHAPE_rep1_in_vivo_72">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_73" name="deltaSHAPE_rep1_in_vivo_73">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_74" name="deltaSHAPE_rep1_in_vivo_74">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_75" name="deltaSHAPE_rep1_in_vivo_75">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_76" name="deltaSHAPE_rep1_in_vivo_76">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_77" name="deltaSHAPE_rep1_in_vivo_77">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_78" name="deltaSHAPE_rep1_in_vivo_78">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_79" name="deltaSHAPE_rep1_in_vivo_79">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_80" name="deltaSHAPE_rep1_in_vivo_80">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_81" name="deltaSHAPE_rep1_in_vivo_81">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_82" name="deltaSHAPE_rep1_in_vivo_82">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_83" name="deltaSHAPE_rep1_in_vivo_83">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_84" name="deltaSHAPE_rep1_in_vivo_84">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_85" name="deltaSHAPE_rep1_in_vivo_85">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_86" name="deltaSHAPE_rep1_in_vivo_86">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_87" name="deltaSHAPE_rep1_in_vivo_87">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_88" name="deltaSHAPE_rep1_in_vivo_88">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_89" name="deltaSHAPE_rep1_in_vivo_89">
+</scanned-sequence>
+<scanned-sequence accession="deltaSHAPE_rep1_in_vivo_90" name="deltaSHAPE_rep1_in_vivo_90">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

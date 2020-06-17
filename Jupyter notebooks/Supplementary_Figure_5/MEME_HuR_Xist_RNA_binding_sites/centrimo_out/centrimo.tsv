@@ -1,0 +1,8 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   1	GUKUCUA	MEME-2	GUKUCUA	1.8e0	   6.2e-1	          -0.48	         0.0	      8.0	         26	           4	          6	  0.30769	7.7e-2	        12
+   1	CUUCCUUGC	MEME-1	CUUCCUUGC	3.0e0	   1.0e0	          -0.00	         0.0	     20.0	         24	           5	          6	  0.83333	7.4e-1	        11
+   1	RVVCMUCRR	MEME-3	RVVCMUCRR	3.0e0	   1.0e0	           0.00	         0.0	      2.0	         24	           0	          2	  0.08333	1.0e0	        11
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
+# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
+# centrimo -seqlen 0 -verbosity 1 -oc MEME_HuR_Xist_RNA_binding_sites/centrimo_out -bfile MEME_HuR_Xist_RNA_binding_sites/background MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml

@@ -1,8 +1,0 @@
-##gff-version 3
-deltaSHAPE_rep1_ex_vivo_22	fimo	nucleotide_motif	13	22	57.8	+	.	Name=AYGCUGYUGC_deltaSHAPE_rep1_ex_vivo_22+;Alias=MEME-5;ID=AYGCUGYUGC-MEME-5-1-deltaSHAPE_rep1_ex_vivo_22;pvalue=1.66e-06;qvalue=0.000885;sequence=AAGCTGCTGC;
-deltaSHAPE_rep1_ex_vivo_127	fimo	nucleotide_motif	11	20	 61	+	.	Name=AYGCUGYUGC_deltaSHAPE_rep1_ex_vivo_127+;Alias=MEME-5;ID=AYGCUGYUGC-MEME-5-1-deltaSHAPE_rep1_ex_vivo_127;pvalue=7.93e-07;qvalue=0.000823;sequence=ATGCTGCTGC;
-deltaSHAPE_rep1_ex_vivo_128	fimo	nucleotide_motif	9	18	 61	+	.	Name=AYGCUGYUGC_deltaSHAPE_rep1_ex_vivo_128+;Alias=MEME-5;ID=AYGCUGYUGC-MEME-5-1-deltaSHAPE_rep1_ex_vivo_128;pvalue=7.93e-07;qvalue=0.000823;sequence=ATGCTGCTGC;
-deltaSHAPE_rep1_ex_vivo_129	fimo	nucleotide_motif	6	15	 61	+	.	Name=AYGCUGYUGC_deltaSHAPE_rep1_ex_vivo_129+;Alias=MEME-5;ID=AYGCUGYUGC-MEME-5-1-deltaSHAPE_rep1_ex_vivo_129;pvalue=7.93e-07;qvalue=0.000823;sequence=ATGCTGCTGC;
-deltaSHAPE_rep1_ex_vivo_133	fimo	nucleotide_motif	22	31	58.8	+	.	Name=AYGCUGYUGC_deltaSHAPE_rep1_ex_vivo_133+;Alias=MEME-5;ID=AYGCUGYUGC-MEME-5-1-deltaSHAPE_rep1_ex_vivo_133;pvalue=1.33e-06;qvalue=0.000823;sequence=ACGCTGTTGC;
-deltaSHAPE_rep1_ex_vivo_134	fimo	nucleotide_motif	8	17	58.8	+	.	Name=AYGCUGYUGC_deltaSHAPE_rep1_ex_vivo_134+;Alias=MEME-5;ID=AYGCUGYUGC-MEME-5-1-deltaSHAPE_rep1_ex_vivo_134;pvalue=1.33e-06;qvalue=0.000823;sequence=ACGCTGTTGC;
-deltaSHAPE_rep1_ex_vivo_135	fimo	nucleotide_motif	1	10	58.8	+	.	Name=AYGCUGYUGC_deltaSHAPE_rep1_ex_vivo_135+;Alias=MEME-5;ID=AYGCUGYUGC-MEME-5-1-deltaSHAPE_rep1_ex_vivo_135;pvalue=1.33e-06;qvalue=0.000823;sequence=ACGCTGTTGC;

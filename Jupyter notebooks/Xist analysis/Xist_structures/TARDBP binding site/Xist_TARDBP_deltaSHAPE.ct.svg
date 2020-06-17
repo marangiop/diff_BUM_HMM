@@ -1,0 +1,2908 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="166.37mm"
+   version="1.1"
+   viewBox="0 0 815 786"
+   width="172.508333mm"
+   x="0mm"
+   y="0mm"
+   id="svg912"
+   sodipodi:docname="Xist_TARDBP_deltaSHAPE.ct.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata918">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs916">
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect8157"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect8174"
+       effect="bspline" />
+    <rect
+       id="rect8178"
+       height="87.953636"
+       width="107.1315"
+       y="334.62057"
+       x="117.71238" />
+    <rect
+       id="rect1339"
+       height="87.953636"
+       width="107.1315"
+       y="334.62057"
+       x="117.71238" />
+    <rect
+       id="rect8184"
+       height="144.02499"
+       width="221.64885"
+       y="678.97498"
+       x="503.15225" />
+    <rect
+       id="rect1342"
+       height="144.02499"
+       width="221.64885"
+       y="678.97498"
+       x="503.15225" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     id="namedview914"
+     showgrid="false"
+     inkscape:zoom="1.3994911"
+     inkscape:cx="252.83041"
+     inkscape:cy="336.73582"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <g
+     transform="matrix(0.96624512,0,0,0.96624512,-123.05554,-364.36406)"
+     id="g910">
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1180"
+       y2="1180"
+       id="line2" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1162"
+       y2="1162"
+       id="line4" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1144"
+       y2="1144"
+       id="line6" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1126"
+       y2="1126"
+       id="line8" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1073"
+       y2="1073"
+       id="line10" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1055"
+       y2="1055"
+       id="line12" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1037"
+       y2="1037"
+       id="line14" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1019"
+       y2="1019"
+       id="line16" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="328"
+       y1="1001"
+       y2="1001"
+       id="line18" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="651.40002"
+       x2="648.29999"
+       y1="748.59998"
+       y2="717.70001"
+       id="line20" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="668.70001"
+       x2="665.59998"
+       y1="746.29999"
+       y2="715.40002"
+       id="line22" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="625.5"
+       x2="608.20001"
+       y1="645.09998"
+       y2="618.59998"
+       id="line24" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="640"
+       x2="622.59998"
+       y1="634.90002"
+       y2="608.40002"
+       id="line26" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="654.40002"
+       x2="637.09998"
+       y1="624.59998"
+       y2="598.20001"
+       id="line28" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="668.90002"
+       x2="651.59998"
+       y1="614.40002"
+       y2="587.90002"
+       id="line30" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="683.40002"
+       x2="666"
+       y1="604.20001"
+       y2="577.70001"
+       id="line32" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="697.79999"
+       x2="680.5"
+       y1="593.90002"
+       y2="567.5"
+       id="line34" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="834"
+       x2="818.09998"
+       y1="510.39999"
+       y2="483.79999"
+       id="line36" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="848.59998"
+       x2="832.70001"
+       y1="501.60001"
+       y2="475"
+       id="line38" />
+    <line
+       style="fill:none;stroke:#0000ff;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10"
+       x1="863.29999"
+       x2="847.40002"
+       y1="492.79999"
+       y2="466.10001"
+       id="line40" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="359"
+       y1="1171"
+       y2="1171"
+       id="line42" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="359"
+       y1="1153"
+       y2="1153"
+       id="line44" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="359"
+       y1="1135"
+       y2="1135"
+       id="line46" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="362.65524"
+       x2="367.34476"
+       y1="1117.7758"
+       y2="1107.2242"
+       id="line48" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="367.22849"
+       x2="362.77151"
+       y1="1090.8284"
+       y2="1081.1716"
+       id="line50" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="359"
+       y1="1064"
+       y2="1064"
+       id="line52" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="359"
+       y1="1046"
+       y2="1046"
+       id="line54" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="359"
+       y1="1028"
+       y2="1028"
+       id="line56" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="359"
+       x2="359"
+       y1="1010"
+       y2="1010"
+       id="line58" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="367.94992"
+       x2="405.75009"
+       y1="1001.948"
+       y2="1005.952"
+       id="line60" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="423.62521"
+       x2="461.27481"
+       y1="1005.7422"
+       y2="1000.8578"
+       id="line62" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="478.617"
+       x2="514.08301"
+       y1="996.51349"
+       y2="983.08655"
+       id="line64" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="529.95367"
+       x2="561.44635"
+       y1="974.85596"
+       y2="953.54407"
+       id="line66" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="574.97644"
+       x2="600.6236"
+       y1="941.86096"
+       y2="913.83905"
+       id="line68" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="611.08173"
+       x2="629.51831"
+       y1="899.33868"
+       y2="866.26135"
+       id="line70" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="636.34277"
+       x2="646.65723"
+       y1="849.73785"
+       y2="813.16217"
+       id="line72" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="649.46997"
+       x2="651.03003"
+       y1="795.50763"
+       y2="757.59235"
+       id="line74" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="676.49908"
+       x2="680.00092"
+       y1="750.79163"
+       y2="752.80835"
+       id="line76" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="696.78577"
+       x2="701.91425"
+       y1="756.79431"
+       y2="756.50568"
+       id="line78" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="716.48438"
+       x2="719.71564"
+       y1="748.94202"
+       y2="744.85797"
+       id="line80" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="724.83307"
+       x2="724.56689"
+       y1="728.81213"
+       y2="723.68787"
+       id="line82" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="717.26111"
+       x2="713.63885"
+       y1="708.84943"
+       y2="705.75061"
+       id="line84" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="697.84967"
+       x2="692.05029"
+       y1="700.84418"
+       y2="701.45587"
+       id="line86" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="675.87531"
+       x2="672.82465"
+       y1="707.76697"
+       y2="710.03308"
+       id="line88" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="646.05609"
+       x2="641.04388"
+       y1="708.98425"
+       y2="689.51575"
+       id="line90" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="635.65802"
+       x2="628.64197"
+       y1="672.36627"
+       y2="653.53369"
+       id="line92" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="705.2774"
+       x2="711.2226"
+       y1="598.90881"
+       y2="602.89124"
+       id="line94" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="727.44543"
+       x2="749.45459"
+       y1="610.02551"
+       y2="615.37451"
+       id="line96" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="766.78094"
+       x2="788.81909"
+       y1="614.78564"
+       y2="607.81433"
+       id="line98" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="803.651"
+       x2="819.04901"
+       y1="598.625"
+       y2="582.67499"
+       id="line100" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="827.42041"
+       x2="832.7796"
+       y1="567.45337"
+       y2="545.34662"
+       id="line102" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="834.59106"
+       x2="834.30896"
+       y1="527.60529"
+       y2="519.39471"
+       id="line104" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="871.72321"
+       x2="873.47681"
+       y1="495.97003"
+       y2="496.62994"
+       id="line106" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="890.89484"
+       x2="896.50519"
+       y1="500.10492"
+       y2="500.29507"
+       id="line108" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="913.35126"
+       x2="918.34875"
+       y1="496.20026"
+       y2="493.39975"
+       id="line110" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="930.48529"
+       x2="933.01471"
+       y1="481.08569"
+       y2="476.41431"
+       id="line112" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="937.60492"
+       x2="937.79504"
+       y1="459.50516"
+       y2="453.89484"
+       id="line114" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="933.38525"
+       x2="930.51471"
+       y1="437.23376"
+       y2="432.56622"
+       id="line116" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="918.07568"
+       x2="913.62433"
+       y1="420.28094"
+       y2="417.61905"
+       id="line118" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="896.90521"
+       x2="891.39484"
+       y1="412.69379"
+       y2="412.50623"
+       id="line120" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="874.73376"
+       x2="870.06628"
+       y1="416.91473"
+       y2="419.78528"
+       id="line122" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="857.78101"
+       x2="855.11902"
+       y1="432.22427"
+       y2="436.67572"
+       id="line124" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="849.22723"
+       x2="848.67279"
+       y1="453.30954"
+       y2="457.19046"
+       id="line126" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="810.75281"
+       x2="810.74719"
+       y1="478.60199"
+       y2="478.59799"
+       id="line128" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="795.27795"
+       x2="782.82208"
+       y1="469.52292"
+       y2="463.57709"
+       id="line130" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="765.71796"
+       x2="752.08203"
+       y1="459.13153"
+       y2="458.26849"
+       id="line132" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="734.69324"
+       x2="722.20673"
+       y1="460.91351"
+       y2="465.68649"
+       id="line134" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="707.16919"
+       x2="697.33081"
+       y1="474.98541"
+       y2="484.01459"
+       id="line136" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="687.04999"
+       x2="681.35004"
+       y1="498.32663"
+       y2="511.1734"
+       id="line138" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="677.36481"
+       x2="676.83521"
+       y1="528.3938"
+       y2="542.6062"
+       id="line140" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="602.04346"
+       x2="594.75653"
+       y1="612.03516"
+       y2="604.26483"
+       id="line142" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="581.73785"
+       x2="573.66211"
+       y1="591.87665"
+       y2="585.02338"
+       id="line144" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="559.29224"
+       x2="550.40778"
+       y1="574.23676"
+       y2="568.36328"
+       id="line146" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="534.86914"
+       x2="525.43091"
+       y1="559.33734"
+       y2="554.56268"
+       id="line148" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="508.95386"
+       x2="498.94617"
+       y1="547.39154"
+       y2="543.70844"
+       id="line150" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="481.74173"
+       x2="471.35828"
+       y1="538.52814"
+       y2="536.07184"
+       id="line152" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="453.66016"
+       x2="443.13986"
+       y1="532.96124"
+       y2="531.73877"
+       id="line154" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="425.20001"
+       x2="414.60001"
+       y1="530.70001"
+       y2="530.70001"
+       id="line156" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="396.66336"
+       x2="386.03665"
+       y1="531.76611"
+       y2="533.03387"
+       id="line158" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="368.34341"
+       x2="358.05658"
+       y1="536.17889"
+       y2="538.62109"
+       id="line160" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="340.85382"
+       x2="330.84616"
+       y1="543.80841"
+       y2="547.49158"
+       id="line162" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="314.38184"
+       x2="304.91815"
+       y1="554.68768"
+       y2="559.51227"
+       id="line164" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="289.40186"
+       x2="280.59814"
+       y1="568.57776"
+       y2="574.42224"
+       id="line166" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="266.24023"
+       x2="258.05978"
+       y1="585.22614"
+       y2="592.17389"
+       id="line168" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="245.06026"
+       x2="237.83974"
+       y1="604.58057"
+       y2="612.31946"
+       id="line170" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="226.38591"
+       x2="220.11409"
+       y1="626.16364"
+       y2="634.73639"
+       id="line172" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="210.36528"
+       x2="205.13472"
+       y1="649.83154"
+       y2="659.06848"
+       id="line174" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="197.2117"
+       x2="193.0883"
+       y1="675.19653"
+       y2="685.00348"
+       id="line176" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="187.11505"
+       x2="184.18495"
+       y1="701.95013"
+       y2="712.14984"
+       id="line178" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="180.22549"
+       x2="178.4745"
+       y1="729.67841"
+       y2="740.22156"
+       id="line180" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="176.59132"
+       x2="176.10867"
+       y1="758.0907"
+       y2="768.70929"
+       id="line182" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="176.33003"
+       x2="177.06996"
+       y1="786.67792"
+       y2="797.22211"
+       id="line184" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="179.39847"
+       x2="181.40154"
+       y1="815.03827"
+       y2="825.46173"
+       id="line186" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="185.80417"
+       x2="188.99583"
+       y1="842.88416"
+       y2="853.01581"
+       id="line188" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="195.3815"
+       x2="199.71849"
+       y1="869.81256"
+       y2="879.48743"
+       id="line190" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="208.03967"
+       x2="213.56032"
+       y1="895.41193"
+       y2="904.58807"
+       id="line192" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="223.67522"
+       x2="230.12479"
+       y1="919.44293"
+       y2="927.85706"
+       id="line194" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="241.91664"
+       x2="249.38336"
+       y1="941.41095"
+       y2="948.98907"
+       id="line196" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="262.6908"
+       x2="270.90918"
+       y1="961.06824"
+       y2="967.73181"
+       id="line198" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="285.51608"
+       x2="294.58392"
+       y1="978.19531"
+       y2="983.90472"
+       id="line200" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="310.32401"
+       x2="319.87601"
+       y1="992.57306"
+       y2="997.12695"
+       id="line202" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1010"
+       y2="1010"
+       id="line204" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1028"
+       y2="1028"
+       id="line206" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1046"
+       y2="1046"
+       id="line208" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1064"
+       y2="1064"
+       id="line210" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1082"
+       y2="1117"
+       id="line212" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1135"
+       y2="1135"
+       id="line214" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1153"
+       y2="1153"
+       id="line216" />
+    <line
+       style="fill:none;stroke:#808080;stroke-linecap:square;stroke-miterlimit:10"
+       x1="328"
+       x2="328"
+       y1="1171"
+       y2="1171"
+       id="line218" />
+    <circle
+       cx="359"
+       cy="1180"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse220"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.33301"
+       y="1184"
+       id="text222">G</text>
+    <circle
+       cx="359"
+       cy="1180"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse224"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1162"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse226"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.66699"
+       y="1166"
+       id="text228">A</text>
+    <circle
+       cx="359"
+       cy="1162"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse230"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1144"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse232"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.66699"
+       y="1148"
+       id="text234">C</text>
+    <circle
+       cx="359"
+       cy="1144"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse236"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1126"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse238"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.66699"
+       y="1130"
+       id="text240">C</text>
+    <circle
+       cx="359"
+       cy="1126"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse242"
+       r="8" />
+    <circle
+       cx="371"
+       cy="1099"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse244"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="366.66699"
+       y="1103"
+       id="text246">C</text>
+    <circle
+       cx="371"
+       cy="1099"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse248"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1073"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse250"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.33301"
+       y="1077"
+       id="text252">G</text>
+    <circle
+       cx="359"
+       cy="1073"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse254"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1055"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse256"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.66699"
+       y="1059"
+       id="text258">A</text>
+    <circle
+       cx="359"
+       cy="1055"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse260"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1037"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse262"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.33301"
+       y="1041"
+       id="text264">G</text>
+    <circle
+       cx="359"
+       cy="1037"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse266"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1019"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse268"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.33301"
+       y="1023"
+       id="text270">G</text>
+    <circle
+       cx="359"
+       cy="1019"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse272"
+       r="8" />
+    <circle
+       cx="359"
+       cy="1001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse274"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="354.66699"
+       y="1005"
+       id="text276">A</text>
+    <circle
+       cx="359"
+       cy="1001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse278"
+       r="8" />
+    <circle
+       cx="414.70001"
+       cy="1006.9"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse280"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="410.367"
+       y="1010.9"
+       id="text282">U</text>
+    <circle
+       cx="414.70001"
+       cy="1006.9"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse284"
+       r="8" />
+    <circle
+       cx="470.20001"
+       cy="999.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse286"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="465.867"
+       y="1003.7"
+       id="text288">C</text>
+    <circle
+       cx="470.20001"
+       cy="999.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse290"
+       r="8" />
+    <circle
+       cx="522.5"
+       cy="979.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse292"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="518.16699"
+       y="983.90002"
+       id="text294">A</text>
+    <circle
+       cx="522.5"
+       cy="979.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse296"
+       r="8" />
+    <circle
+       cx="568.90002"
+       cy="948.5"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse298"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="564.56702"
+       y="952.5"
+       id="text300">A</text>
+    <circle
+       cx="568.90002"
+       cy="948.5"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse302"
+       r="8" />
+    <circle
+       cx="606.70001"
+       cy="907.20001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse304"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="602.367"
+       y="911.20001"
+       id="text306">C</text>
+    <circle
+       cx="606.70001"
+       cy="907.20001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse308"
+       r="8" />
+    <circle
+       cx="633.90002"
+       cy="858.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse310"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="629.56702"
+       y="862.40002"
+       id="text312">A</text>
+    <circle
+       cx="633.90002"
+       cy="858.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse314"
+       r="8" />
+    <circle
+       cx="649.09998"
+       cy="804.5"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse316"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="644.76697"
+       y="808.5"
+       id="text318">U</text>
+    <circle
+       cx="649.09998"
+       cy="804.5"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse320"
+       r="8" />
+    <circle
+       cx="651.40002"
+       cy="748.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse322"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="646.73303"
+       y="752.59998"
+       id="text324">G</text>
+    <circle
+       cx="651.40002"
+       cy="748.59998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse326"
+       r="8" />
+    <circle
+       cx="668.70001"
+       cy="746.29999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse328"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="664.367"
+       y="750.29999"
+       id="text330">C</text>
+    <circle
+       cx="668.70001"
+       cy="746.29999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse332"
+       r="8" />
+    <circle
+       cx="687.79999"
+       cy="757.29999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse334"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="683.46698"
+       y="761.29999"
+       id="text336">C</text>
+    <circle
+       cx="687.79999"
+       cy="757.29999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse338"
+       r="8" />
+    <circle
+       cx="710.90002"
+       cy="756"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse340"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="706.56702"
+       y="760"
+       id="text342">U</text>
+    <circle
+       cx="710.90002"
+       cy="756"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse344"
+       r="8" />
+    <circle
+       cx="725.29999"
+       cy="737.79999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse346"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="720.633"
+       y="741.79999"
+       id="text348">G</text>
+    <circle
+       cx="725.29999"
+       cy="737.79999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse350"
+       r="8" />
+    <circle
+       cx="724.09998"
+       cy="714.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse352"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="719.76697"
+       y="718.70001"
+       id="text354">A</text>
+    <circle
+       cx="724.09998"
+       cy="714.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse356"
+       r="8" />
+    <circle
+       cx="706.79999"
+       cy="699.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse358"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="702.46698"
+       y="703.90002"
+       id="text360">C</text>
+    <circle
+       cx="706.79999"
+       cy="699.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse362"
+       r="8" />
+    <circle
+       cx="683.09998"
+       cy="702.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse364"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="678.76697"
+       y="706.40002"
+       id="text366">U</text>
+    <circle
+       cx="683.09998"
+       cy="702.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse368"
+       r="8" />
+    <circle
+       cx="665.59998"
+       cy="715.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse370"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="660.93298"
+       y="719.40002"
+       id="text372">G</text>
+    <circle
+       cx="665.59998"
+       cy="715.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse374"
+       r="8" />
+    <circle
+       cx="648.29999"
+       cy="717.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse376"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="643.96698"
+       y="721.70001"
+       id="text378">C</text>
+    <circle
+       cx="648.29999"
+       cy="717.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse380"
+       r="8" />
+    <circle
+       cx="638.79999"
+       cy="680.79999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse382"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="634.46698"
+       y="684.79999"
+       id="text384">A</text>
+    <circle
+       cx="638.79999"
+       cy="680.79999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse386"
+       r="8" />
+    <circle
+       cx="625.5"
+       cy="645.09998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse388"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="620.83301"
+       y="649.09998"
+       id="text390">G</text>
+    <circle
+       cx="625.5"
+       cy="645.09998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse392"
+       r="8" />
+    <circle
+       cx="640"
+       cy="634.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse394"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="635.66699"
+       y="638.90002"
+       id="text396">C</text>
+    <circle
+       cx="640"
+       cy="634.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse398"
+       r="8" />
+    <circle
+       cx="654.40002"
+       cy="624.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse400"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="650.06702"
+       y="628.59998"
+       id="text402">A</text>
+    <circle
+       cx="654.40002"
+       cy="624.59998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse404"
+       r="8" />
+    <circle
+       cx="668.90002"
+       cy="614.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse406"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="664.56702"
+       y="618.40002"
+       id="text408">U</text>
+    <circle
+       cx="668.90002"
+       cy="614.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse410"
+       r="8" />
+    <circle
+       cx="683.40002"
+       cy="604.20001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse412"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="679.06702"
+       y="608.20001"
+       id="text414">C</text>
+    <circle
+       cx="683.40002"
+       cy="604.20001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse416"
+       r="8" />
+    <circle
+       cx="697.79999"
+       cy="593.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse418"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="693.46698"
+       y="597.90002"
+       id="text420">U</text>
+    <circle
+       cx="697.79999"
+       cy="593.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse422"
+       r="8" />
+    <circle
+       cx="718.70001"
+       cy="607.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse424"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="714.367"
+       y="611.90002"
+       id="text426">U</text>
+    <circle
+       cx="718.70001"
+       cy="607.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse428"
+       r="8" />
+    <circle
+       cx="758.20001"
+       cy="617.5"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse430"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="753.867"
+       y="621.5"
+       id="text432">A</text>
+    <circle
+       cx="758.20001"
+       cy="617.5"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse434"
+       r="8" />
+    <circle
+       cx="797.40002"
+       cy="605.09998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse436"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="793.06702"
+       y="609.09998"
+       id="text438">A</text>
+    <circle
+       cx="797.40002"
+       cy="605.09998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse440"
+       r="8" />
+    <circle
+       cx="825.29999"
+       cy="576.20001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse442"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="820.96698"
+       y="580.20001"
+       id="text444">A</text>
+    <circle
+       cx="825.29999"
+       cy="576.20001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse446"
+       r="8" />
+    <circle
+       cx="834.90002"
+       cy="536.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse448"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="830.56702"
+       y="540.59998"
+       id="text450">A</text>
+    <circle
+       cx="834.90002"
+       cy="536.59998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse452"
+       r="8" />
+    <circle
+       cx="834"
+       cy="510.39999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse454"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="829.33301"
+       y="514.40002"
+       id="text456">G</text>
+    <circle
+       cx="834"
+       cy="510.39999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse458"
+       r="8" />
+    <circle
+       cx="848.59998"
+       cy="501.60001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse460"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="844.26697"
+       y="505.60001"
+       id="text462">C</text>
+    <circle
+       cx="848.59998"
+       cy="501.60001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse464"
+       r="8" />
+    <circle
+       cx="863.29999"
+       cy="492.79999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse466"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="858.96698"
+       y="496.79999"
+       id="text468">A</text>
+    <circle
+       cx="863.29999"
+       cy="492.79999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse470"
+       r="8" />
+    <circle
+       cx="881.90002"
+       cy="499.79999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse472"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="877.56702"
+       y="503.79999"
+       id="text474">A</text>
+    <circle
+       cx="881.90002"
+       cy="499.79999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse476"
+       r="8" />
+    <circle
+       cx="905.5"
+       cy="500.60001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse478"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="901.16699"
+       y="504.60001"
+       id="text480">U</text>
+    <circle
+       cx="905.5"
+       cy="500.60001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse482"
+       r="8" />
+    <circle
+       cx="926.20001"
+       cy="489"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse484"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="921.867"
+       y="493"
+       id="text486">A</text>
+    <circle
+       cx="926.20001"
+       cy="489"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse488"
+       r="8" />
+    <circle
+       cx="937.29999"
+       cy="468.5"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse490"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="932.633"
+       y="472.5"
+       id="text492">G</text>
+    <circle
+       cx="937.29999"
+       cy="468.5"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse494"
+       r="8" />
+    <circle
+       cx="938.09998"
+       cy="444.89999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse496"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="933.76697"
+       y="448.89999"
+       id="text498">A</text>
+    <circle
+       cx="938.09998"
+       cy="444.89999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse500"
+       r="8" />
+    <circle
+       cx="925.79999"
+       cy="424.89999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse502"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="921.46698"
+       y="428.89999"
+       id="text504">A</text>
+    <circle
+       cx="925.79999"
+       cy="424.89999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse506"
+       r="8" />
+    <circle
+       cx="905.90002"
+       cy="413"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse508"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="901.56702"
+       y="417"
+       id="text510">U</text>
+    <circle
+       cx="905.90002"
+       cy="413"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse512"
+       r="8" />
+    <circle
+       cx="882.40002"
+       cy="412.20001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse514"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="877.73303"
+       y="416.20001"
+       id="text516">G</text>
+    <circle
+       cx="882.40002"
+       cy="412.20001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse518"
+       r="8" />
+    <circle
+       cx="862.40002"
+       cy="424.5"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse520"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="858.06702"
+       y="428.5"
+       id="text522">A</text>
+    <circle
+       cx="862.40002"
+       cy="424.5"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse524"
+       r="8" />
+    <circle
+       cx="850.5"
+       cy="444.39999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse526"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="845.83301"
+       y="448.39999"
+       id="text528">G</text>
+    <circle
+       cx="850.5"
+       cy="444.39999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse530"
+       r="8" />
+    <circle
+       cx="847.40002"
+       cy="466.10001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse532"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="843.06702"
+       y="470.10001"
+       id="text534">U</text>
+    <circle
+       cx="847.40002"
+       cy="466.10001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse536"
+       r="8" />
+    <circle
+       cx="832.70001"
+       cy="475"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse538"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="828.03302"
+       y="479"
+       id="text540">G</text>
+    <circle
+       cx="832.70001"
+       cy="475"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse542"
+       r="8" />
+    <circle
+       cx="818.09998"
+       cy="483.79999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse544"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="813.76697"
+       y="487.79999"
+       id="text546">U</text>
+    <circle
+       cx="818.09998"
+       cy="483.79999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse548"
+       r="8" />
+    <circle
+       cx="803.40002"
+       cy="473.39999"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse550"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="798.73303"
+       y="477.39999"
+       id="text552">G</text>
+    <circle
+       cx="803.40002"
+       cy="473.39999"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse554"
+       r="8" />
+    <circle
+       cx="774.70001"
+       cy="459.70001"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse556"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="770.367"
+       y="463.70001"
+       id="text558">U</text>
+    <circle
+       cx="774.70001"
+       cy="459.70001"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse560"
+       r="8" />
+    <circle
+       cx="743.09998"
+       cy="457.70001"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse562"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="738.76697"
+       y="461.70001"
+       id="text564">A</text>
+    <circle
+       cx="743.09998"
+       cy="457.70001"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse566"
+       r="8" />
+    <circle
+       cx="713.79999"
+       cy="468.89999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse568"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="709.46698"
+       y="472.89999"
+       id="text570">U</text>
+    <circle
+       cx="713.79999"
+       cy="468.89999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse572"
+       r="8" />
+    <circle
+       cx="690.70001"
+       cy="490.10001"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse574"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="686.367"
+       y="494.10001"
+       id="text576">U</text>
+    <circle
+       cx="690.70001"
+       cy="490.10001"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse578"
+       r="8" />
+    <circle
+       cx="677.70001"
+       cy="519.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse580"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="673.03302"
+       y="523.40002"
+       id="text582">G</text>
+    <circle
+       cx="677.70001"
+       cy="519.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse584"
+       r="8" />
+    <circle
+       cx="676.5"
+       cy="551.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse586"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="672.16699"
+       y="555.59998"
+       id="text588">U</text>
+    <circle
+       cx="676.5"
+       cy="551.59998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse590"
+       r="8" />
+    <circle
+       cx="680.5"
+       cy="567.5"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse592"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="675.83301"
+       y="571.5"
+       id="text594">G</text>
+    <circle
+       cx="680.5"
+       cy="567.5"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse596"
+       r="8" />
+    <circle
+       cx="666"
+       cy="577.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse598"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="661.33301"
+       y="581.70001"
+       id="text600">G</text>
+    <circle
+       cx="666"
+       cy="577.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse602"
+       r="8" />
+    <circle
+       cx="651.59998"
+       cy="587.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse604"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="646.93298"
+       y="591.90002"
+       id="text606">G</text>
+    <circle
+       cx="651.59998"
+       cy="587.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse608"
+       r="8" />
+    <circle
+       cx="637.09998"
+       cy="598.20001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse610"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="632.76697"
+       y="602.20001"
+       id="text612">U</text>
+    <circle
+       cx="637.09998"
+       cy="598.20001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse614"
+       r="8" />
+    <circle
+       cx="622.59998"
+       cy="608.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse616"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="617.93298"
+       y="612.40002"
+       id="text618">G</text>
+    <circle
+       cx="622.59998"
+       cy="608.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse620"
+       r="8" />
+    <circle
+       cx="608.20001"
+       cy="618.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse622"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="603.867"
+       y="622.59998"
+       id="text624">U</text>
+    <circle
+       cx="608.20001"
+       cy="618.59998"
+       style="fill:none;stroke:#ff6600;stroke-linecap:square;stroke-miterlimit:10;stroke-width:5.17467043;stroke-dasharray:none"
+       id="ellipse626"
+       r="8" />
+    <circle
+       cx="588.59998"
+       cy="597.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse628"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="583.93298"
+       y="601.70001"
+       id="text630">G</text>
+    <circle
+       cx="588.59998"
+       cy="597.70001"
+       style="fill:none;stroke:#ff6600;stroke-linecap:square;stroke-miterlimit:10;stroke-width:5.17467043;stroke-dasharray:none"
+       id="ellipse632"
+       r="8" />
+    <circle
+       cx="566.79999"
+       cy="579.20001"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse634"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="562.46698"
+       y="583.20001"
+       id="text636">U</text>
+    <circle
+       cx="566.79999"
+       cy="579.20001"
+       style="fill:none;stroke:#ff6600;stroke-linecap:square;stroke-miterlimit:10;stroke-width:3.88100282;stroke-dasharray:none"
+       id="ellipse638"
+       r="8" />
+    <circle
+       cx="542.90002"
+       cy="563.40002"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse640"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="538.56702"
+       y="567.40002"
+       id="text642">C</text>
+    <circle
+       cx="542.90002"
+       cy="563.40002"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse644"
+       r="8" />
+    <circle
+       cx="517.40002"
+       cy="550.5"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse646"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="513.06702"
+       y="554.5"
+       id="text648">U</text>
+    <circle
+       cx="517.40002"
+       cy="550.5"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse650"
+       r="8" />
+    <circle
+       cx="490.5"
+       cy="540.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse652"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="486.16699"
+       y="544.59998"
+       id="text654">A</text>
+    <circle
+       cx="490.5"
+       cy="540.59998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse656"
+       r="8" />
+    <circle
+       cx="462.60001"
+       cy="534"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse658"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="458.267"
+       y="538"
+       id="text660">U</text>
+    <circle
+       cx="462.60001"
+       cy="534"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse662"
+       r="8" />
+    <circle
+       cx="434.20001"
+       cy="530.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse664"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="429.867"
+       y="534.70001"
+       id="text666">U</text>
+    <circle
+       cx="434.20001"
+       cy="530.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse668"
+       r="8" />
+    <circle
+       cx="405.60001"
+       cy="530.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse670"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="401.267"
+       y="534.70001"
+       id="text672">U</text>
+    <circle
+       cx="405.60001"
+       cy="530.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse674"
+       r="8" />
+    <circle
+       cx="377.10001"
+       cy="534.09998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse676"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="372.767"
+       y="538.09998"
+       id="text678">C</text>
+    <circle
+       cx="377.10001"
+       cy="534.09998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse680"
+       r="8" />
+    <circle
+       cx="349.29999"
+       cy="540.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse682"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="344.96698"
+       y="544.70001"
+       id="text684">U</text>
+    <circle
+       cx="349.29999"
+       cy="540.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse686"
+       r="8" />
+    <circle
+       cx="322.39999"
+       cy="550.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse688"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="318.06699"
+       y="554.59998"
+       id="text690">U</text>
+    <circle
+       cx="322.39999"
+       cy="550.59998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse692"
+       r="8" />
+    <circle
+       cx="296.89999"
+       cy="563.59998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse694"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="292.233"
+       y="567.59998"
+       id="text696">G</text>
+    <circle
+       cx="296.89999"
+       cy="563.59998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse698"
+       r="8" />
+    <circle
+       cx="273.10001"
+       cy="579.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse700"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="268.767"
+       y="583.40002"
+       id="text702">U</text>
+    <circle
+       cx="273.10001"
+       cy="579.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse704"
+       r="8" />
+    <circle
+       cx="251.2"
+       cy="598"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse706"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="246.86699"
+       y="602"
+       id="text708">U</text>
+    <circle
+       cx="251.2"
+       cy="598"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse710"
+       r="8" />
+    <circle
+       cx="231.7"
+       cy="618.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse712"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="227.36699"
+       y="622.90002"
+       id="text714">U</text>
+    <circle
+       cx="231.7"
+       cy="618.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse716"
+       r="8" />
+    <circle
+       cx="214.8"
+       cy="642"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse718"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="210.467"
+       y="646"
+       id="text720">U</text>
+    <circle
+       cx="214.8"
+       cy="642"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse722"
+       r="8" />
+    <circle
+       cx="200.7"
+       cy="666.90002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse724"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="196.36699"
+       y="670.90002"
+       id="text726">A</text>
+    <circle
+       cx="200.7"
+       cy="666.90002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse728"
+       r="8" />
+    <circle
+       cx="189.60001"
+       cy="693.29999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse730"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="185.267"
+       y="697.29999"
+       id="text732">U</text>
+    <circle
+       cx="189.60001"
+       cy="693.29999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse734"
+       r="8" />
+    <circle
+       cx="181.7"
+       cy="720.79999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse736"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="177.033"
+       y="724.79999"
+       id="text738">G</text>
+    <circle
+       cx="181.7"
+       cy="720.79999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse740"
+       r="8" />
+    <circle
+       cx="177"
+       cy="749.09998"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse742"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="172.66699"
+       y="753.09998"
+       id="text744">U</text>
+    <circle
+       cx="177"
+       cy="749.09998"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse746"
+       r="8" />
+    <circle
+       cx="175.7"
+       cy="777.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse748"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="171.36699"
+       y="781.70001"
+       id="text750">A</text>
+    <circle
+       cx="175.7"
+       cy="777.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse752"
+       r="8" />
+    <circle
+       cx="177.7"
+       cy="806.20001"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse754"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="173.36699"
+       y="810.20001"
+       id="text756">U</text>
+    <circle
+       cx="177.7"
+       cy="806.20001"
+       style="fill:none;stroke:#ff6600;stroke-linecap:square;stroke-miterlimit:10;stroke-width:3.88100282;stroke-dasharray:none"
+       id="ellipse758"
+       r="8" />
+    <circle
+       cx="183.10001"
+       cy="834.29999"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse760"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="178.767"
+       y="838.29999"
+       id="text762">C</text>
+    <circle
+       cx="183.10001"
+       cy="834.29999"
+       style="fill:none;stroke:#ff6600;stroke-linecap:square;stroke-miterlimit:10;stroke-width:3.88100282;stroke-dasharray:none"
+       id="ellipse764"
+       r="8" />
+    <circle
+       cx="191.7"
+       cy="861.59998"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse766"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="187.36699"
+       y="865.59998"
+       id="text768">U</text>
+    <circle
+       cx="191.7"
+       cy="861.59998"
+       style="fill:none;stroke:#ff6600;stroke-linecap:square;stroke-miterlimit:10;stroke-width:3.88100282;stroke-dasharray:none"
+       id="ellipse770"
+       r="8" />
+    <circle
+       cx="203.39999"
+       cy="887.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse772"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="199.06699"
+       y="891.70001"
+       id="text774">A</text>
+    <circle
+       cx="203.39999"
+       cy="887.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse776"
+       r="8" />
+    <circle
+       cx="218.2"
+       cy="912.29999"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse778"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="213.86699"
+       y="916.29999"
+       id="text780">U</text>
+    <circle
+       cx="218.2"
+       cy="912.29999"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse782"
+       r="8" />
+    <circle
+       cx="235.60001"
+       cy="935"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse784"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="231.267"
+       y="939"
+       id="text786">U</text>
+    <circle
+       cx="235.60001"
+       cy="935"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse788"
+       r="8" />
+    <circle
+       cx="255.7"
+       cy="955.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse790"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="251.36699"
+       y="959.40002"
+       id="text792">U</text>
+    <circle
+       cx="255.7"
+       cy="955.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse794"
+       r="8" />
+    <circle
+       cx="277.89999"
+       cy="973.40002"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse796"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="273.56699"
+       y="977.40002"
+       id="text798">U</text>
+    <circle
+       cx="277.89999"
+       cy="973.40002"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse800"
+       r="8" />
+    <circle
+       cx="302.20001"
+       cy="988.70001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse802"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="297.867"
+       y="992.70001"
+       id="text804">U</text>
+    <circle
+       cx="302.20001"
+       cy="988.70001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse806"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1001"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse808"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="323.66699"
+       y="1005"
+       id="text810">U</text>
+    <circle
+       cx="328"
+       cy="1001"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse812"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1019"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse814"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="323.66699"
+       y="1023"
+       id="text816">C</text>
+    <circle
+       cx="328"
+       cy="1019"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse818"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1037"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse820"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="323.66699"
+       y="1041"
+       id="text822">C</text>
+    <circle
+       cx="328"
+       cy="1037"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse824"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1055"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse826"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="323.66699"
+       y="1059"
+       id="text828">U</text>
+    <circle
+       cx="328"
+       cy="1055"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse830"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1073"
+       style="fill:#00ffff;stroke:none"
+       id="ellipse832"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#00ffff;stroke:none"
+       x="323.66699"
+       y="1077"
+       id="text834">U</text>
+    <circle
+       cx="328"
+       cy="1073"
+       style="fill:none;stroke:#00ffff;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse836"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1126"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse838"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="323.33301"
+       y="1130"
+       id="text840">G</text>
+    <circle
+       cx="328"
+       cy="1126"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse842"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1144"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse844"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="323.33301"
+       y="1148"
+       id="text846">G</text>
+    <circle
+       cx="328"
+       cy="1144"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse848"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1162"
+       style="fill:#ffffff;stroke:none"
+       id="ellipse850"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none"
+       x="323.66699"
+       y="1166"
+       id="text852">U</text>
+    <circle
+       cx="328"
+       cy="1162"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse854"
+       r="8" />
+    <circle
+       cx="328"
+       cy="1180"
+       style="fill:#ffffff;stroke:none;fill-opacity:1"
+       id="ellipse856"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:12px;font-family:Arial;fill:#ffffff;stroke:none;fill-opacity:1;"
+       x="323.66699"
+       y="1184"
+       id="text858">C</text>
+    <circle
+       cx="328"
+       cy="1180"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       id="ellipse860"
+       r="8" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="393.10693"
+       y="1184.5"
+       id="text862">1</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="369"
+       x2="389"
+       y1="1180"
+       y2="1180"
+       id="line864" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="382.13574"
+       y="983.41296"
+       id="text866">10</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="367"
+       x2="378"
+       y1="995"
+       y2="986"
+       id="line868" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="691.32056"
+       y="798.07892"
+       id="text870">20</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="690"
+       x2="695"
+       y1="766"
+       y2="781"
+       id="line872" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="653.07068"
+       y="671.16467"
+       id="text874">30</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="645"
+       x2="653"
+       y1="643"
+       y2="655"
+       id="line876" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="789.4552"
+       y="524.53333"
+       id="text878">40</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="824"
+       x2="808"
+       y1="512"
+       y2="517"
+       id="line880" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="881.69452"
+       y="454.03452"
+       id="text882">50</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="884"
+       x2="887"
+       y1="422"
+       y2="437"
+       id="line884" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="652.05121"
+       y="472.4303"
+       id="text886">60</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="682"
+       x2="670"
+       y1="484"
+       y2="475"
+       id="line888" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="581.82635"
+       y="553.30939"
+       id="text890">70</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="572"
+       x2="581"
+       y1="571"
+       y2="559"
+       id="line892" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="269.94421"
+       y="535.28955"
+       id="text894">80</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="291"
+       x2="284"
+       y1="554"
+       y2="541"
+       id="line896" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="132.23431"
+       y="815.62457"
+       id="text898">90</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="167"
+       x2="150"
+       y1="807"
+       y2="809"
+       id="line900" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="278.3208"
+       y="1023.5"
+       id="text902">100</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="318"
+       x2="304"
+       y1="1019"
+       y2="1019"
+       id="line904" />
+    <text
+       style="font-weight:bold;font-size:14px;font-family:Arial;fill:#000000;stroke:none"
+       x="278.3208"
+       y="1184.5"
+       id="text906">107</text>
+    <line
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10"
+       x1="318"
+       x2="304"
+       y1="1180"
+       y2="1180"
+       id="line908" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="structure" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="CLIP">
+    <text
+       style="font-size:23.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8184);"
+       id="text8182"
+       xml:space="preserve"
+       transform="translate(-14.541625,-135.73155)"><tspan
+         x="503.15234"
+         y="700.26229"><tspan
+           style="shape-inside:url(#rect8184)">deltaSHAPE 1 </tspan></tspan><tspan
+         x="503.15234"
+         y="729.42891"><tspan
+           style="shape-inside:url(#rect8184)">(orange circles) </tspan></tspan><tspan
+         x="503.15234"
+         y="758.59554"><tspan
+           style="shape-inside:url(#rect8184)">and deltaSHAPE 2 </tspan></tspan><tspan
+         x="503.15234"
+         y="787.76216"><tspan
+           style="shape-inside:url(#rect8184)">(aqua fill)</tspan></tspan></text>
+    <path
+       sodipodi:nodetypes="cccccccccccccccccccc"
+       inkscape:original-d="m 732.561,22.807185 c 9.85225,0.009 19.70325,0.0173 29.553,0.0241 8.7583,6.56905 17.51501,13.13658 26.27066,19.70299 4.06703,9.07107 8.13264,18.14053 12.19708,27.20889 -1.56251,8.44557 -3.1262,16.88954 -4.6912,25.33243 -4.37725,8.445555 -8.75561,16.889545 -13.13531,25.332445 -8.44308,4.37978 -16.88704,8.75813 -25.33243,13.13533 -8.1303,0.62675 -16.26155,1.25224 -24.3942,1.87647 -5.94205,-3.90464 -11.88499,-7.8103 -17.82952,-11.71745 -4.68904,2.96889 -9.37913,5.93641 -14.07058,8.90274 -3.97976,1.6032 -7.96061,3.20508 -11.94282,4.80574 3.31265,6.145 6.70807,12.44461 10.06032,18.66525 -2.88992,15.44721 -5.78094,30.89225 -8.67336,46.33695 -12.27353,12.06749 -24.54761,24.13299 -36.82364,36.1979 -14.85497,2.50829 -29.71061,5.01524 -44.56781,7.52095 -14.38535,-3.43901 -28.77136,-6.87916 -43.15894,-10.32061 -4.37528,-4.68604 -8.75153,-9.373 -13.1293,-14.06154 -6.25581,6.25229 -12.51263,12.50309 -18.77079,18.75274 -5.94104,4.69251 -11.8831,9.38361 -17.82654,14.07355 -4.48675,3.04935 -8.68185,5.89851 -13.02465,8.8459"
+       inkscape:path-effect="#path-effect8157"
+       id="path8155"
+       d="m 732.561,22.807185 c 9.85225,0.008 19.70325,0.01607 29.00735,3.304504 9.30411,3.288437 18.06082,9.855967 24.47179,17.674941 6.41097,7.818973 10.47659,16.88843 11.72712,25.645134 1.25053,8.756705 -0.31317,17.200673 -3.28432,25.644638 -2.97116,8.443968 -7.34952,16.887958 -13.76054,23.298948 -6.41102,6.41098 -14.85498,10.78933 -23.14249,13.29138 -8.28751,2.50205 -16.41876,3.12753 -23.45596,1.48785 -7.0372,-1.63969 -12.98014,-5.54535 -18.29748,-6.01505 -5.31735,-0.46971 -10.00744,2.49781 -14.34289,4.78255 -4.33545,2.28473 -8.3163,3.88661 -8.651,7.76032 -0.3347,3.87371 3.06071,10.17333 3.29138,21.00699 0.23068,10.83367 -2.66033,26.27871 -10.24322,40.0343 -7.58289,13.75559 -19.85697,25.82109 -33.42196,33.10762 -13.56499,7.28652 -28.42063,9.79345 -43.04168,9.32707 -14.62104,-0.46638 -29.00706,-3.90651 -38.38862,-7.96979 -9.38156,-4.06328 -13.7578,-8.75025 -19.07519,-7.96901 -5.3174,0.78123 -11.57422,7.03203 -17.67373,12.50305 -6.09952,5.47102 -12.04159,10.16211 -17.25663,14.03173 -5.21504,3.86961 -9.41013,6.71878 -13.75196,9.6676"
+       style="fill:none;stroke:#732073;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text8161"
+       y="171.85362"
+       x="707.19275"
+       style="font-size:23.3334px;line-height:0;font-family:sans-serif;fill:#732073;fill-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#732073;fill-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+         y="171.85362"
+         x="707.19275"
+         id="tspan8159"
+         sodipodi:role="line">CELF </tspan><tspan
+         id="tspan8165"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#732073;fill-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+         y="201.02037"
+         x="707.19275"
+         sodipodi:role="line">CLIP</tspan><tspan
+         id="tspan8163"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#732073;fill-opacity:1;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
+         y="230.18712"
+         x="707.19275"
+         sodipodi:role="line">site</tspan></text>
+    <path
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccc"
+       inkscape:original-d="m 436.71884,223.43549 c -6.83225,-5.2892 -13.66574,-10.57963 -20.50048,-15.87133 -5.06885,-4.1871 -10.13877,-8.37529 -15.21002,-12.5648 -9.6981,-4.62799 -19.39704,-9.25704 -29.09744,-13.88744 -8.5959,-3.52576 -17.19269,-7.05266 -25.7909,-10.5809 -7.93459,-1.32136 -15.8701,-3.08481 -23.807,-4.62911 -9.25723,-0.21919 -18.5153,-0.43964 -27.77485,-0.6613 -8.81633,-0.43964 -17.63339,-0.88049 -26.45222,-1.3226 -8.15501,0.883 -16.31093,1.76471 -24.4683,2.64521 -9.91852,1.9852 -19.83792,3.96909 -29.75877,5.95175 -8.37526,3.30775 -16.75165,6.61424 -25.1296,9.91955 -7.0528,4.41005 -14.10646,8.8186 -21.16176,13.22615 -5.95061,3.0874 -11.90212,6.17335 -17.85524,9.25825 -7.4937,6.17355 -14.9882,12.34549 -22.48439,18.51654 -5.95062,7.05535 -11.90225,14.10913 -17.85526,21.1618 -4.84842,8.1575 -9.697895,16.31345 -14.548715,24.4683 -3.74623,5.73268 -7.49355,11.46389 -11.2422,17.19395 -3.96666,8.81884 -7.93442,17.63605 -11.9035,26.45222 -1.9827,9.03927 -3.96658,18.07692 -5.95175,27.11352 -1.32139,6.394 -2.64397,12.7865 -3.96783,19.17785 -0.43963,11.24368 -0.88049,22.48565 -1.32261,33.7266 0.88301,9.03927 1.76473,18.07693 2.64522,27.11352 1.98521,7.27576 3.96908,14.99085 5.95175,22.48436 1.54433,8.37795 3.08731,16.75415 4.62914,25.12964 4.1896,8.15751 8.37779,16.31345 12.5648,24.4683 3.52829,5.51224 7.05511,11.0229 10.58089,16.53264 4.189605,6.61442 8.377785,13.22736 12.564805,19.83916 7.71665,7.4962 15.43172,14.99085 23.14571,22.48435 0.66256,0.001 1.32385,0.001 1.98391,0 6.61445,6.1736 13.22723,12.34553 19.83917,18.51659 7.27576,4.41004 14.54982,8.81856 21.82308,13.22611 5.07136,2.20565 10.14127,4.40995 15.21003,6.61305 2.20562,0.44213 4.40995,0.883 6.61305,1.3226"
+       inkscape:path-effect="#path-effect8174"
+       id="path8172"
+       d="m 436.71884,223.43549 c -6.83211,-5.28938 -13.6656,-10.57981 -19.61741,-15.31918 -5.95182,-4.73938 -11.02173,-8.92757 -18.40633,-13.33652 -7.3846,-4.40896 -17.08355,-9.038 -26.23169,-13.11615 -9.14814,-4.07814 -17.74493,-7.60503 -25.99072,-10.13621 -8.24579,-2.53117 -16.2226,-4.08221 -24.81974,-4.96407 -8.59715,-0.88186 -17.85522,-1.10229 -26.89315,-1.43292 -9.03792,-0.33064 -17.85498,-0.77149 -26.342,-0.55114 -8.48703,0.22034 -16.64295,1.10206 -25.68096,2.53487 -9.03802,1.43281 -18.95742,3.41669 -28.10563,6.06187 -9.1482,2.64518 -17.5246,5.95164 -25.24013,9.80936 -7.71553,3.85771 -14.76919,8.26626 -21.27208,12.01371 -6.50289,3.74746 -12.45439,6.83342 -19.17798,11.46271 -6.72358,4.6293 -14.21808,10.80123 -20.9416,17.41454 -6.72353,6.6133 -12.67516,13.66709 -18.07593,21.27231 -5.40077,7.60522 -10.250246,15.76117 -14.548758,22.7049 -4.298511,6.94373 -8.045838,12.67493 -11.903524,19.94952 -3.857685,7.27458 -7.825433,16.0918 -10.801303,25.01969 -2.97587,8.9279 -4.959745,17.96555 -6.61302,25.68086 -1.653274,7.71531 -2.97586,14.10781 -3.857528,22.92545 -0.881668,8.81764 -1.322529,20.05961 -1.101995,30.1998 0.220533,10.14019 1.102256,19.17785 2.507969,27.3413 1.405714,8.16345 3.444125,15.8641 5.207554,23.79981 1.763429,7.93571 3.306412,16.31191 6.17238,24.57844 2.865968,8.26654 7.054154,16.42248 10.911885,23.256 3.857731,6.83353 7.384553,12.34419 11.242238,18.40627 3.857682,6.06208 8.045882,12.67502 13.997882,19.7289 5.95201,7.05389 13.6671,14.54852 17.85535,18.29529 4.18826,3.74677 4.84955,3.74677 8.48683,6.83354 3.63728,3.08678 10.25006,9.25871 17.19399,14.54911 6.94394,5.29039 14.218,9.69891 20.39033,13.00539 6.17233,3.30648 11.24224,5.51079 14.8794,6.83321 3.63715,1.32243 5.84149,1.76329 8.04439,2.20387"
+       style="fill:none;stroke:#732073;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       transform="translate(-24.872395,-8.682745)"
+       style="font-size:23.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8178);fill:#732073;fill-opacity:1;stroke:#732073;stroke-opacity:1;"
+       id="text8176"
+       xml:space="preserve"><tspan
+         x="117.71289"
+         y="355.90877"><tspan
+           style="fill:#732073;fill-opacity:1;stroke:#732073;stroke-opacity:1">TARDBP 
+</tspan></tspan><tspan
+         x="117.71289"
+         y="385.0754"><tspan
+           style="fill:#732073;fill-opacity:1;stroke:#732073;stroke-opacity:1">and HuR 
+</tspan></tspan><tspan
+         x="117.71289"
+         y="414.24202"><tspan
+           style="fill:#732073;fill-opacity:1;stroke:#732073;stroke-opacity:1">CLIP site</tspan></tspan></text>
+  </g>
+</svg>

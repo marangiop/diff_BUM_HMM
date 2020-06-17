@@ -1,0 +1,38 @@
+Invoking:
+  getsize MEME_TARDBP_Xist_RNA_binding_sites/TARDBP_Xist_RNA_binding_sites.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.018174
+Invoking:
+  fasta-most -min 50 < MEME_TARDBP_Xist_RNA_binding_sites/TARDBP_Xist_RNA_binding_sites.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.071608
+Invoking:
+  fasta-center -rna -len 100 < MEME_TARDBP_Xist_RNA_binding_sites/TARDBP_Xist_RNA_binding_sites.fa 1> MEME_TARDBP_Xist_RNA_binding_sites/seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.084405
+Invoking:
+  fasta-shuffle-letters MEME_TARDBP_Xist_RNA_binding_sites/seqs-centered MEME_TARDBP_Xist_RNA_binding_sites/seqs-shuffled -kmer 2 -tag -dinuc -rna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.012681
+Invoking:
+  fasta-get-markov -nostatus -nosummary -rna -m 1 MEME_TARDBP_Xist_RNA_binding_sites/TARDBP_Xist_RNA_binding_sites.fa MEME_TARDBP_Xist_RNA_binding_sites/background
+Finished invoke:
+  name: bg  status: 0  time: 0.015305
+Invoking:
+  meme MEME_TARDBP_Xist_RNA_binding_sites/seqs-centered -oc MEME_TARDBP_Xist_RNA_binding_sites/meme_out -mod anr -nmotifs 3 -minw 4 -maxw 10 -bfile MEME_TARDBP_Xist_RNA_binding_sites/background -rna -p 8 -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 0.944181
+Invoking:
+  dreme -verbosity 1 -oc MEME_TARDBP_Xist_RNA_binding_sites/dreme_out -png -rna -p MEME_TARDBP_Xist_RNA_binding_sites/seqs-centered -n MEME_TARDBP_Xist_RNA_binding_sites/seqs-shuffled
+Finished invoke:
+  name: dreme  status: 256  time: 0.047499
+Invoking:
+  centrimo -seqlen 0 -verbosity 1 -oc MEME_TARDBP_Xist_RNA_binding_sites/centrimo_out -bfile MEME_TARDBP_Xist_RNA_binding_sites/background MEME_TARDBP_Xist_RNA_binding_sites/TARDBP_Xist_RNA_binding_sites.fa MEME_TARDBP_Xist_RNA_binding_sites/meme_out/meme.xml
+Finished invoke:
+  name: centrimo  status: 0  time: 0.032019
+Writing output
+Invoking:
+  meme-chip_html_to_tsv MEME_TARDBP_Xist_RNA_binding_sites/meme-chip.html MEME_TARDBP_Xist_RNA_binding_sites/summary.tsv "meme-chip -meme-minw 4 -meme-maxw 10 -meme-nmotifs 3 -meme-p 8 -meme-mod anr -norc -rna -noecho -oc MEME_TARDBP_Xist_RNA_binding_sites TARDBP_Xist_RNA_binding_sites.fa" 5.1.0 "Fri Oct 11 15\:53\:28 2019 -0700"
+Finished invoke:
+  name: summary  status: 512  time: 0.04481
+Done

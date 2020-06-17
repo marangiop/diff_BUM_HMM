@@ -1,0 +1,8 @@
+1) We need Jupyter notebooks that contain the bash code used for running dStruct and diffBUM-HMM for each Figure.
+The goal is that people can download the repository and simply run the code from within the folder.
+
+2) We need to check what figures that are no longer used can be removed.
+
+3) We need to weed through the "Old" folder and decide what to do with the data in it.
+
+4) @Toby, could you made a notebook of the code that you used to download and analyse the rRNA data? I believe this was done using the pyCRAC_PE pipeline?

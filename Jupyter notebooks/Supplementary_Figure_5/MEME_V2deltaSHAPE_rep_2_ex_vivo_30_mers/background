@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_V2deltaSHAPE_rep_2_ex_vivo_30_mers/deltaSHAPE_rep_2_ex_vivo_30_mers.fa
+# seqs: 152    min: 32    max: 32    avg: 32.0    sum: 4864    alph: RNA
+# order 0
+A 2.901e-01
+C 1.906e-01
+G 1.766e-01
+U 3.427e-01
+# order 1
+AA 9.508e-02
+AC 5.306e-02
+AG 5.730e-02
+AU 8.298e-02
+CA 6.494e-02
+CC 4.202e-02
+CG 4.246e-03
+CU 8.086e-02
+GA 4.627e-02
+GC 3.396e-02
+GG 3.374e-02
+GU 6.303e-02
+UA 8.425e-02
+UC 6.218e-02
+UG 8.001e-02
+UU 1.161e-01

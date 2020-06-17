@@ -1,9 +1,0 @@
-##gff-version 3
->diffBUM_HMM_in_vivo_45	fimo	nucleotide_motif	5	14	52.7	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_45+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_45;pvalue=5.35e-06;qvalue=0.00195;sequence=CCCCACTTTA;
->diffBUM_HMM_in_vivo_66	fimo	nucleotide_motif	12	21	58.1	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_66+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_66;pvalue=1.53e-06;qvalue=0.000894;sequence=CCCCACTTGT;
->diffBUM_HMM_in_vivo_67	fimo	nucleotide_motif	7	16	58.1	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_67+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_67;pvalue=1.53e-06;qvalue=0.000894;sequence=CCCCACTTGT;
->diffBUM_HMM_in_vivo_88	fimo	nucleotide_motif	9	18	53.3	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_88+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_88;pvalue=4.7e-06;qvalue=0.00195;sequence=CTTCACTTGA;
->diffBUM_HMM_in_vivo_89	fimo	nucleotide_motif	5	14	53.3	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_89+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_89;pvalue=4.7e-06;qvalue=0.00195;sequence=CTTCACTTGA;
->diffBUM_HMM_in_vivo_95	fimo	nucleotide_motif	23	32	59.8	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_95+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_95;pvalue=1.03e-06;qvalue=0.000894;sequence=CTCCACTTGA;
->diffBUM_HMM_in_vivo_96	fimo	nucleotide_motif	21	30	59.8	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_96+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_96;pvalue=1.03e-06;qvalue=0.000894;sequence=CTCCACTTGA;
->diffBUM_HMM_in_vivo_97	fimo	nucleotide_motif	18	27	59.8	+	.	Name=CYCCACUUGA_>diffBUM_HMM_in_vivo_97+;Alias=MEME-2;ID=CYCCACUUGA-MEME-2-1->diffBUM_HMM_in_vivo_97;pvalue=1.03e-06;qvalue=0.000894;sequence=CTCCACTTGA;

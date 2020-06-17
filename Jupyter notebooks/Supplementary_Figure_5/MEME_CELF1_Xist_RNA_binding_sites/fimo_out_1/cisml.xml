@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc MEME_CELF1_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_CELF1_Xist_RNA_binding_sites/background --motif UGUGUGUCUW MEME_CELF1_Xist_RNA_binding_sites/meme_out/meme.xml MEME_CELF1_Xist_RNA_binding_sites/CELF1_Xist_RNA_binding_sites.fa</command-line>
+<pattern-file>MEME_CELF1_Xist_RNA_binding_sites/meme_out/meme.xml</pattern-file>
+<sequence-file>MEME_CELF1_Xist_RNA_binding_sites/CELF1_Xist_RNA_binding_sites.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="UGUGUGUCUW" name="MEME-1">
+<scanned-sequence accession="CELF1_1" name="CELF1_1">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_2" name="CELF1_2">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_3" name="CELF1_3">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_4" name="CELF1_4">
+<matched-element start="5" stop="14" score="15.8302" pvalue="4.51e-06">
+<sequence>TGTGTGTCTA</sequence>
+<mem:qvalue>0.00102</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_5" name="CELF1_5">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_6" name="CELF1_6">
+<matched-element start="7" stop="16" score="11.0755" pvalue="7.97e-05">
+<sequence>ATTGTGTCTA</sequence>
+<mem:qvalue>0.004</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_7" name="CELF1_7">
+<matched-element start="18" stop="27" score="12.7358" pvalue="3.8e-05">
+<sequence>TTTGTGTCTA</sequence>
+<mem:qvalue>0.00286</mem:qvalue>
+</matched-element>
+<matched-element start="2" stop="11" score="10.6887" pvalue="9.18e-05">
+<sequence>TGTCTGTCTT</sequence>
+<mem:qvalue>0.00415</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_8" name="CELF1_8">
+<matched-element start="3" stop="12" score="13.7642" pvalue="2.04e-05">
+<sequence>TGTGTGTCTT</sequence>
+<mem:qvalue>0.00216</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_9" name="CELF1_9">
+<matched-element start="14" stop="23" score="15.8302" pvalue="4.51e-06">
+<sequence>TGTGTGTCTA</sequence>
+<mem:qvalue>0.00102</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_10" name="CELF1_10">
+<matched-element start="16" stop="25" score="13.217" pvalue="2.39e-05">
+<sequence>TGTGTATCTA</sequence>
+<mem:qvalue>0.00216</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_11" name="CELF1_11">
+<matched-element start="7" stop="16" score="13.7642" pvalue="2.04e-05">
+<sequence>TGTGTGTCTT</sequence>
+<mem:qvalue>0.00216</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_12" name="CELF1_12">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_13" name="CELF1_13">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_14" name="CELF1_14">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_15" name="CELF1_15">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_16" name="CELF1_16">
+<matched-element start="14" stop="23" score="11.7642" pvalue="5.74e-05">
+<sequence>TGTGTTTCTA</sequence>
+<mem:qvalue>0.00324</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_17" name="CELF1_17">
+<matched-element start="7" stop="16" score="12.1038" pvalue="4.76e-05">
+<sequence>TGTGTGTCAT</sequence>
+<mem:qvalue>0.00307</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="CELF1_18" name="CELF1_18">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_19" name="CELF1_19">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_20" name="CELF1_20">
+</scanned-sequence>
+<scanned-sequence accession="CELF1_21" name="CELF1_21">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

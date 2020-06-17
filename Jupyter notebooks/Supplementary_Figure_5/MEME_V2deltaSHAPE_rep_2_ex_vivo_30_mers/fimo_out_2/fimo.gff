@@ -1,0 +1,13 @@
+##gff-version 3
+deltaSHAPE_rep2_ex_vivo_7	fimo	nucleotide_motif	23	30	42.4	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_7+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_7;pvalue=5.68e-05;qvalue=0.0193;sequence=TCATTGCT;
+deltaSHAPE_rep2_ex_vivo_8	fimo	nucleotide_motif	2	9	42.4	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_8+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_8;pvalue=5.68e-05;qvalue=0.0193;sequence=TCATTGCT;
+deltaSHAPE_rep2_ex_vivo_30	fimo	nucleotide_motif	7	14	47.7	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_30+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_30;pvalue=1.69e-05;qvalue=0.0105;sequence=TCCTTGCT;
+deltaSHAPE_rep2_ex_vivo_40	fimo	nucleotide_motif	24	31	41.4	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_40+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_40;pvalue=7.24e-05;qvalue=0.0225;sequence=TCCTTGGT;
+deltaSHAPE_rep2_ex_vivo_43	fimo	nucleotide_motif	24	31	47.7	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_43+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_43;pvalue=1.69e-05;qvalue=0.0105;sequence=TCCTTGCT;
+deltaSHAPE_rep2_ex_vivo_46	fimo	nucleotide_motif	4	11	47.7	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_46+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_46;pvalue=1.69e-05;qvalue=0.0105;sequence=TCCTTGCT;
+deltaSHAPE_rep2_ex_vivo_48	fimo	nucleotide_motif	9	16	47.7	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_48+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_48;pvalue=1.69e-05;qvalue=0.0105;sequence=TCCTTGCT;
+deltaSHAPE_rep2_ex_vivo_50	fimo	nucleotide_motif	24	31	45.1	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_50+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_50;pvalue=3.11e-05;qvalue=0.0145;sequence=TCCTTGCA;
+deltaSHAPE_rep2_ex_vivo_52	fimo	nucleotide_motif	8	15	47.7	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_52+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_52;pvalue=1.69e-05;qvalue=0.0105;sequence=TCCTTGCT;
+deltaSHAPE_rep2_ex_vivo_53	fimo	nucleotide_motif	1	8	45.1	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_53+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_53;pvalue=3.11e-05;qvalue=0.0145;sequence=TCCTTGCA;
+deltaSHAPE_rep2_ex_vivo_54	fimo	nucleotide_motif	18	25	42.4	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_54+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_54;pvalue=5.68e-05;qvalue=0.0193;sequence=TCATTGCT;
+deltaSHAPE_rep2_ex_vivo_55	fimo	nucleotide_motif	13	20	47.7	+	.	Name=UCCUUGCU_deltaSHAPE_rep2_ex_vivo_55+;Alias=MEME-2;ID=UCCUUGCU-MEME-2-1-deltaSHAPE_rep2_ex_vivo_55;pvalue=1.69e-05;qvalue=0.0105;sequence=TCCTTGCT;

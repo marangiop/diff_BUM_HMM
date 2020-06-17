@@ -1,0 +1,18 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_27	4	13	+	16.6952	1.58e-06	0.00159	TGTGTGTCTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_25	16	25	+	16.6952	1.58e-06	0.00159	TGTGTGTCTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_52	2	11	+	16.2667	4.16e-06	0.00209	TGTGTATCTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_51	13	22	+	16.2667	4.16e-06	0.00209	TGTGTATCTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_22	18	27	+	14.3905	1.23e-05	0.00495	GGTGTGTCTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_56	4	13	+	13.8381	2.01e-05	0.0052	TGTGTATATA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_55	14	23	+	13.8381	2.01e-05	0.0052	TGTGTATATA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_28	21	30	+	13.1238	2.21e-05	0.0052	TGTGTGTCTT
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_22	3	12	+	13.0952	2.33e-05	0.0052	TGAGTGTGTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_34	8	17	+	12.6667	3.1e-05	0.00623	TGAGTATGTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_23	12	21	+	12.2857	3.87e-05	0.00706	TATGTATCTA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_56	2	11	+	10.2857	8.11e-05	0.0125	TATGTGTATA
+UGUGURUCUA	MEME-1	deltaSHAPE_rep1_in_vivo_55	12	21	+	10.2857	8.11e-05	0.0125	TATGTGTATA
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/fimo_out_1 --bgfile MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/background --motif UGUGURUCUA MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/meme_out/meme.xml MEME_V2deltaSHAPE_rep_1_in_vivo_30_mers/deltaSHAPE_rep_1_in_vivo_30_mers.fa

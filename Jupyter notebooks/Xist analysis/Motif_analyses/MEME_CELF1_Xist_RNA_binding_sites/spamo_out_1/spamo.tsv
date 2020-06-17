@@ -1,8 +1,0 @@
-prim_db	prim_id	prim_alt	prim_cons	sec_db	sec_id	sec_alt	sec_cons	trim_left	trim_right	red_db	red_id	red_alt	E-value	gap	orient	count	total	adj_p-value	p-value
-meme.xml	UGUGUGUC	MEME-1	UGUGUGUC	meme.xml	GWCAGSA	MEME-3	GWCAGSA	0	0	.	.	.	3.00e+00	0	0	0	0	1.00e+00	1.00e+00
-meme.xml	UGUGUGUC	MEME-1	UGUGUGUC	meme.xml	UCUUCCUUGC	MEME-2	UCUUCCUUGC	0	0	.	.	.	3.00e+00	0	0	0	0	1.00e+00	1.00e+00
-meme.xml	UGUGUGUC	MEME-1	UGUGUGUC	meme.xml	UGUGUGUC	MEME-1	UGUGUGUC	0	0	.	.	.	3.00e+00	0	0	0	0	1.00e+00	1.00e+00
-
-# SpaMo (Spaced Motif Analysis Tool): Version 5.1.0 compiled on May 30 2020 at 12:27:30
-# The format of this file is described at http://meme-suite.org//doc/spamo-output-format.html.
-# spamo -verbosity 1 -oc MEME_CELF1_Xist_RNA_binding_sites/spamo_out_1 -bgfile MEME_CELF1_Xist_RNA_binding_sites/background -keepprimary -primary UGUGUGUC MEME_CELF1_Xist_RNA_binding_sites/CELF1_Xist_RNA_binding_sites.fa MEME_CELF1_Xist_RNA_binding_sites/meme_out/meme.xml MEME_CELF1_Xist_RNA_binding_sites/meme_out/meme.xml

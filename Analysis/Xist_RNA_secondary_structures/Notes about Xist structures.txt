@@ -1,0 +1,25 @@
+General observation: diffBUM_HMM calls generally overlap with deltaSHAPE calls,
+especially where the conclusion given by two deltaSHAPE replicates agree. 
+
+FUS interaction domain (13883-14509, 627nt): mainly enriched with FUS binding CLIP sites.
+FUS mainly binds to ss regions flanked by base-paired regions.
+diffBUM_HMM has good overlap with CLIP sites, seems to be
+a bit more specific than deltaSHAPE.
+
+Repeat A (301-790, 490 nt): not much information obtained from deltaSHAPE in this region, 
+diffBUM_HMM seems to be affected by well, as UM/MU calls are sparser than other 
+regions.
+Still diffBUM_HMM makes more unique calls as to which regions are protected/
+structurally dynamic. Structurally dynamic nucleotides calls by diffBUM_HMM
+all lie outside of the stemloop region (420-614, 195nt, marked in black), 
+which is in agreement with the fact that the stem loop is the only structurally 
+defined region in Repeat A (according to Xist paper).
+
+
+Repeat E (10174-11035, 862 nt): whole region enriched with CLIP sites, both 
+diffBUM_HMM and deltaSHAPE approaches can detect extensive protein binding at 
+Repeat E.
+
+TARDBP binding site (10203 - 10309, 107 nt): 
+in addition to the TARDBP/HuR site, diffBUM_HMM calls nucleotides that lie in the 
+CELF1 CLIP site. Again deltaSHAPE calls generally agree with diffBUM_HMM.

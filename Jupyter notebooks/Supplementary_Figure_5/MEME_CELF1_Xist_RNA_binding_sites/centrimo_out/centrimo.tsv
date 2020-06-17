@@ -1,0 +1,8 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   1	AVAGCAR	MEME-2	AVAGCAR	2.0e0	   6.5e-1	          -0.43	         0.0	      6.0	         26	           3	          5	  0.23077	8.4e-2	        12
+   1	UGUGUGUCUW	MEME-1	UGUGUGUCUW	2.3e0	   7.7e-1	          -0.27	         0.0	     15.0	         23	           8	          9	  0.65217	1.2e-1	        11
+   1	CAGSA	MEME-3	CAGSA	3.0e0	   1.0e0	          -0.00	         0.0	     26.0	         28	           4	          4	  0.92857	7.4e-1	        13
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
+# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
+# centrimo -seqlen 0 -verbosity 1 -oc MEME_CELF1_Xist_RNA_binding_sites/centrimo_out -bfile MEME_CELF1_Xist_RNA_binding_sites/background MEME_CELF1_Xist_RNA_binding_sites/CELF1_Xist_RNA_binding_sites.fa MEME_CELF1_Xist_RNA_binding_sites/meme_out/meme.xml

@@ -1,0 +1,6 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+   1	CUGCCACA	MEME-18	CUGCCACA	5.6e0	   2.8e-1	          -1.27	         0.0	      5.0	         25	           3	          4	  0.20000	2.7e-2	        12
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
+# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
+# centrimo -seqlen 0 -verbosity 1 -oc MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers/centrimo_out -bfile MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers/background MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers/deltaSHAPE_rep_1_ex_vivo_30_mers.fa MEME_V2deltaSHAPE_rep_1_ex_vivo_30_mers/meme_out/meme.xml

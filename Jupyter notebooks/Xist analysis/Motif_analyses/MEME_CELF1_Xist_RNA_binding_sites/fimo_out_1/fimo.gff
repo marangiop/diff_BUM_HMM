@@ -1,9 +1,0 @@
-##gff-version 3
-CELF1_4	fimo	nucleotide_motif	9	16	41.8	+	.	Name=UGUGUGUC_CELF1_4+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-1-CELF1_4;pvalue=6.63e-05;qvalue=0.00666;sequence=TGTGTGTC;
-CELF1_7	fimo	nucleotide_motif	2	9	41.8	+	.	Name=UGUGUGUC_CELF1_7+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-1-CELF1_7;pvalue=6.63e-05;qvalue=0.00666;sequence=TGTGTGTC;
-CELF1_8	fimo	nucleotide_motif	7	14	41.8	+	.	Name=UGUGUGUC_CELF1_8+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-1-CELF1_8;pvalue=6.63e-05;qvalue=0.00666;sequence=TGTGTGTC;
-CELF1_8	fimo	nucleotide_motif	30	37	41.8	+	.	Name=UGUGUGUC_CELF1_8+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-2-CELF1_8;pvalue=6.63e-05;qvalue=0.00666;sequence=TGTGTGTC;
-CELF1_9	fimo	nucleotide_motif	18	25	41.8	+	.	Name=UGUGUGUC_CELF1_9+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-1-CELF1_9;pvalue=6.63e-05;qvalue=0.00666;sequence=TGTGTGTC;
-CELF1_11	fimo	nucleotide_motif	11	18	41.8	+	.	Name=UGUGUGUC_CELF1_11+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-1-CELF1_11;pvalue=6.63e-05;qvalue=0.00666;sequence=TGTGTGTC;
-CELF1_11	fimo	nucleotide_motif	31	38	40.5	+	.	Name=UGUGUGUC_CELF1_11+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-2-CELF1_11;pvalue=8.82e-05;qvalue=0.00776;sequence=AGTGTGTC;
-CELF1_17	fimo	nucleotide_motif	11	18	41.8	+	.	Name=UGUGUGUC_CELF1_17+;Alias=MEME-1;ID=UGUGUGUC-MEME-1-1-CELF1_17;pvalue=6.63e-05;qvalue=0.00666;sequence=TGTGTGTC;

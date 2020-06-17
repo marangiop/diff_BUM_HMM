@@ -1,0 +1,1294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc MEME_V2diffBUM_HMM_ex_vivo_30_mers/fimo_out_4 --bgfile MEME_V2diffBUM_HMM_ex_vivo_30_mers/background --motif YAAGGUCCCA MEME_V2diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_V2diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa</command-line>
+<pattern-file>MEME_V2diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml</pattern-file>
+<sequence-file>MEME_V2diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="YAAGGUCCCA" name="MEME-5">
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_0" name="diffBUM_HMM_ex_vivo_0">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_1" name="diffBUM_HMM_ex_vivo_1">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_2" name="diffBUM_HMM_ex_vivo_2">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_3" name="diffBUM_HMM_ex_vivo_3">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_4" name="diffBUM_HMM_ex_vivo_4">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_5" name="diffBUM_HMM_ex_vivo_5">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_6" name="diffBUM_HMM_ex_vivo_6">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_7" name="diffBUM_HMM_ex_vivo_7">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_8" name="diffBUM_HMM_ex_vivo_8">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_9" name="diffBUM_HMM_ex_vivo_9">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_10" name="diffBUM_HMM_ex_vivo_10">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_11" name="diffBUM_HMM_ex_vivo_11">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_12" name="diffBUM_HMM_ex_vivo_12">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_13" name="diffBUM_HMM_ex_vivo_13">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_14" name="diffBUM_HMM_ex_vivo_14">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_15" name="diffBUM_HMM_ex_vivo_15">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_16" name="diffBUM_HMM_ex_vivo_16">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_17" name="diffBUM_HMM_ex_vivo_17">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_18" name="diffBUM_HMM_ex_vivo_18">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_19" name="diffBUM_HMM_ex_vivo_19">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_20" name="diffBUM_HMM_ex_vivo_20">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_21" name="diffBUM_HMM_ex_vivo_21">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_22" name="diffBUM_HMM_ex_vivo_22">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_23" name="diffBUM_HMM_ex_vivo_23">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_24" name="diffBUM_HMM_ex_vivo_24">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_25" name="diffBUM_HMM_ex_vivo_25">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_26" name="diffBUM_HMM_ex_vivo_26">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_27" name="diffBUM_HMM_ex_vivo_27">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_28" name="diffBUM_HMM_ex_vivo_28">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_29" name="diffBUM_HMM_ex_vivo_29">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_30" name="diffBUM_HMM_ex_vivo_30">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_31" name="diffBUM_HMM_ex_vivo_31">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_32" name="diffBUM_HMM_ex_vivo_32">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_33" name="diffBUM_HMM_ex_vivo_33">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_34" name="diffBUM_HMM_ex_vivo_34">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_35" name="diffBUM_HMM_ex_vivo_35">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_36" name="diffBUM_HMM_ex_vivo_36">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_37" name="diffBUM_HMM_ex_vivo_37">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_38" name="diffBUM_HMM_ex_vivo_38">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_39" name="diffBUM_HMM_ex_vivo_39">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_40" name="diffBUM_HMM_ex_vivo_40">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_41" name="diffBUM_HMM_ex_vivo_41">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_42" name="diffBUM_HMM_ex_vivo_42">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_43" name="diffBUM_HMM_ex_vivo_43">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_44" name="diffBUM_HMM_ex_vivo_44">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_45" name="diffBUM_HMM_ex_vivo_45">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_46" name="diffBUM_HMM_ex_vivo_46">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_47" name="diffBUM_HMM_ex_vivo_47">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_48" name="diffBUM_HMM_ex_vivo_48">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_49" name="diffBUM_HMM_ex_vivo_49">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_50" name="diffBUM_HMM_ex_vivo_50">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_51" name="diffBUM_HMM_ex_vivo_51">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_52" name="diffBUM_HMM_ex_vivo_52">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_53" name="diffBUM_HMM_ex_vivo_53">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_54" name="diffBUM_HMM_ex_vivo_54">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_55" name="diffBUM_HMM_ex_vivo_55">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_56" name="diffBUM_HMM_ex_vivo_56">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_57" name="diffBUM_HMM_ex_vivo_57">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_58" name="diffBUM_HMM_ex_vivo_58">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_59" name="diffBUM_HMM_ex_vivo_59">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_60" name="diffBUM_HMM_ex_vivo_60">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_61" name="diffBUM_HMM_ex_vivo_61">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_62" name="diffBUM_HMM_ex_vivo_62">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_63" name="diffBUM_HMM_ex_vivo_63">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_64" name="diffBUM_HMM_ex_vivo_64">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_65" name="diffBUM_HMM_ex_vivo_65">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_66" name="diffBUM_HMM_ex_vivo_66">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_67" name="diffBUM_HMM_ex_vivo_67">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_68" name="diffBUM_HMM_ex_vivo_68">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_69" name="diffBUM_HMM_ex_vivo_69">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_70" name="diffBUM_HMM_ex_vivo_70">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_71" name="diffBUM_HMM_ex_vivo_71">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_72" name="diffBUM_HMM_ex_vivo_72">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_73" name="diffBUM_HMM_ex_vivo_73">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_74" name="diffBUM_HMM_ex_vivo_74">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_75" name="diffBUM_HMM_ex_vivo_75">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_76" name="diffBUM_HMM_ex_vivo_76">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_77" name="diffBUM_HMM_ex_vivo_77">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_78" name="diffBUM_HMM_ex_vivo_78">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_79" name="diffBUM_HMM_ex_vivo_79">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_80" name="diffBUM_HMM_ex_vivo_80">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_81" name="diffBUM_HMM_ex_vivo_81">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_82" name="diffBUM_HMM_ex_vivo_82">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_83" name="diffBUM_HMM_ex_vivo_83">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_84" name="diffBUM_HMM_ex_vivo_84">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_85" name="diffBUM_HMM_ex_vivo_85">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_86" name="diffBUM_HMM_ex_vivo_86">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_87" name="diffBUM_HMM_ex_vivo_87">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_88" name="diffBUM_HMM_ex_vivo_88">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_89" name="diffBUM_HMM_ex_vivo_89">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_90" name="diffBUM_HMM_ex_vivo_90">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_91" name="diffBUM_HMM_ex_vivo_91">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_92" name="diffBUM_HMM_ex_vivo_92">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_93" name="diffBUM_HMM_ex_vivo_93">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_94" name="diffBUM_HMM_ex_vivo_94">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_95" name="diffBUM_HMM_ex_vivo_95">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_96" name="diffBUM_HMM_ex_vivo_96">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_97" name="diffBUM_HMM_ex_vivo_97">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_98" name="diffBUM_HMM_ex_vivo_98">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_99" name="diffBUM_HMM_ex_vivo_99">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_100" name="diffBUM_HMM_ex_vivo_100">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_101" name="diffBUM_HMM_ex_vivo_101">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_102" name="diffBUM_HMM_ex_vivo_102">
+<matched-element start="18" stop="27" score="13.5" pvalue="1.37e-05">
+<sequence>CACAGTCCCA</sequence>
+<mem:qvalue>0.0138</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_103" name="diffBUM_HMM_ex_vivo_103">
+<matched-element start="2" stop="11" score="13.5" pvalue="1.37e-05">
+<sequence>CACAGTCCCA</sequence>
+<mem:qvalue>0.0138</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_104" name="diffBUM_HMM_ex_vivo_104">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_105" name="diffBUM_HMM_ex_vivo_105">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_106" name="diffBUM_HMM_ex_vivo_106">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_107" name="diffBUM_HMM_ex_vivo_107">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_108" name="diffBUM_HMM_ex_vivo_108">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_109" name="diffBUM_HMM_ex_vivo_109">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_110" name="diffBUM_HMM_ex_vivo_110">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_111" name="diffBUM_HMM_ex_vivo_111">
+<matched-element start="4" stop="13" score="9.4375" pvalue="9.31e-05">
+<sequence>CTCAGTCCCA</sequence>
+<mem:qvalue>0.0764</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_112" name="diffBUM_HMM_ex_vivo_112">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_113" name="diffBUM_HMM_ex_vivo_113">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_114" name="diffBUM_HMM_ex_vivo_114">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_115" name="diffBUM_HMM_ex_vivo_115">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_116" name="diffBUM_HMM_ex_vivo_116">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_117" name="diffBUM_HMM_ex_vivo_117">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_118" name="diffBUM_HMM_ex_vivo_118">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_119" name="diffBUM_HMM_ex_vivo_119">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_120" name="diffBUM_HMM_ex_vivo_120">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_121" name="diffBUM_HMM_ex_vivo_121">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_122" name="diffBUM_HMM_ex_vivo_122">
+<matched-element start="21" stop="30" score="16.1562" pvalue="2.44e-06">
+<sequence>CAAGGTCCTA</sequence>
+<mem:qvalue>0.006</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_123" name="diffBUM_HMM_ex_vivo_123">
+<matched-element start="3" stop="12" score="16.1562" pvalue="2.44e-06">
+<sequence>CAAGGTCCTA</sequence>
+<mem:qvalue>0.006</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_124" name="diffBUM_HMM_ex_vivo_124">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_125" name="diffBUM_HMM_ex_vivo_125">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_126" name="diffBUM_HMM_ex_vivo_126">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_127" name="diffBUM_HMM_ex_vivo_127">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_128" name="diffBUM_HMM_ex_vivo_128">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_129" name="diffBUM_HMM_ex_vivo_129">
+<matched-element start="23" stop="32" score="15.7604" pvalue="4.32e-06">
+<sequence>CAAGATCCCA</sequence>
+<mem:qvalue>0.0063</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_130" name="diffBUM_HMM_ex_vivo_130">
+<matched-element start="7" stop="16" score="15.7604" pvalue="4.32e-06">
+<sequence>CAAGATCCCA</sequence>
+<mem:qvalue>0.0063</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_131" name="diffBUM_HMM_ex_vivo_131">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_132" name="diffBUM_HMM_ex_vivo_132">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_133" name="diffBUM_HMM_ex_vivo_133">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_134" name="diffBUM_HMM_ex_vivo_134">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_135" name="diffBUM_HMM_ex_vivo_135">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_136" name="diffBUM_HMM_ex_vivo_136">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_137" name="diffBUM_HMM_ex_vivo_137">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_138" name="diffBUM_HMM_ex_vivo_138">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_139" name="diffBUM_HMM_ex_vivo_139">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_140" name="diffBUM_HMM_ex_vivo_140">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_141" name="diffBUM_HMM_ex_vivo_141">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_142" name="diffBUM_HMM_ex_vivo_142">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_143" name="diffBUM_HMM_ex_vivo_143">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_144" name="diffBUM_HMM_ex_vivo_144">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_145" name="diffBUM_HMM_ex_vivo_145">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_146" name="diffBUM_HMM_ex_vivo_146">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_147" name="diffBUM_HMM_ex_vivo_147">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_148" name="diffBUM_HMM_ex_vivo_148">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_149" name="diffBUM_HMM_ex_vivo_149">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_150" name="diffBUM_HMM_ex_vivo_150">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_151" name="diffBUM_HMM_ex_vivo_151">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_152" name="diffBUM_HMM_ex_vivo_152">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_153" name="diffBUM_HMM_ex_vivo_153">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_154" name="diffBUM_HMM_ex_vivo_154">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_155" name="diffBUM_HMM_ex_vivo_155">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_156" name="diffBUM_HMM_ex_vivo_156">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_157" name="diffBUM_HMM_ex_vivo_157">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_158" name="diffBUM_HMM_ex_vivo_158">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_159" name="diffBUM_HMM_ex_vivo_159">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_160" name="diffBUM_HMM_ex_vivo_160">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_161" name="diffBUM_HMM_ex_vivo_161">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_162" name="diffBUM_HMM_ex_vivo_162">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_163" name="diffBUM_HMM_ex_vivo_163">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_164" name="diffBUM_HMM_ex_vivo_164">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_165" name="diffBUM_HMM_ex_vivo_165">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_166" name="diffBUM_HMM_ex_vivo_166">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_167" name="diffBUM_HMM_ex_vivo_167">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_168" name="diffBUM_HMM_ex_vivo_168">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_169" name="diffBUM_HMM_ex_vivo_169">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_170" name="diffBUM_HMM_ex_vivo_170">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_171" name="diffBUM_HMM_ex_vivo_171">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_172" name="diffBUM_HMM_ex_vivo_172">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_173" name="diffBUM_HMM_ex_vivo_173">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_174" name="diffBUM_HMM_ex_vivo_174">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_175" name="diffBUM_HMM_ex_vivo_175">
+<matched-element start="23" stop="32" score="17.1458" pvalue="1.1e-06">
+<sequence>TAAGGTCCCA</sequence>
+<mem:qvalue>0.00483</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_176" name="diffBUM_HMM_ex_vivo_176">
+<matched-element start="16" stop="25" score="17.1458" pvalue="1.1e-06">
+<sequence>TAAGGTCCCA</sequence>
+<mem:qvalue>0.00483</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_177" name="diffBUM_HMM_ex_vivo_177">
+<matched-element start="2" stop="11" score="17.1458" pvalue="1.1e-06">
+<sequence>TAAGGTCCCA</sequence>
+<mem:qvalue>0.00483</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_178" name="diffBUM_HMM_ex_vivo_178">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_179" name="diffBUM_HMM_ex_vivo_179">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_180" name="diffBUM_HMM_ex_vivo_180">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_181" name="diffBUM_HMM_ex_vivo_181">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_182" name="diffBUM_HMM_ex_vivo_182">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_183" name="diffBUM_HMM_ex_vivo_183">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_184" name="diffBUM_HMM_ex_vivo_184">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_185" name="diffBUM_HMM_ex_vivo_185">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_186" name="diffBUM_HMM_ex_vivo_186">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_187" name="diffBUM_HMM_ex_vivo_187">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_188" name="diffBUM_HMM_ex_vivo_188">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_189" name="diffBUM_HMM_ex_vivo_189">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_190" name="diffBUM_HMM_ex_vivo_190">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_191" name="diffBUM_HMM_ex_vivo_191">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_192" name="diffBUM_HMM_ex_vivo_192">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_193" name="diffBUM_HMM_ex_vivo_193">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_194" name="diffBUM_HMM_ex_vivo_194">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_195" name="diffBUM_HMM_ex_vivo_195">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_196" name="diffBUM_HMM_ex_vivo_196">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_197" name="diffBUM_HMM_ex_vivo_197">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_198" name="diffBUM_HMM_ex_vivo_198">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_199" name="diffBUM_HMM_ex_vivo_199">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_200" name="diffBUM_HMM_ex_vivo_200">
+<matched-element start="21" stop="30" score="15.8958" pvalue="3.2e-06">
+<sequence>CAAGGTCCCT</sequence>
+<mem:qvalue>0.006</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_201" name="diffBUM_HMM_ex_vivo_201">
+<matched-element start="6" stop="15" score="15.8958" pvalue="3.2e-06">
+<sequence>CAAGGTCCCT</sequence>
+<mem:qvalue>0.006</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_202" name="diffBUM_HMM_ex_vivo_202">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_203" name="diffBUM_HMM_ex_vivo_203">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_204" name="diffBUM_HMM_ex_vivo_204">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_205" name="diffBUM_HMM_ex_vivo_205">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_206" name="diffBUM_HMM_ex_vivo_206">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_207" name="diffBUM_HMM_ex_vivo_207">
+<matched-element start="17" stop="26" score="12.2396" pvalue="2.51e-05">
+<sequence>CAAGGCCGCA</sequence>
+<mem:qvalue>0.0236</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_208" name="diffBUM_HMM_ex_vivo_208">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_209" name="diffBUM_HMM_ex_vivo_209">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_210" name="diffBUM_HMM_ex_vivo_210">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_211" name="diffBUM_HMM_ex_vivo_211">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_212" name="diffBUM_HMM_ex_vivo_212">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_213" name="diffBUM_HMM_ex_vivo_213">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_214" name="diffBUM_HMM_ex_vivo_214">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_215" name="diffBUM_HMM_ex_vivo_215">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_216" name="diffBUM_HMM_ex_vivo_216">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_217" name="diffBUM_HMM_ex_vivo_217">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_218" name="diffBUM_HMM_ex_vivo_218">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_219" name="diffBUM_HMM_ex_vivo_219">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_220" name="diffBUM_HMM_ex_vivo_220">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_221" name="diffBUM_HMM_ex_vivo_221">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_222" name="diffBUM_HMM_ex_vivo_222">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_223" name="diffBUM_HMM_ex_vivo_223">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_224" name="diffBUM_HMM_ex_vivo_224">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_225" name="diffBUM_HMM_ex_vivo_225">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_226" name="diffBUM_HMM_ex_vivo_226">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_227" name="diffBUM_HMM_ex_vivo_227">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_228" name="diffBUM_HMM_ex_vivo_228">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_229" name="diffBUM_HMM_ex_vivo_229">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_230" name="diffBUM_HMM_ex_vivo_230">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_231" name="diffBUM_HMM_ex_vivo_231">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_232" name="diffBUM_HMM_ex_vivo_232">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_233" name="diffBUM_HMM_ex_vivo_233">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_234" name="diffBUM_HMM_ex_vivo_234">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_235" name="diffBUM_HMM_ex_vivo_235">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_236" name="diffBUM_HMM_ex_vivo_236">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_237" name="diffBUM_HMM_ex_vivo_237">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_238" name="diffBUM_HMM_ex_vivo_238">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_239" name="diffBUM_HMM_ex_vivo_239">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_240" name="diffBUM_HMM_ex_vivo_240">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_241" name="diffBUM_HMM_ex_vivo_241">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_242" name="diffBUM_HMM_ex_vivo_242">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_243" name="diffBUM_HMM_ex_vivo_243">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_244" name="diffBUM_HMM_ex_vivo_244">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_245" name="diffBUM_HMM_ex_vivo_245">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_246" name="diffBUM_HMM_ex_vivo_246">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_247" name="diffBUM_HMM_ex_vivo_247">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_248" name="diffBUM_HMM_ex_vivo_248">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_249" name="diffBUM_HMM_ex_vivo_249">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_250" name="diffBUM_HMM_ex_vivo_250">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_251" name="diffBUM_HMM_ex_vivo_251">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_252" name="diffBUM_HMM_ex_vivo_252">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_253" name="diffBUM_HMM_ex_vivo_253">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_254" name="diffBUM_HMM_ex_vivo_254">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_255" name="diffBUM_HMM_ex_vivo_255">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_256" name="diffBUM_HMM_ex_vivo_256">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_257" name="diffBUM_HMM_ex_vivo_257">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_258" name="diffBUM_HMM_ex_vivo_258">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_259" name="diffBUM_HMM_ex_vivo_259">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_260" name="diffBUM_HMM_ex_vivo_260">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_261" name="diffBUM_HMM_ex_vivo_261">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_262" name="diffBUM_HMM_ex_vivo_262">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_263" name="diffBUM_HMM_ex_vivo_263">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_264" name="diffBUM_HMM_ex_vivo_264">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_265" name="diffBUM_HMM_ex_vivo_265">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_266" name="diffBUM_HMM_ex_vivo_266">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_267" name="diffBUM_HMM_ex_vivo_267">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_268" name="diffBUM_HMM_ex_vivo_268">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_269" name="diffBUM_HMM_ex_vivo_269">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_270" name="diffBUM_HMM_ex_vivo_270">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_271" name="diffBUM_HMM_ex_vivo_271">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_272" name="diffBUM_HMM_ex_vivo_272">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_273" name="diffBUM_HMM_ex_vivo_273">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_274" name="diffBUM_HMM_ex_vivo_274">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_275" name="diffBUM_HMM_ex_vivo_275">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_276" name="diffBUM_HMM_ex_vivo_276">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_277" name="diffBUM_HMM_ex_vivo_277">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_278" name="diffBUM_HMM_ex_vivo_278">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_279" name="diffBUM_HMM_ex_vivo_279">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_280" name="diffBUM_HMM_ex_vivo_280">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_281" name="diffBUM_HMM_ex_vivo_281">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_282" name="diffBUM_HMM_ex_vivo_282">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_283" name="diffBUM_HMM_ex_vivo_283">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_284" name="diffBUM_HMM_ex_vivo_284">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_285" name="diffBUM_HMM_ex_vivo_285">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_286" name="diffBUM_HMM_ex_vivo_286">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_287" name="diffBUM_HMM_ex_vivo_287">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_288" name="diffBUM_HMM_ex_vivo_288">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_289" name="diffBUM_HMM_ex_vivo_289">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_290" name="diffBUM_HMM_ex_vivo_290">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_291" name="diffBUM_HMM_ex_vivo_291">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_292" name="diffBUM_HMM_ex_vivo_292">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_293" name="diffBUM_HMM_ex_vivo_293">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_294" name="diffBUM_HMM_ex_vivo_294">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_295" name="diffBUM_HMM_ex_vivo_295">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_296" name="diffBUM_HMM_ex_vivo_296">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_297" name="diffBUM_HMM_ex_vivo_297">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_298" name="diffBUM_HMM_ex_vivo_298">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_299" name="diffBUM_HMM_ex_vivo_299">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_300" name="diffBUM_HMM_ex_vivo_300">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_301" name="diffBUM_HMM_ex_vivo_301">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_302" name="diffBUM_HMM_ex_vivo_302">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_303" name="diffBUM_HMM_ex_vivo_303">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_304" name="diffBUM_HMM_ex_vivo_304">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_305" name="diffBUM_HMM_ex_vivo_305">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_306" name="diffBUM_HMM_ex_vivo_306">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_307" name="diffBUM_HMM_ex_vivo_307">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_308" name="diffBUM_HMM_ex_vivo_308">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_309" name="diffBUM_HMM_ex_vivo_309">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_310" name="diffBUM_HMM_ex_vivo_310">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_311" name="diffBUM_HMM_ex_vivo_311">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_312" name="diffBUM_HMM_ex_vivo_312">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_313" name="diffBUM_HMM_ex_vivo_313">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_314" name="diffBUM_HMM_ex_vivo_314">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_315" name="diffBUM_HMM_ex_vivo_315">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_316" name="diffBUM_HMM_ex_vivo_316">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_317" name="diffBUM_HMM_ex_vivo_317">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_318" name="diffBUM_HMM_ex_vivo_318">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_319" name="diffBUM_HMM_ex_vivo_319">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_320" name="diffBUM_HMM_ex_vivo_320">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_321" name="diffBUM_HMM_ex_vivo_321">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_322" name="diffBUM_HMM_ex_vivo_322">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_323" name="diffBUM_HMM_ex_vivo_323">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_324" name="diffBUM_HMM_ex_vivo_324">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_325" name="diffBUM_HMM_ex_vivo_325">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_326" name="diffBUM_HMM_ex_vivo_326">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_327" name="diffBUM_HMM_ex_vivo_327">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_328" name="diffBUM_HMM_ex_vivo_328">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_329" name="diffBUM_HMM_ex_vivo_329">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_330" name="diffBUM_HMM_ex_vivo_330">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_331" name="diffBUM_HMM_ex_vivo_331">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_332" name="diffBUM_HMM_ex_vivo_332">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_333" name="diffBUM_HMM_ex_vivo_333">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_334" name="diffBUM_HMM_ex_vivo_334">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_335" name="diffBUM_HMM_ex_vivo_335">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_336" name="diffBUM_HMM_ex_vivo_336">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_337" name="diffBUM_HMM_ex_vivo_337">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_338" name="diffBUM_HMM_ex_vivo_338">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_339" name="diffBUM_HMM_ex_vivo_339">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_340" name="diffBUM_HMM_ex_vivo_340">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_341" name="diffBUM_HMM_ex_vivo_341">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_342" name="diffBUM_HMM_ex_vivo_342">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_343" name="diffBUM_HMM_ex_vivo_343">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_344" name="diffBUM_HMM_ex_vivo_344">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_345" name="diffBUM_HMM_ex_vivo_345">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_346" name="diffBUM_HMM_ex_vivo_346">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_347" name="diffBUM_HMM_ex_vivo_347">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_348" name="diffBUM_HMM_ex_vivo_348">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_349" name="diffBUM_HMM_ex_vivo_349">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_350" name="diffBUM_HMM_ex_vivo_350">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_351" name="diffBUM_HMM_ex_vivo_351">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_352" name="diffBUM_HMM_ex_vivo_352">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_353" name="diffBUM_HMM_ex_vivo_353">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_354" name="diffBUM_HMM_ex_vivo_354">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_355" name="diffBUM_HMM_ex_vivo_355">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_356" name="diffBUM_HMM_ex_vivo_356">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_357" name="diffBUM_HMM_ex_vivo_357">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_358" name="diffBUM_HMM_ex_vivo_358">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_359" name="diffBUM_HMM_ex_vivo_359">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_360" name="diffBUM_HMM_ex_vivo_360">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_361" name="diffBUM_HMM_ex_vivo_361">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_362" name="diffBUM_HMM_ex_vivo_362">
+<matched-element start="16" stop="25" score="14.875" pvalue="5.8e-06">
+<sequence>TAAGGACCCA</sequence>
+<mem:qvalue>0.00693</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_363" name="diffBUM_HMM_ex_vivo_363">
+<matched-element start="1" stop="10" score="14.875" pvalue="5.8e-06">
+<sequence>TAAGGACCCA</sequence>
+<mem:qvalue>0.00693</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_364" name="diffBUM_HMM_ex_vivo_364">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_365" name="diffBUM_HMM_ex_vivo_365">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_366" name="diffBUM_HMM_ex_vivo_366">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_367" name="diffBUM_HMM_ex_vivo_367">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_368" name="diffBUM_HMM_ex_vivo_368">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_369" name="diffBUM_HMM_ex_vivo_369">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_370" name="diffBUM_HMM_ex_vivo_370">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_371" name="diffBUM_HMM_ex_vivo_371">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_372" name="diffBUM_HMM_ex_vivo_372">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_373" name="diffBUM_HMM_ex_vivo_373">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_374" name="diffBUM_HMM_ex_vivo_374">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_375" name="diffBUM_HMM_ex_vivo_375">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_376" name="diffBUM_HMM_ex_vivo_376">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_377" name="diffBUM_HMM_ex_vivo_377">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_378" name="diffBUM_HMM_ex_vivo_378">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_379" name="diffBUM_HMM_ex_vivo_379">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_380" name="diffBUM_HMM_ex_vivo_380">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_381" name="diffBUM_HMM_ex_vivo_381">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_382" name="diffBUM_HMM_ex_vivo_382">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_383" name="diffBUM_HMM_ex_vivo_383">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_384" name="diffBUM_HMM_ex_vivo_384">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_385" name="diffBUM_HMM_ex_vivo_385">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_386" name="diffBUM_HMM_ex_vivo_386">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_387" name="diffBUM_HMM_ex_vivo_387">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_388" name="diffBUM_HMM_ex_vivo_388">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_389" name="diffBUM_HMM_ex_vivo_389">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_390" name="diffBUM_HMM_ex_vivo_390">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_391" name="diffBUM_HMM_ex_vivo_391">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_392" name="diffBUM_HMM_ex_vivo_392">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_393" name="diffBUM_HMM_ex_vivo_393">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_394" name="diffBUM_HMM_ex_vivo_394">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_395" name="diffBUM_HMM_ex_vivo_395">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_396" name="diffBUM_HMM_ex_vivo_396">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_397" name="diffBUM_HMM_ex_vivo_397">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_398" name="diffBUM_HMM_ex_vivo_398">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_399" name="diffBUM_HMM_ex_vivo_399">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_400" name="diffBUM_HMM_ex_vivo_400">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_401" name="diffBUM_HMM_ex_vivo_401">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_402" name="diffBUM_HMM_ex_vivo_402">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_403" name="diffBUM_HMM_ex_vivo_403">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_404" name="diffBUM_HMM_ex_vivo_404">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_405" name="diffBUM_HMM_ex_vivo_405">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_406" name="diffBUM_HMM_ex_vivo_406">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_407" name="diffBUM_HMM_ex_vivo_407">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_408" name="diffBUM_HMM_ex_vivo_408">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_409" name="diffBUM_HMM_ex_vivo_409">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_410" name="diffBUM_HMM_ex_vivo_410">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_411" name="diffBUM_HMM_ex_vivo_411">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_412" name="diffBUM_HMM_ex_vivo_412">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_413" name="diffBUM_HMM_ex_vivo_413">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_414" name="diffBUM_HMM_ex_vivo_414">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_415" name="diffBUM_HMM_ex_vivo_415">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_416" name="diffBUM_HMM_ex_vivo_416">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_417" name="diffBUM_HMM_ex_vivo_417">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_418" name="diffBUM_HMM_ex_vivo_418">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_419" name="diffBUM_HMM_ex_vivo_419">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_420" name="diffBUM_HMM_ex_vivo_420">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_421" name="diffBUM_HMM_ex_vivo_421">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_422" name="diffBUM_HMM_ex_vivo_422">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_423" name="diffBUM_HMM_ex_vivo_423">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_424" name="diffBUM_HMM_ex_vivo_424">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_425" name="diffBUM_HMM_ex_vivo_425">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_426" name="diffBUM_HMM_ex_vivo_426">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_427" name="diffBUM_HMM_ex_vivo_427">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_428" name="diffBUM_HMM_ex_vivo_428">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_429" name="diffBUM_HMM_ex_vivo_429">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_430" name="diffBUM_HMM_ex_vivo_430">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_431" name="diffBUM_HMM_ex_vivo_431">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_432" name="diffBUM_HMM_ex_vivo_432">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_433" name="diffBUM_HMM_ex_vivo_433">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_434" name="diffBUM_HMM_ex_vivo_434">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_435" name="diffBUM_HMM_ex_vivo_435">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_436" name="diffBUM_HMM_ex_vivo_436">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_437" name="diffBUM_HMM_ex_vivo_437">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_438" name="diffBUM_HMM_ex_vivo_438">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_439" name="diffBUM_HMM_ex_vivo_439">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_440" name="diffBUM_HMM_ex_vivo_440">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_441" name="diffBUM_HMM_ex_vivo_441">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_442" name="diffBUM_HMM_ex_vivo_442">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_443" name="diffBUM_HMM_ex_vivo_443">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_444" name="diffBUM_HMM_ex_vivo_444">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_445" name="diffBUM_HMM_ex_vivo_445">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_446" name="diffBUM_HMM_ex_vivo_446">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_447" name="diffBUM_HMM_ex_vivo_447">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_448" name="diffBUM_HMM_ex_vivo_448">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_449" name="diffBUM_HMM_ex_vivo_449">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_450" name="diffBUM_HMM_ex_vivo_450">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_451" name="diffBUM_HMM_ex_vivo_451">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_452" name="diffBUM_HMM_ex_vivo_452">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_453" name="diffBUM_HMM_ex_vivo_453">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_454" name="diffBUM_HMM_ex_vivo_454">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_455" name="diffBUM_HMM_ex_vivo_455">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_456" name="diffBUM_HMM_ex_vivo_456">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_457" name="diffBUM_HMM_ex_vivo_457">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_458" name="diffBUM_HMM_ex_vivo_458">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_459" name="diffBUM_HMM_ex_vivo_459">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_460" name="diffBUM_HMM_ex_vivo_460">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_461" name="diffBUM_HMM_ex_vivo_461">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_462" name="diffBUM_HMM_ex_vivo_462">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_463" name="diffBUM_HMM_ex_vivo_463">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_464" name="diffBUM_HMM_ex_vivo_464">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_465" name="diffBUM_HMM_ex_vivo_465">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_466" name="diffBUM_HMM_ex_vivo_466">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_467" name="diffBUM_HMM_ex_vivo_467">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_468" name="diffBUM_HMM_ex_vivo_468">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_469" name="diffBUM_HMM_ex_vivo_469">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_470" name="diffBUM_HMM_ex_vivo_470">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_471" name="diffBUM_HMM_ex_vivo_471">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_472" name="diffBUM_HMM_ex_vivo_472">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_473" name="diffBUM_HMM_ex_vivo_473">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_474" name="diffBUM_HMM_ex_vivo_474">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_475" name="diffBUM_HMM_ex_vivo_475">
+<matched-element start="2" stop="11" score="12.0938" pvalue="2.82e-05">
+<sequence>CTAGGTCCTA</sequence>
+<mem:qvalue>0.0247</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_476" name="diffBUM_HMM_ex_vivo_476">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_477" name="diffBUM_HMM_ex_vivo_477">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_478" name="diffBUM_HMM_ex_vivo_478">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_479" name="diffBUM_HMM_ex_vivo_479">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_480" name="diffBUM_HMM_ex_vivo_480">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_481" name="diffBUM_HMM_ex_vivo_481">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_482" name="diffBUM_HMM_ex_vivo_482">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_483" name="diffBUM_HMM_ex_vivo_483">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_484" name="diffBUM_HMM_ex_vivo_484">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_485" name="diffBUM_HMM_ex_vivo_485">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_486" name="diffBUM_HMM_ex_vivo_486">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_487" name="diffBUM_HMM_ex_vivo_487">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_488" name="diffBUM_HMM_ex_vivo_488">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_489" name="diffBUM_HMM_ex_vivo_489">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_490" name="diffBUM_HMM_ex_vivo_490">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_491" name="diffBUM_HMM_ex_vivo_491">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_492" name="diffBUM_HMM_ex_vivo_492">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_493" name="diffBUM_HMM_ex_vivo_493">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_494" name="diffBUM_HMM_ex_vivo_494">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_495" name="diffBUM_HMM_ex_vivo_495">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_496" name="diffBUM_HMM_ex_vivo_496">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_497" name="diffBUM_HMM_ex_vivo_497">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_498" name="diffBUM_HMM_ex_vivo_498">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_499" name="diffBUM_HMM_ex_vivo_499">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_500" name="diffBUM_HMM_ex_vivo_500">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_501" name="diffBUM_HMM_ex_vivo_501">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_502" name="diffBUM_HMM_ex_vivo_502">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_503" name="diffBUM_HMM_ex_vivo_503">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_504" name="diffBUM_HMM_ex_vivo_504">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_505" name="diffBUM_HMM_ex_vivo_505">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_506" name="diffBUM_HMM_ex_vivo_506">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_507" name="diffBUM_HMM_ex_vivo_507">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_508" name="diffBUM_HMM_ex_vivo_508">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_509" name="diffBUM_HMM_ex_vivo_509">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_510" name="diffBUM_HMM_ex_vivo_510">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_511" name="diffBUM_HMM_ex_vivo_511">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_512" name="diffBUM_HMM_ex_vivo_512">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_513" name="diffBUM_HMM_ex_vivo_513">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_514" name="diffBUM_HMM_ex_vivo_514">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_515" name="diffBUM_HMM_ex_vivo_515">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_516" name="diffBUM_HMM_ex_vivo_516">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_517" name="diffBUM_HMM_ex_vivo_517">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_518" name="diffBUM_HMM_ex_vivo_518">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_519" name="diffBUM_HMM_ex_vivo_519">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_520" name="diffBUM_HMM_ex_vivo_520">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_521" name="diffBUM_HMM_ex_vivo_521">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_522" name="diffBUM_HMM_ex_vivo_522">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_523" name="diffBUM_HMM_ex_vivo_523">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_524" name="diffBUM_HMM_ex_vivo_524">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_525" name="diffBUM_HMM_ex_vivo_525">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_526" name="diffBUM_HMM_ex_vivo_526">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_527" name="diffBUM_HMM_ex_vivo_527">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_528" name="diffBUM_HMM_ex_vivo_528">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_529" name="diffBUM_HMM_ex_vivo_529">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_530" name="diffBUM_HMM_ex_vivo_530">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_531" name="diffBUM_HMM_ex_vivo_531">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_532" name="diffBUM_HMM_ex_vivo_532">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_533" name="diffBUM_HMM_ex_vivo_533">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_534" name="diffBUM_HMM_ex_vivo_534">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_535" name="diffBUM_HMM_ex_vivo_535">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_536" name="diffBUM_HMM_ex_vivo_536">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_537" name="diffBUM_HMM_ex_vivo_537">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_538" name="diffBUM_HMM_ex_vivo_538">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_539" name="diffBUM_HMM_ex_vivo_539">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_540" name="diffBUM_HMM_ex_vivo_540">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_541" name="diffBUM_HMM_ex_vivo_541">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_542" name="diffBUM_HMM_ex_vivo_542">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_543" name="diffBUM_HMM_ex_vivo_543">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_544" name="diffBUM_HMM_ex_vivo_544">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_545" name="diffBUM_HMM_ex_vivo_545">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_546" name="diffBUM_HMM_ex_vivo_546">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_547" name="diffBUM_HMM_ex_vivo_547">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_548" name="diffBUM_HMM_ex_vivo_548">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_549" name="diffBUM_HMM_ex_vivo_549">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_550" name="diffBUM_HMM_ex_vivo_550">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_551" name="diffBUM_HMM_ex_vivo_551">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_552" name="diffBUM_HMM_ex_vivo_552">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_553" name="diffBUM_HMM_ex_vivo_553">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_554" name="diffBUM_HMM_ex_vivo_554">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_555" name="diffBUM_HMM_ex_vivo_555">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_556" name="diffBUM_HMM_ex_vivo_556">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_557" name="diffBUM_HMM_ex_vivo_557">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_558" name="diffBUM_HMM_ex_vivo_558">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_559" name="diffBUM_HMM_ex_vivo_559">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_560" name="diffBUM_HMM_ex_vivo_560">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_561" name="diffBUM_HMM_ex_vivo_561">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_562" name="diffBUM_HMM_ex_vivo_562">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_563" name="diffBUM_HMM_ex_vivo_563">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_564" name="diffBUM_HMM_ex_vivo_564">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_565" name="diffBUM_HMM_ex_vivo_565">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_566" name="diffBUM_HMM_ex_vivo_566">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_567" name="diffBUM_HMM_ex_vivo_567">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_568" name="diffBUM_HMM_ex_vivo_568">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_569" name="diffBUM_HMM_ex_vivo_569">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_570" name="diffBUM_HMM_ex_vivo_570">
+</scanned-sequence>
+<scanned-sequence accession="diffBUM_HMM_ex_vivo_571" name="diffBUM_HMM_ex_vivo_571">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

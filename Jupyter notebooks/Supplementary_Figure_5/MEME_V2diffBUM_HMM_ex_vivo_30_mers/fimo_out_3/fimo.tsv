@@ -1,0 +1,25 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_300	5	12	+	13.0909	1.92e-05	0.0448	TCTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_449	18	25	+	13.0909	1.92e-05	0.0448	TCTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_317	1	8	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_312	2	9	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_35	2	9	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_331	5	12	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_302	5	12	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_316	14	21	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_322	14	21	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_330	15	22	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_329	15	22	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_325	15	22	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_318	15	22	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_332	15	22	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_34	15	22	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_317	24	31	+	13.0568	5.08e-05	0.0448	TTTGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_434	3	10	+	12.3864	6.64e-05	0.0493	TCAGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_433	9	16	+	12.3864	6.64e-05	0.0493	TCAGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_471	20	27	+	12.3864	6.64e-05	0.0493	TCAGTGTG
+UYWGUGUG	MEME-3	diffBUM_HMM_ex_vivo_21	12	19	+	12.3523	9.21e-05	0.065	TTAGTGTG
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_V2diffBUM_HMM_ex_vivo_30_mers/fimo_out_3 --bgfile MEME_V2diffBUM_HMM_ex_vivo_30_mers/background --motif UYWGUGUG MEME_V2diffBUM_HMM_ex_vivo_30_mers/meme_out/meme.xml MEME_V2diffBUM_HMM_ex_vivo_30_mers/diffBUM_HMM_ex_vivo_30_mers.fa

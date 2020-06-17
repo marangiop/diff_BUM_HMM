@@ -1,0 +1,21 @@
+##gff-version 3
+diffBUM_HMM_ex_vivo_21	fimo	nucleotide_motif	12	19	40.3	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_21+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_21;pvalue=9.21e-05;qvalue=0.065;sequence=TTAGTGTG;
+diffBUM_HMM_ex_vivo_34	fimo	nucleotide_motif	15	22	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_34+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_34;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_35	fimo	nucleotide_motif	2	9	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_35+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_35;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_300	fimo	nucleotide_motif	5	12	47.2	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_300+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_300;pvalue=1.92e-05;qvalue=0.0448;sequence=TCTGTGTG;
+diffBUM_HMM_ex_vivo_302	fimo	nucleotide_motif	5	12	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_302+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_302;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_312	fimo	nucleotide_motif	2	9	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_312+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_312;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_316	fimo	nucleotide_motif	14	21	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_316+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_316;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_317	fimo	nucleotide_motif	1	8	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_317+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_317;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_317	fimo	nucleotide_motif	24	31	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_317+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-2-diffBUM_HMM_ex_vivo_317;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_318	fimo	nucleotide_motif	15	22	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_318+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_318;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_322	fimo	nucleotide_motif	14	21	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_322+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_322;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_325	fimo	nucleotide_motif	15	22	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_325+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_325;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_329	fimo	nucleotide_motif	15	22	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_329+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_329;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_330	fimo	nucleotide_motif	15	22	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_330+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_330;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_331	fimo	nucleotide_motif	5	12	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_331+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_331;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_332	fimo	nucleotide_motif	15	22	42.9	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_332+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_332;pvalue=5.08e-05;qvalue=0.0448;sequence=TTTGTGTG;
+diffBUM_HMM_ex_vivo_433	fimo	nucleotide_motif	9	16	41.8	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_433+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_433;pvalue=6.64e-05;qvalue=0.0493;sequence=TCAGTGTG;
+diffBUM_HMM_ex_vivo_434	fimo	nucleotide_motif	3	10	41.8	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_434+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_434;pvalue=6.64e-05;qvalue=0.0493;sequence=TCAGTGTG;
+diffBUM_HMM_ex_vivo_449	fimo	nucleotide_motif	18	25	47.2	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_449+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_449;pvalue=1.92e-05;qvalue=0.0448;sequence=TCTGTGTG;
+diffBUM_HMM_ex_vivo_471	fimo	nucleotide_motif	20	27	41.8	+	.	Name=UYWGUGUG_diffBUM_HMM_ex_vivo_471+;Alias=MEME-3;ID=UYWGUGUG-MEME-3-1-diffBUM_HMM_ex_vivo_471;pvalue=6.64e-05;qvalue=0.0493;sequence=TCAGTGTG;

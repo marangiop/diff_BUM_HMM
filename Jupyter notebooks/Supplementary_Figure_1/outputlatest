@@ -1,0 +1,4789 @@
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+Iteration: 0
+Iteration: 1
+This iter is larger than 0
+Skipped this iteration
+Iteration: 2
+This iter is larger than 0
+17721
+20
+0.0011286044805597878
+Iteration: 3
+This iter is larger than 0
+Skipped this iteration
+Iteration: 4
+This iter is larger than 0
+17708
+33
+0.001863564490625706
+Iteration: 5
+This iter is larger than 0
+Skipped this iteration
+Iteration: 6
+This iter is larger than 0
+17724
+17
+0.0009591514330850823
+Iteration: 7
+This iter is larger than 0
+17728
+13
+0.0007333032490974729
+Iteration: 8
+This iter is larger than 0
+Skipped this iteration
+Iteration: 9
+This iter is larger than 0
+17700
+41
+0.0023163841807909607
+Iteration: 10
+This iter is larger than 0
+17709
+32
+0.0018069907956406346
+Iteration: 11
+This iter is larger than 0
+17710
+31
+0.0017504234895539244
+Iteration: 12
+This iter is larger than 0
+17725
+16
+0.0009026798307475317
+Iteration: 13
+This iter is larger than 0
+Skipped this iteration
+Iteration: 14
+This iter is larger than 0
+Skipped this iteration
+Iteration: 15
+This iter is larger than 0
+17727
+14
+0.0007897557398318948
+Iteration: 16
+This iter is larger than 0
+Skipped this iteration
+Iteration: 17
+This iter is larger than 0
+Skipped this iteration
+Iteration: 18
+This iter is larger than 0
+17713
+28
+0.0015807598938632642
+Iteration: 19
+This iter is larger than 0
+17700
+41
+0.0023163841807909607
+Iteration: 20
+This iter is larger than 0
+17714
+27
+0.001524218132550525
+Iteration: 21
+This iter is larger than 0
+Skipped this iteration
+Iteration: 22
+This iter is larger than 0
+Skipped this iteration
+Iteration: 23
+This iter is larger than 0
+17721
+20
+0.0011286044805597878
+Iteration: 24
+This iter is larger than 0
+17720
+21
+0.0011851015801354402
+Iteration: 25
+This iter is larger than 0
+Skipped this iteration
+Iteration: 26
+This iter is larger than 0
+Skipped this iteration
+Iteration: 27
+This iter is larger than 0
+Skipped this iteration
+Iteration: 28
+This iter is larger than 0
+17714
+27
+0.001524218132550525
+Iteration: 29
+This iter is larger than 0
+17688
+53
+0.002996381727725011
+Iteration: 30
+This iter is larger than 0
+Skipped this iteration
+Iteration: 31
+This iter is larger than 0
+Skipped this iteration
+Iteration: 32
+This iter is larger than 0
+Skipped this iteration
+Iteration: 33
+This iter is larger than 0
+Skipped this iteration
+Iteration: 34
+This iter is larger than 0
+17727
+14
+0.0007897557398318948
+Iteration: 35
+This iter is larger than 0
+Skipped this iteration
+Iteration: 36
+This iter is larger than 0
+Skipped this iteration
+Iteration: 37
+This iter is larger than 0
+17723
+18
+0.0010156294081137506
+Iteration: 38
+This iter is larger than 0
+17723
+18
+0.0010156294081137506
+Iteration: 39
+This iter is larger than 0
+Skipped this iteration
+Iteration: 40
+This iter is larger than 0
+17727
+14
+0.0007897557398318948
+Iteration: 41
+This iter is larger than 0
+17726
+15
+0.0008462146000225657
+Iteration: 42
+This iter is larger than 0
+17709
+32
+0.0018069907956406346
+Iteration: 43
+This iter is larger than 0
+17721
+20
+0.0011286044805597878
+Iteration: 44
+This iter is larger than 0
+17706
+35
+0.0019767310516209196
+Iteration: 45
+This iter is larger than 0
+Skipped this iteration
+Iteration: 46
+This iter is larger than 0
+Skipped this iteration
+Iteration: 47
+This iter is larger than 0
+17724
+17
+0.0009591514330850823
+Iteration: 48
+This iter is larger than 0
+Skipped this iteration
+Iteration: 49
+This iter is larger than 0
+17730
+11
+0.0006204173716864072
+Iteration: 50
+This iter is larger than 0
+17724
+17
+0.0009591514330850823
+Iteration: 51
+This iter is larger than 0
+17722
+19
+0.0010721137569123123
+Iteration: 52
+This iter is larger than 0
+17700
+41
+0.0023163841807909607
+Iteration: 53
+This iter is larger than 0
+Skipped this iteration
+Iteration: 54
+This iter is larger than 0
+17725
+16
+0.0009026798307475317
+Iteration: 55
+This iter is larger than 0
+Skipped this iteration
+Iteration: 56
+This iter is larger than 0
+17700
+41
+0.0023163841807909607
+Iteration: 57
+This iter is larger than 0
+Skipped this iteration
+Iteration: 58
+This iter is larger than 0
+Skipped this iteration
+Iteration: 59
+This iter is larger than 0
+Skipped this iteration
+Iteration: 60
+This iter is larger than 0
+Skipped this iteration
+Iteration: 61
+This iter is larger than 0
+Skipped this iteration
+Iteration: 62
+This iter is larger than 0
+17713
+28
+0.0015807598938632642
+Iteration: 63
+This iter is larger than 0
+Skipped this iteration
+Iteration: 64
+This iter is larger than 0
+Skipped this iteration
+Iteration: 65
+This iter is larger than 0
+17725
+16
+0.0009026798307475317
+Iteration: 66
+This iter is larger than 0
+Skipped this iteration
+Iteration: 67
+This iter is larger than 0
+17724
+17
+0.0009591514330850823
+Iteration: 68
+This iter is larger than 0
+17733
+8
+0.0004511362995545029
+Iteration: 69
+This iter is larger than 0
+Skipped this iteration
+Iteration: 70
+This iter is larger than 0
+Skipped this iteration
+Iteration: 71
+This iter is larger than 0
+17712
+29
+0.0016373080397470642
+Iteration: 72
+This iter is larger than 0
+Skipped this iteration
+Iteration: 73
+This iter is larger than 0
+Skipped this iteration
+Iteration: 74
+This iter is larger than 0
+17721
+20
+0.0011286044805597878
+Iteration: 75
+This iter is larger than 0
+17722
+19
+0.0010721137569123123
+Iteration: 76
+This iter is larger than 0
+17725
+16
+0.0009026798307475317
+Iteration: 77
+This iter is larger than 0
+Skipped this iteration
+Iteration: 78
+This iter is larger than 0
+17717
+24
+0.0013546311452277474
+Iteration: 79
+This iter is larger than 0
+Skipped this iteration
+Iteration: 80
+This iter is larger than 0
+Skipped this iteration
+Iteration: 81
+This iter is larger than 0
+Skipped this iteration
+Iteration: 82
+This iter is larger than 0
+17719
+22
+0.0012416050567187764
+Iteration: 83
+This iter is larger than 0
+17715
+26
+0.001467682754727632
+Iteration: 84
+This iter is larger than 0
+17706
+35
+0.0019767310516209196
+Iteration: 85
+This iter is larger than 0
+17724
+17
+0.0009591514330850823
+Iteration: 86
+This iter is larger than 0
+Skipped this iteration
+Iteration: 87
+This iter is larger than 0
+17723
+18
+0.0010156294081137506
+Iteration: 88
+This iter is larger than 0
+Skipped this iteration
+Iteration: 89
+This iter is larger than 0
+17700
+41
+0.0023163841807909607
+Iteration: 90
+This iter is larger than 0
+Skipped this iteration
+Iteration: 91
+This iter is larger than 0
+Skipped this iteration
+Iteration: 92
+This iter is larger than 0
+Skipped this iteration
+Iteration: 93
+This iter is larger than 0
+Skipped this iteration
+Iteration: 94
+This iter is larger than 0
+Skipped this iteration
+Iteration: 95
+This iter is larger than 0
+17730
+11
+0.0006204173716864072
+Iteration: 96
+This iter is larger than 0
+Skipped this iteration
+Iteration: 97
+This iter is larger than 0
+17729
+12
+0.000676857126741497
+Iteration: 98
+This iter is larger than 0
+17716
+25
+0.0014111537593136149
+Iteration: 99
+This iter is larger than 0
+17739
+2
+0.0001127459270533852
+Iteration: 100
+This iter is larger than 0
+Skipped this iteration
+Iteration: 101
+This iter is larger than 0
+Skipped this iteration
+Iteration: 102
+This iter is larger than 0
+Skipped this iteration
+Iteration: 103
+This iter is larger than 0
+Skipped this iteration
+Iteration: 104
+This iter is larger than 0
+17717
+24
+0.0013546311452277474
+Iteration: 105
+This iter is larger than 0
+Skipped this iteration
+Iteration: 106
+This iter is larger than 0
+17726
+15
+0.0008462146000225657
+Iteration: 107
+This iter is larger than 0
+17732
+9
+0.0005075569591698624
+Iteration: 108
+This iter is larger than 0
+17709
+32
+0.0018069907956406346
+Iteration: 109
+This iter is larger than 0
+Skipped this iteration
+Iteration: 110
+This iter is larger than 0
+Skipped this iteration
+Iteration: 111
+This iter is larger than 0
+Skipped this iteration
+Iteration: 112
+This iter is larger than 0
+17726
+15
+0.0008462146000225657
+Iteration: 113
+This iter is larger than 0
+17725
+16
+0.0009026798307475317
+Iteration: 114
+This iter is larger than 0
+Skipped this iteration     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+     [,1]
+[1,]   NA
+[2,]   NA
+[3,]   NA
+[4,]   NA
+[5,]   NA
+[6,]   NA
+     [,1] [,2] [,3] [,4]
+[1,]   NA   NA   NA   NA
+[2,]   NA   NA   NA   NA
+[3,]   NA   NA   NA   NA
+[4,]   NA   NA   NA   NA
+[5,]   NA   NA   NA   NA
+[6,]   NA   NA   NA   NA
+
+Iteration: 115
+This iter is larger than 0
+Skipped this iteration
+Iteration: 116
+This iter is larger than 0
+Skipped this iteration
+Iteration: 117
+This iter is larger than 0
+Skipped this iteration
+Iteration: 118
+This iter is larger than 0
+Skipped this iteration
+Iteration: 119
+This iter is larger than 0
+17717
+24
+0.0013546311452277474
+Iteration: 120
+This iter is larger than 0
+Skipped this iteration
+Iteration: 121
+This iter is larger than 0
+17720
+21
+0.0011851015801354402
+Iteration: 122
+This iter is larger than 0
+Skipped this iteration
+Iteration: 123
+This iter is larger than 0
+Skipped this iteration
+Iteration: 124
+This iter is larger than 0
+Skipped this iteration
+Iteration: 125
+This iter is larger than 0
+Skipped this iteration
+Iteration: 126
+This iter is larger than 0
+Skipped this iteration
+Iteration: 127
+This iter is larger than 0
+17714
+27
+0.001524218132550525
+Iteration: 128
+This iter is larger than 0
+17734
+7
+0.00039472200293222057
+Iteration: 129
+This iter is larger than 0
+Skipped this iteration
+Iteration: 130
+This iter is larger than 0
+17709
+32
+0.0018069907956406346
+Iteration: 131
+This iter is larger than 0
+Skipped this iteration
+Iteration: 132
+This iter is larger than 0
+17711
+30
+0.0016938625712833832
+Iteration: 133
+This iter is larger than 0
+Skipped this iteration
+Iteration: 134
+This iter is larger than 0
+17711
+30
+0.0016938625712833832
+Iteration: 135
+This iter is larger than 0
+Skipped this iteration
+Iteration: 136
+This iter is larger than 0
+17717
+24
+0.0013546311452277474
+Iteration: 137
+This iter is larger than 0
+17727
+14
+0.0007897557398318948
+Iteration: 138
+This iter is larger than 0
+Skipped this iteration
+Iteration: 139
+This iter is larger than 0
+Skipped this iteration
+Iteration: 140
+This iter is larger than 0
+17721
+20
+0.0011286044805597878
+Iteration: 141
+This iter is larger than 0
+Skipped this iteration
+Iteration: 142
+This iter is larger than 0
+Skipped this iteration
+Iteration: 143
+This iter is larger than 0
+Skipped this iteration
+Iteration: 144
+This iter is larger than 0
+17717
+24
+0.0013546311452277474
+Iteration: 145
+This iter is larger than 0
+Skipped this iteration
+Iteration: 146
+This iter is larger than 0
+17723
+18
+0.0010156294081137506
+Iteration: 147
+This iter is larger than 0
+Skipped this iteration
+Iteration: 148
+This iter is larger than 0
+Skipped this iteration
+Iteration: 149
+This iter is larger than 0
+17721
+20
+0.0011286044805597878
+Mean is 0.0012681025382412154
+SD is 0.00053970857291946
+# of actual iterations70

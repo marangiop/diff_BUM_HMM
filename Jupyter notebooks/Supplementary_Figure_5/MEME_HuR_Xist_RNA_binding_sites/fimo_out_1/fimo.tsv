@@ -1,0 +1,11 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+CUUCCUUGC	MEME-1	HuR_11	3	11	+	14.1782	1.05e-05	0.00198	CTTCCCTGC
+CUUCCUUGC	MEME-1	HuR_6	2	10	+	14.1485	3.75e-05	0.00198	CTTCCTTGC
+CUUCCUUGC	MEME-1	HuR_8	3	11	+	14.1485	3.75e-05	0.00198	CTTCCTTGC
+CUUCCUUGC	MEME-1	HuR_7	9	17	+	14.1485	3.75e-05	0.00198	CTTCCTTGC
+CUUCCUUGC	MEME-1	HuR_6	24	32	+	14.1485	3.75e-05	0.00198	CTTCCTTGC
+CUUCCUUGC	MEME-1	HuR_2	4	12	+	12.7129	4.24e-05	0.00198	CTTACCTGC
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_HuR_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_HuR_Xist_RNA_binding_sites/background --motif CUUCCUUGC MEME_HuR_Xist_RNA_binding_sites/meme_out/meme.xml MEME_HuR_Xist_RNA_binding_sites/HuR_Xist_RNA_binding_sites.fa

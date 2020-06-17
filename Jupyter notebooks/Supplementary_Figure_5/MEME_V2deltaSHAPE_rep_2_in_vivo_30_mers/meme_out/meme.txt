@@ -1,0 +1,2461 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.1.0 (Release date: Fri Oct 11 15:53:28 2019 -0700)
+
+For further information on how to interpret please access http://meme-suite.org/.
+To get a copy of the MEME software please access http://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to discover
+motifs in biopolymers", Proceedings of the Second International
+Conference on Intelligent Systems for Molecular Biology, pp. 28-36,
+AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-centered
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGU
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+deltaSHAPE_rep2_in_vivo_ 1.0000     32  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-centered -oc MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/meme_out -mod anr -nmotifs 20 -minw 4 -maxw 10 -bfile MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/background -rna -p 8 -nostatus 
+
+model:  mod=           anr    nmotifs=        20    evt=           inf
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+width:  minw=            4    maxw=           10
+nsites: minsites=        2    maxsites=      615    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            3936    N=             123
+sample: seed=            0    hsfrac=          0
+        searchsize=   3936    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.315 C 0.177 G 0.19 U 0.318 
+Background letter frequencies (from file MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/background):
+A 0.315 C 0.177 G 0.19 U 0.318 
+Background model order: 1
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAYAAWUCUG MEME-1	width =  10  sites =  11  llr = 102  E-value = 2.5e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAYAAWUCUG MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  aa:9662:::
+pos.-specific     C  ::41:::a::
+probability       G  ::::1:2:2a
+matrix            U  ::6:346:8:
+
+         bits    2.5        * *
+                 2.2        * *
+                 2.0        * *
+                 1.7 **     * *
+Relative         1.5 **     * *
+Entropy          1.2 ** *   * *
+(13.3 bits)      1.0 ****   ***
+                 0.7 **** * ***
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           AAUAAAUCUG
+consensus              C UU    
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAYAAWUCUG MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      5  1.05e-05       ACTG AATAATTCTG TCAGAAATAT
+deltaSHAPE_rep2_in_vivo_     12  1.05e-05 TTGAGTACTG AATAATTCTG TCAGAAATAT
+deltaSHAPE_rep2_in_vivo_     19  1.05e-05 TTGAGTACTG AATAATTCTG TCAG      
+deltaSHAPE_rep2_in_vivo_      1  1.36e-05          . AATAAAGCTG CCTATAAAAT
+deltaSHAPE_rep2_in_vivo_     17  1.36e-05 TTTCTATAGA AATAAAGCTG CCTATA    
+deltaSHAPE_rep2_in_vivo_      6  1.89e-05      TGAAG AATATATCTG ATTACTGAGT
+deltaSHAPE_rep2_in_vivo_     12  1.89e-05 CAGCCTGAAG AATATATCTG ATTACTGAGT
+deltaSHAPE_rep2_in_vivo_     11  3.88e-05 AGGCATGCAC AACAGATCTG TGTGGAGCTT
+deltaSHAPE_rep2_in_vivo_     12  7.96e-05 GGTATCAGGG AACAAAACGG GAAGAGGCCA
+deltaSHAPE_rep2_in_vivo_     16  7.96e-05 AAGGAAAGAA AACCATTCTG TCATTGC   
+deltaSHAPE_rep2_in_vivo_     23  1.24e-04 CAAATATATG AACATAACGG           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAYAAWUCUG MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_            1e-05  4_[1]_18
+deltaSHAPE_rep2_in_vivo_            1e-05  11_[1]_11
+deltaSHAPE_rep2_in_vivo_            1e-05  18_[1]_4
+deltaSHAPE_rep2_in_vivo_          1.4e-05  [1]_22
+deltaSHAPE_rep2_in_vivo_          1.4e-05  16_[1]_6
+deltaSHAPE_rep2_in_vivo_          1.9e-05  5_[1]_17
+deltaSHAPE_rep2_in_vivo_          1.9e-05  11_[1]_11
+deltaSHAPE_rep2_in_vivo_          3.9e-05  10_[1]_12
+deltaSHAPE_rep2_in_vivo_            8e-05  11_[1]_11
+deltaSHAPE_rep2_in_vivo_            8e-05  15_[1]_7
+deltaSHAPE_rep2_in_vivo_          0.00012  22_[1]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAYAAWUCUG MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAYAAWUCUG width=10 seqs=11
+deltaSHAPE_rep2_in_vivo_ (    5) AAUAAUUCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   12) AAUAAUUCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   19) AAUAAUUCUG  1 
+deltaSHAPE_rep2_in_vivo_ (    1) AAUAAAGCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   17) AAUAAAGCUG  1 
+deltaSHAPE_rep2_in_vivo_ (    6) AAUAUAUCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   12) AAUAUAUCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   11) AACAGAUCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   12) AACAAAACGG  1 
+deltaSHAPE_rep2_in_vivo_ (   16) AACCAUUCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   23) AACAUAACGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAYAAWUCUG MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 8.35735 E= 2.5e+002 
+   167  -1010  -1010  -1010 
+   167  -1010  -1010  -1010 
+ -1010    104  -1010    100 
+   153    -96  -1010  -1010 
+   101  -1010   -106    -22 
+   101  -1010  -1010     19 
+   -79  -1010     -6    100 
+ -1010    249  -1010  -1010 
+ -1010  -1010     -6    136 
+ -1010  -1010    240  -1010 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAYAAWUCUG MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 11 E= 2.5e+002 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.363636  0.000000  0.636364 
+ 0.909091  0.090909  0.000000  0.000000 
+ 0.636364  0.000000  0.090909  0.272727 
+ 0.636364  0.000000  0.000000  0.363636 
+ 0.181818  0.000000  0.181818  0.636364 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.181818  0.818182 
+ 0.000000  0.000000  1.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAYAAWUCUG MEME-1 regular expression
+--------------------------------------------------------------------------------
+AA[UC]A[AU][AU]UCUG
+--------------------------------------------------------------------------------
+
+
+
+
+Time 31.42 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GSCUGG MEME-2	width =   6  sites =   8  llr = 68  E-value = 4.3e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GSCUGG MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::::
+pos.-specific     C  :6a:::
+probability       G  a4:3aa
+matrix            U  :::8::
+
+         bits    2.5 * * **
+                 2.2 * * **
+                 2.0 * * **
+                 1.7 * * **
+Relative         1.5 *** **
+Entropy          1.2 *** **
+(12.2 bits)      1.0 ******
+                 0.7 ******
+                 0.5 ******
+                 0.2 ******
+                 0.0 ------
+
+Multilevel           GCCUGG
+consensus             G G  
+sequence                   
+                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCUGG MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value             Site 
+-------------             ----- ---------            ------
+deltaSHAPE_rep2_in_vivo_     15  6.83e-05 TTTGTTCATT GCCTGG CTCAGCGTCA
+deltaSHAPE_rep2_in_vivo_     13  6.83e-05 TGCAATATTT GCCTGG TGTGCAATGA
+deltaSHAPE_rep2_in_vivo_      6  6.83e-05      GGCTG GCCTGG AACTTAGCAT
+deltaSHAPE_rep2_in_vivo_      8  6.83e-05    TTATGTA GCCTGG GCTGGGCGGG
+deltaSHAPE_rep2_in_vivo_     23  1.42e-04 ATAAAGCCCA GGCTGG TTCT      
+deltaSHAPE_rep2_in_vivo_     23  1.42e-04 TAGATGTACT GGCTGG AGGG      
+deltaSHAPE_rep2_in_vivo_      6  1.83e-04      ATAAA GCCGGG ACCTAACTGT
+deltaSHAPE_rep2_in_vivo_     18  2.26e-04 GCCTGGGCTG GGCGGG ACTTACAGG 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCUGG MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          6.8e-05  14_[2]_12
+deltaSHAPE_rep2_in_vivo_          6.8e-05  12_[2]_14
+deltaSHAPE_rep2_in_vivo_          6.8e-05  5_[2]_21
+deltaSHAPE_rep2_in_vivo_          6.8e-05  7_[2]_4_[2]_9
+deltaSHAPE_rep2_in_vivo_          0.00014  22_[2]_4
+deltaSHAPE_rep2_in_vivo_          0.00014  22_[2]_4
+deltaSHAPE_rep2_in_vivo_          0.00018  5_[2]_21
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCUGG MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GSCUGG width=6 seqs=8
+deltaSHAPE_rep2_in_vivo_ (   15) GCCUGG  1 
+deltaSHAPE_rep2_in_vivo_ (   13) GCCUGG  1 
+deltaSHAPE_rep2_in_vivo_ (    6) GCCUGG  1 
+deltaSHAPE_rep2_in_vivo_ (    8) GCCUGG  1 
+deltaSHAPE_rep2_in_vivo_ (   23) GGCUGG  1 
+deltaSHAPE_rep2_in_vivo_ (   23) GGCUGG  1 
+deltaSHAPE_rep2_in_vivo_ (    6) GCCGGG  1 
+deltaSHAPE_rep2_in_vivo_ (   18) GGCGGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCUGG MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 6 n= 3321 bayes= 9.43228 E= 4.3e+002 
+  -965   -965    240   -965 
+  -965    182     98   -965 
+  -965    249   -965   -965 
+  -965   -965     40    124 
+  -965   -965    240   -965 
+  -965   -965    240   -965 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCUGG MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 6 nsites= 8 E= 4.3e+002 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.625000  0.375000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.250000  0.750000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GSCUGG MEME-2 regular expression
+--------------------------------------------------------------------------------
+G[CG]C[UG]GG
+--------------------------------------------------------------------------------
+
+
+
+
+Time 33.89 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF VUGUKKGCWU MEME-3	width =  10  sites =   9  llr = 92  E-value = 5.2e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif VUGUKKGCWU MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:::::::6:
+pos.-specific     C  42::1::a::
+probability       G  3:a:33a:::
+matrix            U  :8:a67::4a
+
+         bits    2.5   *   **  
+                 2.2   *   **  
+                 2.0   *   **  
+                 1.7   **  ** *
+Relative         1.5   **  ** *
+Entropy          1.2   **  ** *
+(14.7 bits)      1.0  *** *** *
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           CUGUUUGCAU
+consensus            GC  GG  U 
+sequence             A         
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VUGUKKGCWU MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      3  1.85e-06         CC CTGTGTGCAT TTAGCAAAGG
+deltaSHAPE_rep2_in_vivo_     18  1.85e-06 TAGTCCAGCC CTGTGTGCAT TTAGC     
+deltaSHAPE_rep2_in_vivo_     18  7.93e-06 CGGGACCTAA CTGTTGGCTT TATCA     
+deltaSHAPE_rep2_in_vivo_     22  7.93e-06 GTACATGTGC GTGTGTGCAT G         
+deltaSHAPE_rep2_in_vivo_      7  1.11e-05     TGCTTT GTGTTTGCTT GTGTTTCTAT
+deltaSHAPE_rep2_in_vivo_     23  1.11e-05 CTGTTGCTTT GTGTTTGCTT           
+deltaSHAPE_rep2_in_vivo_      7  2.35e-05     AGCCAA CTGTCTGCTT AAGAAACTTT
+deltaSHAPE_rep2_in_vivo_      2  4.04e-05          T ACGTTGGCAT TTTATGAACT
+deltaSHAPE_rep2_in_vivo_     22  4.04e-05 AATAATATGT ACGTTGGCAT T         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VUGUKKGCWU MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          1.9e-06  2_[3]_20
+deltaSHAPE_rep2_in_vivo_          1.9e-06  17_[3]_5
+deltaSHAPE_rep2_in_vivo_          7.9e-06  17_[3]_5
+deltaSHAPE_rep2_in_vivo_          7.9e-06  21_[3]_1
+deltaSHAPE_rep2_in_vivo_          1.1e-05  6_[3]_16
+deltaSHAPE_rep2_in_vivo_          1.1e-05  22_[3]
+deltaSHAPE_rep2_in_vivo_          2.3e-05  6_[3]_16
+deltaSHAPE_rep2_in_vivo_            4e-05  1_[3]_21
+deltaSHAPE_rep2_in_vivo_            4e-05  21_[3]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VUGUKKGCWU MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF VUGUKKGCWU width=10 seqs=9
+deltaSHAPE_rep2_in_vivo_ (    3) CUGUGUGCAU  1 
+deltaSHAPE_rep2_in_vivo_ (   18) CUGUGUGCAU  1 
+deltaSHAPE_rep2_in_vivo_ (   18) CUGUUGGCUU  1 
+deltaSHAPE_rep2_in_vivo_ (   22) GUGUGUGCAU  1 
+deltaSHAPE_rep2_in_vivo_ (    7) GUGUUUGCUU  1 
+deltaSHAPE_rep2_in_vivo_ (   23) GUGUUUGCUU  1 
+deltaSHAPE_rep2_in_vivo_ (    7) CUGUCUGCUU  1 
+deltaSHAPE_rep2_in_vivo_ (    2) ACGUUGGCAU  1 
+deltaSHAPE_rep2_in_vivo_ (   22) ACGUUGGCAU  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VUGUKKGCWU MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 8.42626 E= 5.2e+001 
+   -50    132     81   -982 
+  -982     33   -982    129 
+  -982   -982    240   -982 
+  -982   -982   -982    165 
+  -982    -67     81     80 
+  -982   -982     81    107 
+  -982   -982    240   -982 
+  -982    249   -982   -982 
+    82   -982   -982     48 
+  -982   -982   -982    165 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VUGUKKGCWU MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 9 E= 5.2e+001 
+ 0.222222  0.444444  0.333333  0.000000 
+ 0.000000  0.222222  0.000000  0.777778 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.111111  0.333333  0.555556 
+ 0.000000  0.000000  0.333333  0.666667 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.555556  0.000000  0.000000  0.444444 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif VUGUKKGCWU MEME-3 regular expression
+--------------------------------------------------------------------------------
+[CGA][UC]GU[UG][UG]GC[AU]U
+--------------------------------------------------------------------------------
+
+
+
+
+Time 36.29 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MCMCAACACC MEME-4	width =  10  sites =   5  llr = 60  E-value = 1.2e+001
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MCMCAACACC MEME-4 Description
+--------------------------------------------------------------------------------
+Simplified        A  6:42aa:a::
+pos.-specific     C  4a66::8:aa
+probability       G  ::::::2:::
+matrix            U  :::2::::::
+
+         bits    2.5  *      **
+                 2.2  *      **
+                 2.0  *      **
+                 1.7  *  ******
+Relative         1.5  *  ******
+Entropy          1.2  ** ******
+(17.3 bits)      1.0 *** ******
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           ACCCAACACC
+consensus            C AA  G   
+sequence                U      
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MCMCAACACC MEME-4 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      3  1.31e-06         GA ACACAACACC TAATGAAACA
+deltaSHAPE_rep2_in_vivo_     21  1.31e-06 AGCATGCAGA ACACAACACC TA        
+deltaSHAPE_rep2_in_vivo_      3  1.50e-06         AT CCCCAAGACC AAGAAGGGAA
+deltaSHAPE_rep2_in_vivo_      5  2.12e-06       TTAC CCCAAACACC CTATGTGTCA
+deltaSHAPE_rep2_in_vivo_     20  3.51e-06 AATGCTTATC ACCTAACACC ACC       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MCMCAACACC MEME-4 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          1.3e-06  2_[4]_20
+deltaSHAPE_rep2_in_vivo_          1.3e-06  20_[4]_2
+deltaSHAPE_rep2_in_vivo_          1.5e-06  2_[4]_20
+deltaSHAPE_rep2_in_vivo_          2.1e-06  4_[4]_18
+deltaSHAPE_rep2_in_vivo_          3.5e-06  19_[4]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MCMCAACACC MEME-4 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MCMCAACACC width=10 seqs=5
+deltaSHAPE_rep2_in_vivo_ (    3) ACACAACACC  1 
+deltaSHAPE_rep2_in_vivo_ (   21) ACACAACACC  1 
+deltaSHAPE_rep2_in_vivo_ (    3) CCCCAAGACC  1 
+deltaSHAPE_rep2_in_vivo_ (    5) CCCAAACACC  1 
+deltaSHAPE_rep2_in_vivo_ (   20) ACCUAACACC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MCMCAACACC MEME-4 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 9.39354 E= 1.2e+001 
+    93    117   -897   -897 
+  -897    249   -897   -897 
+    34    176   -897   -897 
+   -65    176   -897    -67 
+   166   -897   -897   -897 
+   166   -897   -897   -897 
+  -897    217      8   -897 
+   166   -897   -897   -897 
+  -897    249   -897   -897 
+  -897    249   -897   -897 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MCMCAACACC MEME-4 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 5 E= 1.2e+001 
+ 0.600000  0.400000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.400000  0.600000  0.000000  0.000000 
+ 0.200000  0.600000  0.000000  0.200000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.800000  0.200000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MCMCAACACC MEME-4 regular expression
+--------------------------------------------------------------------------------
+[AC]C[CA][CAU]AA[CG]ACC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 38.54 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCAAAUCCCC MEME-5	width =  10  sites =   2  llr = 30  E-value = 3.2e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCAAAUCCCC MEME-5 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::aaa:::::
+pos.-specific     C  :a::::aaaa
+probability       G  a:::::::::
+matrix            U  :::::a::::
+
+         bits    2.5 **    ****
+                 2.2 **    ****
+                 2.0 **    ****
+                 1.7 **********
+Relative         1.5 **********
+Entropy          1.2 **********
+(21.5 bits)      1.0 **********
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           GCAAAUCCCC
+consensus                      
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCAAAUCCCC MEME-5 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      3  3.28e-07         GA GCAAATCCCC TGCTAGTTTC
+deltaSHAPE_rep2_in_vivo_     20  3.28e-07 TCCAACTTGA GCAAATCCCC TGC       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCAAAUCCCC MEME-5 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          3.3e-07  2_[5]_20
+deltaSHAPE_rep2_in_vivo_          3.3e-07  19_[5]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCAAAUCCCC MEME-5 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCAAAUCCCC width=10 seqs=2
+deltaSHAPE_rep2_in_vivo_ (    3) GCAAAUCCCC  1 
+deltaSHAPE_rep2_in_vivo_ (   20) GCAAAUCCCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCAAAUCCCC MEME-5 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 10.4651 E= 3.2e+002 
+  -765   -765    239   -765 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+   166   -765   -765   -765 
+   166   -765   -765   -765 
+  -765   -765   -765    165 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCAAAUCCCC MEME-5 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 2 E= 3.2e+002 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCAAAUCCCC MEME-5 regular expression
+--------------------------------------------------------------------------------
+GCAAAUCCCC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 40.66 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGYAUCAGRS MEME-6	width =  10  sites =   4  llr = 51  E-value = 5.2e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGYAUCAGRS MEME-6 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a::a:5:
+pos.-specific     C  ::5::a:::5
+probability       G  aa:::::a55
+matrix            U  ::5:a:::::
+
+         bits    2.5 **   * *  
+                 2.2 **   * *  
+                 2.0 **   * *  
+                 1.7 ** *****  
+Relative         1.5 ** ***** *
+Entropy          1.2 ** ***** *
+(18.2 bits)      1.0 **********
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           GGCAUCAGAC
+consensus              U     GG
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGYAUCAGRS MEME-6 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      3  8.51e-07         AA GGCATCAGAC TAAGTACCTG
+deltaSHAPE_rep2_in_vivo_     19  8.51e-07 TTTCCTATAA GGCATCAGAC TAAG      
+deltaSHAPE_rep2_in_vivo_      2  2.11e-06          G GGTATCAGGG AACAAAACGG
+deltaSHAPE_rep2_in_vivo_     15  2.11e-06 CCAGAGCATG GGTATCAGGG AACAAAAC  
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGYAUCAGRS MEME-6 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          8.5e-07  2_[6]_20
+deltaSHAPE_rep2_in_vivo_          8.5e-07  18_[6]_4
+deltaSHAPE_rep2_in_vivo_          2.1e-06  1_[6]_21
+deltaSHAPE_rep2_in_vivo_          2.1e-06  14_[6]_8
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGYAUCAGRS MEME-6 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGYAUCAGRS width=10 seqs=4
+deltaSHAPE_rep2_in_vivo_ (    3) GGCAUCAGAC  1 
+deltaSHAPE_rep2_in_vivo_ (   19) GGCAUCAGAC  1 
+deltaSHAPE_rep2_in_vivo_ (    2) GGUAUCAGGG  1 
+deltaSHAPE_rep2_in_vivo_ (   15) GGUAUCAGGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGYAUCAGRS MEME-6 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 10.2018 E= 5.2e+002 
+  -865   -865    240   -865 
+  -865   -865    240   -865 
+  -865    149   -865     65 
+   166   -865   -865   -865 
+  -865   -865   -865    165 
+  -865    249   -865   -865 
+   166   -865   -865   -865 
+  -865   -865    240   -865 
+    67   -865    140   -865 
+  -865    149    140   -865 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGYAUCAGRS MEME-6 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 4 E= 5.2e+002 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.500000  0.000000  0.500000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.500000  0.500000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGYAUCAGRS MEME-6 regular expression
+--------------------------------------------------------------------------------
+GG[CU]AUCAG[AG][CG]
+--------------------------------------------------------------------------------
+
+
+
+
+Time 42.96 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GUCCAGCC MEME-7	width =   8  sites =   2  llr = 25  E-value = 8.0e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GUCCAGCC MEME-7 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::a:::
+pos.-specific     C  ::aa::aa
+probability       G  a::::a::
+matrix            U  :a::::::
+
+         bits    2.5 * ** ***
+                 2.2 * ** ***
+                 2.0 * ** ***
+                 1.7 ********
+Relative         1.5 ********
+Entropy          1.2 ********
+(18.1 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           GUCCAGCC
+consensus                    
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GUCCAGCC MEME-7 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+deltaSHAPE_rep2_in_vivo_      7  3.55e-06     GAAAGG GTCCAGCC TGTCTATCTG
+deltaSHAPE_rep2_in_vivo_     10  3.55e-06  CTTTAGCTA GTCCAGCC CTGTGTGCAT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GUCCAGCC MEME-7 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          3.5e-06  6_[7]_18
+deltaSHAPE_rep2_in_vivo_          3.5e-06  9_[7]_15
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GUCCAGCC MEME-7 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GUCCAGCC width=8 seqs=2
+deltaSHAPE_rep2_in_vivo_ (    7) GUCCAGCC  1 
+deltaSHAPE_rep2_in_vivo_ (   10) GUCCAGCC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GUCCAGCC MEME-7 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 3075 bayes= 10.5854 E= 8.0e+002 
+  -765   -765    239   -765 
+  -765   -765   -765    165 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+  -765   -765    239   -765 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GUCCAGCC MEME-7 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 2 E= 8.0e+002 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GUCCAGCC MEME-7 regular expression
+--------------------------------------------------------------------------------
+GUCCAGCC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 44.98 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF UCAGCRUC MEME-8	width =   8  sites =   4  llr = 44  E-value = 8.0e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif UCAGCRUC MEME-8 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a::5::
+pos.-specific     C  :a::a::a
+probability       G  :::a:5::
+matrix            U  a:::::a:
+
+         bits    2.5  * **  *
+                 2.2  * **  *
+                 2.0  * **  *
+                 1.7 ***** **
+Relative         1.5 ***** **
+Entropy          1.2 ***** **
+(15.9 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           UCAGCAUC
+consensus                 G  
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif UCAGCRUC MEME-8 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+deltaSHAPE_rep2_in_vivo_      1  6.38e-06          . TCAGCGTC ATGTGAGCAA
+deltaSHAPE_rep2_in_vivo_     22  6.38e-06 ATTGCCTGGC TCAGCGTC ATG       
+deltaSHAPE_rep2_in_vivo_      2  1.69e-05          C TCAGCATC ATTCTGTTGC
+deltaSHAPE_rep2_in_vivo_     25  1.69e-05 ATTTCTTATC TCAGCATC           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif UCAGCRUC MEME-8 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          6.4e-06  [8]_24
+deltaSHAPE_rep2_in_vivo_          6.4e-06  21_[8]_3
+deltaSHAPE_rep2_in_vivo_          1.7e-05  1_[8]_23
+deltaSHAPE_rep2_in_vivo_          1.7e-05  24_[8]
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif UCAGCRUC MEME-8 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF UCAGCRUC width=8 seqs=4
+deltaSHAPE_rep2_in_vivo_ (    1) UCAGCGUC  1 
+deltaSHAPE_rep2_in_vivo_ (   22) UCAGCGUC  1 
+deltaSHAPE_rep2_in_vivo_ (    2) UCAGCAUC  1 
+deltaSHAPE_rep2_in_vivo_ (   25) UCAGCAUC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif UCAGCRUC MEME-8 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 3075 bayes= 9.58449 E= 8.0e+002 
+  -865   -865   -865    165 
+  -865    249   -865   -865 
+   166   -865   -865   -865 
+  -865   -865    240   -865 
+  -865    249   -865   -865 
+    67   -865    140   -865 
+  -865   -865   -865    165 
+  -865    249   -865   -865 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif UCAGCRUC MEME-8 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 4 E= 8.0e+002 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif UCAGCRUC MEME-8 regular expression
+--------------------------------------------------------------------------------
+UCAGC[AG]UC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 47.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCCCAC MEME-9	width =   6  sites =   2  llr = 20  E-value = 8.9e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCCCAC MEME-9 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::::a:
+pos.-specific     C  aaaa:a
+probability       G  ::::::
+matrix            U  ::::::
+
+         bits    2.5 **** *
+                 2.2 **** *
+                 2.0 **** *
+                 1.7 ******
+Relative         1.5 ******
+Entropy          1.2 ******
+(14.1 bits)      1.0 ******
+                 0.7 ******
+                 0.5 ******
+                 0.2 ******
+                 0.0 ------
+
+Multilevel           CCCCAC
+consensus                  
+sequence                   
+                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCCAC MEME-9 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value             Site 
+-------------             ----- ---------            ------
+deltaSHAPE_rep2_in_vivo_      8  5.47e-05    GTGCTCA CCCCAC TTGTTCTTTG
+deltaSHAPE_rep2_in_vivo_     20  5.47e-05 AGAGCTACAG CCCCAC CGTGTGG   
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCCAC MEME-9 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          5.5e-05  7_[9]_19
+deltaSHAPE_rep2_in_vivo_          5.5e-05  19_[9]_7
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCCAC MEME-9 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCCCAC width=6 seqs=2
+deltaSHAPE_rep2_in_vivo_ (    8) CCCCAC  1 
+deltaSHAPE_rep2_in_vivo_ (   20) CCCCAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCCAC MEME-9 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 6 n= 3321 bayes= 10.6965 E= 8.9e+002 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+  -765    249   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCCAC MEME-9 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 6 nsites= 2 E= 8.9e+002 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCCAC MEME-9 regular expression
+--------------------------------------------------------------------------------
+CCCCAC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 49.08 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CUUAGUUGC MEME-10	width =   9  sites =   3  llr = 38  E-value = 9.9e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CUUAGUUGC MEME-10 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a:::::
+pos.-specific     C  a:::::::a
+probability       G  ::::a::a:
+matrix            U  :aa::aa::
+
+         bits    2.5 *   *  **
+                 2.2 *   *  **
+                 2.0 *   *  **
+                 1.7 *********
+Relative         1.5 *********
+Entropy          1.2 *********
+(18.1 bits)      1.0 *********
+                 0.7 *********
+                 0.5 *********
+                 0.2 *********
+                 0.0 ---------
+
+Multilevel           CUUAGUUGC
+consensus                     
+sequence                      
+                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CUUAGUUGC MEME-10 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site 
+-------------             ----- ---------            ---------
+deltaSHAPE_rep2_in_vivo_      7  3.64e-06     ATATTC CTTAGTTGC AAATCCTTTT
+deltaSHAPE_rep2_in_vivo_     23  3.64e-06 TTGCATATTC CTTAGTTGC A         
+deltaSHAPE_rep2_in_vivo_      8  3.64e-06    TCATGGT CTTAGTTGC ATATTCCTTA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CUUAGUUGC MEME-10 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          3.6e-06  6_[10]_17
+deltaSHAPE_rep2_in_vivo_          3.6e-06  7_[10]_6_[10]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CUUAGUUGC MEME-10 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CUUAGUUGC width=9 seqs=3
+deltaSHAPE_rep2_in_vivo_ (    7) CUUAGUUGC  1 
+deltaSHAPE_rep2_in_vivo_ (   23) CUUAGUUGC  1 
+deltaSHAPE_rep2_in_vivo_ (    8) CUUAGUUGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CUUAGUUGC MEME-10 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 9 n= 2952 bayes= 9.59962 E= 9.9e+002 
+  -823    249   -823   -823 
+  -823   -823   -823    165 
+  -823   -823   -823    165 
+   166   -823   -823   -823 
+  -823   -823    240   -823 
+  -823   -823   -823    165 
+  -823   -823   -823    165 
+  -823   -823    240   -823 
+  -823    249   -823   -823 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CUUAGUUGC MEME-10 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 9 nsites= 3 E= 9.9e+002 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CUUAGUUGC MEME-10 regular expression
+--------------------------------------------------------------------------------
+CUUAGUUGC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 51.19 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GCACAUUGGC MEME-11	width =  10  sites =   2  llr = 30  E-value = 1.2e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GCACAUUGGC MEME-11 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a:a:::::
+pos.-specific     C  :a:a:::::a
+probability       G  a::::::aa:
+matrix            U  :::::aa:::
+
+         bits    2.5 ** *   ***
+                 2.2 ** *   ***
+                 2.0 ** *   ***
+                 1.7 **********
+Relative         1.5 **********
+Entropy          1.2 **********
+(21.3 bits)      1.0 **********
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           GCACAUUGGC
+consensus                      
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCACAUUGGC MEME-11 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      4  3.82e-07        ATA GCACATTGGC AATTATACAT
+deltaSHAPE_rep2_in_vivo_     14  3.82e-07 CATGCTCATA GCACATTGGC AATTATACA 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCACAUUGGC MEME-11 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          3.8e-07  3_[11]_19
+deltaSHAPE_rep2_in_vivo_          3.8e-07  13_[11]_9
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCACAUUGGC MEME-11 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GCACAUUGGC width=10 seqs=2
+deltaSHAPE_rep2_in_vivo_ (    4) GCACAUUGGC  1 
+deltaSHAPE_rep2_in_vivo_ (   14) GCACAUUGGC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCACAUUGGC MEME-11 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 10.4651 E= 1.2e+003 
+  -765   -765    239   -765 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+  -765   -765   -765    165 
+  -765   -765   -765    165 
+  -765   -765    239   -765 
+  -765   -765    239   -765 
+  -765    249   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCACAUUGGC MEME-11 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 2 E= 1.2e+003 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GCACAUUGGC MEME-11 regular expression
+--------------------------------------------------------------------------------
+GCACAUUGGC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 53.27 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF MWGRARYWUU MEME-12	width =  10  sites =  17  llr = 138  E-value = 8.6e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif MWGRARYWUU MEME-12 Description
+--------------------------------------------------------------------------------
+Simplified        A  4535a6:5::
+pos.-specific     C  5:::::6:::
+probability       G  1:75:4::::
+matrix            U  :5::::45aa
+
+         bits    2.5           
+                 2.2           
+                 2.0           
+                 1.7     *   **
+Relative         1.5     *   **
+Entropy          1.2   * * * **
+(11.7 bits)      1.0   ***** **
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           CAGGAACAUU
+consensus            AUAA GUU  
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGRARYWUU MEME-12 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_     16  6.14e-06 TTATTAATGA CAGGAACTTT TTCCATC   
+deltaSHAPE_rep2_in_vivo_     11  6.14e-06 AACCTCTGCA CTGGAACATT TTATGTGGAT
+deltaSHAPE_rep2_in_vivo_     20  1.87e-05 GACTAAGTAC CTGAAGCTTT GTG       
+deltaSHAPE_rep2_in_vivo_     15  5.14e-05 CATGTTAATA CAAGAACATT TGCCCAGG  
+deltaSHAPE_rep2_in_vivo_     22  5.14e-05 CTATGAATGT CTGGAATATT T         
+deltaSHAPE_rep2_in_vivo_      1  8.43e-05          . ATGAAACATT GTATATAAAA
+deltaSHAPE_rep2_in_vivo_     15  8.43e-05 ACAACACCTA ATGAAACATT GTATATAA  
+deltaSHAPE_rep2_in_vivo_     22  8.43e-05 ACAGATCTGT GTGGAGCTTT G         
+deltaSHAPE_rep2_in_vivo_     17  8.43e-05 CTGTCTGCTT AAGAAACTTT AAGCCC    
+deltaSHAPE_rep2_in_vivo_     23  9.36e-05 AAGTAGAAGA CAGAAGTTTT           
+deltaSHAPE_rep2_in_vivo_     16  9.36e-05 ATAATTCTGT CAGAAATATT TTGTCCA   
+deltaSHAPE_rep2_in_vivo_     23  9.36e-05 ATAATTCTGT CAGAAATATT           
+deltaSHAPE_rep2_in_vivo_     16  1.43e-04 TTTCATTTTT AAGGAATATT TCTTTGT   
+deltaSHAPE_rep2_in_vivo_     21  1.69e-04 CCTAGTAAGA AAAGAGCTTT CT        
+deltaSHAPE_rep2_in_vivo_     11  1.97e-04 ACCAATCAAA CAAGAGTTTT ATATCAGAGA
+deltaSHAPE_rep2_in_vivo_     13  2.74e-04 AATGCATTAA ATAAAGCATT ATACAGCTAT
+deltaSHAPE_rep2_in_vivo_      1  3.05e-04          . GTAGAGCTTT TCCTATAAGG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGRARYWUU MEME-12 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          6.1e-06  15_[12]_7
+deltaSHAPE_rep2_in_vivo_          6.1e-06  10_[12]_12
+deltaSHAPE_rep2_in_vivo_          1.9e-05  19_[12]_3
+deltaSHAPE_rep2_in_vivo_          5.1e-05  14_[12]_8
+deltaSHAPE_rep2_in_vivo_          5.1e-05  21_[12]_1
+deltaSHAPE_rep2_in_vivo_          8.4e-05  [12]_22
+deltaSHAPE_rep2_in_vivo_          8.4e-05  14_[12]_8
+deltaSHAPE_rep2_in_vivo_          8.4e-05  21_[12]_1
+deltaSHAPE_rep2_in_vivo_          8.4e-05  16_[12]_6
+deltaSHAPE_rep2_in_vivo_          9.4e-05  22_[12]
+deltaSHAPE_rep2_in_vivo_          9.4e-05  15_[12]_7
+deltaSHAPE_rep2_in_vivo_          9.4e-05  22_[12]
+deltaSHAPE_rep2_in_vivo_          0.00014  15_[12]_7
+deltaSHAPE_rep2_in_vivo_          0.00017  20_[12]_2
+deltaSHAPE_rep2_in_vivo_           0.0002  10_[12]_12
+deltaSHAPE_rep2_in_vivo_          0.00027  12_[12]_10
+deltaSHAPE_rep2_in_vivo_          0.00031  [12]_22
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGRARYWUU MEME-12 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF MWGRARYWUU width=10 seqs=17
+deltaSHAPE_rep2_in_vivo_ (   16) CAGGAACUUU  1 
+deltaSHAPE_rep2_in_vivo_ (   11) CUGGAACAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   20) CUGAAGCUUU  1 
+deltaSHAPE_rep2_in_vivo_ (   15) CAAGAACAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   22) CUGGAAUAUU  1 
+deltaSHAPE_rep2_in_vivo_ (    1) AUGAAACAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   15) AUGAAACAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   22) GUGGAGCUUU  1 
+deltaSHAPE_rep2_in_vivo_ (   17) AAGAAACUUU  1 
+deltaSHAPE_rep2_in_vivo_ (   23) CAGAAGUUUU  1 
+deltaSHAPE_rep2_in_vivo_ (   16) CAGAAAUAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   23) CAGAAAUAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   16) AAGGAAUAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   21) AAAGAGCUUU  1 
+deltaSHAPE_rep2_in_vivo_ (   11) CAAGAGUUUU  1 
+deltaSHAPE_rep2_in_vivo_ (   13) AUAAAGCAUU  1 
+deltaSHAPE_rep2_in_vivo_ (    1) GUAGAGCUUU  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGRARYWUU MEME-12 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 5.66713 E= 8.6e+002 
+    16    158    -69  -1073 
+    75  -1073  -1073     56 
+   -10  -1073    190  -1073 
+    58  -1073    148  -1073 
+   167  -1073  -1073  -1073 
+    90  -1073    112  -1073 
+ -1073    187  -1073     15 
+    75  -1073  -1073     56 
+ -1073  -1073  -1073    165 
+ -1073  -1073  -1073    165 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGRARYWUU MEME-12 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 17 E= 8.6e+002 
+ 0.352941  0.529412  0.117647  0.000000 
+ 0.529412  0.000000  0.000000  0.470588 
+ 0.294118  0.000000  0.705882  0.000000 
+ 0.470588  0.000000  0.529412  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.588235  0.000000  0.411765  0.000000 
+ 0.000000  0.647059  0.000000  0.352941 
+ 0.529412  0.000000  0.000000  0.470588 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif MWGRARYWUU MEME-12 regular expression
+--------------------------------------------------------------------------------
+[CA][AU][GA][GA]A[AG][CU][AU]UU
+--------------------------------------------------------------------------------
+
+
+
+
+Time 55.20 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YUAAGYACUG MEME-13	width =  10  sites =  10  llr = 95  E-value = 2.7e+002
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YUAAGYACUG MEME-13 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::79::7::1
+pos.-specific     C  431::419::
+probability       G  ::21a:21:9
+matrix            U  67:::6::a:
+
+         bits    2.5     *     
+                 2.2     *     
+                 2.0     *  *  
+                 1.7     *  ***
+Relative         1.5     *  ***
+Entropy          1.2    **  ***
+(13.7 bits)      1.0 ** *** ***
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           UUAAGUACUG
+consensus            CCG  CG   
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YUAAGYACUG MEME-13 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_     11  2.91e-06 ACTAAAATTT CTAAGTACTG AAAAGAACAA
+deltaSHAPE_rep2_in_vivo_      2  1.41e-05          C TTGAGTACTG AATAATTCTG
+deltaSHAPE_rep2_in_vivo_      9  1.41e-05   GTATTACC TTGAGTACTG AATAATTCTG
+deltaSHAPE_rep2_in_vivo_      1  1.77e-05          . TCAAGTGCTG AGATTACAGA
+deltaSHAPE_rep2_in_vivo_     17  1.77e-05 TCACAGCTTC TCAAGTGCTG AGATTA    
+deltaSHAPE_rep2_in_vivo_     14  2.05e-05 AATACCCATG TTCAGCACTG GGAATAACA 
+deltaSHAPE_rep2_in_vivo_     22  2.44e-05 AGTGCCCTTG CTAGGCACTG G         
+deltaSHAPE_rep2_in_vivo_     20  2.59e-05 CTGTACTTGA TCAAGCCCTG ATA       
+deltaSHAPE_rep2_in_vivo_     12  3.57e-05 TTTCTGAAGA CTAAGCAGTG TCTCAGTGTA
+deltaSHAPE_rep2_in_vivo_     20  5.71e-05 AAGTGCAGTT CTAAGTACTA AAA       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YUAAGYACUG MEME-13 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          2.9e-06  10_[13]_12
+deltaSHAPE_rep2_in_vivo_          1.4e-05  1_[13]_21
+deltaSHAPE_rep2_in_vivo_          1.4e-05  8_[13]_14
+deltaSHAPE_rep2_in_vivo_          1.8e-05  [13]_22
+deltaSHAPE_rep2_in_vivo_          1.8e-05  16_[13]_6
+deltaSHAPE_rep2_in_vivo_            2e-05  13_[13]_9
+deltaSHAPE_rep2_in_vivo_          2.4e-05  21_[13]_1
+deltaSHAPE_rep2_in_vivo_          2.6e-05  19_[13]_3
+deltaSHAPE_rep2_in_vivo_          3.6e-05  11_[13]_11
+deltaSHAPE_rep2_in_vivo_          5.7e-05  19_[13]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YUAAGYACUG MEME-13 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YUAAGYACUG width=10 seqs=10
+deltaSHAPE_rep2_in_vivo_ (   11) CUAAGUACUG  1 
+deltaSHAPE_rep2_in_vivo_ (    2) UUGAGUACUG  1 
+deltaSHAPE_rep2_in_vivo_ (    9) UUGAGUACUG  1 
+deltaSHAPE_rep2_in_vivo_ (    1) UCAAGUGCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   17) UCAAGUGCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   14) UUCAGCACUG  1 
+deltaSHAPE_rep2_in_vivo_ (   22) CUAGGCACUG  1 
+deltaSHAPE_rep2_in_vivo_ (   20) UCAAGCCCUG  1 
+deltaSHAPE_rep2_in_vivo_ (   12) CUAAGCAGUG  1 
+deltaSHAPE_rep2_in_vivo_ (   20) CUAAGUACUA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YUAAGYACUG MEME-13 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 7.57098 E= 2.7e+002 
+  -997    117   -997     91 
+  -997     76   -997    114 
+   115    -83      8   -997 
+   151   -997    -92   -997 
+  -997   -997    240   -997 
+  -997    117   -997     91 
+   115    -83      8   -997 
+  -997    234    -92   -997 
+  -997   -997   -997    165 
+  -165   -997    225   -997 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YUAAGYACUG MEME-13 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 10 E= 2.7e+002 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.000000  0.300000  0.000000  0.700000 
+ 0.700000  0.100000  0.200000  0.000000 
+ 0.900000  0.000000  0.100000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.700000  0.100000  0.200000  0.000000 
+ 0.000000  0.900000  0.100000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.100000  0.000000  0.900000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YUAAGYACUG MEME-13 regular expression
+--------------------------------------------------------------------------------
+[UC][UC][AG]AG[UC][AG]CUG
+--------------------------------------------------------------------------------
+
+
+
+
+Time 56.85 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCCAGG MEME-14	width =   6  sites =   2  llr = 19  E-value = 2.6e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCCAGG MEME-14 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::a::
+pos.-specific     C  aaa:::
+probability       G  ::::aa
+matrix            U  ::::::
+
+         bits    2.5 *** **
+                 2.2 *** **
+                 2.0 *** **
+                 1.7 ******
+Relative         1.5 ******
+Entropy          1.2 ******
+(14.0 bits)      1.0 ******
+                 0.7 ******
+                 0.5 ******
+                 0.2 ******
+                 0.0 ------
+
+Multilevel           CCCAGG
+consensus                  
+sequence                   
+                           
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCAGG MEME-14 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value             Site 
+-------------             ----- ---------            ------
+deltaSHAPE_rep2_in_vivo_     27  6.31e-05 AGAACATTTG CCCAGG           
+deltaSHAPE_rep2_in_vivo_     26  6.31e-05 TAGCATATAA CCCAGG C         
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCAGG MEME-14 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          6.3e-05  26_[14]
+deltaSHAPE_rep2_in_vivo_          6.3e-05  25_[14]_1
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCAGG MEME-14 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCCAGG width=6 seqs=2
+deltaSHAPE_rep2_in_vivo_ (   27) CCCAGG  1 
+deltaSHAPE_rep2_in_vivo_ (   26) CCCAGG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCAGG MEME-14 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 6 n= 3321 bayes= 8.92891 E= 2.6e+003 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+  -765   -765    239   -765 
+  -765   -765    239   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCAGG MEME-14 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 6 nsites= 2 E= 2.6e+003 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCCAGG MEME-14 regular expression
+--------------------------------------------------------------------------------
+CCCAGG
+--------------------------------------------------------------------------------
+
+
+
+
+Time 58.43 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCAAACUAAG MEME-15	width =  10  sites =   2  llr = 28  E-value = 2.7e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCAAACUAAG MEME-15 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::aaa::aa:
+pos.-specific     C  aa:::a::::
+probability       G  :::::::::a
+matrix            U  ::::::a:::
+
+         bits    2.5 **   *   *
+                 2.2 **   *   *
+                 2.0 **   *   *
+                 1.7 **********
+Relative         1.5 **********
+Entropy          1.2 **********
+(19.9 bits)      1.0 **********
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           CCAAACUAAG
+consensus                      
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCAAACUAAG MEME-15 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      1  1.04e-06          . CCAAACTAAG TCAAGTCATT
+deltaSHAPE_rep2_in_vivo_     18  1.04e-06 GATAAAGAAA CCAAACTAAG TCAAG     
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCAAACUAAG MEME-15 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_            1e-06  [15]_22
+deltaSHAPE_rep2_in_vivo_            1e-06  17_[15]_5
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCAAACUAAG MEME-15 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCAAACUAAG width=10 seqs=2
+deltaSHAPE_rep2_in_vivo_ (    1) CCAAACUAAG  1 
+deltaSHAPE_rep2_in_vivo_ (   18) CCAAACUAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCAAACUAAG MEME-15 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 10.4651 E= 2.7e+003 
+  -765    249   -765   -765 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+   166   -765   -765   -765 
+   166   -765   -765   -765 
+  -765    249   -765   -765 
+  -765   -765   -765    165 
+   166   -765   -765   -765 
+   166   -765   -765   -765 
+  -765   -765    239   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCAAACUAAG MEME-15 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 2 E= 2.7e+003 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCAAACUAAG MEME-15 regular expression
+--------------------------------------------------------------------------------
+CCAAACUAAG
+--------------------------------------------------------------------------------
+
+
+
+
+Time 60.04 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGAGGKAYCA MEME-16	width =  10  sites =   3  llr = 40  E-value = 1.2e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGAGGKAYCA MEME-16 Description
+--------------------------------------------------------------------------------
+Simplified        A  ::a:::a::a
+pos.-specific     C  :::::::7a:
+probability       G  aa:aa3::::
+matrix            U  :::::7:3::
+
+         bits    2.5 ** **   * 
+                 2.2 ** **   * 
+                 2.0 ** **   * 
+                 1.7 ***** * **
+Relative         1.5 ***** * **
+Entropy          1.2 ***** ****
+(19.4 bits)      1.0 **********
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           GGAGGUACCA
+consensus                 G U  
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGAGGKAYCA MEME-16 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_     23  4.06e-07 TTATGAACTC GGAGGTACCA           
+deltaSHAPE_rep2_in_vivo_      1  6.48e-07          . GGAGGGACCA AGCATGCAGA
+deltaSHAPE_rep2_in_vivo_     20  1.38e-06 GACTTGCCAT GGAGGTATCA TCT       
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGAGGKAYCA MEME-16 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          4.1e-07  22_[16]
+deltaSHAPE_rep2_in_vivo_          6.5e-07  [16]_22
+deltaSHAPE_rep2_in_vivo_          1.4e-06  19_[16]_3
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGAGGKAYCA MEME-16 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGAGGKAYCA width=10 seqs=3
+deltaSHAPE_rep2_in_vivo_ (   23) GGAGGUACCA  1 
+deltaSHAPE_rep2_in_vivo_ (    1) GGAGGGACCA  1 
+deltaSHAPE_rep2_in_vivo_ (   20) GGAGGUAUCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGAGGKAYCA MEME-16 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 10.3275 E= 1.2e+003 
+  -823   -823    240   -823 
+  -823   -823    240   -823 
+   166   -823   -823   -823 
+  -823   -823    240   -823 
+  -823   -823    240   -823 
+  -823   -823     81    106 
+   166   -823   -823   -823 
+  -823    191   -823      7 
+  -823    249   -823   -823 
+   166   -823   -823   -823 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGAGGKAYCA MEME-16 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 3 E= 1.2e+003 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.333333  0.666667 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.666667  0.000000  0.333333 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGAGGKAYCA MEME-16 regular expression
+--------------------------------------------------------------------------------
+GGAGG[UG]A[CU]CA
+--------------------------------------------------------------------------------
+
+
+
+
+Time 61.68 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CAURGUCUC MEME-17	width =   9  sites =   3  llr = 36  E-value = 2.3e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CAURGUCUC MEME-17 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a:7:::::
+pos.-specific     C  a:::::a:a
+probability       G  :::3a::::
+matrix            U  ::a::a:a:
+
+         bits    2.5 *   * * *
+                 2.2 *   * * *
+                 2.0 *   * * *
+                 1.7 *** *****
+Relative         1.5 *** *****
+Entropy          1.2 *** *****
+(17.5 bits)      1.0 *********
+                 0.7 *********
+                 0.5 *********
+                 0.2 *********
+                 0.0 ---------
+
+Multilevel           CAUAGUCUC
+consensus               G     
+sequence                      
+                              
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAURGUCUC MEME-17 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site 
+-------------             ----- ---------            ---------
+deltaSHAPE_rep2_in_vivo_     14  3.36e-06 ATAAAATAGG CATAGTCTC TACAAAATTT
+deltaSHAPE_rep2_in_vivo_     24  3.36e-06 ATAAAATAGG CATAGTCTC           
+deltaSHAPE_rep2_in_vivo_      4  5.39e-06        AGA CATGGTCTC ATAAAGCCCA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAURGUCUC MEME-17 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          3.4e-06  13_[17]_10
+deltaSHAPE_rep2_in_vivo_          3.4e-06  23_[17]
+deltaSHAPE_rep2_in_vivo_          5.4e-06  3_[17]_20
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAURGUCUC MEME-17 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CAURGUCUC width=9 seqs=3
+deltaSHAPE_rep2_in_vivo_ (   14) CAUAGUCUC  1 
+deltaSHAPE_rep2_in_vivo_ (   24) CAUAGUCUC  1 
+deltaSHAPE_rep2_in_vivo_ (    4) CAUGGUCUC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAURGUCUC MEME-17 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 9 n= 2952 bayes= 10.3889 E= 2.3e+003 
+  -823    249   -823   -823 
+   166   -823   -823   -823 
+  -823   -823   -823    165 
+   108   -823     81   -823 
+  -823   -823    240   -823 
+  -823   -823   -823    165 
+  -823    249   -823   -823 
+  -823   -823   -823    165 
+  -823    249   -823   -823 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAURGUCUC MEME-17 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 9 nsites= 3 E= 2.3e+003 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.666667  0.000000  0.333333  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAURGUCUC MEME-17 regular expression
+--------------------------------------------------------------------------------
+CAU[AG]GUCUC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 63.26 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF GGUGGAUU MEME-18	width =   8  sites =   4  llr = 43  E-value = 4.8e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif GGUGGAUU MEME-18 Description
+--------------------------------------------------------------------------------
+Simplified        A  :::::a::
+pos.-specific     C  ::::::3:
+probability       G  aa:aa:::
+matrix            U  ::a:::8a
+
+         bits    2.5 ** **   
+                 2.2 ** **   
+                 2.0 ** **   
+                 1.7 ****** *
+Relative         1.5 ****** *
+Entropy          1.2 ****** *
+(15.6 bits)      1.0 ********
+                 0.7 ********
+                 0.5 ********
+                 0.2 ********
+                 0.0 --------
+
+Multilevel           GGUGGAUU
+consensus                  C 
+sequence                     
+                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGUGGAUU MEME-18 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value              Site
+-------------             ----- ---------            --------
+deltaSHAPE_rep2_in_vivo_     10  1.32e-05  TTTGCTATT GGTGGATT TCTTATCTCA
+deltaSHAPE_rep2_in_vivo_     18  1.32e-05 CTTTGCTATT GGTGGATT TCTTATC   
+deltaSHAPE_rep2_in_vivo_     11  1.32e-05 TGGATTGCAA GGTGGATT GACTGTGAGA
+deltaSHAPE_rep2_in_vivo_     10  2.05e-05  TGTGTGTAT GGTGGACT TACCTTTCTT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGUGGAUU MEME-18 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          1.3e-05  9_[18]_15
+deltaSHAPE_rep2_in_vivo_          1.3e-05  17_[18]_7
+deltaSHAPE_rep2_in_vivo_          1.3e-05  10_[18]_14
+deltaSHAPE_rep2_in_vivo_          2.1e-05  9_[18]_15
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGUGGAUU MEME-18 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF GGUGGAUU width=8 seqs=4
+deltaSHAPE_rep2_in_vivo_ (   10) GGUGGAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   18) GGUGGAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   11) GGUGGAUU  1 
+deltaSHAPE_rep2_in_vivo_ (   10) GGUGGACU  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGUGGAUU MEME-18 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 8 n= 3075 bayes= 9.58449 E= 4.8e+003 
+  -865   -865    240   -865 
+  -865   -865    240   -865 
+  -865   -865   -865    165 
+  -865   -865    240   -865 
+  -865   -865    240   -865 
+   166   -865   -865   -865 
+  -865     49   -865    124 
+  -865   -865   -865    165 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGUGGAUU MEME-18 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 8 nsites= 4 E= 4.8e+003 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.250000  0.000000  0.750000 
+ 0.000000  0.000000  0.000000  1.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif GGUGGAUU MEME-18 regular expression
+--------------------------------------------------------------------------------
+GGUGGA[UC]U
+--------------------------------------------------------------------------------
+
+
+
+
+Time 64.92 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AAUCAAGAWG MEME-19	width =  10  sites =   3  llr = 37  E-value = 5.4e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AAUCAAGAWG MEME-19 Description
+--------------------------------------------------------------------------------
+Simplified        A  aa::aa:a3:
+pos.-specific     C  :::a::::::
+probability       G  ::::::a::a
+matrix            U  ::a:::::7:
+
+         bits    2.5    *  *  *
+                 2.2    *  *  *
+                 2.0    *  *  *
+                 1.7 ******** *
+Relative         1.5 ******** *
+Entropy          1.2 ******** *
+(18.0 bits)      1.0 ******** *
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           AAUCAAGAUG
+consensus                    A 
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAUCAAGAWG MEME-19 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      6  2.00e-06      AGGAG AATCAAGATG AATCGATAAT
+deltaSHAPE_rep2_in_vivo_     23  2.00e-06 TTCAAAGGAG AATCAAGATG           
+deltaSHAPE_rep2_in_vivo_     13  3.99e-06 TTTTGTTGGT AATCAAGAAG ACCTTTGATC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAUCAAGAWG MEME-19 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_            2e-06  5_[19]_17
+deltaSHAPE_rep2_in_vivo_            2e-06  22_[19]
+deltaSHAPE_rep2_in_vivo_            4e-06  12_[19]_10
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAUCAAGAWG MEME-19 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AAUCAAGAWG width=10 seqs=3
+deltaSHAPE_rep2_in_vivo_ (    6) AAUCAAGAUG  1 
+deltaSHAPE_rep2_in_vivo_ (   23) AAUCAAGAUG  1 
+deltaSHAPE_rep2_in_vivo_ (   13) AAUCAAGAAG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAUCAAGAWG MEME-19 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 9.53814 E= 5.4e+003 
+   166   -823   -823   -823 
+   166   -823   -823   -823 
+  -823   -823   -823    165 
+  -823    249   -823   -823 
+   166   -823   -823   -823 
+   166   -823   -823   -823 
+  -823   -823    240   -823 
+   166   -823   -823   -823 
+     8   -823   -823    106 
+  -823   -823    240   -823 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAUCAAGAWG MEME-19 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 3 E= 5.4e+003 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.333333  0.000000  0.000000  0.666667 
+ 0.000000  0.000000  1.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AAUCAAGAWG MEME-19 regular expression
+--------------------------------------------------------------------------------
+AAUCAAGA[UA]G
+--------------------------------------------------------------------------------
+
+
+
+
+Time 66.80 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CAGGACMRAC MEME-20	width =  10  sites =   2  llr = 27  E-value = 5.5e+003
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CAGGACMRAC MEME-20 Description
+--------------------------------------------------------------------------------
+Simplified        A  :a::a:55a:
+pos.-specific     C  a::::a5::a
+probability       G  ::aa:::5::
+matrix            U  ::::::::::
+
+         bits    2.5 * ** *   *
+                 2.2 * ** *   *
+                 2.0 * ** *   *
+                 1.7 ******  **
+Relative         1.5 ******  **
+Entropy          1.2 ******  **
+(19.4 bits)      1.0 **********
+                 0.7 **********
+                 0.5 **********
+                 0.2 **********
+                 0.0 ----------
+
+Multilevel           CAGGACAAAC
+consensus                  CG  
+sequence                       
+                               
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGGACMRAC MEME-20 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name             Start   P-value               Site 
+-------------             ----- ---------            ----------
+deltaSHAPE_rep2_in_vivo_      8  5.59e-07    TACTGTA CAGGACCAAC TGCCAGAAAA
+deltaSHAPE_rep2_in_vivo_     21  9.34e-07 AGCTTGAAGC CAGGACAGAC TT        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGGACMRAC MEME-20 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_          5.6e-07  7_[20]_15
+deltaSHAPE_rep2_in_vivo_          9.3e-07  20_[20]_2
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGGACMRAC MEME-20 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CAGGACMRAC width=10 seqs=2
+deltaSHAPE_rep2_in_vivo_ (    8) CAGGACCAAC  1 
+deltaSHAPE_rep2_in_vivo_ (   21) CAGGACAGAC  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGGACMRAC MEME-20 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 10 n= 2829 bayes= 10.4651 E= 5.5e+003 
+  -765    249   -765   -765 
+   166   -765   -765   -765 
+  -765   -765    239   -765 
+  -765   -765    239   -765 
+   166   -765   -765   -765 
+  -765    249   -765   -765 
+    66    149   -765   -765 
+    66   -765    140   -765 
+   166   -765   -765   -765 
+  -765    249   -765   -765 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGGACMRAC MEME-20 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 10 nsites= 2 E= 5.5e+003 
+ 0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.500000  0.500000  0.000000  0.000000 
+ 0.500000  0.000000  0.500000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CAGGACMRAC MEME-20 regular expression
+--------------------------------------------------------------------------------
+CAGGAC[AC][AG]AC
+--------------------------------------------------------------------------------
+
+
+
+
+Time 68.60 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+deltaSHAPE_rep2_in_vivo_         9.95e-01  32
+deltaSHAPE_rep2_in_vivo_         8.38e-01  32
+deltaSHAPE_rep2_in_vivo_         2.28e-01  9_[18(2.05e-05)]_15
+deltaSHAPE_rep2_in_vivo_         4.50e-01  32
+deltaSHAPE_rep2_in_vivo_         1.41e-01  32
+deltaSHAPE_rep2_in_vivo_         2.48e-03  19_[16(1.38e-06)]_3
+deltaSHAPE_rep2_in_vivo_         2.82e-01  15_[1(7.96e-05)]_7
+deltaSHAPE_rep2_in_vivo_         9.22e-02  8_[13(1.41e-05)]_[1(1.05e-05)]_4
+deltaSHAPE_rep2_in_vivo_         2.30e-02  1_[13(1.41e-05)]_[1(1.05e-05)]_1_\
+    [12(9.36e-05)]
+deltaSHAPE_rep2_in_vivo_         4.76e-01  4_[1(1.05e-05)]_1_[12(9.36e-05)]_7
+deltaSHAPE_rep2_in_vivo_         5.09e-05  9_[7(3.55e-06)]_[3(1.85e-06)]_5
+deltaSHAPE_rep2_in_vivo_         1.44e-03  2_[3(1.85e-06)]_20
+deltaSHAPE_rep2_in_vivo_         8.11e-01  32
+deltaSHAPE_rep2_in_vivo_         4.64e-01  32
+deltaSHAPE_rep2_in_vivo_         3.42e-02  10_[12(6.14e-06)]_12
+deltaSHAPE_rep2_in_vivo_         8.58e-01  32
+deltaSHAPE_rep2_in_vivo_         8.07e-03  19_[9(5.47e-05)]_7
+deltaSHAPE_rep2_in_vivo_         2.36e-02  7_[2(6.83e-05)]_19
+deltaSHAPE_rep2_in_vivo_         1.99e-01  32
+deltaSHAPE_rep2_in_vivo_         4.43e-02  17_[15(1.04e-06)]_5
+deltaSHAPE_rep2_in_vivo_         5.03e-02  [15(1.04e-06)]_22
+deltaSHAPE_rep2_in_vivo_         9.79e-02  12_[19(3.99e-06)]_10
+deltaSHAPE_rep2_in_vivo_         4.07e-04  5_[2(6.83e-05)]_14_[14(6.31e-05)]_1
+deltaSHAPE_rep2_in_vivo_         9.62e-01  32
+deltaSHAPE_rep2_in_vivo_         4.34e-01  21_[12(5.14e-05)]_1
+deltaSHAPE_rep2_in_vivo_         7.81e-03  19_[5(3.28e-07)]_3
+deltaSHAPE_rep2_in_vivo_         1.08e-02  2_[5(3.28e-07)]_20
+deltaSHAPE_rep2_in_vivo_         6.51e-02  32
+deltaSHAPE_rep2_in_vivo_         1.02e-02  4_[4(2.12e-06)]_18
+deltaSHAPE_rep2_in_vivo_         9.84e-01  32
+deltaSHAPE_rep2_in_vivo_         3.62e-02  6_[3(2.35e-05)]_[12(8.43e-05)]_6
+deltaSHAPE_rep2_in_vivo_         2.66e-02  7_[20(5.59e-07)]_15
+deltaSHAPE_rep2_in_vivo_         8.32e-01  32
+deltaSHAPE_rep2_in_vivo_         2.25e-01  10_[18(1.32e-05)]_14
+deltaSHAPE_rep2_in_vivo_         1.67e-02  11_[13(3.57e-05)]_11
+deltaSHAPE_rep2_in_vivo_         9.39e-01  32
+deltaSHAPE_rep2_in_vivo_         6.13e-01  32
+deltaSHAPE_rep2_in_vivo_         1.09e-01  7_[9(5.47e-05)]_19
+deltaSHAPE_rep2_in_vivo_         8.68e-01  32
+deltaSHAPE_rep2_in_vivo_         7.85e-01  17_[18(1.32e-05)]_7
+deltaSHAPE_rep2_in_vivo_         3.45e-02  9_[18(1.32e-05)]_7_[8(1.69e-05)]
+deltaSHAPE_rep2_in_vivo_         3.32e-03  1_[8(1.69e-05)]_13_[3(1.11e-05)]
+deltaSHAPE_rep2_in_vivo_         9.53e-01  6_[3(1.11e-05)]_16
+deltaSHAPE_rep2_in_vivo_         6.57e-01  32
+deltaSHAPE_rep2_in_vivo_         4.82e-01  21_[3(7.93e-06)]_1
+deltaSHAPE_rep2_in_vivo_         2.68e-02  22_[12(9.36e-05)]
+deltaSHAPE_rep2_in_vivo_         8.88e-01  32
+deltaSHAPE_rep2_in_vivo_         2.85e-04  2_[4(1.50e-06)]_20
+deltaSHAPE_rep2_in_vivo_         8.08e-01  32
+deltaSHAPE_rep2_in_vivo_         1.26e-01  13_[11(3.82e-07)]_9
+deltaSHAPE_rep2_in_vivo_         1.71e-01  3_[11(3.82e-07)]_19
+deltaSHAPE_rep2_in_vivo_         1.00e+00  32
+deltaSHAPE_rep2_in_vivo_         1.49e-02  18_[6(8.51e-07)]_4
+deltaSHAPE_rep2_in_vivo_         3.51e-04  2_[6(8.51e-07)]_7_[12(1.87e-05)]_3
+deltaSHAPE_rep2_in_vivo_         3.74e-02  7_[10(3.64e-06)]_6_[10(3.64e-06)]_1
+deltaSHAPE_rep2_in_vivo_         2.06e-01  6_[10(3.64e-06)]_17
+deltaSHAPE_rep2_in_vivo_         3.07e-02  19_[13(2.59e-05)]_3
+deltaSHAPE_rep2_in_vivo_         3.84e-01  32
+deltaSHAPE_rep2_in_vivo_         9.14e-01  32
+deltaSHAPE_rep2_in_vivo_         4.45e-01  32
+deltaSHAPE_rep2_in_vivo_         2.74e-03  13_[13(2.05e-05)]_9
+deltaSHAPE_rep2_in_vivo_         7.20e-01  32
+deltaSHAPE_rep2_in_vivo_         5.95e-01  32
+deltaSHAPE_rep2_in_vivo_         4.86e-01  32
+deltaSHAPE_rep2_in_vivo_         9.28e-01  32
+deltaSHAPE_rep2_in_vivo_         3.76e-03  14_[12(5.14e-05)]_2_[14(6.31e-05)]
+deltaSHAPE_rep2_in_vivo_         9.77e-01  32
+deltaSHAPE_rep2_in_vivo_         7.82e-01  32
+deltaSHAPE_rep2_in_vivo_         1.70e-02  32
+deltaSHAPE_rep2_in_vivo_         1.76e-01  16_[1(1.36e-05)]_6
+deltaSHAPE_rep2_in_vivo_         1.57e-03  [1(1.36e-05)]_13_[17(3.36e-06)]
+deltaSHAPE_rep2_in_vivo_         1.04e-01  13_[17(3.36e-06)]_10
+deltaSHAPE_rep2_in_vivo_         7.48e-01  32
+deltaSHAPE_rep2_in_vivo_         1.19e-01  21_[3(4.04e-05)]_1
+deltaSHAPE_rep2_in_vivo_         7.53e-03  1_[3(4.04e-05)]_11_[16(4.06e-07)]
+deltaSHAPE_rep2_in_vivo_         9.53e-01  32
+deltaSHAPE_rep2_in_vivo_         8.91e-01  32
+deltaSHAPE_rep2_in_vivo_         1.32e-02  21_[13(2.44e-05)]_1
+deltaSHAPE_rep2_in_vivo_         4.40e-01  32
+deltaSHAPE_rep2_in_vivo_         9.82e-01  32
+deltaSHAPE_rep2_in_vivo_         1.52e-01  12_[2(6.83e-05)]_14
+deltaSHAPE_rep2_in_vivo_         9.30e-04  10_[1(3.88e-05)]_1_[12(8.43e-05)]_1
+deltaSHAPE_rep2_in_vivo_         7.51e-05  17_[3(7.93e-06)]_5
+deltaSHAPE_rep2_in_vivo_         8.22e-03  19_[4(3.51e-06)]_3
+deltaSHAPE_rep2_in_vivo_         8.61e-01  32
+deltaSHAPE_rep2_in_vivo_         8.17e-01  32
+deltaSHAPE_rep2_in_vivo_         9.84e-01  32
+deltaSHAPE_rep2_in_vivo_         4.18e-01  32
+deltaSHAPE_rep2_in_vivo_         9.66e-01  32
+deltaSHAPE_rep2_in_vivo_         1.37e-01  32
+deltaSHAPE_rep2_in_vivo_         7.25e-01  32
+deltaSHAPE_rep2_in_vivo_         2.15e-01  15_[12(6.14e-06)]_7
+deltaSHAPE_rep2_in_vivo_         3.25e-03  14_[6(2.11e-06)]_8
+deltaSHAPE_rep2_in_vivo_         1.48e-02  1_[6(2.11e-06)]_[1(7.96e-05)]_11
+deltaSHAPE_rep2_in_vivo_         8.11e-02  32
+deltaSHAPE_rep2_in_vivo_         5.45e-06  [16(6.48e-07)]_10_[4(1.31e-06)]_2
+deltaSHAPE_rep2_in_vivo_         1.64e-02  2_[4(1.31e-06)]_2_[12(8.43e-05)]_8
+deltaSHAPE_rep2_in_vivo_         8.85e-01  [12(8.43e-05)]_22
+deltaSHAPE_rep2_in_vivo_         7.03e-01  32
+deltaSHAPE_rep2_in_vivo_         1.60e-05  3_[17(5.39e-06)]_6_[14(6.31e-05)]_8
+deltaSHAPE_rep2_in_vivo_         6.53e-02  16_[13(1.77e-05)]_6
+deltaSHAPE_rep2_in_vivo_         2.15e-01  [13(1.77e-05)]_22
+deltaSHAPE_rep2_in_vivo_         5.21e-02  11_[1(1.89e-05)]_11
+deltaSHAPE_rep2_in_vivo_         2.93e-01  5_[1(1.89e-05)]_17
+deltaSHAPE_rep2_in_vivo_         1.00e+00  32
+deltaSHAPE_rep2_in_vivo_         5.16e-01  32
+deltaSHAPE_rep2_in_vivo_         1.02e-02  20_[20(9.34e-07)]_2
+deltaSHAPE_rep2_in_vivo_         6.59e-01  32
+deltaSHAPE_rep2_in_vivo_         9.92e-01  32
+deltaSHAPE_rep2_in_vivo_         6.97e-02  22_[19(2.00e-06)]
+deltaSHAPE_rep2_in_vivo_         3.56e-01  5_[19(2.00e-06)]_17
+deltaSHAPE_rep2_in_vivo_         4.35e-04  14_[2(6.83e-05)]_1_[8(6.38e-06)]_3
+deltaSHAPE_rep2_in_vivo_         1.08e-01  [8(6.38e-06)]_24
+deltaSHAPE_rep2_in_vivo_         6.79e-01  19_[13(5.71e-05)]_3
+deltaSHAPE_rep2_in_vivo_         3.71e-01  10_[13(2.91e-06)]_12
+deltaSHAPE_rep2_in_vivo_         1.05e-01  32
+deltaSHAPE_rep2_in_vivo_         6.19e-01  32
+deltaSHAPE_rep2_in_vivo_         9.58e-01  32
+deltaSHAPE_rep2_in_vivo_         5.49e-01  32
+deltaSHAPE_rep2_in_vivo_         1.45e-02  6_[7(3.55e-06)]_18
+deltaSHAPE_rep2_in_vivo_         9.19e-01  32
+deltaSHAPE_rep2_in_vivo_         1.72e-01  32
+deltaSHAPE_rep2_in_vivo_         3.45e-01  32
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because requested number of motifs (20) found.
+********************************************************************************
+
+CPU: SCE-BIO-C04242.local
+
+********************************************************************************

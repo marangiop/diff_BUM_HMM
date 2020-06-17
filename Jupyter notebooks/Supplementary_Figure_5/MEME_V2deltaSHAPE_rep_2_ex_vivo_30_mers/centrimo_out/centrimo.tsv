@@ -1,0 +1,5 @@
+db_index	motif_id	motif_alt_id	consensus	E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	p-value	mult_tests
+
+# CentriMo (Local Motif Enrichment Analysis): Version 5.1.0 compiled on May 30 2020 at 12:27:21
+# The format of this file is described at http://meme-suite.org//doc/centrimo-output-format.html.
+# centrimo -seqlen 0 -verbosity 1 -oc MEME_V2deltaSHAPE_rep_2_ex_vivo_30_mers/centrimo_out -bfile MEME_V2deltaSHAPE_rep_2_ex_vivo_30_mers/background MEME_V2deltaSHAPE_rep_2_ex_vivo_30_mers/deltaSHAPE_rep_2_ex_vivo_30_mers.fa MEME_V2deltaSHAPE_rep_2_ex_vivo_30_mers/meme_out/meme.xml

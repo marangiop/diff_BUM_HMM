@@ -1,0 +1,11 @@
+##gff-version 3
+CELF1_4	fimo	nucleotide_motif	5	14	53.4	+	.	Name=UGUGUGUCUW_CELF1_4+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_4;pvalue=4.51e-06;qvalue=0.00102;sequence=TGTGTGTCTA;
+CELF1_6	fimo	nucleotide_motif	7	16	 41	+	.	Name=UGUGUGUCUW_CELF1_6+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_6;pvalue=7.97e-05;qvalue=0.004;sequence=ATTGTGTCTA;
+CELF1_7	fimo	nucleotide_motif	18	27	44.2	+	.	Name=UGUGUGUCUW_CELF1_7+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_7;pvalue=3.8e-05;qvalue=0.00286;sequence=TTTGTGTCTA;
+CELF1_7	fimo	nucleotide_motif	2	11	40.4	+	.	Name=UGUGUGUCUW_CELF1_7+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-2-CELF1_7;pvalue=9.18e-05;qvalue=0.00415;sequence=TGTCTGTCTT;
+CELF1_8	fimo	nucleotide_motif	3	12	46.9	+	.	Name=UGUGUGUCUW_CELF1_8+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_8;pvalue=2.04e-05;qvalue=0.00216;sequence=TGTGTGTCTT;
+CELF1_9	fimo	nucleotide_motif	14	23	53.4	+	.	Name=UGUGUGUCUW_CELF1_9+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_9;pvalue=4.51e-06;qvalue=0.00102;sequence=TGTGTGTCTA;
+CELF1_10	fimo	nucleotide_motif	16	25	46.2	+	.	Name=UGUGUGUCUW_CELF1_10+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_10;pvalue=2.39e-05;qvalue=0.00216;sequence=TGTGTATCTA;
+CELF1_11	fimo	nucleotide_motif	7	16	46.9	+	.	Name=UGUGUGUCUW_CELF1_11+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_11;pvalue=2.04e-05;qvalue=0.00216;sequence=TGTGTGTCTT;
+CELF1_16	fimo	nucleotide_motif	14	23	42.4	+	.	Name=UGUGUGUCUW_CELF1_16+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_16;pvalue=5.74e-05;qvalue=0.00324;sequence=TGTGTTTCTA;
+CELF1_17	fimo	nucleotide_motif	7	16	43.2	+	.	Name=UGUGUGUCUW_CELF1_17+;Alias=MEME-1;ID=UGUGUGUCUW-MEME-1-1-CELF1_17;pvalue=4.76e-05;qvalue=0.00307;sequence=TGTGTGTCAT;

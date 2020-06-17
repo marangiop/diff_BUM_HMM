@@ -1,0 +1,16 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+UGUCUAAUUC	MEME-1	PTBP1_4	1	10	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_7	7	16	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_1	9	18	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_10	9	18	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_2	16	25	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_8	17	26	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_3	18	27	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_6	23	32	+	17	4.32e-06	0.000269	TGTCTAATTC
+UGUCUAAUUC	MEME-1	PTBP1_5	2	11	+	14.1154	1.79e-05	0.000989	TGTCTATTTC
+UGUCUAAUUC	MEME-1	PTBP1_9	6	15	+	12.4231	2.66e-05	0.00132	TGTCTATGTC
+UGUCUAAUUC	MEME-1	PTBP1_4	18	27	+	10.6827	4.14e-05	0.00187	TATCTATTTC
+
+# FIMO (Find Individual Motif Occurrences): Version 5.1.0 compiled on May 30 2020 at 12:27:23
+# The format of this file is described at http://meme-suite.org//doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc MEME_PTBP1_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_PTBP1_Xist_RNA_binding_sites/background --motif UGUCUAAUUC MEME_PTBP1_Xist_RNA_binding_sites/meme_out/meme.xml MEME_PTBP1_Xist_RNA_binding_sites/PTBP1_Xist_RNA_binding_sites.fa

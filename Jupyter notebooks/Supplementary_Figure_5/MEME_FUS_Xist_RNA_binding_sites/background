@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file MEME_FUS_Xist_RNA_binding_sites/FUS_Xist_RNA_binding_sites.fa
+# seqs: 107    min: 32    max: 32    avg: 32.0    sum: 3424    alph: RNA
+# order 0
+A 2.728e-01
+C 2.056e-01
+G 2.123e-01
+U 3.093e-01
+# order 1
+AA 7.718e-02
+AC 4.944e-02
+AG 6.542e-02
+AU 8.140e-02
+CA 6.632e-02
+CC 5.427e-02
+CG 1.387e-02
+CU 7.024e-02
+GA 5.969e-02
+GC 4.251e-02
+GG 4.914e-02
+GU 6.301e-02
+UA 7.024e-02
+UC 5.849e-02
+UG 8.532e-02
+UU 9.346e-02

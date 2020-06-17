@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc MEME_PTBP1_Xist_RNA_binding_sites/fimo_out_1 --bgfile MEME_PTBP1_Xist_RNA_binding_sites/background --motif UGUCUAAUUC MEME_PTBP1_Xist_RNA_binding_sites/meme_out/meme.xml MEME_PTBP1_Xist_RNA_binding_sites/PTBP1_Xist_RNA_binding_sites.fa</command-line>
+<pattern-file>MEME_PTBP1_Xist_RNA_binding_sites/meme_out/meme.xml</pattern-file>
+<sequence-file>MEME_PTBP1_Xist_RNA_binding_sites/PTBP1_Xist_RNA_binding_sites.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="UGUCUAAUUC" name="MEME-1">
+<scanned-sequence accession="PTBP1_1" name="PTBP1_1">
+<matched-element start="9" stop="18" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_2" name="PTBP1_2">
+<matched-element start="16" stop="25" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_3" name="PTBP1_3">
+<matched-element start="18" stop="27" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_4" name="PTBP1_4">
+<matched-element start="1" stop="10" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+<matched-element start="18" stop="27" score="10.6827" pvalue="4.14e-05">
+<sequence>TATCTATTTC</sequence>
+<mem:qvalue>0.00187</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_5" name="PTBP1_5">
+<matched-element start="2" stop="11" score="14.1154" pvalue="1.79e-05">
+<sequence>TGTCTATTTC</sequence>
+<mem:qvalue>0.000989</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_6" name="PTBP1_6">
+<matched-element start="23" stop="32" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_7" name="PTBP1_7">
+<matched-element start="7" stop="16" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_8" name="PTBP1_8">
+<matched-element start="17" stop="26" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_9" name="PTBP1_9">
+<matched-element start="6" stop="15" score="12.4231" pvalue="2.66e-05">
+<sequence>TGTCTATGTC</sequence>
+<mem:qvalue>0.00132</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_10" name="PTBP1_10">
+<matched-element start="9" stop="18" score="17" pvalue="4.32e-06">
+<sequence>TGTCTAATTC</sequence>
+<mem:qvalue>0.000269</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_11" name="PTBP1_11">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_12" name="PTBP1_12">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_13" name="PTBP1_13">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_14" name="PTBP1_14">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_15" name="PTBP1_15">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_16" name="PTBP1_16">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_17" name="PTBP1_17">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_18" name="PTBP1_18">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_19" name="PTBP1_19">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_20" name="PTBP1_20">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_21" name="PTBP1_21">
+</scanned-sequence>
+<scanned-sequence accession="PTBP1_22" name="PTBP1_22">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

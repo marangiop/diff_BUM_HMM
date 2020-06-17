@@ -1,0 +1,38 @@
+Invoking:
+  getsize MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/deltaSHAPE_rep_2_in_vivo_30_mers.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.016551
+Invoking:
+  fasta-most -min 50 < MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/deltaSHAPE_rep_2_in_vivo_30_mers.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.061627
+Invoking:
+  fasta-center -rna -len 100 < MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/deltaSHAPE_rep_2_in_vivo_30_mers.fa 1> MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.097314
+Invoking:
+  fasta-shuffle-letters MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-centered MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-shuffled -kmer 2 -tag -dinuc -rna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.019344
+Invoking:
+  fasta-get-markov -nostatus -nosummary -rna -m 1 MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/deltaSHAPE_rep_2_in_vivo_30_mers.fa MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/background
+Finished invoke:
+  name: bg  status: 0  time: 0.010509
+Invoking:
+  meme MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-centered -oc MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/meme_out -mod anr -nmotifs 20 -minw 4 -maxw 10 -bfile MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/background -rna -p 8 -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 75.894939
+Invoking:
+  dreme -verbosity 1 -oc MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/dreme_out -png -rna -p MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-centered -n MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/seqs-shuffled
+Finished invoke:
+  name: dreme  status: 256  time: 0.050988
+Invoking:
+  centrimo -seqlen 0 -verbosity 1 -oc MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/centrimo_out -bfile MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/background MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/deltaSHAPE_rep_2_in_vivo_30_mers.fa MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/meme_out/meme.xml
+Finished invoke:
+  name: centrimo  status: 0  time: 0.080197
+Writing output
+Invoking:
+  meme-chip_html_to_tsv MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/meme-chip.html MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers/summary.tsv "meme-chip -meme-minw 4 -meme-maxw 10 -meme-nmotifs 20 -meme-p 8 -meme-mod anr -norc -rna -noecho -o MEME_V2deltaSHAPE_rep_2_in_vivo_30_mers deltaSHAPE_rep_2_in_vivo_30_mers.fa" 5.1.0 "Fri Oct 11 15\:53\:28 2019 -0700"
+Finished invoke:
+  name: summary  status: 512  time: 0.043106
+Done

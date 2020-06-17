@@ -1,0 +1,12 @@
+##gff-version 3
+PTBP1_1	fimo	nucleotide_motif	9	18	53.6	+	.	Name=UGUCUAAUUC_PTBP1_1+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_1;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
+PTBP1_2	fimo	nucleotide_motif	16	25	53.6	+	.	Name=UGUCUAAUUC_PTBP1_2+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_2;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
+PTBP1_3	fimo	nucleotide_motif	18	27	53.6	+	.	Name=UGUCUAAUUC_PTBP1_3+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_3;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
+PTBP1_4	fimo	nucleotide_motif	1	10	53.6	+	.	Name=UGUCUAAUUC_PTBP1_4+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_4;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
+PTBP1_4	fimo	nucleotide_motif	18	27	43.8	+	.	Name=UGUCUAAUUC_PTBP1_4+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-2-PTBP1_4;pvalue=4.14e-05;qvalue=0.00187;sequence=TATCTATTTC;
+PTBP1_5	fimo	nucleotide_motif	2	11	47.5	+	.	Name=UGUCUAAUUC_PTBP1_5+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_5;pvalue=1.79e-05;qvalue=0.000989;sequence=TGTCTATTTC;
+PTBP1_6	fimo	nucleotide_motif	23	32	53.6	+	.	Name=UGUCUAAUUC_PTBP1_6+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_6;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
+PTBP1_7	fimo	nucleotide_motif	7	16	53.6	+	.	Name=UGUCUAAUUC_PTBP1_7+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_7;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
+PTBP1_8	fimo	nucleotide_motif	17	26	53.6	+	.	Name=UGUCUAAUUC_PTBP1_8+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_8;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
+PTBP1_9	fimo	nucleotide_motif	6	15	45.7	+	.	Name=UGUCUAAUUC_PTBP1_9+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_9;pvalue=2.66e-05;qvalue=0.00132;sequence=TGTCTATGTC;
+PTBP1_10	fimo	nucleotide_motif	9	18	53.6	+	.	Name=UGUCUAAUUC_PTBP1_10+;Alias=MEME-1;ID=UGUCUAAUUC-MEME-1-1-PTBP1_10;pvalue=4.32e-06;qvalue=0.000269;sequence=TGTCTAATTC;
