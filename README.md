@@ -11,5 +11,5 @@ DiffBUM-HMM (differential BUM-HMM) is a natural extension of the beta-uniform mi
 | 4    | TBA    | TBA     |
 TO BE COMPLETED
 
-Bash script includes command that allows to execute R script or python scripts directly from command line without opening the scripts
+
 
