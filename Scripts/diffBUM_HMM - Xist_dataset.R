@@ -334,19 +334,23 @@ colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
 
 
-
+## Applicable only to RT-stop probing chemistries.
 ## All posterior probabilities need to be shifted by 1 nt because the RT
 ## is believed to stop 1 nucleotide before the modified nucleodide.
 ## So below a new matrix is made containing the values shifted by one position.
-shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
-shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
-colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
+## SKIP THIS PART IF THE INPUT DATA IS GENERATED WITH RT-mutate probing techniques(eg. SHAPE-MaP)!!!
+## ------------------------------------------------------------------------
+#shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
+#shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
+#colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
+#head(shifted_posteriors)
+#head(posteriors_diff)
 
+## ------------------------------------------------------------------------
+#Unhash as needed to plot the original/shifted posterior probabilities of differential modification 
+#differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
+differentiallymod <- posteriors_diff[,2] + posteriors_diff[,3]
 
-head(shifted_posteriors)
-head(posteriors_diff)
-
-differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
 ## ------------------------------------------------------------------------
 
@@ -359,6 +363,6 @@ plot(differentiallymod, xlab = 'Nucleotide position',
      ylim = c(0,1))
 dev.off()
 
-shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
-write.table(shifted_posteriors,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
+posteriors_diff <- replace(posteriors_diff,is.na(posteriors_diff),-999)
+write.table(posteriors_diff,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
 
