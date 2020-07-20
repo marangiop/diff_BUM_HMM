@@ -1,16 +1,16 @@
 #### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
 
-# This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
+# This script assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
 
 install.packages("rstudioapi")
 library(rstudioapi)
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 install.packages("BiocManager")
 install.packages("formattable")
 
-BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.10")
+BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
 
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 setwd('..')
 
 source("Functions/computePvals.R")
@@ -42,16 +42,16 @@ setwd('..')
 
 outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis','.txt')
 
-table1_incell <- read.delim("Data/Xist_data_from_Weeks_lab/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
-table2_incell <- read.delim("Data/Xist_data_from_Weeks_lab/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
+table1_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
+table2_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
 
-table1_exvivo <- read.delim("Data/Xist_data_from_Weeks_lab/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
-table2_exvivo <- read.delim("Data/Xist_data_from_Weeks_lab/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
+table1_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
+table2_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
 
 head(table1_incell["in_cell_DMSO1_read_count"])
 
-dc_incell <- read.delim("Data/Xist_data_from_Weeks_lab/Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
-dc_exvivo <- read.delim("Data/Xist_data_from_Weeks_lab/XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_incell <- read.delim("Data/Xist_dataset/Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
 
 
 
@@ -114,7 +114,7 @@ scaled_exvivo_rates_df[2451:2599,]=0
 scaled_incell_rates_df[17801:17918,]=0 
 scaled_exvivo_rates_df[17801:17918,]=0 
 
-# calculate back mutation counts using scaled rates 
+# Back-calculate mutation counts using scaled rates 
 mutation_counts_in_cell <-  incell_counts * scaled_incell_rates_df
 mutation_counts_ex_vivo <-  exvivo_counts * scaled_exvivo_rates_df
 
@@ -131,12 +131,14 @@ exvivo_counts <- cbind(gene="Xist",exvivo_counts)
 head(mutation_counts_ex_vivo)
 head(exvivo_counts)
 
-# Calculating log mutation rates
+#### ------- DATA PRE-PROCESSING (CALCULATION LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
+
+# Calculating log mutation rates (denoted as drop offs from here on)
 logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence)
 logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, noreplicates, refsequence)
 
 
-#### ------- QUALITY CONTROL: INSPECTION OF LOG MUTATION RATES (OPTIONAL)------ ######
+## ------- QUALITY CONTROL: INSPECTION OF LOG MUTATION RATES (OPTIONAL)------ ##
 #TO RUN,UNCOMMENT LINES 142-190 WITH: CTRL + ALT + C On Windows or command + SHIFT + C in Mac OS 
 
 #setwd("Analysis/LMR_and_LDR_plots/Xist")
@@ -191,7 +193,7 @@ logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, norep
 #setwd('..')
 #setwd('..')
 
-## ------------------------------------------------------------------------
+## ------------------------------------------------------------------------##
 
 head(logdropoffs_incell$LDR_C)
 head(logdropoffs_incell$LDR_CT)
@@ -202,25 +204,25 @@ Nc <- Nt <- noreplicates
 
 strand = "+"
 
+#Calculation of empirical p values for the two probing conditions
 empPvals_1 <- computePvals(logdropoffs_incell$LDR_C,logdropoffs_incell$LDR_CT, Nc, Nt, strand, logdropoffs_incell$nuclPosition,
                            logdropoffs_incell$nuclSelection$analysedC, logdropoffs_incell$nuclSelection$analysedCT)
 
 empPvals_2 <- computePvals(logdropoffs_exvivo$LDR_C,logdropoffs_exvivo$LDR_CT, Nc, Nt, strand, logdropoffs_exvivo$nuclPosition,
                            logdropoffs_exvivo$nuclSelection$analysedC, logdropoffs_exvivo$nuclSelection$analysedCT)
 
-
+#overlapping the stretches of nucleotides that have valid log mutation rates to get a representative set
 stretches <-overlapsRanges(logdropoffs_incell$stretches,logdropoffs_exvivo$stretches)
 
 ## Number of nucleotides in the sequence = number of rows in empPvals_1
 nNucl <- length(empPvals_1[1, ])
 
 
-## ------------------------------------------------------------------------
+####### ------- HMM ANALYSIS (CALCULATION OF POSTERIOR PROBABILITIES FOR THE FOUR HIDDEN STATES) ------- ########
 ###computes posterior probabilities of all nucleotides in the stretches specified above.
-#This is the step where the null distributions and p-values are calculated as well.
-#The most important arguments are the LDRs, the positions used to compute the
-#null distribution, as well as the positional information of the selected stretches
-#and nucleotide pairs where the LDRs were obtained.
+#The most important arguments are the LMRs, the positions used to compute the
+#null distribution, as well as the positions of the selected stretches
+#and nucleotide pairs where the LMRs were obtained.
 
 
 ##Before computing posterior probabilities, we set up matrices to hold the required p-values
@@ -280,7 +282,7 @@ for (i in 1:length(stretches)) {
 
 }
 
-#### ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL)------ ######
+## ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL) ------- ##
 #TO RUN,UNCOMMENT LINES 284-325 WITH: CTRL + ALT + C On Windows or command + SHIFT + C in Mac OS 
 
 #setwd("Analysis/pvalues_plots/Xist")
@@ -326,43 +328,42 @@ for (i in 1:length(stretches)) {
 #setwd('..')
 #setwd('..')
 #setwd('..')
-#
-
+## --------------------------------------------------------------------------------------------- ##
 
 posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
 colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
 
-
+## ------- SHIFTING POSTERIORS (OPTIONAL) ------- ##
 ## Applicable only to RT-stop probing chemistries.
 ## All posterior probabilities need to be shifted by 1 nt because the RT
 ## is believed to stop 1 nucleotide before the modified nucleodide.
 ## So below a new matrix is made containing the values shifted by one position.
 ## SKIP THIS PART IF THE INPUT DATA IS GENERATED WITH RT-mutate probing techniques(eg. SHAPE-MaP)!!!
-## ------------------------------------------------------------------------
+
 #shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
 #shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
 #colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
 #head(shifted_posteriors)
 #head(posteriors_diff)
 
-## ------------------------------------------------------------------------
-#Unhash as needed to plot the original/shifted posterior probabilities of differential modification 
+##### ------------------ DATAFRAME AND PLOT OUTPUTS -------------------------------#####
+
+#Plotting and outputting the original/shifted posterior probabilities of differential modification 
 #differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 differentiallymod <- posteriors_diff[,2] + posteriors_diff[,3]
 
-
-## ------------------------------------------------------------------------
-
 setwd("Analysis/diffBUM-HMM")
 
-png("Xist_sum_of_diff_states_diff_BUM_HMM.png")
+pdf('Xist_sum_of_diff_states_diff_BUM_HMM.pdf', width = 10)
 plot(differentiallymod, xlab = 'Nucleotide position',
      ylab = 'Probability of modification (UM+MU)',
      main = 'diffBUMHMM output: Probability of differential modification between in vivo and ex vivo',
      ylim = c(0,1))
 dev.off()
 
+
+#Outputting all posterior probabilities
 posteriors_diff <- replace(posteriors_diff,is.na(posteriors_diff),-999)
 write.table(posteriors_diff,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
 
