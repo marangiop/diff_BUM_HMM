@@ -1,11 +1,15 @@
-# diff_BUM_HMM
-Differential version of BUM_HMM - 
-Work continued from Gitlab repository maintained by Sander and Toby (May 2019)
-- with latest changes made after Paolo's work (November 2019) --> branch latest_master
-- and with Sander's latest version (March 2020) --> branch sander 
+# diffBUM_HMM
+Bayesian modelling approach for detecting RNA flexibility changes in high-throughput structure probing data
 
-Branches overview
-- latest master --> latest version of Paolo's diffBUM-HMM pipeline
-- sander --> Sander's diffBUMM-HMM pipeline
-- master --> older version of Paolo's diffBUM-HMM pipeline
-- perturbation_tests --> tests with random Gaussian perturbations of the initial probabilities of the transition matrix
+## Background 
+DiffBUM-HMM (differential BUM-HMM) is a natural extension of the beta-uniform mixture hidden Markov model developed previously [Selega2017](https://pubmed.ncbi.nlm.nih.gov/27819660/). TO BE COMPLETED
+
+## Reproducing figures from the paper
+| Figure | Bash script for raw data analysis | Jupyter Notebook for figure generation |
+|   ------------- |-------------        | -------------|
+| 2-3  | TBA  | *  [notebook](./Jupyter notebooks/Figure_2_3/Plotting 5'ETS and 35S data.ipynb)  |
+| 4    | TBA    | TBA     |
+TO BE COMPLETED
+
+Bash script includes command that allows to execute R script or python scripts directly from command line without opening the scripts
+

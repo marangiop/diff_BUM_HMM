@@ -23,9 +23,14 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
     #store the reference sequence as a DNAString class object, under the name dna
     #here its needed to specify the number of replicates we have for each control and treatment samples
     
+    setwd("Reference_sequences")
+    
     seq <- gsub("[\r\n\"]", "", readChar(refsequence, file.info(refsequence)$size))
     dna <- DNAString(seq)
-    #setwd(working_directory) 
+    
+    setwd('..')
+    
+    
     
     #construct a list of matrices using the container SummarizedExperiment (se), containing DOC, coverage, and drop-off rate values.
     #each column represents the samples: 1 column for each control or treatment replicate
