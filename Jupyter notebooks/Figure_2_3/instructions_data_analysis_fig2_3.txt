@@ -1,0 +1,15 @@
+#Run all the following commands from within "Scripts" directory
+
+## Run the following commands from RStudio Console:
+
+source(diffBUM_HMM_35S_dataset.R)
+source(Rscript dStruct_35S_dataset.R)
+source(script_creating_SHAPE_map_files_35S_dataset.R)
+
+## Run the following commands from within a virtual environment (e.g. conda, virtualenv) with Python 2.7 installed
+pip install matplotlib.pyplot
+pip install numpy 
+pip install scipy
+python deltaSHAPE.py 35s_delta5_rep1.map 35s_deltaerb1_rep1.map -o "35S_deltaerb1_Vs_delta5_reps1.txt "
+python deltaSHAPE.py 35s_delta5_rep2.map 35s_deltaerb1_rep2.map -o "35S_deltaerb1_Vs_delta5_reps2.txt "
+

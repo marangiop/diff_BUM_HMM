@@ -38,7 +38,7 @@ setwd("Reference_sequences")
 refsequence <- "35S_pre-rRNA_refseq.seq"
 setwd('..')
 
-outputfilename <-paste0('35S','_diff_BUM_HMM_analysis','.txt')
+outputfilename <-paste0('35S','_diffBUM_HMM_WT_vs_Erb1_diff_BUM_HMM_analysed','.txt')
 
 mergedcountswt <- read.table("Data/35S_data/35S_control_delta5_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 mergedstartswt <- read.table("Data/35S_data/35S_control_delta5_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
