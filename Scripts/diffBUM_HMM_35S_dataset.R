@@ -36,26 +36,29 @@ noreplicates <- 2
 
 setwd("Reference_sequences")
 refsequence <- "35S_pre-rRNA_refseq.seq"
-setwd('..')
-
+setwd('../Data/35S_data/')
 outputfilename <-paste0('35S','_diffBUM_HMM_WT_vs_Erb1_diff_BUM_HMM_analysed','.txt')
 
-mergedcountswt <- read.table("Data/35S_data/35S_control_delta5_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
-mergedstartswt <- read.table("Data/35S_data/35S_control_delta5_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
-mergedcountsmut <- read.table("Data/35S_data/35S_control_Erb1_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
-mergedstartsmut <- read.table("Data/35S_data/35S_control_Erb1_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+# input the coverage and drop off counts from the working directory:
+# wt:wild type; mut: mutant
 
-head(mergedcountswt)
+mergedcountswt <- read.table("35S_control_delta5_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+mergedstartswt <- read.table("35S_control_delta5_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+mergedcountsmut <- read.table("35S_control_Erb1_merged_dropoffcounts.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
+mergedstartsmut <- read.table("35S_control_Erb1_merged_reads.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 
-## Calculating dropoff rates
+setwd("./../../")
+#### ------- DATA PRE-PROCESSING (CALCULATION LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
+
+## Calculating dropoff rate ratios
 logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt,noreplicates, refsequence)  
 logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut,noreplicates, refsequence)
 
 
-#### ------- QUALITY CONTROL: INSPECTION OF LOG MUTATION RATES (OPTIONAL)------ ######
-#TO RUN,UNCOMMENT LINES 58-107 WITH: CTRL + ALT + C On Windows or command + SHIFT + C in Mac OS 
+#### ------- QUALITY CONTROL: INSPECTION OF LOG DROP OFF RATE RATIOS (OPTIONAL)------ ######
+#TO RUN,UNCOMMENT LINES 61-107 WITH: CTRL + SHIFT + C on Windows or command + SHIFT + C on Mac OS 
 
-#setwd("Analysis/LMR_and_LDR_plots/35S")
+# setwd("Analysis/LMR_and_LDR_plots/35S")
 
 # pdf('LDR-35S-Control1-Control2-comparison_delta5.pdf',width=6,height=4,paper='special')
 # hist(logdropoffswt$LDR_C, breaks = 30, main = 'Null distribution of LDRs - delta 5')
@@ -102,20 +105,17 @@ logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut,noreplicates, re
 # hist(ldr_ct_erb1[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution erb1')
 # dev.off()
 #
-#setwd('..')
-#setwd('..')
-#setwd('..')
+# setwd('./../../..')
 
+
+## ------------------------------------------------------------------------##
 
 Nc <- Nt <- noreplicates
 
 strand = "+"
 
+##Calculation of empirical p values for the two sets of samples: the WT and mutant.
 
-#logdropoffswt <- logdropoffs_incell
-#logdropoffsmut <- logdropoffs_exvivo
-
-###
 empPvals_1 <- computePvals(logdropoffswt$LDR_C,logdropoffswt$LDR_CT, Nc, Nt, strand, logdropoffswt$nuclPosition,
                            logdropoffswt$nuclSelection$analysedC, logdropoffswt$nuclSelection$analysedCT)
 
@@ -123,21 +123,18 @@ empPvals_2 <- computePvals(logdropoffsmut$LDR_C,logdropoffsmut$LDR_CT, Nc, Nt, s
                            logdropoffsmut$nuclSelection$analysedC, logdropoffsmut$nuclSelection$analysedCT)
 
 
+#stretches contain the selection of nulceotide positions that have valid log drop off rate ratios
+#overlapping the stretches of nucleotides selected in each group of samples to get a representative set
 stretches <-overlapsRanges(logdropoffswt$stretches,logdropoffsmut$stretches)
 
-## Number of nucleotides in the sequence = number of rows in empPvals_1
-nNucl <- length(empPvals_1[1, ])
 
-
-## ------------------------------------------------------------------------
+####### ------- HMM ANALYSIS (CALCULATION OF POSTERIOR PROBABILITIES FOR THE FOUR HIDDEN STATES) ------- ########
 ###computes posterior probabilities of all nucleotides in the stretches specified above.
-#This is the step where the null distributions and p-values are calculated as well.
 #The most important arguments are the LDRs, the positions used to compute the
-#null distribution, as well as the positional information of the selected stretches
+#null distribution, as well as the positions of the selected stretches
 #and nucleotide pairs where the LDRs were obtained.
 
 ##Before computing posterior probabilities, we set up matrices to hold the required p-values
-
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
 
@@ -198,12 +195,12 @@ for (i in 1:length(stretches)) {
 
 
 #### ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL)------ ######
-#TO RUN,UNCOMMENT LINES 206-246 WITH: CTRL + ALT + C On Windows or command + SHIFT + C in Mac OS 
+#TO RUN,UNCOMMENT LINES 200-241 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
-#setwd("Analysis/pvalues_plots/35S")
+# setwd("Analysis/pvalues_plots/35S")
 
-#write.table(Pv1, file="pvalues_delta5.txt", row.names=TRUE, col.names=TRUE)
-#write.table(Pv2, file="pvalues_deltaerb1.txt", row.names=TRUE, col.names=TRUE)
+# write.table(Pv1, file="pvalues_delta5.txt", row.names=TRUE, col.names=TRUE)
+# write.table(Pv2, file="pvalues_deltaerb1.txt", row.names=TRUE, col.names=TRUE)
 
 # 
 # pdf('pvalues-35S-Treatment1-Control1-comparison_delta5.pdf',width=6,height=4,paper='special')
@@ -241,18 +238,22 @@ for (i in 1:length(stretches)) {
 # dev.off()
 #
 #
-#setwd('..')
-#setwd('..')
-#setwd('..')
+# setwd('./../../..')
 
+## ------------------------------------------------------------------ ##
+
+#The selected empirical p values are input into the HMM, to give posterior probabilities
 posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
 colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
 
+## ------- SHIFTING POSTERIORS (OPTIONAL) ------- ##
+## Applicable only to RT-stop probing chemistries.
 ## All posterior probabilities need to be shifted by 1 nt because the RT
 ## is believed to stop 1 nucleotide before the modified nucleodide.
 ## So below a new matrix is made containing the values shifted by one position.
-## ------------------------------------------------------------------------
+## SKIP THIS PART IF THE INPUT DATA IS GENERATED WITH RT-mutate probing techniques(eg. SHAPE-MaP)!!!
+
 shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
 shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
 colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
@@ -262,20 +263,21 @@ head(shifted_posteriors)
 head(posteriors_diff)
 
 
-differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
+##### ------------------ EXPORTING POSTERIORS AND PLOTS -------------------------------#####
 
-## ------------------------------------------------------------------------
+#Plotting and outputting the shifted posterior probabilities of differential modification
+differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
 setwd("Analysis/diffBUM-HMM")
 
-png("35S_sum_of_diff_states_diff_BUM_HMM_.png")
+pdf("35S_sum_of_diff_states_diff_BUM_HMM_.pdf", width = 10)
 plot(differentiallymod, xlab = 'Nucleotide position',
      ylab = 'Probability of modification (UM+MU)',
      main = 'diffBUMHMM output: ProbabilITY of differential modification between delta5 and erb1',
      ylim = c(0,1))
 dev.off()
 
-
+#Outputting all posterior probabilities
 shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
 write.table(shifted_posteriors,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
 

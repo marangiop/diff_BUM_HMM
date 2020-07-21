@@ -1,6 +1,6 @@
 #### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
 
-# This script assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
+# This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
 install.packages("rstudioapi")
 library(rstudioapi)
@@ -131,17 +131,17 @@ exvivo_counts <- cbind(gene="Xist",exvivo_counts)
 head(mutation_counts_ex_vivo)
 head(exvivo_counts)
 
-#### ------- DATA PRE-PROCESSING (CALCULATION LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
+#### ------- DATA PRE-PROCESSING (CALCULATING LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
 
-# Calculating log mutation rates (denoted as drop offs from here on)
+# Calculating log mutation rate ratios (denoted as drop offs from here on)
 logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence)
 logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, noreplicates, refsequence)
 
 
-## ------- QUALITY CONTROL: INSPECTION OF LOG MUTATION RATES (OPTIONAL)------ ##
-#TO RUN,UNCOMMENT LINES 142-190 WITH: CTRL + ALT + C On Windows or command + SHIFT + C in Mac OS 
+## ------- QUALITY CONTROL: INSPECTION OF LOG MUTATION RATE RATIOS DISTRIBUTION (OPTIONAL)------ ##
+#TO RUN,UNCOMMENT LINES 144-194 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
-#setwd("Analysis/LMR_and_LDR_plots/Xist")
+# setwd("Analysis/LMR_and_LDR_plots/Xist")
 
 
 # pdf('LMR-xist-Control1-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
@@ -189,9 +189,7 @@ logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, norep
 # hist(ldr_ct_exvivo[ , 4:4], breaks = 30, main = 'LMR T2 - C2 distribution ex vivo')
 # dev.off()
 
-#setwd('..')
-#setwd('..')
-#setwd('..')
+# setwd('./../../..')
 
 ## ------------------------------------------------------------------------##
 
@@ -211,11 +209,10 @@ empPvals_1 <- computePvals(logdropoffs_incell$LDR_C,logdropoffs_incell$LDR_CT, N
 empPvals_2 <- computePvals(logdropoffs_exvivo$LDR_C,logdropoffs_exvivo$LDR_CT, Nc, Nt, strand, logdropoffs_exvivo$nuclPosition,
                            logdropoffs_exvivo$nuclSelection$analysedC, logdropoffs_exvivo$nuclSelection$analysedCT)
 
-#overlapping the stretches of nucleotides that have valid log mutation rates to get a representative set
+#stretches contain the selection of nulceotide positions that have valid log mutation rate ratios
+#overlapping the stretches of nucleotides selected in each group of samples to get a representative set
 stretches <-overlapsRanges(logdropoffs_incell$stretches,logdropoffs_exvivo$stretches)
 
-## Number of nucleotides in the sequence = number of rows in empPvals_1
-nNucl <- length(empPvals_1[1, ])
 
 
 ####### ------- HMM ANALYSIS (CALCULATION OF POSTERIOR PROBABILITIES FOR THE FOUR HIDDEN STATES) ------- ########
@@ -283,12 +280,12 @@ for (i in 1:length(stretches)) {
 }
 
 ## ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL) ------- ##
-#TO RUN,UNCOMMENT LINES 284-325 WITH: CTRL + ALT + C On Windows or command + SHIFT + C in Mac OS 
+#TO RUN,UNCOMMENT LINES 286-328 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
-#setwd("Analysis/pvalues_plots/Xist")
-
-#write.table(Pv1, file="pvalues_invivo.txt", row.names=TRUE, col.names=TRUE)
-#write.table(Pv2, file="pvalues_exvivo.txt", row.names=TRUE, col.names=TRUE)
+# setwd("Analysis/pvalues_plots/Xist")
+# 
+# write.table(Pv1, file="pvalues_invivo.txt", row.names=TRUE, col.names=TRUE)
+# write.table(Pv2, file="pvalues_exvivo.txt", row.names=TRUE, col.names=TRUE)
 
 
 # pdf('pvalues-xist-Treatment1-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
@@ -324,12 +321,12 @@ for (i in 1:length(stretches)) {
 # pdf('pvalues-xist-Treatment2-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
 # hist(Pv2[4:4,], breaks = 30, main = 'pvalues T2 - C2 distribution ex vivo')
 # dev.off()
-#
-#setwd('..')
-#setwd('..')
-#setwd('..')
+
+# setwd('./../../..')
+
 ## --------------------------------------------------------------------------------------------- ##
 
+#The selected empirical p values are input into the HMM, to give posterior probabilities
 posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
 colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
@@ -347,7 +344,7 @@ head(posteriors_diff)
 #head(shifted_posteriors)
 #head(posteriors_diff)
 
-##### ------------------ DATAFRAME AND PLOT OUTPUTS -------------------------------#####
+##### ------------------ EXPORTING POSTERIORS AND PLOTS -------------------------------#####
 
 #Plotting and outputting the original/shifted posterior probabilities of differential modification 
 #differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
