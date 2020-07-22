@@ -13,7 +13,7 @@ Still diffBUM_HMM makes more unique calls as to which regions are protected/
 structurally dynamic. Structurally dynamic nucleotides calls by diffBUM_HMM
 all lie outside of the stemloop region (420-614, 195nt, marked in black), 
 which is in agreement with the fact that the stem loop is the only structurally 
-defined region in Repeat A (according to Xist paper).
+defined region in Repeat A (according to Xist Smola et.al 2016 paper).
 
 
 Repeat E (10174-11035, 862 nt): whole region enriched with CLIP sites, both 

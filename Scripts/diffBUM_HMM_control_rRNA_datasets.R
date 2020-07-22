@@ -93,7 +93,7 @@ logdropoffsmut5S <- calculateLDRs(mergedcountsmut5S,mergedstartsmut5S,noreplicat
 ## ------- QUALITY CONTROL: INSPECTION OF LOG DROP OFF RATE RATIOS DISTRIBUTION (OPTIONAL)------ ##
 
 # TO RUN,UNCOMMENT LINES 98-136 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
-# wt AND MUT LDRs WILL BE THE SAME SINCE THEY ARE IDENTICAL SETS OF SAMPLES, HERE ONLY THE CODE FOR ASSESSING WT IS SHOWN.
+# WT AND MUT LDRs WILL BE THE SAME SINCE THEY ARE IDENTICAL SETS OF SAMPLES, HERE ONLY THE CODE FOR ASSESSING WT IS SHOWN.
 
 # setwd("Analysis/LMR_and_LDR_plots/mature rRNA")
 # 
@@ -265,7 +265,7 @@ pvaluesstretch_5S <- selectPvalues(empPvals_5S_A, empPvals_5S_B, stretches_5S)
 
 
 ## ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL) ------- ##
-#TO RUN,UNCOMMENT LINES 229-293 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
+#TO RUN,UNCOMMENT LINES 270-294 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
 # setwd("Analysis/pvalues_plots/mature rRNA")
 # 
