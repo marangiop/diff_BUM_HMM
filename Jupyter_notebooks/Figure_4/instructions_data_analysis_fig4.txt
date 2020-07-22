@@ -1,0 +1,7 @@
+#Run all the following commands from within "Scripts" directory
+
+## Run the following commands from RStudio Console:
+
+source(diffBUM_HMM_control_rRNA_datasets)
+
+

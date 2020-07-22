@@ -270,7 +270,7 @@ differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
 setwd("Analysis/diffBUM-HMM")
 
-pdf("35S_sum_of_diff_states_diff_BUM_HMM_.pdf", width = 10)
+pdf("35S_sum_of_diff_states_diff_BUM_HMM.pdf", width = 10)
 plot(differentiallymod, xlab = 'Nucleotide position',
      ylab = 'Probability of modification (UM+MU)',
      main = 'diffBUMHMM output: Probability of differential modification between delta5 and erb1',
