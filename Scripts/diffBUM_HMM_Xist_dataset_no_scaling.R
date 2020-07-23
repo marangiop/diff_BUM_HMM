@@ -1,17 +1,18 @@
-#USER HAS TO ALWAYS MANUALLY SET THE WORKING DIRECTORY TO THE CLONED DIFFBUM-HMM FOLDER
-#ON RSTUDIO BEFORE RUNNING THE SCRIPT 
+#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
 
-#setwd("C://Users/User/Desktop/diff_BUM_HMM/")
-#working_directory <- getwd()
-setwd(dirname(getwd()))
+# This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-#IF YOU HAVEN'T DONE IT YET, READ THE FOLLOWING FILE AND FOLLOW ITS INSTRUCTIONS:
-# Bioconductor_March2020_InstallationBug_Fixed.txt
+install.packages("rstudioapi")
+library(rstudioapi)
 
-#Line 11 is commented out because after done what it says on line 5 
-#(i.e. updating R and Bioconductor to versions 3.6.3 and 3.1.0, respectively) 
-#there is no need to run line 8 every time the script is run. 
-#source("https://bioconductor.org/biocLite.R")
+install.packages("BiocManager")
+install.packages("formattable")
+
+BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd('..')
+
 source("Functions/computePvals.R")
 source("Functions/calculateLDRs.R")
 source("Functions/hmmFwbw_differential_two_betas.R")
@@ -25,38 +26,49 @@ source("Functions/computeStretches.R")
 source("Functions/stabiliseVariance.R")
 
 suppressPackageStartupMessages({ 
-  library(Biostrings)
-  library(SummarizedExperiment) })
+    library(Biostrings)
+    library(SummarizedExperiment) })
 
+library(formattable)
+
+
+#### ------- LOADING DATA ------ ######
 
 noreplicates <- 2
 
-#cat(working_directory)
-
-#ref_seq_directory <- paste(working_directory, "Reference sequences/5.8S_refseq", sep="/")
+setwd("Reference_sequences")
 refsequence <- "Xist.seq"
-#cat(refsequence)
+setwd('..')
 
-outputfilename <-paste0('Xist_exvivo_vs._invivo','_diff_BUM_HMM_analysis','.txt')
+outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_noscaling_empty_first_line_last_line_removed','.txt')
 
-table1_incell <- read.delim("Data/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
-table2_incell <- read.delim("Data/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
+table1_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
+table2_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
 
-table1_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
-table2_exvivo <- read.delim("Data/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
+table1_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
+table2_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
 
 head(table1_incell["in_cell_DMSO1_read_count"])
 
-#READ COUNTS  i.e COVERAGE
+#dc_incell <- read.delim("Data/Xist_dataset/Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+#dc_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+
+
+
+# READ COUNTS  i.e COVERAGE
 incell_counts <- data.frame("in_cell_DMSO1_read_count" = table1_incell["in_cell_DMSO1_read_count"],"in_cell_DMSO2_read_count" = table2_incell["in_cell_DMSO2_read_count"],"X1M7_1_read_count" = table1_incell["in_cell_1M71_read_count"],"X1M7_2_read_count"= table2_incell["in_cell_1M72_read_count"])
 exvivo_counts <- data.frame("ex_vivo_DMSO1_read_count" = table1_exvivo["ex_vivo_DMSO1_read_count"],"ex_vivo_DMSO2_read_count" = table2_exvivo["ex_vivo_DMSO2_read_count"],"X1M7_1_read_count" = table1_exvivo["ex_vivo_1M71_read_count"],"X1M7_2_read_count"= table2_exvivo["ex_vivo_1M72_read_count"])
 
 head(incell_counts)
 head(exvivo_counts)
 
-#MUTATION RATES
+# MUTATION RATES
 incell_rates <- data.frame("in_cell_DMSO1_mutation_rate" = table1_incell["in_cell_DMSO1_mutation_rate"],"in_cell_DMSO2_mutation_rate" = table2_incell["in_cell_DMSO2_mutation_rate"],"X1M7_1_mutation_rate" = table1_incell["in_cell_1M71_mutation_rate"],"X1M7_2_mutation_rate"= table2_incell["in_cell_1M72_mutation_rate"])
 exvivo_rates <- data.frame("ex_vivo_DMSO1_mutation_rate" = table1_exvivo["ex_vivo_DMSO1_mutation_rate"],"ex_vivo_DMSO2_mutation_rate" = table2_exvivo["ex_vivo_DMSO2_mutation_rate"],"X1M7_1_mutation_rate" = table1_exvivo["ex_vivo_1M71_mutation_rate"],"X1M7_2_mutation_rate"= table2_exvivo["ex_vivo_1M72_mutation_rate"])
+
+
+
+
 
 #Setting regions to 0, based on sanity check
 
@@ -253,13 +265,16 @@ head(posteriors_diff)
 
 differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 
+
+setwd("Analysis/diffBUM-HMM")
+
 ## ------------------------------------------------------------------------
-png("Xist_sum_of_diff_states_diff_BUM_HMM_scaled_without_dc.png")
-plot(differentiallymod, xlab = 'Nucleotide position',
-     ylab = 'Probability of modification (UM+MU)',
-     main = 'diffBUMHMM output: ProbabilITY of differential modification between in vivo and ex vivo',
-     ylim = c(0,1))
-dev.off()
+#png("Xist_sum_of_diff_states_diff_BUM_HMM_scaled_without_dc.png")
+#plot(differentiallymod, xlab = 'Nucleotide position',
+#     ylab = 'Probability of modification (UM+MU)',
+#     main = 'diffBUMHMM output: ProbabilITY of differential modification between in vivo and ex vivo',
+#     ylim = c(0,1))
+#dev.off()
 ## ----eval=FALSE----------------------------------------------------------
 ## ## Call the function with the additonal tolerance parameter
 ## posteriors <- computeProbs(LDR_C, LDR_CT, Nc, Nt, '+', nuclPosition,
@@ -267,6 +282,14 @@ dev.off()
 ##                            stretches, 0.001)
 
 ## ------------------------------------------------------------------------
+
+
+
+#Add arow  of 999 at the top and remove last row
+shifted_posteriors <- rbind( c(999, 999,999,999), shifted_posteriors)
+shifted_posteriors <- shifted_posteriors[-nrow(shifted_posteriors),]
+
+
 shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)
 write.table(shifted_posteriors,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
 

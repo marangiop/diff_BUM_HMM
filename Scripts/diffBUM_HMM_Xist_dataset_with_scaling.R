@@ -40,7 +40,7 @@ setwd("Reference_sequences")
 refsequence <- "Xist.seq"
 setwd('..')
 
-outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis','.txt')
+outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_withscaling_empty_first_line_last_line_removed','.txt')
 
 table1_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
 table2_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
@@ -352,12 +352,16 @@ differentiallymod <- posteriors_diff[,2] + posteriors_diff[,3]
 
 setwd("Analysis/diffBUM-HMM")
 
-pdf('Xist_sum_of_diff_states_diff_BUM_HMM.pdf', width = 10)
-plot(differentiallymod, xlab = 'Nucleotide position',
-     ylab = 'Probability of modification (UM+MU)',
-     main = 'diffBUMHMM output: Probability of differential modification between in vivo and ex vivo',
-     ylim = c(0,1))
-dev.off()
+#pdf('Xist_sum_of_diff_states_diff_BUM_HMM.pdf', width = 10)
+#plot(differentiallymod, xlab = 'Nucleotide position',
+#     ylab = 'Probability of modification (UM+MU)',
+#     main = 'diffBUMHMM output: Probability of differential modification between in vivo and ex vivo',
+#     ylim = c(0,1))
+#dev.off()
+
+#Add arow  of 999 at the top and remove last row
+posteriors_diff <- rbind( c(999, 999,999,999), posteriors_diff)
+posteriors_diff <- posteriors_diff[-nrow(posteriors_diff),]
 
 
 #Outputting all posterior probabilities
