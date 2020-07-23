@@ -1,8 +1,21 @@
 1) We need Jupyter notebooks that contain the bash code used for running dStruct and diffBUM-HMM for each Figure.
 The goal is that people can download the repository and simply run the code from within the folder.
+(changed to including instructions for which scripts/notebooks to run in order to repeat our analyses)
 
-2) We need to check what figures that are no longer used can be removed.
+2) We need to check what figures that are no longer used can be removed. (done)
 
-3) We need to weed through the "Old" folder and decide what to do with the data in it.
+3) We need to weed through the "Old" folder and decide what to do with the data in it. (done)
 
-4) @Toby, could you made a notebook of the code that you used to download and analyse the rRNA data? I believe this was done using the pyCRAC_PE pipeline?
+4) @Toby, could you made a notebook of the code that you used to download and analyse the rRNA data? I believe this was done using the pyCRAC_PE pipeline? (done)
+
+Additional items added by Toby on 23rd July 2020:
+
+5) Check and regenerate the 35S LDR and p-value plots, after correcting for swap in input data.
+
+6) Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
+corrected set generated in June 2020 (i.e. after the big debug).
+Posteriors are the same except the new ones are shifted 1 nt towards the beginning of the molecule.
+
+7) Finish instructions for readme.md file.
+
+8) Check if all scripts can be run from start to finish, and if all outputs are reproducible.
