@@ -40,7 +40,7 @@ setwd("Reference_sequences")
 refsequence <- "Xist.seq"
 setwd('..')
 
-outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_noscaling_empty_first_line_last_line_removed','.txt')
+outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_noscaling','.txt')
 
 table1_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
 table2_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
@@ -283,11 +283,6 @@ setwd("Analysis/diffBUM-HMM")
 
 ## ------------------------------------------------------------------------
 
-
-
-#Add arow  of 999 at the top and remove last row
-shifted_posteriors <- rbind( c(999, 999,999,999), shifted_posteriors)
-shifted_posteriors <- shifted_posteriors[-nrow(shifted_posteriors),]
 
 
 shifted_posteriors <- replace(shifted_posteriors,is.na(shifted_posteriors),-999)

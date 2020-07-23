@@ -40,7 +40,7 @@ setwd("Reference_sequences")
 refsequence <- "Xist.seq"
 setwd('..')
 
-outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_withscaling_empty_first_line_last_line_removed','.txt')
+outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_withscaling','.txt')
 
 table1_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
 table2_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
@@ -360,8 +360,8 @@ setwd("Analysis/diffBUM-HMM")
 #dev.off()
 
 #Add arow  of 999 at the top and remove last row
-posteriors_diff <- rbind( c(999, 999,999,999), posteriors_diff)
-posteriors_diff <- posteriors_diff[-nrow(posteriors_diff),]
+
+
 
 
 #Outputting all posterior probabilities
