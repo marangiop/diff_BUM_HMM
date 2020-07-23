@@ -10,12 +10,18 @@ The goal is that people can download the repository and simply run the code from
 
 Additional items added by Toby on 23rd July 2020:
 
-5) Check and regenerate the 35S LDR and p-value plots, after correcting for swap in input data.
+5) Check and regenerate the 35S LDR and p-value plots, after correcting for swap in input data. Might need
+regenerate figure S3.
 
-6) Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
+6) Check and update the input file paths to the mature rRNA analysis notebook (figure 4).
+
+7)Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
 corrected set generated in June 2020 (i.e. after the big debug).
-Posteriors are the same except the new ones are shifted 1 nt towards the beginning of the molecule.
+Posteriors are the same except the updated ones are shifted 1 nt towards the beginning of the molecule.
 
-7) Finish instructions for readme.md file.
+8) Add a cell in the figure 5 notebook that reads the dStruct output and makes it into a dataframe 
+marking DRRs along the length of the Xist RNA.
 
-8) Check if all scripts can be run from start to finish, and if all outputs are reproducible.
+9) Finish instructions for readme.md file.
+
+10) Check if all scripts can be run from start to finish, and if all outputs are reproducible.
