@@ -1,6 +1,6 @@
 #### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
 
-# This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
+# This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
 install.packages("rstudioapi")
 library(rstudioapi)
@@ -56,10 +56,10 @@ logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut,noreplicates, re
 
 
 #### ------- QUALITY CONTROL: INSPECTION OF LOG DROP OFF RATE RATIOS (OPTIONAL)------ ######
-#TO RUN,UNCOMMENT LINES 61-107 WITH: CTRL + SHIFT + C on Windows or command + SHIFT + C on Mac OS 
+#TO RUN,UNCOMMENT LINES 61-108 WITH: CTRL + SHIFT + C on Windows or command + SHIFT + C on Mac OS 
 
 # setwd("Analysis/LMR_and_LDR_plots/35S")
-
+# 
 # pdf('LDR-35S-Control1-Control2-comparison_delta5.pdf',width=6,height=4,paper='special')
 # hist(logdropoffswt$LDR_C, breaks = 30, main = 'Null distribution of LDRs - delta 5')
 # dev.off()
@@ -104,7 +104,7 @@ logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut,noreplicates, re
 # pdf('LDR-35S-Treatment2-Control2-comparison_erb1.pdf',width=6,height=4,paper='special')
 # hist(ldr_ct_erb1[ , 4:4], breaks = 30, main = 'LDR T2 - C2 distribution erb1')
 # dev.off()
-#
+# 
 # setwd('./../../..')
 
 
@@ -198,10 +198,10 @@ for (i in 1:length(stretches)) {
 #TO RUN,UNCOMMENT LINES 200-241 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
 # setwd("Analysis/pvalues_plots/35S")
-
-# write.table(Pv1, file="pvalues_delta5.txt", row.names=TRUE, col.names=TRUE)
-# write.table(Pv2, file="pvalues_deltaerb1.txt", row.names=TRUE, col.names=TRUE)
-
+# 
+# write.table(t(Pv1), file="pvalues_delta5.txt", row.names=TRUE, col.names=TRUE)
+# write.table(t(Pv2), file="pvalues_deltaerb1.txt", row.names=TRUE, col.names=TRUE)
+# 
 # 
 # pdf('pvalues-35S-Treatment1-Control1-comparison_delta5.pdf',width=6,height=4,paper='special')
 # hist(Pv1[1:1,], breaks = 30, main = 'pvalues T1 - C1 distribution delta 5')
@@ -233,11 +233,11 @@ for (i in 1:length(stretches)) {
 # hist(Pv2[3:3,], breaks = 30, main = 'pvalues T2 - C1 distribution erb1')
 # dev.off()
 # 
-# pdf('pvalues-xist-Treatment2-Control2-comparison_erb1.pdf',width=6,height=4,paper='special')
+# pdf('pvalues-35S-Treatment2-Control2-comparison_erb1.pdf',width=6,height=4,paper='special')
 # hist(Pv2[4:4,], breaks = 30, main = 'pvalues T2 - C2 distribution erb1')
 # dev.off()
-#
-#
+# 
+# 
 # setwd('./../../..')
 
 ## ------------------------------------------------------------------ ##
