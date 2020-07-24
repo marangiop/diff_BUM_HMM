@@ -18,6 +18,7 @@ DiffBUM-HMM (differential BUM-HMM) is a natural extension of the beta-uniform mi
 | S4    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_4/instructions_SF4.txt)    | N/A    |
 | S5    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_5/instructions_SF5.txt)  | N/A   |
 
+The table above only includes instructions for figures from the paper that have been generated programmatically. 
 
 
 
