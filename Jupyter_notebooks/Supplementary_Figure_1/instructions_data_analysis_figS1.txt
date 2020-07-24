@@ -1,0 +1,10 @@
+#Run all the following commands from within "Scripts" directory, unless stated otherwise
+
+## Run the following commands from RStudio Console:
+source(diffBUM_HMM_35S_dataset_mismatch_rate.R)
+source(diffBUM_HMM_Xist_dataset_mismatch_rate.R)
+
+##Run the following commands from terminal, from within "diff_BUM_HMM/Jupyter_notebooks/Supplementary_Figure_1" directory:
+python script_comparison_perturbations_Xist_dataset.py > output_Xist_150_permutations.txt
+python script_comparison_perturbations_35S_dataset.py > output_35S_150_permutations.txt
+

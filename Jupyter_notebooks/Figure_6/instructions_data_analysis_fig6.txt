@@ -1,0 +1,11 @@
+#Run all the following commands from within "Scripts" directory, unless stated otherwise
+
+## Run the following commands from RStudio Console:
+source(diffBUM_HMM_Xist_dataset_no_scaling.R)
+source(diffBUM_HMM_Xist_dataset_with_scaling.R)
+source(dStruct_Xist_dataset_no_scaling.R)
+source(dStruct_Xist_dataset_with_scaling.R)
+
+##Run the following command from within "diff_BUM_HMM/Jupyter_notebooks/Xist analysis/Big_dataframe_SHAPEMAP_BED_for_Xist" directory:
+jupyter nbconvert --to script --execute --stdout Updated_code_for_making_big_data_table.ipynb | python
+
