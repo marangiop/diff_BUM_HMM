@@ -1,0 +1,3 @@
+#Run from within "Scripts" directory:
+
+source(diffBUM_HMM_35S_datase_LDRpvalueplots.R)

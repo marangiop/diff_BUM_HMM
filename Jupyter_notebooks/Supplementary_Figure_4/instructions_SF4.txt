@@ -1,0 +1,3 @@
+#Run from within "Scripts" directory:
+
+source(diffBUM_HMM_Xist_dataset_with_scaling_LMRpvalueplots.R)
