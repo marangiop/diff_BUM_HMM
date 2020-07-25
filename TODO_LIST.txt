@@ -16,13 +16,15 @@ Additional items added by Toby on 23rd July 2020:
 
 7) Check and update the input file paths to the mature rRNA analysis notebook (figure 4).
 
-8)Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
+8) Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
 corrected set generated in June 2020 (i.e. after the big debug).
 Posteriors are the same except the updated ones are shifted 1 nt towards the beginning of the molecule.
 
-9) Add a cell in the figure 5 notebook that reads the dStruct output and makes it into a dataframe 
+9) Find the dStruct output on Xist not-scaled data.
+
+10) Add a cell in the figure 5 notebook that reads the dStruct output (scaled and not scaled) and makes it into a dataframe 
 marking DRRs along the length of the Xist RNA.
 
-10) Finish instructions for readme.md file.
+11) Finish instructions for readme.md file.
 
-11) Check if all scripts can be run from start to finish, and if all outputs are reproducible.
+12) Check if all scripts can be run from start to finish, and if all outputs are reproducible.

@@ -1,14 +1,14 @@
-#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- PACKAGES INSTALLATION ------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
 install.packages("rstudioapi")
-library(rstudioapi)
-
 install.packages("BiocManager")
 install.packages("formattable")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+
+#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 setwd('..')
@@ -30,7 +30,7 @@ suppressPackageStartupMessages({
   library(SummarizedExperiment) })
 
 library(formattable)
-
+library(rstudioapi)
 
 #### ------- LOADING DATA ------ ######
 
@@ -38,20 +38,20 @@ noreplicates <- 2
 
 setwd("Reference_sequences")
 refsequence <- "Xist.seq"
-setwd('..')
+setwd('../Data/Xist_dataset/')
 
 outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_withscaling','.txt')
 
-table1_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
-table2_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
+table1_incell <- read.delim("XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
+table2_incell <- read.delim("XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
 
-table1_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
-table2_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
+table1_exvivo <- read.delim("XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
+table2_exvivo <- read.delim("XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
 
 head(table1_incell["in_cell_DMSO1_read_count"])
 
-dc_incell <- read.delim("Data/Xist_dataset/Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
-dc_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_incell <- read.delim("Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_exvivo <- read.delim("XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
 
 
 
@@ -79,12 +79,12 @@ dc_incell_column = formattable(dc_incell_column, digits = 8, format = "f" )
 dc_exvivo_column = formattable(dc_exvivo_column,digits = 8, format = "f" )
 
 
-#Dividing DMSO and 1MT columns for both in cell and ex vivo by respective DC replicate
+# Dividing DMSO and 1M7 columns for both in cell and ex vivo by respective DC replicate
 #Note:only 1 single replicate for DC was available, for each condition. 
 scaled_incell_rates <- incell_rates[,] / dc_incell_column
 scaled_exvivo_rates <- exvivo_rates[,] / dc_exvivo_column
 
-#Removing NaN and Inf values
+# Removing NaN and Inf values
 is.na(scaled_incell_rates)<-sapply(scaled_incell_rates, is.infinite)
 scaled_incell_rates[is.na(scaled_incell_rates)]<-0
 
@@ -100,8 +100,7 @@ colnames(scaled_incell_rates_df) <- c("in_cell_DMSO1_mutation_rate", "in_cell_DM
 scaled_exvivo_rates_df  <- structure(scaled_exvivo_rates,  row.names = c(NA, -n), class = "data.frame")
 colnames(scaled_exvivo_rates_df) <- c("in_cell_DMSO1_mutation_rate", "in_cell_DMSO2_mutation_rate", "in_cell_1M71_mutation_rate", "in_cell_1M72_mutation_rate" )
 
-#Setting regions to 0 
-
+# Setting regions to 0 
 scaled_incell_rates_df[2500:4500,]=0 
 scaled_exvivo_rates_df[2500:4500,]=0 
 
@@ -131,26 +130,28 @@ exvivo_counts <- cbind(gene="Xist",exvivo_counts)
 head(mutation_counts_ex_vivo)
 head(exvivo_counts)
 
+setwd("./../../")
+
 #### ------- DATA PRE-PROCESSING (CALCULATING LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
 
-# Calculating log mutation rate ratios (denoted as drop offs from here on)
+## Calculating log mutation rate ratios (denoted as drop offs from here on)
 logdropoffs_incell <- calculateLDRs(incell_counts,mutation_counts_in_cell, noreplicates, refsequence)
 logdropoffs_exvivo <- calculateLDRs(exvivo_counts,mutation_counts_ex_vivo, noreplicates, refsequence)
 
 
 ## ------- QUALITY CONTROL: INSPECTION OF LOG MUTATION RATE RATIOS DISTRIBUTION (OPTIONAL)------ ##
-#TO RUN,UNCOMMENT LINES 144-194 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
+## TO RUN, UNCOMMENT THIS SECTION WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
 # setwd("Analysis/LMR_and_LDR_plots/Xist")
 
 
 # pdf('LMR-xist-Control1-Control2-comparison_invivo.pdf',width=6,height=4,paper='special')
-# hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LDRs - in vivo')
+# hist(logdropoffs_incell$LDR_C, breaks = 30, main = 'Null distribution of LMRs - in vivo')
 # dev.off()
 # 
 # 
 # pdf('LMR-xist-Control1-Control2-comparison_exvivo.pdf',width=6,height=4,paper='special')
-# hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LDRs - ex vivo')
+# hist(logdropoffs_exvivo$LDR_C, breaks = 30, main = 'Null distribution of LMRs - ex vivo')
 # dev.off()
 # 
 # ldr_ct_invivo <-- logdropoffs_incell$LDR_CT
@@ -202,27 +203,27 @@ Nc <- Nt <- noreplicates
 
 strand = "+"
 
-#Calculation of empirical p values for the two probing conditions
+## Calculation of empirical p values for the two probing conditions
 empPvals_1 <- computePvals(logdropoffs_incell$LDR_C,logdropoffs_incell$LDR_CT, Nc, Nt, strand, logdropoffs_incell$nuclPosition,
                            logdropoffs_incell$nuclSelection$analysedC, logdropoffs_incell$nuclSelection$analysedCT)
 
 empPvals_2 <- computePvals(logdropoffs_exvivo$LDR_C,logdropoffs_exvivo$LDR_CT, Nc, Nt, strand, logdropoffs_exvivo$nuclPosition,
                            logdropoffs_exvivo$nuclSelection$analysedC, logdropoffs_exvivo$nuclSelection$analysedCT)
 
-#stretches contain the selection of nulceotide positions that have valid log mutation rate ratios
-#overlapping the stretches of nucleotides selected in each group of samples to get a representative set
+## stretches contain the selection of nulceotide positions that have valid log mutation rate ratios
+## overlapping the stretches of nucleotides selected in each group of samples to get a representative set
 stretches <-overlapsRanges(logdropoffs_incell$stretches,logdropoffs_exvivo$stretches)
 
 
 
 ####### ------- HMM ANALYSIS (CALCULATION OF POSTERIOR PROBABILITIES FOR THE FOUR HIDDEN STATES) ------- ########
-###computes posterior probabilities of all nucleotides in the stretches specified above.
-#The most important arguments are the LMRs, the positions used to compute the
-#null distribution, as well as the positions of the selected stretches
-#and nucleotide pairs where the LMRs were obtained.
+### computes posterior probabilities of all nucleotides in the stretches specified above.
+## The most important arguments are the LMRs, the positions used to compute the
+## null distribution, as well as the positions of the selected stretches
+## and nucleotide pairs where the LMRs were obtained.
 
 
-##Before computing posterior probabilities, we set up matrices to hold the required p-values
+## Before computing posterior probabilities, we set up matrices to hold the required p-values
 Pv1 <- matrix(ncol = 1,nrow = length(empPvals_1[,1]))
 Pv2 <- matrix(ncol = 1,nrow = length(empPvals_2[,1]))
 
@@ -280,12 +281,12 @@ for (i in 1:length(stretches)) {
 }
 
 ## ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL) ------- ##
-#TO RUN,UNCOMMENT LINES 286-328 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
+#TO RUN, UNCOMMENT THIS SECTION WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
 # setwd("Analysis/pvalues_plots/Xist")
 # 
-# write.table(Pv1, file="pvalues_invivo.txt", row.names=TRUE, col.names=TRUE)
-# write.table(Pv2, file="pvalues_exvivo.txt", row.names=TRUE, col.names=TRUE)
+# write.table(t(Pv1), file="pvalues_invivo.txt", row.names=TRUE, col.names=TRUE)
+# write.table(t(Pv2), file="pvalues_exvivo.txt", row.names=TRUE, col.names=TRUE)
 
 
 # pdf('pvalues-xist-Treatment1-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')
@@ -326,7 +327,7 @@ for (i in 1:length(stretches)) {
 
 ## --------------------------------------------------------------------------------------------- ##
 
-#The selected empirical p values are input into the HMM, to give posterior probabilities
+# The selected empirical p values are input into the HMM, to give posterior probabilities
 posteriors_diff <- hmmFwbw_differential_two_betas(pvaluesstretch)
 colnames(posteriors_diff) <- c("UU","UM","MU","MM")
 head(posteriors_diff)
@@ -338,33 +339,27 @@ head(posteriors_diff)
 ## So below a new matrix is made containing the values shifted by one position.
 ## SKIP THIS PART IF THE INPUT DATA IS GENERATED WITH RT-mutate probing techniques(eg. SHAPE-MaP)!!!
 
-#shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
-#shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
-#colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
-#head(shifted_posteriors)
-#head(posteriors_diff)
+# shifted_posteriors <- matrix(, nrow=dim(posteriors_diff)[1], ncol=4)
+# shifted_posteriors[1:(length(shifted_posteriors[,1]) - 1), ] <- posteriors_diff[2:(length(shifted_posteriors[,1])), ]
+# colnames(shifted_posteriors) <- c("UU","UM","MU","MM")
+# head(shifted_posteriors)
+# head(posteriors_diff)
 
 ##### ------------------ EXPORTING POSTERIORS AND PLOTS -------------------------------#####
+## Plotting and outputting the original/shifted posterior probabilities of differential modification 
 
-#Plotting and outputting the original/shifted posterior probabilities of differential modification 
 #differentiallymod <- shifted_posteriors[,2] + shifted_posteriors[,3]
 differentiallymod <- posteriors_diff[,2] + posteriors_diff[,3]
 
 setwd("Analysis/diffBUM-HMM")
 
-#pdf('Xist_sum_of_diff_states_diff_BUM_HMM.pdf', width = 10)
-#plot(differentiallymod, xlab = 'Nucleotide position',
-#     ylab = 'Probability of modification (UM+MU)',
-#     main = 'diffBUMHMM output: Probability of differential modification between in vivo and ex vivo',
-#     ylim = c(0,1))
-#dev.off()
+pdf('Xist_sum_of_diff_states_diff_BUM_HMM_scaled_with_DC.pdf', width = 10)
+plot(differentiallymod, xlab = 'Nucleotide position',
+    ylab = 'Probability of modification (UM+MU)',
+    main = 'diffBUMHMM output: Probability of differential modification between in vivo and ex vivo',
+    ylim = c(0,1))
+dev.off()
 
-#Add arow  of 999 at the top and remove last row
-
-
-
-
-#Outputting all posterior probabilities
+## Outputting all posterior probabilities
 posteriors_diff <- replace(posteriors_diff,is.na(posteriors_diff),-999)
 write.table(posteriors_diff,sep="\t",quote=FALSE,file=outputfilename,col.names = c("UU","UM","MU","MM"), row.names = TRUE)
-
