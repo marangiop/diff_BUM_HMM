@@ -9,7 +9,7 @@ ADD MORE INFO about LDR and LMR
 For each experimental condition (e.g. Condition 1 and 2), the null distribution of log (with base e) drop-off rates or log mutation rates (SHAPE-MaP) at each nucleotide position is computed for control samples in order to quantify variability in drop-off or mutation rates observed by chance. Subsequently, coverage-dependent biases are removed by applying a variance stabilization transformation. The different null distributions are computed for different nucleotide patterns to address sequence-dependent bias. Subsequently, per-nucleotide empirical P values are computed for all pairs of treatment and control replicate samples in each condition, by comparing the corresponding log of drop-off rates (LDRs) or log of mutation rates (LMRs, for SHAPE-MaP) to the null distribution. DiffBUM-HMM is run on P values associated with the two independent conditions as observations, leaving out any nucleotides with missing data. The resulting output is a posterior probability of modification for each nucleotide, ranging from 0 to 1. DiffBUM-HMM reports whether nucleotides were unmodified in both conditions, modified in either of the conditions or modified in both conditions.
 
 
-![img/Figure_1.jpg](img/Figure_1.jpg)
+![Images/Figure_1.jpg](Images/Figure_1.jpg)
 
 ## Reproducing figures from the paper
 | Figure | Instructions for raw data analysis | Jupyter Notebook for figure generation |
