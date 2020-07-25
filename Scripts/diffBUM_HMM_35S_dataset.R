@@ -2,9 +2,8 @@
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-install.packages("rstudioapi")
-library(rstudioapi)
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+wd <- setwd(".")
+setwd(wd)
 
 install.packages("BiocManager")
 
@@ -32,6 +31,8 @@ suppressPackageStartupMessages({
 #### ------- LOADING DATA ------ ######
 
 noreplicates <- 2
+
+
 
 
 setwd("Reference_sequences")

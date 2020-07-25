@@ -1,12 +1,12 @@
-#Run all the following commands from within "Scripts" directory
+#Set the "Scripts" directory as working directory in RStudio by navigating within the bottom right "Files" panel, then press "Set As Working directory" under "More". 
+#Do this before executing any of the R scripts mentioned below.
 
 ## Run the following commands from RStudio Console:
-
 source(diffBUM_HMM_35S_dataset.R)
-source(Rscript dStruct_35S_dataset.R)
+source(dStruct_35S_dataset.R)
 source(script_creating_SHAPE_map_files_35S_dataset.R)
 
-## Run the following commands from within a virtual environment (e.g. conda, virtualenv) with Python 2.7 installed
+## Run the following commands from within an environment (e.g. virtual environemtn created with conda or virtualenv) with Python 2.7 installed:
 pip install matplotlib.pyplot
 pip install numpy 
 pip install scipy

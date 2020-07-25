@@ -2,9 +2,9 @@
 
 # This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
 
-install.packages("rstudioapi")
-library(rstudioapi)
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+wd <- setwd(".")
+setwd(wd)
+
 
 
 setwd('..')

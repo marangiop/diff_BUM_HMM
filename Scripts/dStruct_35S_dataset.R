@@ -8,15 +8,16 @@ install_github("AviranLab/dStruct")
 install.packages("ggplot2")
 install.packages("reshape2")
 install.packages("formattable")
-install.packages("rstudioapi")
+
 
 library(dStruct)
 library(ggplot2)
 library(reshape2)
 library(formattable)
 
-library(rstudioapi)
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+wd <- setwd(".")
+setwd(wd)
 
 setwd('..')
 getwd()
