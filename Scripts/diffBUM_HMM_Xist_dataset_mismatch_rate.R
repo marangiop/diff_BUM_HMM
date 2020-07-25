@@ -5,6 +5,8 @@
 
 
 install.packages("BiocManager")
+install.packages("formattable")
+install.packages("gtools")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
 
