@@ -18,13 +18,15 @@ Additional items added by Toby on 23rd July 2020:
 
 8) Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
 corrected set generated in June 2020 (i.e. after the big debug).
-Posteriors are the same except the updated ones are shifted 1 nt towards the beginning of the molecule.
+Posteriors are the same except the updated ones are shifted 1 nt towards the beginning of the molecule. (done, need to discuss with Sander)
 
-9) Find the dStruct output on Xist not-scaled data.
+9) double check if it's correct for HMM to output identical UM and MU posteriors for control (identical) datasets. 
 
-10) Add a cell in the figure 5 notebook that reads the dStruct output (scaled and not scaled) and makes it into a dataframe 
+10) Find the dStruct output on Xist not-scaled data.
+
+11) Add a cell in the figure 5 notebook that reads the dStruct output (scaled and not scaled) and makes it into a dataframe 
 marking DRRs along the length of the Xist RNA.
 
-11) Finish instructions for readme.md file.
+12) Finish instructions for readme.md file.
 
-12) Check if all scripts can be run from start to finish, and if all outputs are reproducible.
+13) Check if all scripts can be run from start to finish, and if all outputs are reproducible.
