@@ -2,7 +2,7 @@
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-install.packages("rstudioapi")
+
 install.packages("BiocManager")
 install.packages("formattable")
 
@@ -10,7 +10,8 @@ BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
 
 #### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+wd <- setwd(".")
+setwd(wd)
 setwd('..')
 
 source("Functions/computePvals.R")

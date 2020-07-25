@@ -14,7 +14,7 @@ Additional items added by Toby on 23rd July 2020:
 
 6) DEFINITELY need to regenerate figure S3. (ask Sander?)
 
-7) Check and update the input file paths to the mature rRNA analysis notebook (figure 4).
+7) Check and update the input file paths to the mature rRNA analysis notebook (figure 4). (done)
 
 8) Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
 corrected set generated in June 2020 (i.e. after the big debug).
@@ -22,11 +22,23 @@ Posteriors are the same except the updated ones are shifted 1 nt towards the beg
 
 9) double check if it's correct for HMM to output identical UM and MU posteriors for control (identical) datasets. 
 
-10) Find the dStruct output on Xist not-scaled data.
+10) Find the dStruct output on Xist not-scaled data. (DONE)
 
 11) Add a cell in the figure 5 notebook that reads the dStruct output (scaled and not scaled) and makes it into a dataframe 
-marking DRRs along the length of the Xist RNA.
+marking DRRs along the length of the Xist RNA. (DONE by Paolo)
 
-12) Finish instructions for readme.md file.
+12) Finish instructions for readme.md file, need to finalize the section describing the pipeline.
 
-13) Check if all scripts can be run from start to finish, and if all outputs are reproducible.
+13) Check if all scripts can be run from start to finish, and if all outputs are reproducible. (DONE by Paolo for all R scripts and jupyter notebooks - APART from Jupyter notebook of figure 4, and any python script)
+
+Additional items added by Paolo
+
+14) PyCRAC installation for Jupyter notebook "Nucleotide_analyses" inside "Figure_5/Hypergeometric_test_Xist_bindingsites" directory gives problems. Need to check for precise instructions with Sander since he developed the package
+
+15) PDF file titled "deltaSHAPE_diffBUM_HMM_dStruct_comparision_5ETS.pdf" inside Figure_2_3 directory inside Jupyter notebooks has some weird red highlighting. In some portions of the figure. No idea why. Same figure in the paper seems fine...
+
+16) Create requirements.txt file at the end of the project --> Paolo
+
+17) What do we do with the "sanity_check_xist_shape_reac.R" script and associated jupyte notebook?
+
+18) Based on latest results, it seems that we will need to regenerate figures SF3, SF5 and Fig 4B

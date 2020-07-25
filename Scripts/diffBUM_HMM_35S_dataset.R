@@ -7,8 +7,9 @@ setwd(wd)
 
 install.packages("BiocManager")
 
-BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
 
+BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+# If using R 3.6.3, then install version 3.10 of the above packages
 setwd('..')
 
 source("Functions/computePvals.R")

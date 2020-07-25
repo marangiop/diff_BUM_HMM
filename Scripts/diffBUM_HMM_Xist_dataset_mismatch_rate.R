@@ -2,14 +2,14 @@
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-install.packages("rstudioapi")
-library(rstudioapi)
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
 
 install.packages("BiocManager")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
 
+wd <- setwd(".")
+setwd(wd)
 setwd('..')
 
 library(formattable)
