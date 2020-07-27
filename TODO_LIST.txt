@@ -46,9 +46,8 @@ where primer extention analysis data is available. Should be fine.)
 
 Items added by Toby after Skype call with Sander on 27 July 2020:
 
-18) @Sander, please help us update figure 4 and supplementary figure 3. And also add back to the repository the "secondary_structure_diagrams" folder 
-containing all of the .svg files that are called in the jupyter notebooks, in the "Analysis" folder, thank you!
+18) @Sander, please help us update figure 4 and supplementary figure 3, thank you!
 
 19) Add note that the PyCRAC.Methods module has to be installed in order to plot 18S structure in jupyter notebook figure_4. 
 
-20) Rerun jupyter notebook figure_4 and finalize the code to run on Windows.
+20) Need to finalize Jupyter notebook of figure 4 to run on Windows.
