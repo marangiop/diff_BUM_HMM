@@ -12,33 +12,43 @@ Additional items added by Toby on 23rd July 2020:
 
 5) Check and regenerate the 35S LDR and p-value plots, after correcting for swap in input data.(done!)
 
-6) DEFINITELY need to regenerate figure S3. (ask Sander?)
 
-7) Check and update the input file paths to the mature rRNA analysis notebook (figure 4). (done)
+6) Check and update the input file paths to the mature rRNA analysis notebook (figure 4). (done)
 
-8) Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
+7) Check the analysis for mature rRNAs. Seems that an old set of posteriors (generated Oct 2019) was used to do the analysis, instead of the 
 corrected set generated in June 2020 (i.e. after the big debug).
-Posteriors are the same except the updated ones are shifted 1 nt towards the beginning of the molecule. (done, need to discuss with Sander)
+Posteriors are the same except the updated ones are shifted 1 nt towards the beginning of the molecule. (done, and discussed)
 
-9) double check if it's correct for HMM to output identical UM and MU posteriors for control (identical) datasets. 
+8) double check if it's correct for HMM to output identical UM and MU posteriors for control (identical) datasets. (done) 
 
-10) Find the dStruct output on Xist not-scaled data. (DONE)
+9) Find the dStruct output on Xist not-scaled data. (DONE)
 
-11) Add a cell in the figure 5 notebook that reads the dStruct output (scaled and not scaled) and makes it into a dataframe 
+10) Add a cell in the figure 5 notebook that reads the dStruct output (scaled and not scaled) and makes it into a dataframe 
 marking DRRs along the length of the Xist RNA. (DONE by Paolo)
 
-12) Finish instructions for readme.md file, need to finalize the section describing the pipeline.
+11) Finish instructions for readme.md file, need to finalize the section describing the pipeline.
 
-13) Check if all scripts can be run from start to finish, and if all outputs are reproducible. (DONE by Paolo for all R scripts and jupyter notebooks - APART from Jupyter notebook of figure 4, and any python script)
+12) Check if all scripts can be run from start to finish, and if all outputs are reproducible. (DONE by Paolo - APART from Jupyter notebook of figure 4, and any python script)
 
 Additional items added by Paolo
 
-14) PyCRAC installation for Jupyter notebook "Nucleotide_analyses" inside "Figure_5/Hypergeometric_test_Xist_bindingsites" directory gives problems. Need to check for precise instructions with Sander since he developed the package
+13) PyCRAC installation for Jupyter notebook "Nucleotide_analyses" inside "Figure_5/Hypergeometric_test_Xist_bindingsites" directory gives problems. Need to check for precise instructions with Sander since he developed the package
 
-15) PDF file titled "deltaSHAPE_diffBUM_HMM_dStruct_comparision_5ETS.pdf" inside Figure_2_3 directory inside Jupyter notebooks has some weird red highlighting. In some portions of the figure. No idea why. Same figure in the paper seems fine...
+14) PDF file titled "deltaSHAPE_diffBUM_HMM_dStruct_comparision_5ETS.pdf" inside Figure_2_3 directory inside Jupyter notebooks has some weird red highlighting. 
+In some portions of the figure. No idea why. Same figure in the paper seems fine... (Reply by Toby: red boxes is to highlight the regions
+where primer extention analysis data is available. Should be fine.)
 
-16) Create requirements.txt file at the end of the project --> Paolo
+15) Create requirements.txt file at the end of the project --> Paolo
 
-17) What do we do with the "sanity_check_xist_shape_reac.R" script and associated jupyte notebook?
+16) What do we do with the "sanity_check_xist_shape_reac.R" script and associated jupyter notebook?
 
-18) Based on latest results, it seems that we will need to regenerate figures SF3, SF5 and Fig 4B
+17) Based on latest results, it seems that we will need to regenerate figures SF3 and Fig 4B.
+
+Items added by Toby after Skype call with Sander on 27 July 2020:
+
+18) @Sander, please help us update figure 4 and supplementary figure 3. And also add back to the repository the "secondary_structure_diagrams" folder 
+containing all of the .svg files that are called in the jupyter notebooks, in the "Analysis" folder, thank you!
+
+19) Add note that the PyCRAC.Methods module has to be installed in order to plot 18S structure in jupyter notebook figure_4. 
+
+20) Rerun jupyter notebook figure_4 and finalize the code to run on Windows.

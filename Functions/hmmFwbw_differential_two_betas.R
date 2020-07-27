@@ -39,16 +39,16 @@ hmmFwbw_differential_two_betas <- function(pValues){
   for (index in 1:nexp ) { 
     #iterates over a sequence of values from 1 to the number of nucleotides
     for (index2 in 1:nBins) { 
-      # Likelihod for UU
       if (is.na(pValues[[1]][index, index2]) || is.na(pValues[[2]][index, index2])) {
         obsLike[, index2] <- obsLike[, index2]
       } else { 
+        # Likelihod for UU
         obsLike[1, index2] <- obsLike[1, index2] * stats::dbeta(pValues[[1]][index, index2], shape1 = 1, shape2 = 1) * 
           stats::dbeta(pValues[[2]][index, index2], shape1 = 1, shape2 = 1)
-        # Likelihod for MU
+        # Likelihod for UM
         obsLike[2, index2] <- obsLike[2, index2] * stats::dbeta(pValues[[1]][index, index2], shape1 = 1, shape2 = 1) *
           stats::dbeta(pValues[[2]][index, index2], shape1 = alpha_P2, shape2 = beta_P2)
-        # Likelihod for UM
+        # Likelihod for MU
         obsLike[3, index2] <- obsLike[3, index2] * stats::dbeta(pValues[[1]][index, index2], shape1 = alpha_P1, shape2 = beta_P1) *
           stats::dbeta(pValues[[2]][index, index2], shape1 = 1, shape2 = 1)
         # Likelihod for MM
