@@ -115,26 +115,27 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
     
     ## ------------------------------------------------------------------------
     #corrects the log-ratios for any dependency on coverage, to correct for coverage
-    #bias. This is also the part where the log drop-off ratios are calculated.
+    #bias. This is also the part where the log drop-off rate ratios are calculated.
     varStab <- stabiliseVariance(se, nuclSelection, Nc, Nt)
     
     ## ------------------------------------------------------------------------
     #considering that immediate neighbours of a nucleotide can affect accessibility,
     #we want to remove the effect of sequence on nucleotides' susceptibility
     #to chemical modification.This is done by computing different null distributions
-    #for user-defined sequence patterns. This step is omitted for the 18S.
+    #for user-defined sequence patterns. This step is omitted for the diffBUM_HMM study 
+    #as it is primarily designed for transcriptome studies, please refer to the documentation
+    #of BUM_HMM (Selega et al. 2017) for more information.
     nuclNum <- 3
     patterns <- nuclPerm(nuclNum)
     patterns
     
-    ## ------------------------------------------------------------------------
     ## Extract the DNA sequence
     sequence <- subject(rowData(se)$nucl)
     sequence
     nuclPosition <- findPatternPos(patterns, sequence, '+')
     
     ## ------------------------------------------------------------------------
-    #Skip to here for 18S. Here we are using all the nucleotide positions for constructing
+    #Here we are using all the nucleotide positions for constructing
     #a single null distribution for quantifying drop-off rate variability. We specify
     #nuclPosition list to contain 1 element ([1]), corresponding to the single stretch
     #of reference DNA sequence
