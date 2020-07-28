@@ -46,7 +46,7 @@ where primer extention analysis data is available. Should be fine.)
 
 Items added by Toby after Skype call with Sander on 27 July 2020:
 
-18) @Sander, please help us update figure 4 and supplementary figure 3, thank you!
+18) @Sander, please help us update figure 1, 4 and supplementary figure 3, thank you!
 
 19) Add note that the PyCRAC.Methods module has to be installed in order to plot 18S structure in jupyter notebook figure_4. 
 
