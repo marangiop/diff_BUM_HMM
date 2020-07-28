@@ -38,18 +38,18 @@ Need to check for precise instructions with Sander since he developed the packag
 
 14) PDF file titled "deltaSHAPE_diffBUM_HMM_dStruct_comparision_5ETS.pdf" inside Figure_2_3 directory inside Jupyter notebooks has some weird red highlighting. 
 In some portions of the figure. No idea why. Same figure in the paper seems fine... (Reply by Toby: red boxes is to highlight the regions
-where primer extention analysis data is available. Should be fine.)
+where primer extention analysis data is available. This is replaced by gray shading in figure 2B.)
 
 15) Create requirements.txt file at the end of the project --> Paolo
 
 16) What do we do with the "sanity_check_xist_shape_reac.R" script and associated jupyter notebook? 
 (from Toby: can we also delete the transition matrices.R file from the Functions folder as well? Seems like there is no use for it anymore.)
 
-17) Based on latest results, it seems that we will need to regenerate figures SF3 and Fig 4B.
+17) Based on latest results, it seems that we will need to regenerate figures SF3 and Fig 4B. (done by Sander)
 
 Items added by Toby after Skype call with Sander on 27 July 2020:
 
-18) @Sander, please help us update figure 4 and supplementary figure 3, thank you!
+18) @Sander, please help us update figure 4 and supplementary figure 3, thank you! (done)
 
 19) Check for paper, figures and comments in scripts for mentions of log drop-off/mutation rates, 
 should have been log drop-off/mutation rate ratios, or log-ratios of drop-off/mutation rates.
