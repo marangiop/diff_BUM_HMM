@@ -66,6 +66,6 @@ Required for Jupyter notebook "Nucleotide_analyses" inside "Figure_5/Hypergeomet
 16) What do we do with the "sanity_check_xist_shape_reac.R" script and associated jupyter notebook? 
 (from Toby: can we also delete the transition matrices.R file from the Functions folder as well? Seems like there is no use for it anymore.)
 
-20) Amend Figure 1 (waiting to hear back from Sander).
+20) Amend Figure 1 (done!).
 
 11) Finish instructions for readme.md file.
