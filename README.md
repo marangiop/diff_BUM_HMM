@@ -21,7 +21,7 @@ In our paper (ADD REFERENCE BIORXIV PAPER), we demonstrate that, compared to the
 | Figure | Instructions for raw data analysis | Jupyter Notebook for figure generation |
 |   ------------- |-------------        | -------------|
 | 2-3  | [Instructions](./Jupyter_notebooks/Figure_2_3/instructions_data_analysis_fig2_3.txt)  | [Notebook](./Jupyter_notebooks/Figure_2_3/Plotting_5'ETS_and_35S_data.ipynb)  |
-| 4   |  [Instructions](./Jupyter_notebooks/Figure_4/instructions_data_analysis_fig4.txt)  | TBA     |
+| 4   |  [Instructions](./Jupyter_notebooks/Figure_4/instructions_data_analysis_fig4.txt)  | [Notebook](./Jupyter_notebooks/Figure_4/AnalysisOfControlData_270720.ipynb)   |
 | 5A-B   | [Instructions](./Jupyter_notebooks/Figure_5/instructions_data_analysis_fig5.txt)    | [Notebook](./Jupyter_notebooks/Figure_5/Binning_and_smoothing_diffBUM_HMM_signal/notebook_binned_results.ipynb)   |
 | 5C   | [Instructions](./Jupyter_notebooks/Figure_5/instructions_data_analysis_fig5.txt)     | [Notebook](./Jupyter_notebooks/Figure_5/Heatmap_diffBUM-HMM_&_deltaSHAPE_with_protein_binding_sites/heatmap.ipynb)    |
 | 5D   | [Instructions](./Jupyter_notebooks/Figure_5/instructions_data_analysis_fig5.txt)     | [Notebook](./Jupyter_notebooks/Figure_5/Hypergeometric_test_Xist_bindingsites/notebook_hypergeometric_test.ipynb)  |
@@ -46,7 +46,8 @@ We provide a requirements.txt file listing R and Python packages with correct ve
 
 ## A note on OS compatibility
 
-The entire repository has been tested successfully on Mac OS. For Windows users we recommend installing Ubuntu (version 18.04 or higher)  LTS ([Link to Microsoft Store](https://www.microsoft.com/en-gb/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab/)) on top of Windows (i.e. Windows Subsystem for Linux) in order to allow smooth installation of the pyCRAC Python package within the relevant Jupyter notebooks (required for generating Figures 6 and S2).
+The entire repository has been tested successfully on Mac OS. For Windows users we recommend installing Ubuntu (version 18.04 or higher)  LTS ([Link to Microsoft Store](https://www.microsoft.com/en-gb/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab/)) on top of Windows (i.e. Windows Subsystem for Linux) in order to allow smooth installation of the pyCRAC Python package within the relevant Jupyter notebooks (required for generating Figures 6 and S2). Also,the jupyter notebook associated with Figure 4 contains a bash command that will cause an error on Windows.
+
 
 For MEME???
 
