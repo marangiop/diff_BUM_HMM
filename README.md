@@ -46,7 +46,7 @@ We provide a requirements.txt file listing R and Python packages with correct ve
 
 ## A note on OS compatibility
 
-The entire repository has been tested successfully on Mac OS. For Windows users we recommend installing Ubuntu (version 18.04 or higher)  LTS ([Link to Microsoft Store](https://www.microsoft.com/en-gb/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab/) in order to allow smooth installation of the pyCRAC Python package within the relevant Jupyter notebooks (required for generating Figures 6 and S2).
+The entire repository has been tested successfully on Mac OS. For Windows users we recommend installing Ubuntu (version 18.04 or higher)  LTS ([Link to Microsoft Store](https://www.microsoft.com/en-gb/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab/)) on top of Windows (i.e. Windows Subsystem for Linux) in order to allow smooth installation of the pyCRAC Python package within the relevant Jupyter notebooks (required for generating Figures 6 and S2).
 
 For MEME???
 
