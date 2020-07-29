@@ -68,4 +68,6 @@ Required for Jupyter notebook "Nucleotide_analyses" inside "Figure_5/Hypergeomet
 
 20) Amend Figure 1 (done!).
 
+21) Check jupyter notebook for Figure S2 and make sure it runs. The New_data_table it currently calls has been deleted earlier.
+
 11) Finish instructions for readme.md file.
