@@ -26,7 +26,7 @@ Posteriors are the same except the updated ones are shifted 1 nt towards the beg
 10) Add a cell in the figure 5 notebook that reads the dStruct output (scaled and not scaled) and makes it into a dataframe 
 marking DRRs along the length of the Xist RNA. (DONE by Paolo)
 
-11) Finish instructions for readme.md file, need to finalize the section describing the pipeline.
+11) Finish instructions for readme.md file, need to finalize the section describing the pipeline --> DONE
 
 12) Check if all scripts can be run from start to finish, and if all outputs are reproducible. (DONE by Paolo - APART from Jupyter notebook of figure 4, and any python script)
 
@@ -34,11 +34,11 @@ Additional items added by Paolo
 
 13) PyCRAC installation for Windows gives problems. 
 Required for Jupyter notebook "Nucleotide_analyses" inside "Figure_5/Hypergeometric_test_Xist_bindingsites" directory, and also for figure_4 notebook.
-Need to check for precise instructions with Sander since he developed the package.
+Need to check for precise instructions with Sander since he developed the package. --> DONE . Added into inside README
 
 14) PDF file titled "deltaSHAPE_diffBUM_HMM_dStruct_comparision_5ETS.pdf" inside Figure_2_3 directory inside Jupyter notebooks has some weird red highlighting. 
 In some portions of the figure. No idea why. Same figure in the paper seems fine... (Reply by Toby: red boxes is to highlight the regions
-where primer extention analysis data is available. This is replaced by gray shading in figure 2B.)
+where primer extention analysis data is available. This is replaced by gray shading in figure 2B.) --> DONE
 
 15) Create requirements.txt file at the end of the project --> Paolo
 
@@ -54,20 +54,27 @@ Items added by Toby after Skype call with Sander on 27 July 2020:
 19) Check for paper, figures and comments in scripts for mentions of log drop-off/mutation rates, 
 should have been log drop-off/mutation rate ratios, or log-ratios of drop-off/mutation rates. (DONE)
 
-20) Seems we will also have to amend Figure 1..
+20) Seems we will also have to amend Figure 1 --> DONE
 
 OUTSTANDING ITEMS (29 JULY 2020):
 
 13) PyCRAC installation for Windows gives problems, try with WSL Ubuntu layer.
-Required for Jupyter notebook "Nucleotide_analyses" inside "Figure_5/Hypergeometric_test_Xist_bindingsites" directory, and also for figure_4 notebook.
+Required for Jupyter notebook "Nucleotide_analyses" inside Figure_6 directory. --> DONE
 
 15) Create requirements.txt file at the end of the project --> Paolo
 
 16) What do we do with the "sanity_check_xist_shape_reac.R" script and associated jupyter notebook? 
 (from Toby: can we also delete the transition matrices.R file from the Functions folder as well? Seems like there is no use for it anymore.)
 
-20) Amend Figure 1 (done!).
+20) Amend Figure 1 --> DONE
 
-21) Check jupyter notebook for Figure S2 and make sure it runs. The New_data_table it currently calls has been deleted earlier.
+21) Check jupyter notebook for Figure S2 and make sure it runs. Needs MEME installed!!!
 
-11) Finish instructions for readme.md file.
+22) Finish instructions for readme.md file. --> DONE
+
+23) Reduce number of branches of the repo (just leave master) --> Paolo
+
+24) Try to run successfully the cell that contains bash command inside jupyter notebook for figure 4
+
+25) mention MEME installation instructions inside repo
+

@@ -27,11 +27,12 @@ In our paper (ADD REFERENCE BIORXIV PAPER), we demonstrate that, compared to the
 | 5D   | [Instructions](./Jupyter_notebooks/Figure_5/instructions_data_analysis_fig5.txt)     | [Notebook](./Jupyter_notebooks/Figure_5/Hypergeometric_test_Xist_bindingsites/notebook_hypergeometric_test.ipynb)  |
 | 6   | [Instructions](./Jupyter_notebooks/Figure_6/instructions_data_analysis_fig6.txt)   | [Notebook](./Jupyter_notebooks/Figure_6/Nucleotide_analyses.ipynb)     |
 | S1    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_1/instructions_data_analysis_figS1.txt)   |[Notebook](./Jupyter_notebooks/Supplementary_Figure_1/Plotting_pertubation_tests.ipynb)    |
+| S2    | N/A   |[Notebook](./Jupyter_notebooks/Supplementary_Figure_2/Motif_analyses.ipynb)    |
 | S3    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_3/instructions_SF3.txt)   | N/A    |
 | S4    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_4/instructions_SF4.txt)    | N/A    |
 | S5    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_5/instructions_SF5.txt)  | N/A   |
 
-The table above only includes instructions for figures from the paper that have been generated programmatically. 
+The table above only includes instructions for figures (or subpanels of figures) from the paper that have been generated programmatically. 
 
 ## Dependencies
 The pipeline is built in R. Python and Jupyter (notebook) are needed for performing some of the raw data analysis and figure generation. 
@@ -42,6 +43,15 @@ The pipeline is built in R. Python and Jupyter (notebook) are needed for perform
 
 ## Requirements 
 We provide a requirements.txt file listing R and Python packages with correct versions used in the development and benchmarking of the diffBUM-HMM pipeline described in this study, as reference and also to enable quick installation of the packages. TBA
+
+## A note on OS compatibility
+
+The entire repository has been tested successfully on Mac OS. For Windows users we recommend installing Ubuntu (version 18.04 or higher)  LTS ([Link to Microsoft Store](https://www.microsoft.com/en-gb/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab/) in order to allow smooth installation of the pyCRAC Python package within the relevant Jupyter notebooks (required for generating Figures 6 and S2).
+
+For MEME???
+
+
+
 
 
 
