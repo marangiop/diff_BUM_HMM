@@ -1,18 +1,18 @@
-#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-
-
 install.packages("BiocManager")
-install.packages("formattable")
+install.packages("rstudioapi")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+# If using R 3.6.3, then install version 3.10 of the above packages
+
+#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 
 wd <- setwd(".")
 setwd(wd)
 setwd('..')
-###
 
 source("Functions/computePvals.R")
 source("Functions/calculateLDRs.R")
@@ -30,6 +30,8 @@ suppressPackageStartupMessages({
   library(Biostrings)
   library(SummarizedExperiment) })
 
+library(rstudioapi)
+
 #### ------- LOADING DATA FOR ALL 4 rRNAs ------ ######
 
 noreplicates <- 3
@@ -42,7 +44,8 @@ setwd('../Data/Control_rRNA_dataset')
 
 
 ## input the coverage and drop off counts for each of the rRNAs from the working directory:
-# wt:wild type; mut: mutant, for this control dataset wt and mut are the same, to test for false positives
+# wt: Condition 1; mut: Condition 2; starts: drop off/mutation count; counts: coverage
+# for this control dataset wt and mut are the same, to test for false positives
 
 # 25S
 mergedcountswt25S <- read.table("25S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","25S_DMSO_1","25S_DMSO_2","25S_DMSO_3","25S_DMS_1", "25S_DMS_2", "25S_DMS_3"))
@@ -69,7 +72,7 @@ mergedcountsmut5S <- read.table("5S_readcounts.txt", comment.char="#",col.names=
 mergedstartsmut5S <- read.table("5S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5S_DMSO_1","5S_DMSO_2","5S_DMSO_3","5S_DMS_1", "5S_DMS_2", "5S_DMS_3"))
 
 setwd("./../../")
-#### ------- DATA PRE-PROCESSING (CALCULATING LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
+#### ------- DATA PRE-PROCESSING (CALCULATING LOG RATIOS OF DROP OFF RATES AND EMPIRICAL P-VALUES ) ------- ######
 
 # Calculating log of drop off rate ratios
 
@@ -91,7 +94,6 @@ logdropoffsmut5S <- calculateLDRs(mergedcountsmut5S,mergedstartsmut5S,noreplicat
 
 
 ## ------- QUALITY CONTROL: INSPECTION OF LOG DROP OFF RATE RATIOS DISTRIBUTION ------ ##
-
 
 # WT AND MUT LDRs WILL BE THE SAME SINCE THEY ARE IDENTICAL SETS OF SAMPLES, HERE ONLY THE CODE FOR ASSESSING WT IS SHOWN.
 
@@ -262,7 +264,6 @@ pvaluesstretch_5S <- selectPvalues(empPvals_5S_A, empPvals_5S_B, stretches_5S)
 
 
 ## ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL) ------- ##
-#TO RUN,UNCOMMENT LINES 270-294 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
 setwd("Analysis/pvalues_plots/mature rRNA")
  
@@ -273,19 +274,19 @@ setwd("Analysis/pvalues_plots/mature rRNA")
 # 
 
 pdf('pvalues-maturerRNA-25S.pdf',width=6,height=4,paper='special')
-hist(pvaluesstretch_25S[[1]], breaks = 30, main = 'mature rRNA dataset ??? 25S p???value distribution')
+hist(pvaluesstretch_25S[[1]], breaks = 30, main = 'mature rRNA dataset - 25S p-value distribution')
 dev.off()
 
 pdf('pvalues-maturerRNA-18S.pdf',width=6,height=4,paper='special')
-hist(pvaluesstretch_18S[[1]], breaks = 30, main = 'mature rRNA dataset ??? 18S p???value distribution')
+hist(pvaluesstretch_18S[[1]], breaks = 30, main = 'mature rRNA dataset - 18S p-value distribution')
 dev.off()
 
 pdf('pvalues-maturerRNA-5.8S.pdf',width=6,height=4,paper='special')
-hist(pvaluesstretch_5.8S[[1]], breaks = 30, main = 'mature rRNA dataset ??? 5.8S p???value distribution')
+hist(pvaluesstretch_5.8S[[1]], breaks = 30, main = 'mature rRNA dataset - 5.8S p-value distribution')
 dev.off()
 
 pdf('pvalues-maturerRNA-5S.pdf',width=6,height=4,paper='special')
-hist(pvaluesstretch_5S[[1]], breaks = 30, main = 'mature rRNA dataset ??? 5S p???value distribution')
+hist(pvaluesstretch_5S[[1]], breaks = 30, main = 'mature rRNA dataset - 5S p-value distribution')
 dev.off()
  
 

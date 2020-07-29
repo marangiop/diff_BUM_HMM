@@ -1,14 +1,15 @@
-#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-
-
 install.packages("BiocManager")
 install.packages("formattable")
+install.packages("rstudioapi")
 install.packages("gtools")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+
+#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 
 wd <- setwd(".")
 setwd(wd)
@@ -31,13 +32,17 @@ suppressPackageStartupMessages({
     library(Biostrings)
     library(SummarizedExperiment) })
 
+library(formattable)
+library(rstudioapi)
+library(gtools)
+
 #### ------- LOADING DATA ------ ######
 
 noreplicates <- 2
 
 setwd("Reference_sequences")
 refsequence <- "Xist.seq"
-setwd('..')
+setwd('../Data/Xist_dataset/')
 
 
 outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_withscaling_gaussiannoiseadded','.txt')
@@ -45,16 +50,16 @@ outputfilename <-paste0('Xist','_diff_BUM_HMM_analysis_withscaling_gaussiannoise
 #ADDED CODE FOR PROCESSING NEW DATA 
 
 
-table1_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
-table2_incell <- read.delim("Data/Xist_dataset/XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
+table1_incell <- read.delim("XIST_1M7_in-cell_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate"))
+table2_incell <- read.delim("XIST_1M7_in-cell_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO2_read_count","in_cell_DMSO2_mutation_rate","in_cell_1M72_read_count","in_cell_1M72_mutation_rate"))
 
-table1_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
-table2_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
+table1_exvivo <- read.delim("XIST_1M7_ex-vivo_rep1.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate"))
+table2_exvivo <- read.delim("XIST_1M7_ex-vivo_rep2.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO2_read_count","ex_vivo_DMSO2_mutation_rate","ex_vivo_1M72_read_count","ex_vivo_1M72_mutation_rate"))
 
 head(table1_incell["in_cell_DMSO1_read_count"])
 
-dc_incell <- read.delim("Data/Xist_dataset/Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
-dc_exvivo <- read.delim("Data/Xist_dataset/XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_incell <- read.delim("Xist_1M7_in-cell_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","in_cell_DMSO1_read_count","in_cell_DMSO1_mutation_rate","in_cell_1M71_read_count","in_cell_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
+dc_exvivo <- read.delim("XIST_1M7_ex-vivo_wDC.txt", stringsAsFactors=FALSE, col.names= c("chromosome","position","ex_vivo_DMSO1_read_count","ex_vivo_DMSO1_mutation_rate","ex_vivo_1M71_read_count","ex_vivo_1M71_mutation_rate","DC_read_count" ,"DC_mutation_rate"))
 
 
 
@@ -133,6 +138,8 @@ exvivo_counts <- cbind(gene="Xist",exvivo_counts)
 
 head(mutation_counts_ex_vivo)
 head(exvivo_counts)
+
+setwd("./../../")
 
 #### ------- DATA PRE-PROCESSING (CALCULATING LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
 

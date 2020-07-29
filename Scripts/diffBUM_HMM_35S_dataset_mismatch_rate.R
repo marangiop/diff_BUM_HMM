@@ -1,20 +1,20 @@
-#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-
-
 install.packages("BiocManager")
-install.packages("formattable")
+install.packages("rstudioapi")
 install.packages("gtools")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+# If using R 3.6.3, then install version 3.10 of the above packages
+
+#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 
 wd <- setwd(".")
 setwd(wd)
 setwd('..')
 
-library(formattable)
 source("Functions/computePvals.R")
 source("Functions/calculateLDRs.R")
 source("Functions/hmmFwbw_differential_two_betas.R")
@@ -31,6 +31,9 @@ suppressPackageStartupMessages({
     library(Biostrings)
     library(SummarizedExperiment) })
 
+library(rstudioapi)
+library(gtools)
+
 #### ------- LOADING DATA ------ ######
 
 noreplicates <- 2
@@ -42,7 +45,7 @@ setwd('../Data/35S_data/')
 outputfilename <-paste0('35S','_diffBUM_HMM_WT_vs_Erb1_diff_BUM_HMM_analysed_gaussiannoiseadded','.txt')
 
 # input the coverage and drop off counts from the working directory:
-# wt:wild type; mut: mutant
+# wt: Condition 1; mut: Condition 2; starts: drop off/mutation count; counts: coverage
 
 mergedcountswt <- read.table("35S_control_delta5_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 mergedstartswt <- read.table("35S_control_delta5_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
@@ -50,7 +53,7 @@ mergedcountsmut <- read.table("35S_control_Erb1_merged_reads.sgr", comment.char=
 mergedstartsmut <- read.table("35S_control_Erb1_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 
 setwd("./../../")
-#### ------- DATA PRE-PROCESSING (CALCULATION LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
+#### ------- DATA PRE-PROCESSING (CALCULATION LOG RATIOS OF DROP OFF RATES AND EMPIRICAL P-VALUES ) ------- ######
 
 ## Calculating dropoff rate ratios
 logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt,noreplicates, refsequence)  

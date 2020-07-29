@@ -1,12 +1,15 @@
-#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
 
 install.packages("BiocManager")
 install.packages("formattable")
+install.packages("rstudioapi")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+
+#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 
 wd <- setwd(".")
 setwd(wd)
@@ -29,7 +32,7 @@ suppressPackageStartupMessages({
   library(SummarizedExperiment) })
 
 library(formattable)
-
+library(rstudioapi)
 
 #### ------- LOADING DATA ------ ######
 

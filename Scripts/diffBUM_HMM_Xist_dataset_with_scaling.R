@@ -1,12 +1,13 @@
-#### ------- PACKAGES INSTALLATION ------ ######
+#### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-
 install.packages("BiocManager")
 install.packages("formattable")
+install.packages("rstudioapi")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+# If using R 3.6.3, then install version 3.10 of the above packages
 
 #### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 

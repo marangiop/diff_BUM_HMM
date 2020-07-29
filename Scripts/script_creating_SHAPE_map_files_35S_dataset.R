@@ -1,14 +1,12 @@
-#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- SET WORKING DIRECTORY ------ ######
 
 # This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
 
 wd <- setwd(".")
 setwd(wd)
-
-
-
 setwd('..')
 
+#### ------- LOADING DATA ------ ######
 
 delta5_shape <- read.table("Data/SHAPE_35S/35S_SHAPE_reactivities.txt",
                     sep = "\t", col.names= c("nucleotide", "rep1", "rep2"))
@@ -18,12 +16,9 @@ deltaerb1_shape <- read.table("Data/SHAPE_35S/35S_Erb1_dep_SHAPE_reactivities.tx
 delta5_shape[nrow(delta5_shape)+1,] <- c(6868, -999.0,-999.0)
 deltaerb1_shape[nrow(deltaerb1_shape)+1,] <- c(6868, -999.0,-999.0)
 
-
-
 setwd("Reference_sequences")
 
 seq <- gsub("[\r\n\"]", "", readChar('35S_pre-rRNA_refseq.seq', file.info('35S_pre-rRNA_refseq.seq')$size))
-
 
 setwd('..')
 
@@ -40,7 +35,7 @@ a2 <- delta5_shape[,c(3)]
 b1 <- deltaerb1_shape[,c(2)]
 b2 <- deltaerb1_shape[,c(3)]
 
-####
+#### ------- -------- ------ ######
 df <- data.frame("Position" = position_column ,"A1" = a1, "nucleotide" = nucleotide_column)
 df[,c('standard_error')] <- 0
 df <- df[,c(1,2,4,3)]
@@ -74,6 +69,7 @@ df4[is.na(df4)] <- -999.0
 df4[,2:2][df4[, 2:2] == 0] <- -999.0
 ####
 
+#### ------- -------- ------ ######
 setwd("Data/SHAPE_35S")
 
 write.table(df,sep="\t",quote=FALSE,file='35s_delta5_rep1.map', row.names = FALSE, col.names=FALSE)

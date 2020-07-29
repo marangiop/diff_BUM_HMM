@@ -1,14 +1,15 @@
-#### ------- PACKAGES INSTALLATION ------ ######
+#### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
 
 install.packages("BiocManager")
 install.packages("formattable")
+install.packages("rstudioapi")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
 
-#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
 
 wd <- setwd(".")
 setwd(wd)
@@ -114,10 +115,6 @@ head(logdropoffs_exvivo$LDR_CT)
 Nc <- Nt <- noreplicates
 
 strand = "+"
-
-
-#logdropoffswt <- logdropoffs_incell
-#logdropoffsmut <- logdropoffs_exvivo
 
 # Calculation of empirical p values for the two probing conditions
 empPvals_1 <- computePvals(logdropoffs_incell$LDR_C,logdropoffs_incell$LDR_CT, Nc, Nt, strand, logdropoffs_incell$nuclPosition,

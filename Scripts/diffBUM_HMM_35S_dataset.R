@@ -1,15 +1,17 @@
-#### ------- PACKAGES INSTALLATION AND IMPORT OF HELPER FUNCTIONS ------ ######
+#### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001
 
-wd <- setwd(".")
-setwd(wd)
-
 install.packages("BiocManager")
-
+install.packages("rstudioapi")
 
 BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
 # If using R 3.6.3, then install version 3.10 of the above packages
+
+#### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
+
+wd <- setwd(".")
+setwd(wd)
 setwd('..')
 
 source("Functions/computePvals.R")
@@ -28,13 +30,12 @@ suppressPackageStartupMessages({
     library(Biostrings)
     library(SummarizedExperiment) })
 
+library(rstudioapi)
+
 
 #### ------- LOADING DATA ------ ######
 
 noreplicates <- 2
-
-
-
 
 setwd("Reference_sequences")
 refsequence <- "35S_pre-rRNA_refseq.seq"
@@ -42,7 +43,7 @@ setwd('../Data/35S_data/')
 outputfilename <-paste0('35S','_diffBUM_HMM_WT_vs_Erb1_diff_BUM_HMM_analysed','.txt')
 
 # input the coverage and drop off counts from the working directory:
-# wt:wild type; mut: mutant
+# wt: Condition 1; mut: Condition 2; starts: drop off/mutation count; counts: coverage
 
 mergedcountswt <- read.table("35S_control_delta5_merged_reads.sgr", comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 mergedstartswt <- read.table("35S_control_delta5_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
@@ -50,7 +51,7 @@ mergedcountsmut <- read.table("35S_control_Erb1_merged_reads.sgr", comment.char=
 mergedstartsmut <- read.table("35S_control_Erb1_merged_dropoffcounts.sgr",comment.char="#",col.names=c("chromosome","position","35S_control_1_trimmed_plus_strand_startpositions","35S_control_2_trimmed_plus_strand_startpositions","35S_1M7_1_trimmed_plus_strand_startpositions","35S_1M7_2_trimmed_plus_strand_startpositions"))
 
 setwd("./../../")
-#### ------- DATA PRE-PROCESSING (CALCULATION LOG RATIOS OF MUTATION RATES AND EMPIRICAL P-VALUES ) ------- ######
+#### ------- DATA PRE-PROCESSING (CALCULATION LOG RATIOS OF DROP OFF RATES AND EMPIRICAL P-VALUES ) ------- ######
 
 ## Calculating dropoff rate ratios
 logdropoffswt <- calculateLDRs(mergedcountswt,mergedstartswt,noreplicates, refsequence)  
@@ -58,7 +59,7 @@ logdropoffsmut <- calculateLDRs(mergedcountsmut,mergedstartsmut,noreplicates, re
 
 
 #### ------- QUALITY CONTROL: INSPECTION OF LOG DROP OFF RATE RATIOS (OPTIONAL)------ ######
-#TO RUN,UNCOMMENT LINES 61-108 WITH: CTRL + SHIFT + C on Windows or command + SHIFT + C on Mac OS 
+#TO RUN, UNCOMMENT THIS SECTION WITH: CTRL + SHIFT + C on Windows or command + SHIFT + C on Mac OS 
 
 # setwd("Analysis/LMR_and_LDR_plots/35S")
 # 
@@ -197,7 +198,7 @@ for (i in 1:length(stretches)) {
 
 
 #### ------- QUALITY CONTROL: INSPECTION OF P-VALUES (OPTIONAL)------ ######
-#TO RUN,UNCOMMENT LINES 200-241 WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
+# TO RUN,UNCOMMENT THIS SECTION WITH: CTRL + SHIFT + C On Windows or command + SHIFT + C on Mac OS 
 
 # setwd("Analysis/pvalues_plots/35S")
 # 
