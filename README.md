@@ -46,10 +46,7 @@ We provide a requirements.txt file listing R and Python packages with correct ve
 
 ## A note on OS compatibility
 
-The entire repository has been tested successfully on Mac OS. For Windows users we recommend installing Ubuntu (version 18.04 or higher)  LTS ([Link to Microsoft Store](https://www.microsoft.com/en-gb/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab/)) on top of Windows (i.e. Windows Subsystem for Linux) in order to allow smooth installation of the pyCRAC Python package within the relevant Jupyter notebooks (required for generating Figures 6 and S2). Jupyter notebooks for Figure 4, 6 and S2 have dependencies that are only supported by Mac OS, and can only be run partially on Windows.
-
-
-For MEME???
+The entire repository has been tested successfully on Mac OS. All .R scripts have been tested successfully for Mac OS and Windows. Jupyter notebooks for Figure 4, 6 and S2 have partial dependencies (the pyCRAC software package and MEME Suite software) that are only supported by Mac OS, hence cannot be fully run on Windows.
 
 
 
