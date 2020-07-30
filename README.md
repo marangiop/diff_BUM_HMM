@@ -18,6 +18,7 @@ In our paper (ADD REFERENCE BIORXIV PAPER), we demonstrate that, compared to the
 ![Images/Figure_1.jpg](Images/Figure_1.jpg)
 
 ## Reproducing figures from the paper
+
 | Figure | Instructions for raw data analysis | Jupyter Notebook for figure generation |
 |   ------------- |-------------        | -------------|
 | 2-3  | [Instructions](./Jupyter_notebooks/Figure_2_3/instructions_data_analysis_fig2_3.txt)  | [Notebook](./Jupyter_notebooks/Figure_2_3/Plotting_5'ETS_and_35S_data.ipynb)  |
@@ -35,18 +36,22 @@ In our paper (ADD REFERENCE BIORXIV PAPER), we demonstrate that, compared to the
 The table above only includes instructions for figures (or subpanels of figures) from the paper that have been generated programmatically. 
 
 ## Dependencies
+
 The pipeline is built in R. Python and Jupyter (notebook) are needed for performing some of the raw data analysis and figure generation. 
 
 - R 4.0.0 (2020-04-24) (version 3.6.3 2020-02-29 tested working)
 - RStudio 1.2.5001 (version 1.1.442 tested working)
 - Python 3.7.6 (unless specified otherwise)
 
+If .R scripts are run using previous versions of R, Bioconductor v 3.10 needs to be installed.
+
 ## Requirements 
-We provide a requirements.txt file listing R and Python packages with correct versions used in the development and benchmarking of the diffBUM-HMM pipeline described in this study, as reference and also to enable quick installation of the packages. TBA
+
+We provide two requirements.txt file (inside Requirements directory ) listing R and Python packages with versions used in the development and benchmarking of the diffBUM-HMM pipeline described in this study, as reference and also to enable quick installation of the packages.
 
 ## A note on OS compatibility
 
-The entire repository has been tested successfully on Mac OS. All .R scripts have been tested successfully for Mac OS and Windows. Jupyter notebooks for Figure 4, 6 and S2 have partial dependencies (the pyCRAC software package and MEME Suite software) that are only supported by Mac OS, hence cannot be fully run on Windows.
+The entire repository has been tested successfully on Mac OS. All .R scripts have been tested successfully for Mac OS and Windows. Jupyter notebooks for Figure 4, 6 and S2 have partial dependencies (the pyCRAC software package and MEME Suite software) that are only supported by Mac OS and Linux, hence cannot be fully run on Windows.
 
 
 
