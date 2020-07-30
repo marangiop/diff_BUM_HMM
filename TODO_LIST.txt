@@ -63,8 +63,8 @@ Required for Jupyter notebook "Nucleotide_analyses" inside Figure_6 directory. -
 
 15) Create requirements.txt file at the end of the project --> Paolo
 
-16) What do we do with the "sanity_check_xist_shape_reac.R" script and associated jupyter notebook? 
-(from Toby: can we also delete the transition matrices.R file from the Functions folder as well? Seems like there is no use for it anymore.)
+16) What do we do with the "sanity_check_xist_shape_reac.R" script (deleted) and associated jupyter notebook? 
+(from Toby: can we also delete the transition matrices.R file from the Functions folder as well? Seems like there is no use for it anymore.) - deleted
 
 20) Amend Figure 1 --> DONE
 
@@ -74,7 +74,8 @@ Required for Jupyter notebook "Nucleotide_analyses" inside Figure_6 directory. -
 
 23) Reduce number of branches of the repo (just leave master) --> Paolo
 
-24) Try to run successfully the cell that contains bash command inside jupyter notebook for figure 4
+24) Try to run successfully the cell that contains bash command inside jupyter notebook for figure 4 - unsuccessful, note in readme that figure 4
+is not fully runnable for Windows users.
 
 25) mention MEME installation instructions inside repo
 
