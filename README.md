@@ -1,4 +1,4 @@
-# diffBUM_HMM
+# diffBUM-HMM
 Bayesian modelling approach for detecting RNA flexibility changes in high-throughput structure probing data
 
 ## Background 
@@ -47,7 +47,17 @@ If .R scripts are run using previous versions of R, Bioconductor v 3.10 needs to
 
 ## Requirements 
 
-We provide two requirements.txt file (inside Requirements directory ) listing R and Python packages with versions used in the development and benchmarking of the diffBUM-HMM pipeline described in this study, as reference and also to enable quick installation of the packages.
+The `renv` package was used for recording version of the packages used in the R environment. We also provide a requirements.txt file listing Python packages with versions used in the development and benchmarking of the diffBUM-HMM pipeline described in this study, as reference and also to enable quick installation of the packages.
+
+```R
+#Restores the state of the R development environment from renv.lock inside renv directory
+renv::restore()
+```
+
+```bash
+#Restores the state of the Python development environment from python-requirements.txt 
+pip install -r python_requirements.txt
+```
 
 ## A note on OS compatibility
 
