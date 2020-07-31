@@ -13,7 +13,7 @@ Differential BUM-HMM (diffBUM-HMM) is a natural extension of BUM-HMM, where the 
 
 Subsequently, per-nucleotide empirical P values are computed for all possible treatment-control comparisons in each condition, by comparing the corresponding log-ratios to the null distribution. DiffBUM-HMM is run on P values associated with the two independent conditions as observations, leaving out any nucleotides with missing data. The resulting output is a posterior probability of modification for each nucleotide, ranging from 0 to 1. DiffBUM-HMM reports whether nucleotides were unmodified in both conditions, modified in either of the conditions or modified in both conditions.
 
-In our paper (ADD REFERENCE BIORXIV PAPER), we demonstrate that, compared to the existing approaches including dStruct and deltaSHAPE, diffBUM-HMM displays higher sensitivity while calling virtually no false positives. DiffBUM-HMM analysis of ex vivo and in vivo Xist lncRNA SHAPE-MaP data detected many more RNA structural differences, involving mostly single-stranded nucleotides located at or near protein-binding sites. Collectively, our analyses demonstrate the value of diffBUM-HMM for quantitatively detecting RNA structural changes and reinforce the notion that RNA structure probing is a very powerful tool for identifying protein-binding sites.
+In our paaper (currently a preprint available from BioRxiv: [Marangio2020](https://www.biorxiv.org/content/10.1101/2020.07.30.229179v1)), we demonstrate that, compared to the existing approaches including dStruct and deltaSHAPE, diffBUM-HMM displays higher sensitivity while calling virtually no false positives. DiffBUM-HMM analysis of ex vivo and in vivo Xist lncRNA SHAPE-MaP data detected many more RNA structural differences, involving mostly single-stranded nucleotides located at or near protein-binding sites. Collectively, our analyses demonstrate the value of diffBUM-HMM for quantitatively detecting RNA structural changes and reinforce the notion that RNA structure probing is a very powerful tool for identifying protein-binding sites.
 
 ![Images/Figure_1.jpg](Images/Figure_1.jpg)
 
@@ -50,7 +50,7 @@ If .R scripts are run using previous versions of R, Bioconductor v 3.10 needs to
 The `renv` package was used for recording version of the packages used in the R environment. We also provide a requirements.txt file listing Python packages with versions used in the development and benchmarking of the diffBUM-HMM pipeline described in this study, as reference and also to enable quick installation of the packages.
 
 ```R
-#Restores the state of the R development environment from renv.lock inside renv directory
+#Restores the state of the R development environment from renv.lock 
 renv::restore()
 ```
 
