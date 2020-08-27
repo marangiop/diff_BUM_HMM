@@ -65,11 +65,11 @@ setwd("Analysis/dStruct/35S")
 #write.table(res,sep="\t",quote=FALSE,file='SHAPE_reactivities_dStruct_35S_1nt.txt', row.names = FALSE)
 
 
-result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 1) #Change the search length here
+result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 5) #Change the search length here
 
-res <- subset(result, FDR < 0.20) #Change the FDR level here.
+res <- subset(result, FDR < 0.1) #Change the FDR level here.
 
-write.table(res,sep="\t",quote=FALSE,file='output_dStruct_35S_res_table_11nt.txt', row.names = FALSE)
+write.table(res,sep="\t",quote=FALSE,file='output_dStruct_35S_res_table_5nt_FDR_0.1.txt', row.names = FALSE)
 
 
 #----- PLOTTING RESULTS OF DSTRUCT (OPTIONAL) -----

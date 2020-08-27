@@ -1,6 +1,6 @@
 #### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
-# This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
+# This script assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
 
 install.packages("devtools")
 library(devtools)
@@ -114,14 +114,14 @@ reac[reac<0] <- 0
 reac <- as.data.frame(reac)
 
 
-result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 11) #Change the search length here
+result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 5) #Change the search length here
 
 
-res <- subset(result, FDR < 0.05) #Change the FDR level here.
+res <- subset(result, FDR < 0.1) #Change the FDR level here.
 
 setwd("Analysis/dStruct/Xist")
 
-write.table(res,sep="\t",quote=FALSE,file='output_dStruct_with_scaling_Xist_res_table_11nt.txt', row.names = FALSE)
+write.table(res,sep="\t",quote=FALSE,file='output_dStruct_with_scaling_Xist_res_table_5nt_FDR_0.1.txt', row.names = FALSE)
 
 
 #----- PLOTTING RESULTS OF DSTRUCT (OPTIONAL) -----
