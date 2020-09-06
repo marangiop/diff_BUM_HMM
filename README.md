@@ -1,6 +1,8 @@
 # diffBUM-HMM
 Bayesian modelling approach for detecting RNA flexibility changes in high-throughput structure probing data
 
+The code implementing diffBUM-HMM is based on the [original BUM-HMM Bioconductor package](https://bioconductor.org/packages/release/bioc/html/BUMHMM.html) hosted in [this repository](https://github.com/alinaselega/BUMHMM).
+
 ## Background 
 RNA structure is known to be a key regulator of many important mechanisms, such as RNA stability, transcription, and mRNA translation. RNA structural regulatory elements are interrogated with chemical and enzymatic structure probing. In these experiments, a chemical adduct reacts with the RNA molecule in a structure-dependent way, cleaving or otherwise modifying its flexible parts. These modified positions can then be detected, providing valuable structural information that can be used for structure prediction.
 Specifically, chemical adducts halt the reverse transcriptase (RT) reaction, causing it to drop off at the modified positions and truncating the cDNA transcript (RT-stop methods). By changing the conditions for the reaction, one can alternatively force RT to misincorporate non-complementary nucleotides or introduce deletions into the cDNA transcript instead (RT-mutate methods). These drop-off or mutated positions can then be mapped back to the reference sequence. Regardless of the approach, one challenge lies in the stochasticity of this process as the RT can also drop off or introduce mutations randomly. To address this, a complementary control experiment, where no probing reagent is used, is routinely performed to monitor random RT drop-offs or mutations.
