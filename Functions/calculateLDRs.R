@@ -1,3 +1,5 @@
+#diff BUM-HMM
+# Copyright (C) 2020 Alina Selega, Paolo Marangio, Ka Ying Toby Law, Sander Granneman, Guido Sanguinetti
 
 calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
     ### calculates and returns LDRs for the dataset

@@ -1,3 +1,6 @@
+# BUM-HMM
+# Copyright (C) 2016 Alina Selega, Sander Granneman, Guido Sanguinetti
+
 ## This function is for internal use by computeProbs.R
 
 betaParamsEM <- function(posteriors, pVals, alpha, beta,

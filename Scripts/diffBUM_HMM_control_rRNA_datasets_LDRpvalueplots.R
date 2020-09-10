@@ -1,3 +1,7 @@
+# diffBUM-HMM
+# Copyright (C) 2020 Alina Selega, Paolo Marangio, Ka Ying Toby Law, Sander Granneman, Guido Sanguinetti
+
+
 #### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
 # This script assumes: R version 4.0.0 (2020-04-24); RStudio Version 1.2.5001

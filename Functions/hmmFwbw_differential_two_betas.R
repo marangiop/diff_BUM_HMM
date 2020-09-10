@@ -1,3 +1,5 @@
+# diffBUM-HMM
+# Copyright (C) 2020 Alina Selega, Paolo Marangio, Ka Ying Toby Law, Sander Granneman, Guido Sanguinetti
 
 hmmFwbw_differential_two_betas <- function(pValues){
       

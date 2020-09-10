@@ -1,3 +1,6 @@
+# BUM-HMM
+# Copyright (C) 2020 Alina Selega, Paolo Marangio, Ka Ying Toby Law, Sander Granneman, Guido Sanguinetti
+
 ##Annotations and notes for the computeProbs pipeline.
 ##The computepVals function takes in the LDR values, number of replicates, nucleotide
 #positions used to derive LDRs. 
