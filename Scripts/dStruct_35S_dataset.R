@@ -3,7 +3,7 @@
 # This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
 
 install.packages("devtools")
-install_github("AviranLab/dStruct")
+devtools::install_github("AviranLab/dStruct", force = TRUE)
 install.packages("ggplot2")
 install.packages("reshape2")
 install.packages("formattable")
