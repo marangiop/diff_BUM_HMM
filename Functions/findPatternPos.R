@@ -1,3 +1,6 @@
+# BUM-HMM
+# Copyright (C) 2016 Alina Selega, Sander Granneman, Guido Sanguinetti
+
 findPatternPos <- function(patterns, sequence, strand) {
 
     if ((strand != '+') & (strand != '-')) {

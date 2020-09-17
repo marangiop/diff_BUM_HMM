@@ -1,3 +1,6 @@
+# diffBUM-HMM
+# Copyright (C) 2020 Paolo Marangio, Ka Ying Toby Law, Sander Granneman, Guido Sanguinetti
+
 #### ------- SET WORKING DIRECTORY ------ ######
 
 # This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442

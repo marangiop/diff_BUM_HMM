@@ -1,3 +1,6 @@
+# BUM-HMM
+# Copyright (C) 2016 Alina Selega, Sander Granneman, Guido Sanguinetti
+
 .stabiliseVariance <- function(covFile, dorFile, analysedC, analysedCT, Nc, Nt)
 {
 

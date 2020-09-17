@@ -1,3 +1,6 @@
+# BUM-HMM
+# Copyright (C) 2016 Alina Selega, Sander Granneman, Guido Sanguinetti
+
 ## This is a function for internal use by betaParamsEM.R
 
 betaParamsMStep <- function(posteriors, pVals, alpha, beta, tolerance,

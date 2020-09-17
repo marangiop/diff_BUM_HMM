@@ -1,3 +1,6 @@
+# BUM-HMM
+# Copyright (C) 2016 Alina Selega, Sander Granneman, Guido Sanguinetti
+
 ## This is a hidden helper function
 .poolNucl <- function(c, comparisons, indices) {
 
