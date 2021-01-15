@@ -8,7 +8,7 @@
 install.packages("BiocManager")
 install.packages("rstudioapi")
 
-BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.11")
+BiocManager::install(c("Biostrings", "SummarizedExperiment"), version = "3.10")
 # If using R 3.6.3, then install version 3.10 of the above packages
 
 #### ------- SETTING WORKING DIRECTORY AND IMPORT OF HELPER FUNCTIONS (START HERE) ------ ######
@@ -62,6 +62,64 @@ mergedstartswt18S <- read.table("18S_dropoffcounts.txt",comment.char="#",col.nam
 mergedcountsmut18S <- read.table("18S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","18S_DMSO_1","18S_DMSO_2","18S_DMSO_3","18S_DMS_1", "18S_DMS_2", "18S_DMS_3"))
 mergedstartsmut18S <- read.table("18S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","18S_DMSO_1","18S_DMSO_2","18S_DMSO_3","18S_DMS_1", "18S_DMS_2", "18S_DMS_3"))
 
+
+#### - ANALYSIS OF 18S dataset sent by Sander on Jan 15 2021
+r1 <- read.table("Fun12_EtOH_160113_1_18S_18S_chemmod_out.txt", col.names=c("gene","position","nucleotide","readsmapped","dropoffs","hybs"))
+r2 <- read.table("Fun12_EtOH_160113_2_18S_18S_chemmod_out.txt",  col.names=c("gene","position","nucleotide","readsmapped","dropoffs","hybs"))
+r3 <- read.table("Fun12_EtOH_190712_18S_18S_chemmod_out.txt",  col.names=c("gene","position","nucleotide","readsmapped","dropoffs","hybs"))
+
+r4 <- read.table("Fun12_DMS_160113_1_18S_18S_chemmod_out.txt", col.names=c("gene","position","nucleotide","readsmapped","dropoffs","hybs"))
+r5 <- read.table("Fun12_DMS_160113_2_18S_18S_chemmod_out.txt",  col.names=c("gene","position","nucleotide","readsmapped","dropoffs","hybs"))
+r6 <- read.table("Fun12_DMS_190712_18S_18S_chemmod_out.txt",  col.names=c("gene","position","nucleotide","readsmapped","dropoffs","hybs"))
+
+
+#mergedcountswt18Snew
+
+mergedcountswt18Snew <- subset(r1, select = -c(nucleotide,dropoffs,hybs, readsmapped ) )
+mergedcountswt18Snew$position <- as.integer(as.character(mergedcountswt18Snew$position))
+mergedcountswt18Snew$ETOH1 <- as.integer(as.character(r1$readsmapped))
+mergedcountswt18Snew$ET0H2 <- as.integer(as.character(r2$readsmapped))
+mergedcountswt18Snew$ETOH3 <- as.integer(as.character(r3$readsmapped))
+
+mergedcountswt18Snew$DMS1 <- as.integer(as.character(r4$readsmapped))
+mergedcountswt18Snew$DMS2 <- as.integer(as.character(r5$readsmapped))
+mergedcountswt18Snew$DMS3 <- as.integer(as.character(r6$readsmapped))
+
+mergedcountswt18Snew <- mergedcountswt18Snew[-1,]
+mergedcountswt18Snew[nrow(mergedcountswt18Snew)+1,] <- 0
+
+row.names(mergedcountswt18Snew) <- NULL
+mergedcountswt18Snew[1800,"gene"] = "18S"
+mergedcountswt18Snew[1800,"position"] = 1800
+
+
+#mergedstartswt18Snew
+mergedstartswt18Snew <-  subset(r1, select = -c(nucleotide,dropoffs,hybs, readsmapped ) )
+mergedstartswt18Snew$position <- as.integer(as.character(mergedstartswt18Snew$position))
+
+
+mergedstartswt18Snew$ETOH1 <- as.integer(as.character(r1$dropoffs))
+mergedstartswt18Snew$ET0H2 <- as.integer(as.character(r2$dropoffs))
+mergedstartswt18Snew$ETOH3 <- as.integer(as.character(r3$dropoffs))
+
+mergedstartswt18Snew$DMS1 <- as.integer(as.character(r4$dropoffs))
+mergedstartswt18Snew$DMS2 <- as.integer(as.character(r5$dropoffs))
+mergedstartswt18Snew$DMS3 <- as.integer(as.character(r6$dropoffs))
+
+mergedstartswt18Snew <- mergedstartswt18Snew[-1,]
+mergedstartswt18Snew[nrow(mergedstartswt18Snew)+1,] <- 0
+
+row.names(mergedstartswt18Snew) <- NULL
+mergedstartswt18Snew[1800,"gene"] = "18S"
+mergedstartswt18Snew[1800,"position"] = 1800
+
+
+# Negative control test, so mergedcountsmut18Snew is equal to mergedcountswt18Snew
+
+mergedcountsmut18Snew  = mergedcountswt18Snew
+mergedstartsmut18Snew  = mergedstartswt18Snew
+
+
 # 5.8S
 mergedcountswt5.8S <- read.table("5.8S_readcounts.txt", comment.char="#",col.names=c("chromosome","position","5.8S_DMSO_1","5.8S_DMSO_2","5.8S_DMSO_3","5.8S_DMS_1", "5.8S_DMS_2", "5.8S_DMS_3"))
 mergedstartswt5.8S <- read.table("5.8S_dropoffcounts.txt",comment.char="#",col.names=c("chromosome","position","5.8S_DMSO_1","5.8S_DMSO_2","5.8S_DMSO_3","5.8S_DMS_1", "5.8S_DMS_2", "5.8S_DMS_3"))
@@ -86,6 +144,11 @@ logdropoffsmut25S <- calculateLDRs(mergedcountsmut25S,mergedstartsmut25S,norepli
 # 18S
 logdropoffswt18S <- calculateLDRs(mergedcountswt18S,mergedstartswt18S,noreplicates,refsequence18S)
 logdropoffsmut18S <- calculateLDRs(mergedcountsmut18S,mergedstartsmut18S,noreplicates,refsequence18S)
+
+# 18S NEW  15 January 2021
+logdropoffswt18Snew <- calculateLDRs(mergedcountswt18Snew,mergedstartswt18Snew,noreplicates,refsequence18S)
+logdropoffsmut18Snew <- calculateLDRs(mergedcountsmut18Snew,mergedstartsmut18Snew,noreplicates,refsequence18S)
+
 
 # 5.8S
 logdropoffswt5.8S <- calculateLDRs(mergedcountswt5.8S,mergedstartswt5.8S,noreplicates,refsequence5.8S)
@@ -174,6 +237,20 @@ empPvals_18S_B <- computePvals(logdropoffsmut18S$LDR_C,logdropoffsmut18S$LDR_CT,
                                logdropoffsmut18S$nuclSelection$analysedC, logdropoffsmut18S$nuclSelection$analysedCT)
 
 stretches_18S <-overlapsRanges(logdropoffswt18S$stretches,logdropoffsmut18S$stretches)
+
+
+# 18S - New January 2021
+
+empPvals_18S_A <- computePvals(logdropoffswt18Snew$LDR_C,logdropoffswt18Snew$LDR_CT, Nc, Nt, strand, logdropoffswt18Snew$nuclPosition,
+                               logdropoffswt18Snew$nuclSelection$analysedC, logdropoffswt18Snew$nuclSelection$analysedCT)
+
+empPvals_18S_B <- computePvals(logdropoffsmut18Snew$LDR_C,logdropoffsmut18Snew$LDR_CT, Nc, Nt, strand, logdropoffsmut18Snew$nuclPosition,
+                               logdropoffsmut18Snew$nuclSelection$analysedC, logdropoffsmut18Snew$nuclSelection$analysedCT)
+
+stretches_18S <-overlapsRanges(logdropoffswt18Snew$stretches,logdropoffsmut18Snew$stretches)
+
+
+
 
 
 
@@ -266,6 +343,9 @@ selectPvalues <- function(empPvals_1, empPvals_2, stretches){
 
 pvaluesstretch_25S <- selectPvalues(empPvals_25S_A, empPvals_25S_B, stretches_25S)
 pvaluesstretch_18S <- selectPvalues(empPvals_18S_A, empPvals_18S_B, stretches_18S)
+
+pvaluesstretch_18Snew <- selectPvalues(empPvals_18S_A, empPvals_18S_B, stretches_18S)
+
 pvaluesstretch_5.8S <- selectPvalues(empPvals_5.8S_A, empPvals_5.8S_B, stretches_5.8S)
 pvaluesstretch_5S <- selectPvalues(empPvals_5S_A, empPvals_5S_B, stretches_5S)
 
@@ -304,11 +384,17 @@ pvaluesstretch_5S <- selectPvalues(empPvals_5S_A, empPvals_5S_B, stretches_5S)
 #The selected empirical p values are input into the HMM, to give posterior probabilities
 posteriors_diff_25S <- hmmFwbw_differential_two_betas(pvaluesstretch_25S)
 posteriors_diff_18S <- hmmFwbw_differential_two_betas(pvaluesstretch_18S)
+
+posteriors_diff_18Snew <- hmmFwbw_differential_two_betas(pvaluesstretch_18Snew)
+
 posteriors_diff_5.8S <- hmmFwbw_differential_two_betas(pvaluesstretch_5.8S)
 posteriors_diff_5S <- hmmFwbw_differential_two_betas(pvaluesstretch_5S)
 
 colnames(posteriors_diff_25S) <- c("UU","UM","MU","MM")
 colnames(posteriors_diff_18S) <- c("UU","UM","MU","MM")
+
+colnames(posteriors_diff_18Snew) <- c("UU","UM","MU","MM")
+
 colnames(posteriors_diff_5.8S) <- c("UU","UM","MU","MM")
 colnames(posteriors_diff_5S) <- c("UU","UM","MU","MM")
 head(posteriors_diff_25S)
@@ -330,6 +416,10 @@ shifted_posteriors_18S <- matrix(, nrow=dim(posteriors_diff_18S)[1], ncol=4)
 shifted_posteriors_18S[1:(length(shifted_posteriors_18S[,1]) - 1), ] <- posteriors_diff_18S[2:(length(shifted_posteriors_18S[,1])), ]
 colnames(shifted_posteriors_18S) <- c("UU","UM","MU","MM")
 
+shifted_posteriors_18Snew <- matrix(, nrow=dim(posteriors_diff_18Snew)[1], ncol=4)
+shifted_posteriors_18Snew[1:(length(shifted_posteriors_18Snew[,1]) - 1), ] <- posteriors_diff_18Snew[2:(length(shifted_posteriors_18Snew[,1])), ]
+colnames(shifted_posteriors_18Snew) <- c("UU","UM","MU","MM")
+
 shifted_posteriors_5.8S <- matrix(, nrow=dim(posteriors_diff_5.8S)[1], ncol=4)
 shifted_posteriors_5.8S[1:(length(shifted_posteriors_5.8S[,1]) - 1), ] <- posteriors_diff_5.8S[2:(length(shifted_posteriors_5.8S[,1])), ]
 colnames(shifted_posteriors_5.8S) <- c("UU","UM","MU","MM")
@@ -347,6 +437,9 @@ head(shifted_posteriors_25S)
 #Plotting and outputting the shifted posterior probabilities of differential modification
 differentiallymod_25S <- shifted_posteriors_25S[,2] + shifted_posteriors_25S[,3]
 differentiallymod_18S <- shifted_posteriors_18S[,2] + shifted_posteriors_18S[,3]
+
+differentiallymod_18Snew <- shifted_posteriors_18Snew[,2] + shifted_posteriors_18Snew[,3]
+
 differentiallymod_5.8S <- shifted_posteriors_5.8S[,2] + shifted_posteriors_5.8S[,3]
 differentiallymod_5S <- shifted_posteriors_5S[,2] + shifted_posteriors_5S[,3]
 
@@ -368,6 +461,15 @@ plot(differentiallymod_18S, xlab = 'Nucleotide position',
      ylim = c(0,1))
 dev.off()
 
+# 18S NEW
+pdf('rRNA_18SNEW_sum_of_diff_states_diff_BUM_HMM.pdf', width = 10)
+plot(differentiallymod_18Snew, xlab = 'Nucleotide position',
+     ylab = 'Probability of differential modification',
+     main = 'Mature yeast rRNA dataset: Probabilites of differential modification - 18S new',
+     ylim = c(0,1))
+dev.off()
+
+
 # 5.8S
 pdf('rRNA_5.8S_sum_of_diff_states_diff_BUM_HMM.pdf', width = 10)
 plot(differentiallymod_5.8S, xlab = 'Nucleotide position',
@@ -388,10 +490,16 @@ dev.off()
 #Outputting all posterior probabilities
 shifted_posteriors_25S <- replace(shifted_posteriors_25S,is.na(shifted_posteriors_25S),-999)
 shifted_posteriors_18S <- replace(shifted_posteriors_18S,is.na(shifted_posteriors_18S),-999)
+
+shifted_posteriors_18Snew <- replace(shifted_posteriors_18Snew,is.na(shifted_posteriors_18Snew),-999)
+
 shifted_posteriors_5.8S <- replace(shifted_posteriors_5.8S,is.na(shifted_posteriors_5.8S),-999)
 shifted_posteriors_5S <- replace(shifted_posteriors_5S,is.na(shifted_posteriors_5S),-999)
 
 write.table(shifted_posteriors_25S,sep="\t",quote=FALSE,file="mature_rRNA_25S_control_identical_conditions_diff_BUM_HMM.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
 write.table(shifted_posteriors_18S,sep="\t",quote=FALSE,file="mature_rRNA_18S_control_identical_conditions_diff_BUM_HMM.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
+
+write.table(shifted_posteriors_18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18S_control_identical_conditions_Fun12analysis_diff_BUM_HMM.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
+
 write.table(shifted_posteriors_5.8S,sep="\t",quote=FALSE,file="mature_rRNA_5.8S_control_identical_conditions_diff_BUM_HMM.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
 write.table(shifted_posteriors_5S,sep="\t",quote=FALSE,file="mature_rRNA_5S_control_identical_conditions_diff_BUM_HMM.txt",col.names = c("UU","UM","MU","MM"), row.names = TRUE)
