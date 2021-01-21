@@ -41,11 +41,11 @@ mergedcountswt18Snew <- subset(r1, select = -c(nucleotide,dropoffs,hybs, readsma
 mergedcountswt18Snew$position <- as.integer(as.character(mergedcountswt18Snew$position))
 mergedcountswt18Snew$ETOH1 <- as.integer(as.character(r1$readsmapped))
 mergedcountswt18Snew$ET0H2 <- as.integer(as.character(r2$readsmapped))
-#mergedcountswt18Snew$ETOH3 <- as.integer(as.character(r3$readsmapped))
+mergedcountswt18Snew$ETOH3 <- as.integer(as.character(r3$readsmapped))
 
 mergedcountswt18Snew$DMS1 <- as.integer(as.character(r4$readsmapped))
 mergedcountswt18Snew$DMS2 <- as.integer(as.character(r5$readsmapped))
-#mergedcountswt18Snew$DMS3 <- as.integer(as.character(r6$readsmapped))
+mergedcountswt18Snew$DMS3 <- as.integer(as.character(r6$readsmapped))
 
 mergedcountswt18Snew <- mergedcountswt18Snew[-1,]
 mergedcountswt18Snew[nrow(mergedcountswt18Snew)+1,] <- 0
@@ -62,11 +62,11 @@ mergedstartswt18Snew$position <- as.integer(as.character(mergedstartswt18Snew$po
 
 mergedstartswt18Snew$ETOH1 <- as.integer(as.character(r1$dropoffs))
 mergedstartswt18Snew$ET0H2 <- as.integer(as.character(r2$dropoffs))
-#mergedstartswt18Snew$ETOH3 <- as.integer(as.character(r3$dropoffs))
+mergedstartswt18Snew$ETOH3 <- as.integer(as.character(r3$dropoffs))
 
 mergedstartswt18Snew$DMS1 <- as.integer(as.character(r4$dropoffs))
 mergedstartswt18Snew$DMS2 <- as.integer(as.character(r5$dropoffs))
-#mergedstartswt18Snew$DMS3 <- as.integer(as.character(r6$dropoffs))
+mergedstartswt18Snew$DMS3 <- as.integer(as.character(r6$dropoffs))
 
 mergedstartswt18Snew <- mergedstartswt18Snew[-1,]
 mergedstartswt18Snew[nrow(mergedstartswt18Snew)+1,] <- 0
@@ -75,31 +75,31 @@ row.names(mergedstartswt18Snew) <- NULL
 mergedstartswt18Snew[1800,"gene"] = "18S"
 mergedstartswt18Snew[1800,"position"] = 1800
 
-write.table(mergedcountswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_counts_EtOH1_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2", "DMS1","DMS2"), row.names = TRUE)
-write.table(mergedstartswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_starts_EtOH1_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2", "DMS1","DMS2"), row.names = TRUE)
+write.table(mergedcountswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_counts_EtOH1_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2","ET0H3", "DMS1","DMS2", "DMS3"), row.names = TRUE)
+write.table(mergedstartswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_starts_EtOH1_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2","ET0H3", "DMS1","DMS2", "DMS3"), row.names = TRUE)
 
-write.table(mergedcountswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_counts_EtOH2_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2", "DMS1","DMS2"), row.names = TRUE)
-write.table(mergedstartswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_starts_EtOH2_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2",  "DMS1","DMS2"), row.names = TRUE)
-
-
+write.table(mergedcountswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_counts_EtOH2_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2","ET0H3", "DMS1","DMS2", "DMS3"), row.names = TRUE)
+write.table(mergedstartswt18Snew,sep="\t",quote=FALSE,file="mature_rRNA_18SFun12_starts_EtOH2_allreps.txt",col.names = c("gene","position", "ETOH1", "ET0H2","ET0H3", "DMS1","DMS2", "DMS3"), row.names = TRUE)
 
 
-a_cnts <- read.table("mature_rRNA_18SFun12_starts_EtOH1.txt",
+
+
+a_cnts <- read.table("mature_rRNA_18SFun12_starts_EtOH1_allreps.txt",
                      sep = "\t", header= T)
-a_cov <- read.table("mature_rRNA_18SFun12_counts_EtOH1.txt",
+a_cov <- read.table("mature_rRNA_18SFun12_counts_EtOH1_allreps.txt",
                     sep = "\t", header= T)
 
-b_cnts <- read.table("mature_rRNA_18SFun12_starts_EtOH2.txt",
+b_cnts <- read.table("mature_rRNA_18SFun12_starts_EtOH2_allreps.txt",
                      sep = "\t", header= T)
-b_cov <- read.table("mature_rRNA_18SFun12_counts_EtOH2.txt",
+b_cov <- read.table("mature_rRNA_18SFun12_counts_EtOH2_allreps.txt",
                     sep = "\t", header= T)
 
 
-a_rates <- a_cnts[, 3:6]/a_cov[, 3:6]
-b_rates <- b_cnts[, 3:6]/b_cov[, 3:6]
+a_rates <- a_cnts[, 3:8]/a_cov[, 3:8]
+b_rates <- b_cnts[, 3:8]/b_cov[, 3:8]
 
-a_raw_reac <- (a_rates[, 3:4] - a_rates[, 1:2])/(1 - a_rates[, 1:2])
-b_raw_reac <- (b_rates[, 3:4] - b_rates[, 1:2])/(1 - b_rates[, 1:2])
+a_raw_reac <- (a_rates[, 4:6] - a_rates[, 1:3])/(1 - a_rates[, 1:3])
+b_raw_reac <- (b_rates[, 4:6] - b_rates[, 1:3])/(1 - b_rates[, 1:3])
 
 
 
@@ -109,7 +109,7 @@ b_raw_reac_rates_2_8_norm <- apply(b_raw_reac, 2, two.eight.normalize)
 
 reac <- cbind(a_raw_reac_rates_2_8_norm , b_raw_reac_rates_2_8_norm)
 
-colnames(reac) <- c("A1", "A2", "B1", "B2")
+colnames(reac) <- c("A1", "A2","A3", "B1", "B2", "B3")
 reac[reac<0] <- 0
 reac <- as.data.frame(reac)
 
@@ -119,7 +119,7 @@ setwd("Analysis/dStruct/18S_Fun12")
 
 #------  WRITE TO FILE AND INSPECT SHAPE REACTIVITIES (OPTIONAL) --------
 
-result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 5) #Change the search length here
+result <- dStruct(reac, reps_A = 3, reps_B = 3, min_length = 5) #Change the search length here
 
 res <- subset(result, FDR < 0.15) #Change the FDR level here.
 

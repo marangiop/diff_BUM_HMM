@@ -1,6 +1,6 @@
 #### ------- PACKAGES INSTALLATION (EXECUTE ONCE)------ ######
 
-# This sripts assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
+# This script assumes: R version 3.6.3 (2020-02-29); RStudio Version 1.1.442
 
 install.packages("devtools")
 library(devtools)
