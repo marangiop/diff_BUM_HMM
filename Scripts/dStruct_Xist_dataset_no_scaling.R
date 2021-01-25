@@ -79,11 +79,11 @@ reac <- apply(reac, 2, two.eight.normalize)
 result <- dStruct(reac, reps_A = 2, reps_B = 2, min_length = 5) #Change the search length here
 
 
-res <- subset(result, FDR < 0.1) #Change the FDR level here.
+res <- subset(result, FDR < 0.15) #Change the FDR level here.
 
 setwd("Analysis/dStruct/Xist")
 
-write.table(res,sep="\t",quote=FALSE,file='output_dStruct_no_scaling_Xist_res_table_5nt_FDR_0.1.txt', row.names = FALSE)
+write.table(res,sep="\t",quote=FALSE,file='output_dStruct_no_scaling_Xist_res_table_5nt_FDR_0.15.txt', row.names = FALSE)
 
 
 
