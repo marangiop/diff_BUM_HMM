@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4549759.svg)](https://doi.org/10.5281/zenodo.4549759)
 # diffBUM-HMM
 Bayesian modelling approach for detecting RNA flexibility changes in high-throughput structure probing data
 
