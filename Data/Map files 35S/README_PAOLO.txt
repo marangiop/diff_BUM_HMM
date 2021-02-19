@@ -10,4 +10,4 @@ python deltaSHAPE.py 35s_deltaerb1_rep2.map 35s_delta5_rep1.map -o "35S_deltaerb
 
 from within a conda virtual environment with python 2.7 installed, with matplotlib, NumPy and SciPy packages
 
-Output files are stored under "Local_position_of_repository"\diff_BUM_HMM\Analysis\deltaSHAPE
+Output files are also stored under "Local_position_of_repository"\diff_BUM_HMM\Analysis\deltaSHAPE
