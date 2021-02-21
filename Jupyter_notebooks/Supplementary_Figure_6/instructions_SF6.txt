@@ -4,6 +4,7 @@
 ## Run the following commands from RStudio Console:
 source("diffBUM_HMM_35S_dataset.R")
 source("dStruct_35S_dataset.R")
+source("diffBUM_HMM_35S_dataset_scaled_DORs.R")
 source("script_creating_SHAPE_map_files_35S_dataset.R")
 
 ## Run the following commands from within an environment (e.g. virtual environment created with conda or virtualenv) with Python 2.7 installed:

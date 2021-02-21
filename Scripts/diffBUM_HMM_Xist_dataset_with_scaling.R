@@ -290,8 +290,8 @@ for (i in 1:length(stretches)) {
 
 # setwd("Analysis/pvalues_plots/Xist")
 # 
-# write.table(t(Pv1), file="pvalues_invivo.txt", row.names=TRUE, col.names=TRUE)
-# write.table(t(Pv2), file="pvalues_exvivo.txt", row.names=TRUE, col.names=TRUE)
+# write.table(t(Pv1), file="pvalues_invivo.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
+# write.table(t(Pv2), file="pvalues_exvivo.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
 
 
 # pdf('pvalues-xist-Treatment1-Control1-comparison_invivo.pdf',width=6,height=4,paper='special')

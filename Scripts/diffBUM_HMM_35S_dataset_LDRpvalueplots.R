@@ -205,8 +205,8 @@ for (i in 1:length(stretches)) {
 
 setwd("Analysis/pvalues_plots/35S")
 
-write.table(t(Pv1), file="pvalues_delta5.txt", row.names=TRUE, col.names=TRUE)
-write.table(t(Pv2), file="pvalues_deltaerb1.txt", row.names=TRUE, col.names=TRUE)
+write.table(t(Pv1), file="pvalues_delta5.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
+write.table(t(Pv2), file="pvalues_deltaerb1.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
 
 
 pdf('pvalues-35S-Treatment1-Control1-comparison_delta5.pdf',width=6,height=4,paper='special')

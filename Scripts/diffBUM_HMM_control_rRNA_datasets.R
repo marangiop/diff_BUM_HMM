@@ -355,10 +355,10 @@ pvaluesstretch_5S <- selectPvalues(empPvals_5S_A, empPvals_5S_B, stretches_5S)
 
 # setwd("Analysis/pvalues_plots/mature rRNA")
 # 
-# write.table(t(pvaluesstretch_25S[[1]]), file="pvalues_25S.txt", row.names=TRUE, col.names=TRUE)
-# write.table(t(pvaluesstretch_18S[[1]]), file="pvalues_18S.txt", row.names=TRUE, col.names=TRUE)
-# write.table(t(pvaluesstretch_5.8S[[1]]), file="pvalues_5.8S.txt", row.names=TRUE, col.names=TRUE)
-# write.table(t(pvaluesstretch_5S[[1]]), file="pvalues_5S.txt", row.names=TRUE, col.names=TRUE)
+# write.table(t(pvaluesstretch_25S[[1]]), file="pvalues_25S.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
+# write.table(t(pvaluesstretch_18S[[1]]), file="pvalues_18S.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
+# write.table(t(pvaluesstretch_5.8S[[1]]), file="pvalues_5.8S.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
+# write.table(t(pvaluesstretch_5S[[1]]), file="pvalues_5S.txt", sep = "\t", row.names=TRUE, col.names=TRUE)
 # 
 # 
 # pdf('pvalues-maturerRNA-25S.pdf',width=6,height=4,paper='special')

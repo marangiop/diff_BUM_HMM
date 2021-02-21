@@ -12,4 +12,3 @@ pip install numpy
 pip install scipy
 python deltaSHAPE.py 35s_delta5_rep1.map 35s_deltaerb1_rep1.map -o "35S_deltaerb1_Vs_delta5_reps1.txt "
 python deltaSHAPE.py 35s_delta5_rep2.map 35s_deltaerb1_rep2.map -o "35S_deltaerb1_Vs_delta5_reps2.txt "
-
