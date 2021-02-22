@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4549759.svg)](https://doi.org/10.5281/zenodo.4549759)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4553821.svg)](https://doi.org/10.5281/zenodo.4553821)
 # diffBUM-HMM
 Bayesian modelling approach for detecting RNA flexibility changes in high-throughput structure probing data
 
@@ -35,8 +35,8 @@ In our paper (currently a preprint available from BioRxiv: [Marangio2020](https:
 | S3    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_3/instructions_SF3.txt)   | N/A    |
 | S4    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_4/instructions_SF4.txt)    | N/A    |
 | S5    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_5/instructions_SF5.txt)  | N/A   |
-| S6    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_5/instructions_SF6.txt)  |[Notebook](./Jupyter_notebooks/Supplementary_Figure_6/Plotting_5'ETS_and_35S_data-Region_405-502_with_DOR.ipynb)|
-| S7    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_5/instructions_SF7.txt) |[Notebook](./Jupyter_notebooks/Supplementary_Figure_7/Plotting_5'ETS_and_35S_data_with_deltaSHAPE_replicates.ipynb)|
+| S6    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_6/instructions_SF6.txt)  |[Notebook](./Jupyter_notebooks/Supplementary_Figure_6/Plotting_5'ETS_and_35S_data-Region_405-502_with_DOR.ipynb)|
+| S7    | [Instructions](./Jupyter_notebooks/Supplementary_Figure_7/instructions_SF7.txt) |[Notebook](./Jupyter_notebooks/Supplementary_Figure_7/Plotting_5'ETS_and_35S_data_with_deltaSHAPE_replicates.ipynb)|
 
 The table above only includes instructions for figures (or subpanels of figures) from the paper that have been generated programmatically. 
 
