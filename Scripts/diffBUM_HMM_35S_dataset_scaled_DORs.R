@@ -20,12 +20,12 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
     mergeddors <- mergedstarts / mergedcounts
     mergeddors <- replace(mergeddors, is.na(mergeddors), 0)
     
-    #introduce the reference DNA seqeunce, remove \r\n\ characters that can be found
-    #in size info of the file (although I have no idea why)
+    #introduce the reference DNA sequence, remove \r\n\ characters that can be found
+    #in size info of the file
     #store the reference sequence as a DNAString class object, under the name dna
     #here its needed to specify the number of replicates we have for each control and treatment samples
     
-    setwd("Reference_sequences")
+    setwd('../Reference_sequences/')
     
     seq <- gsub("[\r\n\"]", "", readChar(refsequence, file.info(refsequence)$size))
     dna <- DNAString(seq)
@@ -154,8 +154,10 @@ calculateLDRs <- function(mergedcounts,mergedstarts,noreplicates,refsequence) {
 }
 
 outputlogdropoffsdelta5 <- calculateLDRs(mergedcountswt,mergedstartswt,noreplicates, refsequence)  
+setwd("Scripts")
 outputlogdropoffserb1 <- calculateLDRs(mergedcountsmut,mergedstartsmut,noreplicates, refsequence)
 
+setwd("Data/35S_DOR_values/")
 DOR_delta5 <- outputlogdropoffsdelta5[["processed_se"]]@assays@data@listData[["dropoff_rate"]]
 raw_DOR_delta5 <- outputlogdropoffsdelta5[["rawdors"]]
 write.table(DOR_delta5, file="scaled_DORs_delta5.txt", sep = "\t", quote = FALSE, row.names=TRUE, col.names=TRUE)
