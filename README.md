@@ -28,7 +28,7 @@ Overview of the diffBUM-HMM model is shown below:
 
 ## Citing the diffBUM-HMM paper
 
-Marangio, P., Law, K., Sanguinetti, G., Granneman, S. diffBUM-HMM: a robust statistical modeling approach for detecting RNA flexibility changes in high-throughput structure probing data. *Genome Biology* 22, 165 (2021). https://doi.org/10.1186/s13059-021-02379-y
+Marangio, P., Law, K., Sanguinetti, G., Granneman, S. diffBUM-HMM: a robust statistical modeling approach for detecting RNA flexibility changes in high-throughput structure probing data. *Genome Biology* **22**, 165 (2021). https://doi.org/10.1186/s13059-021-02379-y
 
 
 ## Reproducing figures from the paper
