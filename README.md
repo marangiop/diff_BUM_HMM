@@ -1,4 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4553821.svg)](https://doi.org/10.5281/zenodo.4553821)
+
+
 # diffBUM-HMM
 Bayesian modelling approach for detecting RNA flexibility changes in high-throughput structure probing data
 
@@ -12,13 +14,22 @@ Beta-uniform mixture hidden Markov model (BUM-HMM) is a statistical framework fo
 
 Once we have concluded whether a certain nucleotide is modified in a given condition X, where X can be a chemical reagent, temperature, or of a certain genotype, how can we compare that to the degree of modification of the same nucleotide under a different condition Y?
 
-Differential BUM-HMM (diffBUM-HMM) is a natural extension of BUM-HMM, where the number of hidden states is increased from 2 to 4, to allow modelling probabilities of modification between two conditions (see figure below). DiffBUM-HMM requires the coverage and drop-off/mutation counts for the differentially probed RNA of interest, to compute drop-off/mutation rates. For each experimental condition (e.g. Condition 1 and 2), the log-ratios for drop-off/mutation rates (LDRs/LMRs) at each nucleotide position are computed for pairs of control samples to give a null distribution, in order to quantify variability in drop-off or mutation rates observed by chance. LDRs/LMRs are also computed similarly for all possible treatment-control comparisons. Coverage-dependent biases are then removed by applying a variance stabilization transformation. 
+Differential BUM-HMM (diffBUM-HMM) is a natural extension of BUM-HMM, where the number of hidden states is increased from 2 to 4, to allow modelling probabilities of modification between two conditions (see figure below). diffBUM-HMM requires the coverage and drop-off/mutation counts for the differentially probed RNA of interest, to compute drop-off/mutation rates. For each experimental condition (e.g. Condition 1 and 2), the log-ratios for drop-off/mutation rates (LDRs/LMRs) at each nucleotide position are computed for pairs of control samples to give a null distribution, in order to quantify variability in drop-off or mutation rates observed by chance. LDRs/LMRs are also computed similarly for all possible treatment-control comparisons. Coverage-dependent biases are then removed by applying a variance stabilization transformation. 
 
-Subsequently, per-nucleotide empirical P values are computed for all possible treatment-control comparisons in each condition, by comparing the corresponding log-ratios to the null distribution. DiffBUM-HMM is run on P values associated with the two independent conditions as observations, leaving out any nucleotides with missing data. The resulting output is a posterior probability of modification for each nucleotide, ranging from 0 to 1. DiffBUM-HMM reports whether nucleotides were unmodified in both conditions, modified in either of the conditions or modified in both conditions.
+Subsequently, per-nucleotide empirical P values are computed for all possible treatment-control comparisons in each condition, by comparing the corresponding log-ratios to the null distribution. diffBUM-HMM is run on P values associated with the two independent conditions as observations, leaving out any nucleotides with missing data. The resulting output is a posterior probability of modification for each nucleotide, ranging from 0 to 1. diffBUM-HMM reports whether nucleotides were unmodified in both conditions, modified in either of the conditions or modified in both conditions.
 
-In our paper (currently a preprint available from BioRxiv: [Marangio2020](https://www.biorxiv.org/content/10.1101/2020.07.30.229179v1)), we demonstrate that, compared to the existing approaches including dStruct and deltaSHAPE, diffBUM-HMM displays higher sensitivity while calling virtually no false positives. DiffBUM-HMM analysis of ex vivo and in vivo Xist lncRNA SHAPE-MaP data detected many more RNA structural differences, involving mostly single-stranded nucleotides located at or near protein-binding sites. Collectively, our analyses demonstrate the value of diffBUM-HMM for quantitatively detecting RNA structural changes and reinforce the notion that RNA structure probing is a very powerful tool for identifying protein-binding sites.
+In our paper ([Marangio2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02379-y)), we demonstrate that, compared to the existing approaches including dStruct and deltaSHAPE, diffBUM-HMM displays higher sensitivity while calling virtually no false positives. diffBUM-HMM analysis of ex vivo and in vivo Xist lncRNA SHAPE-MaP data detected many more RNA structural differences, involving mostly single-stranded nucleotides located at or near protein-binding sites. Collectively, our analyses demonstrate the value of diffBUM-HMM for quantitatively detecting RNA structural changes and reinforce the notion that RNA structure probing is a very powerful tool for identifying protein-binding sites.
+
+
+Overview of the diffBUM-HMM model is shown below:
 
 ![Images/Figure_1.jpg](Images/Figure_1.jpg)
+
+
+## Citing the diffBUM-HMM paper
+
+Marangio, P., Law, K., Sanguinetti, G., Granneman, S. diffBUM-HMM: a robust statistical modeling approach for detecting RNA flexibility changes in high-throughput structure probing data. *Genome Biology* 22, 165 (2021). https://doi.org/10.1186/s13059-021-02379-y
+
 
 ## Reproducing figures from the paper
 
