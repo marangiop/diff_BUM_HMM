@@ -152,7 +152,7 @@ pytest-shutil==1.6.0
 python-dateutil==2.7.5
 pytz==2018.7
 PyWavelets==1.0.1
-pywin32==223
+pywin32==301
 pywinpty==0.5.5
 PyYAML==5.1
 pyzmq==17.1.2
